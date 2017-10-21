@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2551148C-2C51-48B2-A055-EBC9AA765F53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTS.Shared</RootNamespace>
+    <AssemblyName>VtsShared</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticRuleType.cs" />
+    <Compile Include="BiDirectionalEnumAutoMapper.cs" />
+    <Compile Include="DiagnosticSystemType.cs" />
+    <Compile Include="DomainObjects\AgentVersion.cs" />
+    <Compile Include="DomainObjects\AnalyticStatistics.cs" />
+    <Compile Include="DomainObjects\AnalyticStatisticsItem.cs" />
+    <Compile Include="DomainObjects\AnalyticStatisticsValue.cs" />
+    <Compile Include="DomainObjects\DomainObject.cs" />
+    <Compile Include="DomainObjects\PsaDataset.cs" />
+    <Compile Include="DomainObjects\PsaParameterData.cs" />
+    <Compile Include="DomainObjects\PsaParametersSet.cs" />
+    <Compile Include="DomainObjects\PsaParametersSetType.cs" />
+    <Compile Include="DomainObjects\PsaParameterType.cs" />
+    <Compile Include="DomainObjects\PsaTrace.cs" />
+    <Compile Include="DomainObjects\SystemNews.cs" />
+    <Compile Include="DomainObjects\SystemNewsLocalized.cs" />
+    <Compile Include="DomainObjects\User.cs" />
+    <Compile Include="DomainObjects\UserProfile.cs" />
+    <Compile Include="DomainObjects\UserRole.cs" />
+    <Compile Include="DomainObjects\Vehicle.cs" />
+    <Compile Include="DomainObjects\VehicleCharacteristics.cs" />
+    <Compile Include="DomainObjects\VehicleCharacteristicsItem.cs" />
+    <Compile Include="DomainObjects\VehicleCharacteristicsItemsGroup.cs" />
+    <Compile Include="DomainObjects\VehicleEvent.cs" />
+    <Compile Include="DomainObjects\VehicleEventType.cs" />
+    <Compile Include="EngineFamilyType.cs" />
+    <Compile Include="EngineType.cs" />
+    <Compile Include="ErrorCallbackDelegate.cs" />
+    <Compile Include="FuelType.cs" />
+    <Compile Include="InjectionType.cs" />
+    <Compile Include="Manufacturer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sha256Hash.cs" />
+    <Compile Include="SupportedLanguage.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="VinChecker.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

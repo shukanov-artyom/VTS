@@ -1,0 +1,108 @@
+﻿<Common:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Admin.AnalyticRulesSettings.AnalyticRulesSettingsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:AnalyticRulesSettings="clr-namespace:VTSWeb.Presentation.Workspace.Admin.AnalyticRulesSettings"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <AnalyticRulesSettings:ReliabilityDisplayNameConverter
+                x:Name="ReliabilityDisplayNameConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <AnalyticRulesSettings:AnalyticRulesSettingsFilteringControl
+            x:Name="controlFiltering"
+            Grid.Column="1"
+            Grid.Row="1"/>
+        
+        <ContentControl
+            Grid.Column="1"
+            Grid.Row="3">
+            <sdk:DataGrid
+                SelectionChanged="OnGridSelectionChanged"
+                MinHeight="250"
+                x:Name="dataGridRulesSettings"
+                HeadersVisibility="None"
+                AutoGenerateColumns="False">
+                <sdk:DataGrid.Columns>
+                    <sdk:DataGridTextColumn
+                        Binding="{Binding Path=TypeName}"
+                        Width="SizeToCells"
+                        MinWidth="100"
+                        IsReadOnly="True"/>
+                    <sdk:DataGridTextColumn
+                        Binding="{Binding Path=EngineFamilyTypeName}"
+                        Width="SizeToCells"
+                        MinWidth="100"
+                        IsReadOnly="True"/>
+                    <sdk:DataGridTextColumn
+                        Binding="{Binding Path=EngineTypeName}"
+                        Width="SizeToCells"
+                        MinWidth="100"
+                        IsReadOnly="True"/>
+                    <sdk:DataGridTextColumn
+                        Binding="{Binding Path=Reliability, 
+                            Converter={StaticResource ReliabilityDisplayNameConverter}}"
+                        Width="SizeToCells"
+                        MinWidth="100"
+                        IsReadOnly="True"/>
+                </sdk:DataGrid.Columns>
+            </sdk:DataGrid>
+        </ContentControl>
+        
+        <StackPanel
+            Height="23"
+            Grid.Column="1"
+            Grid.Row="5"
+            Orientation="Horizontal">
+            <TextBlock 
+                Text="{Localization:TranslateExtension Key=ItemsCountText}"/>
+            <TextBlock 
+                Margin="10,0,0,0"
+                x:Name="textBlockItemsCount"/>
+        </StackPanel>
+        
+        <StackPanel
+            Orientation="Vertical"
+            Grid.Column="3"
+            Grid.Row="3">
+            <Button
+                Click="ButtonCreateClick"
+                MinHeight="23"
+                MinWidth="100"
+                Content="{Localization:TranslateExtension 
+                    Key=CreateButtonText}"/>
+            <Button
+                IsEnabled="False"
+                x:Name="buttonDetails"
+                Click="ButtonDetailsClick"
+                Margin="0,10,0,0"
+                MinHeight="23"
+                MinWidth="100"
+                Content="{Localization:TranslateExtension 
+                    Key=DetailsText}"/>
+        </StackPanel>
+    </Grid>
+</Common:NavigatablePage>

@@ -1,0 +1,40 @@
+﻿<UserControl 
+    x:Class="Agent.Common.Presentation.Controls.ScalesSetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Controls="clr-namespace:Agent.Common.Presentation.Controls">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Controls:AxisScaleSettingsControl
+            Grid.Column="0"
+            Grid.Row="0"
+            DataContext="{Binding Path=MainScale}"/>
+        <Image
+            VerticalAlignment="Center"
+            Grid.Column="1"
+            Grid.Row="0"
+            Source="..\Images\Grid.png"/>
+        <ItemsControl
+            ItemsSource="{Binding Path=Scales}"
+            Grid.Column="2"
+            Grid.Row="0">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Controls:AxisScaleSettingsControl/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </Grid>
+</UserControl>

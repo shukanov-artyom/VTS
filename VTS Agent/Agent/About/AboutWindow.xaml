@@ -1,0 +1,53 @@
+﻿<Window 
+    x:Class="Agent.About.AboutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+    WindowStartupLocation="CenterOwner"
+    Width="400"
+    Height="240">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="1"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="{Localization:Translate Key=AboutHeader}"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"/> 
+        
+        <Button
+            Click="OnVisitWebsiteButtonClicked"
+            Grid.Column="1"
+            Grid.Row="3">
+            <Button.Content>
+                <TextBlock
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Text="vtsautomonitoring.com"/>
+            </Button.Content>
+        </Button>
+        
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="5"
+            TextWrapping="Wrap"
+            Text="{Localization:Translate AboutTextContent}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿.wiki-links-list {
+    text-decoration: none;
+}
+
+.wiki-link-block div img{
+    margin-left: 4%;
+    background-image:url('../Images/wiki.png');
+}
+
+.wiki-link-block div h3{
+    display: inline;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}

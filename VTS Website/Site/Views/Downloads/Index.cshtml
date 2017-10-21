@@ -1,0 +1,42 @@
+﻿@using System.Threading
+@using Html
+@using Html.Models
+@using VTS.Site.DomainObjects
+@model DownloadAgentViewModel
+@{
+    ViewBag.Title = "VTS Automonitoring - Downloads";
+    int culture = SiteSession.CurrentUICulture;
+}
+
+<div class="root-element">
+    <h3>@Resource.VtsAgentExplanationHeader</h3>
+    
+    <a href=@Model.AvailableAgentVersions.OrderByDescending(v => v.ReleasedDate).First().DownloadLink><h2 style="color: green">@Resource.DownloadLastAgentVersion</h2></a>
+
+    <h3>@Resource.AvailableAgentVersionsСolon</h3>
+
+    <ul>
+        @foreach (AvailableAgentVersion v in Model.AvailableAgentVersions.OrderByDescending(v => v.ReleasedDate))
+        {
+            <li>
+                <a href="@v.DownloadLink">@v.VersionString — @v.ReleasedDate.ToShortDateString()</a>
+            </li>
+        }
+    </ul>
+
+    <h3>Microsoft Silverlight:</h3>
+
+    <ul>
+        <li>
+            <a href="http://www.microsoft.com/getsilverlight/get-started/install/default.aspx">@Resource.Download</a>
+        </li>
+    </ul>
+
+    <h3>@Resource.AgentPrerequisitesWikiPageText</h3>
+    <div class="wiki-link-block">
+        <div>
+            <img src="../content/images/wiki.png"/>
+            <h3><a href="@Resource.AgentPrerequisitesWikiPage">VTS Agent</a></h3>
+        </div>
+    </div>
+</div>

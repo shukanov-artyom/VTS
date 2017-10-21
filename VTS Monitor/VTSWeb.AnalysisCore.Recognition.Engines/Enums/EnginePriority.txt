@@ -1,0 +1,21 @@
+﻿DV - recognition added, unit tests added
+
+EW/DW - recognition added, unit tests added
+
+TU - developed, unit tests added
+
+Prince - developed, unittests added
+
+XU - developed, NO UNIT TESTS
+
+XUD - developed, NO UNIT TESTS
+
+ES - developed, no unit tests
+		VF7TDXFVJ78005842
+
+DK  - developed, no unit tests added
+		VF36BTHY291042428
+
+EC - development started, 
+
+		VF7DDNFP0DJ538584 - EC5 c-elysee

@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" />
+  <xs:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/Message" />
+  <xs:element name="CheckConnection">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckConnectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckConnectionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckUsernameAvailability">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckUsernameAvailabilityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckUsernameAvailabilityResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginOrEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="AuthenticateUserResult" nillable="true" type="q1:UserDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastAgentVersion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastAgentVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetLastAgentVersionResult" nillable="true" type="q2:AgentVersionDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="user" nillable="true" type="q3:UserDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserRoleByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserRoleByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserRoleByUserIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnersVehiclesCount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPartnersVehiclesCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPartnersVehiclesCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientsForPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientsForPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetClientsForPartnerResult" nillable="true" type="q4:ArrayOfUserDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUsers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="administrativeLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="administrativePasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAllUsersResult" nillable="true" type="q5:ArrayOfUserDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPartnerClients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="partnerLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllPartnerClientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAllPartnerClientsResult" nillable="true" type="q6:ArrayOfUserDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProvideAccessToVehicleForClientUsingEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vehicleId" type="xs:long" />
+        <xs:element minOccurs="0" name="clientEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProvideAccessToVehicleForClientUsingEmailResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RevokeAccessToVehicleForClientUsingEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vehicleId" type="xs:long" />
+        <xs:element minOccurs="0" name="clientEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="partnerPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RevokeAccessToVehicleForClientUsingEmailResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersVehicles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersVehiclesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetUsersVehiclesResult" nillable="true" type="q7:ArrayOfVehicleDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleByVin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleByVinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehicleByVinResult" nillable="true" type="q8:VehicleDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckWhetherVinIsSupported">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckWhetherVinIsSupportedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CheckWhetherVinIsSupportedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckVinsReturnUnsupported">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vins" nillable="true" type="q9:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckVinsReturnUnsupportedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CheckVinsReturnUnsupportedResult" nillable="true" type="q10:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleInformationByVin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleInformationByVinResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehicleInformationByVinResult" nillable="true" type="q11:VehicleInformationDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnUnsupportedVinsFromTheList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vins" nillable="true" type="q12:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReturnUnsupportedVinsFromTheListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ReturnUnsupportedVinsFromTheListResult" nillable="true" type="q13:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAgentVersions">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAgentVersionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAgentVersionsResult" nillable="true" type="q14:ArrayOfAgentVersionDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckVinsReturnUnregistered">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vins" nillable="true" type="q15:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckVinsReturnUnregisteredResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CheckVinsReturnUnregisteredResult" nillable="true" type="q16:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterVehicleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterVehicles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vins" nillable="true" type="q17:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterVehiclesResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateVehicleWithUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateVehicleWithUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateVehiclesWithUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vin" nillable="true" type="q18:ArrayOfstring" />
+        <xs:element minOccurs="0" name="userLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssociateVehiclesWithUserResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleCharacteristics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lang" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleCharacteristicsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehicleCharacteristicsResult" nillable="true" type="q19:VehicleCharacteristicsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehiclesInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vehicleIds" nillable="true" type="q20:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehiclesInformationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehiclesInformationResult" nillable="true" type="q21:ArrayOfVehicleInformationDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehiclesForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehiclesForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehiclesForUserResult" nillable="true" type="q22:ArrayOfVehicleDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDesktopMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDesktopMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDesktopMessagesResult" nillable="true" type="q23:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVehicleMileage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newMileage" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateVehicleMileageResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAnalyticStatistics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="statistics" nillable="true" type="q24:AnalyticStatisticsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAnalyticStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettings">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsResult" nillable="true" type="q25:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByTypeResult" nillable="true" type="q26:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByTypeAndEngineFamily">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByTypeAndEngineFamilyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByTypeAndEngineFamilyResult" nillable="true" type="q27:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByTypeEngineFamilyAndEngineType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="type" type="xs:int" />
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+        <xs:element minOccurs="0" name="engineType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByTypeEngineFamilyAndEngineTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByTypeEngineFamilyAndEngineTypeResult" nillable="true" type="q28:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByEngineFamilyAndEngineType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+        <xs:element minOccurs="0" name="engineType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByEngineFamilyAndEngineTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByEngineFamilyAndEngineTypeResult" nillable="true" type="q29:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByEngineFamily">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByEngineFamilyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByEngineFamilyResult" nillable="true" type="q30:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsDefaultByTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="types" nillable="true" type="q31:ArrayOfint" />
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+        <xs:element minOccurs="0" name="engineType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsDefaultByTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsDefaultByTypesResult" nillable="true" type="q32:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsBySignature">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="signatureRuleTypes" nillable="true" type="q33:ArrayOfint" />
+        <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="signatureEngineTypes" nillable="true" type="q34:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsBySignatureResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsBySignatureResult" nillable="true" type="q35:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsWhereFamilyAndEngineIsNull">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsWhereFamilyAndEngineIsNullResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsWhereFamilyAndEngineIsNullResult" nillable="true" type="q36:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsWhereEngineIsNull">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleType" type="xs:int" />
+        <xs:element minOccurs="0" name="engineFamilyType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsWhereEngineIsNullResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsWhereEngineIsNullResult" nillable="true" type="q37:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ids" nillable="true" type="q38:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticRuleSettingsByIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticRuleSettingsByIdsResult" nillable="true" type="q39:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAnalyticRuleSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="settings" nillable="true" type="q40:AnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAnalyticRuleSettingsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggregateStatistics">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AggregateStatisticsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableAnalyticStatisticsTypesForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableAnalyticStatisticsTypesForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAvailableAnalyticStatisticsTypesForVehicleResult" nillable="true" type="q41:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticStatisticsPerVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="analyticRuleType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyticStatisticsPerVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAnalyticStatisticsPerVehicleResult" nillable="true" type="q42:ArrayOfAnalyticStatisticsValueDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettingsForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ruleType" type="xs:int" />
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettingsForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetSettingsForVehicleResult" nillable="true" type="q43:AnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSettingsForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSettingsForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetAllSettingsForVehicleResult" nillable="true" type="q44:ArrayOfAnalyticRuleSettingsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetDatasetsForVehicleResult" nillable="true" type="q45:ArrayOfPsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetIdsForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetIdsForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDatasetIdsForVehicleResult" nillable="true" type="q46:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+        <xs:element minOccurs="0" name="userLogin" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userPasswordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetDatasetByIdResult" nillable="true" type="q47:PsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadDataset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="dataset" nillable="true" type="q48:PsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadDatasetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadDatasets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="datasets" nillable="true" type="q49:ArrayOfPsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadDatasetsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDataset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="datasetId" type="xs:long" />
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDatasetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTrace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="traceId" type="xs:long" />
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passwordHash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteTraceResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsCount">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsCountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDatasetsCountResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsCountForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vehicleId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDatasetsCountForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDatasetsCountForVehicleResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextPageForVehicle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastId" type="xs:long" />
+        <xs:element minOccurs="0" name="pageSize" type="xs:int" />
+        <xs:element minOccurs="0" name="vehicleId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextPageForVehicleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetNextPageForVehicleResult" nillable="true" type="q50:ArrayOfPsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextPage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lastId" type="xs:long" />
+        <xs:element minOccurs="0" name="pagesize" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetNextPageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetNextPageResult" nillable="true" type="q51:ArrayOfPsaDatasetDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParameterById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetParameterByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetParameterByIdResult" nillable="true" type="q52:PsaParameterDataDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpcomingVehicleEvents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpcomingVehicleEventsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetUpcomingVehicleEventsResult" nillable="true" type="q53:ArrayOfVehicleEventDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleEvents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vin" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleEventsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="GetVehicleEventsResult" nillable="true" type="q54:ArrayOfVehicleEventDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitVehicleEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="e" nillable="true" type="q55:VehicleEventDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitVehicleEventResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVehicleEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="e" nillable="true" type="q56:VehicleEventDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteVehicleEventResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGetLast">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="topCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGetLastResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="NewsGetLastResult" nillable="true" type="q57:ArrayOfSystemNewsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGetAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="NewsGetAllResult" nillable="true" type="q58:ArrayOfSystemNewsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="NewsGetResult" nillable="true" type="q59:SystemNewsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="item" nillable="true" type="q60:SystemNewsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsUpdateResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsPersist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" minOccurs="0" name="item" nillable="true" type="q61:SystemNewsDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsPersistResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewsDeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportUnrecognizedData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.microsoft.com/Message" name="dataStream" type="q62:StreamBody" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportUnrecognizedDataResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

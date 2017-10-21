@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D595477-45C9-40F3-B34D-1723DD70742F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent.Connector.PSA</RootNamespace>
+    <AssemblyName>Agent.Connector.PSA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.2">
+      <HintPath>..\External\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\External\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiagBox\DiagBoxTraceSession.cs" />
+    <Compile Include="DiagBox\DiagBoxTraceSessionFactory.cs" />
+    <Compile Include="DiagBox\Xml\TraceSessionXml.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoMCC.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoPDV.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoTool.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoTrace.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoUserAction.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserMembers\InfoVEH.cs" />
+    <Compile Include="DiagBox\Xml\TraceUserXml.cs" />
+    <Compile Include="GraphTypeData\LexiaChannelRawData.cs" />
+    <Compile Include="GraphTypeData\LexiaChannelHeader.cs" />
+    <Compile Include="GraphTypeData\LexiaRawDataPoint.cs" />
+    <Compile Include="GraphTypeData\LexiaDataPointsCollection.cs" />
+    <Compile Include="GraphTypeData\LexiaGraphSessionRawData.cs" />
+    <Compile Include="GraphTypeData\LexiaScanDataHeader.cs" />
+    <Compile Include="GraphTypeData\LexiaScanGeneralInfo.cs" />
+    <Compile Include="GraphTypeData\LexiaScanMetadata.cs" />
+    <Compile Include="Citroen\LexiaAdditionalFilePathSearcher.cs" />
+    <Compile Include="Citroen\LexiaScanDataFactory.cs" />
+    <Compile Include="DiagBox\DiagBoxConnector.cs" />
+    <Compile Include="DiagnosticSystemConnectorsFactory.cs" />
+    <Compile Include="Peugeot\PeugeotAdditionalFilePathSearcher.cs" />
+    <Compile Include="PsaParametersSetTypeMapper.cs" />
+    <Compile Include="PsaTraceFactoryBase.cs" />
+    <Compile Include="Refactor\Common\CitroenKnownVehicleNames.cs" />
+    <Compile Include="Refactor\Citroen\Graph\CitroenGraphDataRetriever.cs" />
+    <Compile Include="Refactor\Citroen\Graph\CitroenGraphPsaTraceFactory.cs" />
+    <Compile Include="Refactor\Citroen\Graph\LexiaGraphSessionToPsaTraceConverter.cs" />
+    <Compile Include="Refactor\Citroen\PsaCitroenConnector.cs" />
+    <Compile Include="Refactor\Citroen\Trace\CitroenTraceDataRetriever.cs" />
+    <Compile Include="Refactor\Citroen\Trace\CitroenTracePsaTraceFactory.cs" />
+    <Compile Include="Refactor\Citroen\Trace\UnitsConverter.cs" />
+    <Compile Include="Refactor\Citroen\Trace\LexiaRawParameterPoint.cs" />
+    <Compile Include="Refactor\Citroen\Trace\LexiaScreen.cs" />
+    <Compile Include="Refactor\Citroen\Trace\LexiaScreensExtractor.cs" />
+    <Compile Include="Refactor\Citroen\Trace\LexiaScreensToPsaParametersSetConverter.cs" />
+    <Compile Include="Refactor\Citroen\Trace\PsaParametersSetFactory.cs" />
+    <Compile Include="Refactor\Citroen\Trace\PsaTraceVehicleNameExtractor.cs" />
+    <Compile Include="Refactor\Citroen\Trace\PsaTraceVinExtractor.cs" />
+    <Compile Include="Refactor\Peugeot\PeugeotRawParameterPoint.cs" />
+    <Compile Include="Refactor\Peugeot\PeugeotScreen.cs" />
+    <Compile Include="Refactor\Peugeot\PeugeotScreensToPsaParametersSetConverter.cs" />
+    <Compile Include="Refactor\Peugeot\PeugeotTracePsaTraceFactory.cs" />
+    <Compile Include="Refactor\Peugeot\PeugeotTraceStrings.cs" />
+    <Compile Include="Refactor\Peugeot\PsaPeugeotConnector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common\Agent.Common.csproj">
+      <Project>{21539378-9A42-4546-8327-FF4FF88E7D08}</Project>
+      <Name>Agent.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Metadata\Agent.Metadata.csproj">
+      <Project>{FA109915-77D6-456C-AF17-6D76ECB0633D}</Project>
+      <Name>Agent.Metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.PSA.TypeConversion\Agent.Connector.PSA.TypeConversion.csproj">
+      <Project>{C866837D-A44B-48FF-A082-BDB694C01253}</Project>
+      <Name>Agent.Connector.PSA.TypeConversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Logging\Agent.Logging.csproj">
+      <Project>{A9403843-FAD4-446E-A157-2A2CA6F228C7}</Project>
+      <Name>Agent.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector\Agent.Connector.csproj">
+      <Project>{5673E58F-C62F-4701-AB8D-57FFED655A6C}</Project>
+      <Name>Agent.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Localization\Agent.Localization.csproj">
+      <Project>{43F96D06-9A94-471C-B900-B8EFF2BCB42A}</Project>
+      <Name>Agent.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Interfaces\Agent.Common.Interfaces.csproj">
+      <Project>{6853BCCB-216D-4FF7-ADB8-65FF46213A96}</Project>
+      <Name>Agent.Common.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <XmlTag1>XML Value 1</XmlTag1>
+  <XmlTag2>XML Value 2</XmlTag2>
+  <Collection1 Attr1="Attr1Value">
+    <Element1>val1</Element1>
+    <Element2>val2</Element2>
+    <Element3>val3</Element3>
+  </Collection1>
+</root>

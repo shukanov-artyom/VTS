@@ -1,0 +1,84 @@
+﻿<UserControl 
+    x:Class="VTSWeb.AnalysisCore.Statistics.Presentation.AnalyticStatisticsItemPropertiesControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock 
+            x:Name="textBlockTypeColonText"
+            Text="{Localization:TranslateExtension 
+                Key=StatisticsElementTypeColon}"
+            VerticalAlignment="Center"
+            Grid.Column="1"
+            Grid.Row="0" />
+        <TextBlock
+            x:Name="textBlockElementType"
+            VerticalAlignment="Center"
+            Grid.Column="3"
+            Grid.Row="0"/>
+        
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="2"
+            VerticalAlignment="Center"
+            Text="{Localization:TranslateExtension 
+                Key=EngineFamilyColon}"/>
+        <TextBlock
+            VerticalAlignment="Center"
+            x:Name="textBlockEngineFamily"
+            Grid.Column="3"
+            Grid.Row="2" />
+        
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="4"
+            VerticalAlignment="Center"
+            Text="{Localization:TranslateExtension Key=EngineModelColon}"/>
+        <TextBlock
+            VerticalAlignment="Center"
+            x:Name="textBlockEngine"
+            Grid.Column="3"
+            Grid.Row="4" />
+        
+        <StackPanel 
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.Row="6"
+            Orientation="Horizontal">
+            <TextBlock
+                VerticalAlignment="Center"
+                Text="M:"/>
+            <TextBlock
+                VerticalAlignment="Center"
+                x:Name="textBlockExpectation"/>
+            <TextBlock
+                Margin="10,0,0,0"
+                FontSize="13"
+                VerticalAlignment="Center"
+                Text="σ:"/>
+            <TextBlock
+                VerticalAlignment="Center"
+                x:Name="textBlockSigma"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

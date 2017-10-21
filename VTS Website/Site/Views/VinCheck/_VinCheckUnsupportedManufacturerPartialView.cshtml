@@ -1,0 +1,9 @@
+﻿@using Html
+@using Html.Models
+@using System.Threading
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+    int culture = SiteSession.CurrentUICulture;
+}
+<p style="color: #fa8a0f; font-weight: bold">@Resource.UnsupportedManufacturerMessage</p>

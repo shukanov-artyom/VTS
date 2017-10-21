@@ -1,0 +1,13 @@
+﻿<Application 
+    x:Class="Sypher.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:BindingConverters="clr-namespace:Agent.Common.Presentation.BindingConverters;assembly=Agent.Common.Presentation"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+            <BindingConverters:BoolToVisibilityConverter 
+                x:Key="booleanToVisibilityConverter"/>
+         </ResourceDictionary>
+    </Application.Resources>
+</Application>

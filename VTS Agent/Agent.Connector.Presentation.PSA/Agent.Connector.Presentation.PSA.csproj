@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6786BA7-89A7-49DF-9947-B7BBB8F5CC45}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent.Connector.Presentation.PSA</RootNamespace>
+    <AssemblyName>Agent.Connector.Presentation.PSA</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workspace\ExportablePsaParametersSetViewModel.cs" />
+    <Compile Include="Workspace\PsaTraceViewModel.cs" />
+    <Compile Include="Workspace\SynchronizationStatusViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Metadata\Agent.Metadata.csproj">
+      <Project>{FA109915-77D6-456C-AF17-6D76ECB0633D}</Project>
+      <Name>Agent.Metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.DataSynchronization\Agent.Network.DataSynchronization.csproj">
+      <Project>{4BD6050A-11BB-40B0-9314-FEBD6E029DA6}</Project>
+      <Name>Agent.Network.DataSynchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector\Agent.Connector.csproj">
+      <Project>{5673E58F-C62F-4701-AB8D-57FFED655A6C}</Project>
+      <Name>Agent.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Localization\Agent.Localization.csproj">
+      <Project>{43F96D06-9A94-471C-B900-B8EFF2BCB42A}</Project>
+      <Name>Agent.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Interfaces\Agent.Common.Interfaces.csproj">
+      <Project>{6853BCCB-216D-4FF7-ADB8-65FF46213A96}</Project>
+      <Name>Agent.Common.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Presentation\Agent.Common.Presentation.csproj">
+      <Project>{7BEDE629-357F-4903-A1F1-061D0185848E}</Project>
+      <Name>Agent.Common.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.PSA\Agent.Connector.PSA.csproj">
+      <Project>{5D595477-45C9-40F3-B34D-1723DD70742F}</Project>
+      <Name>Agent.Connector.PSA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

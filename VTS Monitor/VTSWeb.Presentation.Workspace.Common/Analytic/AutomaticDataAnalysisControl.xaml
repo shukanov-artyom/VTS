@@ -1,0 +1,43 @@
+﻿<Common:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Common.Analytic.AutomaticDataAnalysisControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Common1="clr-namespace:VTSWeb.Presentation.Workspace.Common;assembly=VTSWeb.Presentation.Workspace.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    xmlns:Presentation="clr-namespace:VTSWeb.AnalysisCore.Presentation;assembly=VTSWeb.AnalysisCore.Presentation">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <Common:HeaderedBorderControl
+            Header="{Localization:TranslateExtension
+                Key=HeaderSelectVehicle}"
+            x:Name="controlVehicleSelection"
+            Grid.Column="1"
+            Grid.Row="1">
+            <Common1:VehicleSelectionControl />
+        </Common:HeaderedBorderControl>
+
+        <Common:HeaderedBorderControl
+            ContentPadding="0"
+            Header="{Localization:TranslateExtension 
+                Key=StateMarks}"
+            x:Name="controlAnalysisDataPlaceholder"
+            Grid.Column="1"
+            Grid.Row="3">
+            <Presentation:VehicleAnalyticModelControl/>
+        </Common:HeaderedBorderControl>
+    </Grid>
+</Common:NavigatablePage>

@@ -1,0 +1,21 @@
+﻿<common:NavigatablePage 
+    x:Class="VTSWeb.SystemNews.SystemNewsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    
+    <Grid>
+        <sdk:DataGrid
+            AutoGenerateColumns="False"
+            x:Name="dataGridNews">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn
+                    Binding="{Binding Path=Subject}"/>
+                <sdk:DataGridTextColumn
+                    Binding="{Binding Path=Date}"/>
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+    </Grid>
+</common:NavigatablePage>
+    

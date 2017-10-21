@@ -1,0 +1,136 @@
+﻿@using Html
+@using Html.Models
+@using VTS.Site.DomainObjects
+@using VTS.Site.WebService.Assemblers
+
+@{
+    ViewBag.Title = "VTS Automonitoring system";
+    int culture = SiteSession.CurrentUICulture;
+}
+<div id="banner-panel" class="root-element">
+    <div id="banner-content">
+        <div id="banner-zero" class="banner-root">
+            <h3>@Html.ActionLink(Resource.LearnMore, "GeneralOverview", "TopicDetails")</h3>
+            <h1>@Resource.BannerZeroHeader</h1>
+            <h1 id="explanatory-text-banner1">@Resource.BannerZeroText1</h1>
+        </div>
+    </div>
+    <div id="banner-switch-panel" class="root-element">
+        <ul>
+            <li>
+                <input id="banner-selector-button1" class="banner-selector-button" type="button" />
+            </li>
+            <li>
+                <input id="banner-selector-button2" class="banner-selector-button" type="button" />
+            </li>
+            <li>
+                <input id="banner-selector-button3" class="banner-selector-button" type="button" />
+            </li>
+            <li>
+                <input id="banner-selector-button4" class="banner-selector-button" type="button" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="steps-panel" class="root-element">
+    <div class="step-panel">
+        <div class="step-image-holder" id="step1-image-holder">
+            <div class="step-caption">
+                <h2>@Resource.Step1Caption</h2>
+            </div>
+            <p>
+                @Html.ActionLink(Resource.DetailsWithDots, "DataCapture", "TopicDetails")
+            </p>
+        </div>
+        <div class="panel-cleaner"></div>
+        <div class="step-text-holder">
+            <p>@Resource.Step1Text</p>
+        </div>
+    </div>
+    <div class="step-panel">
+        <div class="step-image-holder" id="step2-image-holder">
+            <div class="step-caption">
+                <h2>@Resource.Step2Caption</h2>
+            </div>
+            <p>
+                @Html.ActionLink(Resource.DetailsWithDots, "DataAnalysis", "TopicDetails")
+            </p>
+        </div>
+        <div class="step-text-holder">
+            <p>@Resource.Step2Text</p>
+        </div>
+    </div>
+    <div class="step-panel">
+        <div class="step-image-holder" id="step3-image-holder">
+            <div class="step-caption">
+                <h2>@Resource.Step3Caption</h2>
+            </div>
+            <p>
+                @Html.ActionLink(Resource.DetailsWithDots, "DataShare", "TopicDetails")
+            </p>
+        </div>
+        <div class="step-text-holder">
+            <p>@Resource.Step3Text</p>
+        </div>
+    </div>
+</div>
+<div class="panel-cleaner"></div>
+
+<div id="vin-check-panel" class="root-element">
+    <p id="vin-check-invitation">@Resource.CheckYourVinCompatibilityInvitation</p>
+    <button id="button-vin-submit">@Resource.Check</button>
+    <input id="input-vin"/>
+
+    <div class="panel-cleaner"></div>
+
+    <div id="vin-check-result"><p>@Resource.CaseVinSupported</p></div>
+</div>
+
+<div class="panel-cleaner"></div>
+
+<div id="news-panel" class="root-element">
+    <div id="news-header">
+        <h2>@Resource.News</h2>
+    </div>
+    <div>
+        <ul>
+            @foreach (SystemNews newsItem in NewsPersistency.GetLast(5))
+            {
+                <li id="news-item">
+                    <div>
+                        <h4>@String.Format("{0} – {1:D}", 
+                                newsItem.GetTopic(culture), newsItem.DatePublished)</h4>
+                        <p>@newsItem.GetText(culture)</p>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script src="../../Scripts/jquery-1.8.2.js"></script>
+<script src="@Url.Content("../../Scripts/HomeScript.js")"></script>
+<script type="text/javascript">
+    preload([
+        '../Images/banner1back.png',
+        '../Images/banner2back.png',
+        '../Images/banner3back.png',
+        '../Images/banner4back.png']);
+
+    $.ajaxSetup({
+        cache: false
+    });
+
+    window.setInterval(bannersRefresher, 5000);
+
+    $("#banner-zero").hide().fadeIn();
+
+    document.getElementById('button-vin-submit').onclick = onVinSubmit;
+    document.getElementById('banner-selector-button1').onclick = markBanner1;
+    document.getElementById('banner-selector-button2').onclick = markBanner2;
+    document.getElementById('banner-selector-button3').onclick = markBanner3;
+    document.getElementById('banner-selector-button4').onclick = markBanner4;
+</script>
+
+

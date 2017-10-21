@@ -1,0 +1,1 @@
+insert into AgentVersion (VersionString, DownloadLink, ReleasedDate) values ('0.0.22.483', 'https://docs.google.com/uc?export=download&id=0B5BEEqdrM1zpSW1wLUwwY1dGMzg', '2014-01-12 14:19:57.173')

@@ -1,0 +1,106 @@
+﻿<UserControl 
+    x:Class="VTSWeb.Presentation.Workspace.Partner.Vehicles.LicenseInfoControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Converters="clr-namespace:VTSWeb.Presentation.Common.Converters;assembly=VTSWeb.Presentation.Common">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Converters:BoolToVisibilityConverter 
+                x:Name="boolToVisConverter"/>
+            <Converters:IntegerNegatingConverter 
+                x:Name="IntegerNegatingConverter"/>
+            <Converters:StringFormatResourceConverter
+                x:Name="ResourceConverter"/>
+            <Converters:NegatingStringFormatResourceConverter
+                x:Name="SpecialResourceConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="1"
+            Orientation="Horizontal">
+            <TextBlock 
+                Margin="10,0,10,0"
+                x:Name="textBlockId"
+                HorizontalAlignment="Left"
+                FontSize="12"
+                FontWeight="Bold"
+                Text="{Binding Path=LicenseA.Id,
+                    Converter={StaticResource ResourceConverter},
+                    ConverterParameter='LicenseNumberStringFormat',
+                    Mode=OneWay}"/>
+            <TextBlock 
+                x:Name="textBlockIssuedDate"
+                HorizontalAlignment="Left"
+                FontSize="12"
+                FontWeight="Bold"
+                Text="{Binding Path=LicenseA.StartDate,
+                    Converter={StaticResource ResourceConverter},
+                    ConverterParameter='LicenseStartDateStringFormat',
+                    Mode=OneWay}"/>
+        </StackPanel>
+
+        <StackPanel
+            Margin="20,0,0,0"
+            Grid.Column="1"
+            Grid.Row="2"
+            Orientation="Horizontal"
+            Visibility="{Binding Path=LicenseA.HasExpired, 
+                Mode=OneWay,
+                Converter={StaticResource boolToVisConverter}, 
+                ConverterParameter='Inverse'}">
+            <TextBlock 
+                HorizontalAlignment="Left"
+                FontSize="12"
+                Text="{Binding Path=LicenseA.Period,
+                    Converter={StaticResource ResourceConverter},
+                    ConverterParameter='LicensePeriodDisplayStringFormat',
+                    Mode=OneWay}"/>
+            <TextBlock 
+                HorizontalAlignment="Left"
+                FontSize="12"
+                Text="{Binding Path=LicenseA.PeriodRemaining,
+                    Converter={StaticResource ResourceConverter},
+                    ConverterParameter='LicenseExpirationPeriodDisplayStringFormat',
+                    Mode=OneWay}"/>
+        </StackPanel>
+
+        <StackPanel
+            Margin="20,0,0,0"
+            Grid.Column="1"
+            Grid.Row="2"
+            Orientation="Horizontal"
+            Visibility="{Binding Path=LicenseA.HasExpired, 
+                Mode=OneWay,
+                Converter={StaticResource boolToVisConverter}}">
+            <TextBlock 
+                HorizontalAlignment="Left"
+                FontSize="12"
+                Text="{Binding Path=LicenseA.Period,
+                    Converter={StaticResource ResourceConverter},
+                    ConverterParameter='LicensePeriodDisplayStringFormat',
+                    Mode=OneWay}"/>
+            <TextBlock 
+                HorizontalAlignment="Left"
+                FontSize="12"
+                Text="{Binding Path=LicenseA.PeriodRemaining,
+                    ConverterParameter='LicenseExpiredDaysStringFormat',
+                    Converter={StaticResource SpecialResourceConverter},
+                    Mode=OneWay}"
+                    Foreground="Red"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

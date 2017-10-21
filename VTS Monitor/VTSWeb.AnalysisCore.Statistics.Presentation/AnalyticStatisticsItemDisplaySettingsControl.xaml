@@ -1,0 +1,49 @@
+﻿<UserControl 
+    x:Class="VTSWeb.AnalysisCore.Statistics.Presentation.AnalyticStatisticsItemDisplaySettingsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            Text="{Localization:TranslateExtension Key=DiscretionColon}"
+            x:Name="textBlockDiscretion"/>
+        
+        <TextBox
+            TextAlignment="Right"
+            VerticalAlignment="Center"
+            Grid.Column="3"
+            Text="0.5"
+            MinWidth="40"
+            x:Name="textBlockDiscretionValue"/>
+
+        <TextBlock
+            FontSize="15"
+            VerticalAlignment="Center"
+            Grid.Column="5"
+            Text="σ"
+            x:Name="textBlockSigma"/>
+        
+        <Button
+            Content="{Localization:TranslateExtension Key=ApplyText}"
+            Height="23"
+            Width="100"
+            Grid.Column="7"
+            x:Name="buttonApply"/>
+    </Grid>
+    
+</UserControl>

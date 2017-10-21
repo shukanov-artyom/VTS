@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="015bd11e-d460-4416-aab0-0257deea5b50" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://vtswebservice.azurewebsites.net/VtsWebService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VtsWebService.wsdl" MetadataType="Wsdl" ID="ee6a5c5b-c2b9-4a24-b407-d47dbcf9cd26" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?wsdl" />
+    <MetadataFile FileName="VtsWebService.xsd" MetadataType="Schema" ID="28099dbb-bf82-403d-a625-6c592fd7963e" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VtsWebService1.xsd" MetadataType="Schema" ID="2155a3c9-28be-406d-aa24-f1917e4c6409" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VtsWebService2.xsd" MetadataType="Schema" ID="645c228f-c090-4b82-b997-3ee5c4c02fee" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VtsWebService3.xsd" MetadataType="Schema" ID="d9ddcf48-5323-4a04-b72e-8ee72ecfee21" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VtsWebService4.xsd" MetadataType="Schema" ID="a36501b3-0729-45f0-86a4-1c65b1dd345c" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd4" />
+    <MetadataFile FileName="VtsWebService5.xsd" MetadataType="Schema" ID="114c33e5-5744-4163-83c6-da423c013eda" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd5" />
+    <MetadataFile FileName="VtsWebService.disco" MetadataType="Disco" ID="1af91c2a-540c-45d5-b1bb-5f0820e4f929" SourceId="1" SourceUrl="http://vtswebservice.azurewebsites.net/VtsWebService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

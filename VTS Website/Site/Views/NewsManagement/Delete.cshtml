@@ -1,0 +1,17 @@
+﻿@model Html.Models.SystemNewsViewModel
+
+@{
+    ViewBag.Title = "Delete News item";
+}
+
+<div class="root-element">
+    @using (Html.BeginForm())
+    {
+        <p>
+            <input type="submit" value="Delete" />
+        </p>
+        <p>
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    }
+</div>

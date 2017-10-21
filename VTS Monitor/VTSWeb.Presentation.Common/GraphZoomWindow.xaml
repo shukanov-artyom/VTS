@@ -1,0 +1,16 @@
+﻿<controls:ChildWindow 
+    x:Class="VTSWeb.Presentation.Common.GraphZoomWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    Background="White"
+    BorderThickness="0"
+    Foreground="White"
+     
+    HasCloseButton="True">
+
+    <Grid x:Name="LayoutRoot">
+        <ContentControl 
+            x:Name="contentControlPlaceholder"/>
+    </Grid>
+</controls:ChildWindow>

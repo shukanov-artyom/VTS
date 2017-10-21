@@ -1,0 +1,62 @@
+﻿<Window 
+    x:Class="Agent.Workspace.Filtering.MileageAbsenceWarningWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+    WindowStartupLocation="CenterOwner"
+    IsManipulationEnabled="False"
+    Width="520"
+    Height="380"
+    Background="#f8f8f8">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock
+            HorizontalAlignment="Right"
+            FontSize="16"
+            FontWeight="Bold"
+            Grid.Column="1"
+            Grid.Row="1"
+            Text="{Localization:Translate
+                MileageNotSetText}"/>
+
+        <TextBlock
+            TextWrapping="Wrap"
+
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="{Localization:Translate
+                MileageNotSetExplainText}"/>
+        
+        <Button
+            IsCancel="True"
+            Width="80"
+            Height="23"
+            Content="{Localization:Translate OkText}"
+            HorizontalAlignment="Right"
+            Grid.Column="1"
+            Grid.Row="7"/>
+
+        <Image
+            Width="500"
+            Grid.Row="5"
+            Grid.Column="1"
+            Source="pack://application:,,,/Agent;component/Resources/Images/MileageWarnIllustration.png"/>
+    </Grid>
+</Window>

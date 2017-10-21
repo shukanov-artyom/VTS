@@ -1,0 +1,1389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VTS2Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="VTS2ModelStoreContainer">
+    <EntitySet Name="AnalyticRuleSettings" EntityType="VTS2Model.Store.AnalyticRuleSettings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnalyticStatisticsItem" EntityType="VTS2Model.Store.AnalyticStatisticsItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AnalyticStatisticsValue" EntityType="VTS2Model.Store.AnalyticStatisticsValue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="License" EntityType="VTS2Model.Store.License" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PsaDataset" EntityType="VTS2Model.Store.PsaDataset" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PsaParameterData" EntityType="VTS2Model.Store.PsaParameterData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PsaParametersSet" EntityType="VTS2Model.Store.PsaParametersSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PsaTrace" EntityType="VTS2Model.Store.PsaTrace" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SettingsAtom" EntityType="VTS2Model.Store.SettingsAtom" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SettingsMolecule" EntityType="VTS2Model.Store.SettingsMolecule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemNews" EntityType="VTS2Model.Store.SystemNews" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SystemNewsLocalized" EntityType="VTS2Model.Store.SystemNewsLocalized" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UnrecognizedVin" EntityType="VTS2Model.Store.UnrecognizedVin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="VTS2Model.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserVehicleAssociation" EntityType="VTS2Model.Store.UserVehicleAssociation" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vehicle" EntityType="VTS2Model.Store.Vehicle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleCharacteristics" EntityType="VTS2Model.Store.VehicleCharacteristics" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleCharacteristicsItem" EntityType="VTS2Model.Store.VehicleCharacteristicsItem" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleCharacteristicsItemGroup" EntityType="VTS2Model.Store.VehicleCharacteristicsItemGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleEvent" EntityType="VTS2Model.Store.VehicleEvent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AgentVersion" EntityType="VTS2Model.Store.AgentVersion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserProfile" EntityType="VTS2Model.Store.UserProfile" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity" Association="VTS2Model.Store.FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity">
+      <End Role="AnalyticRuleSettings" EntitySet="AnalyticRuleSettings" />
+      <End Role="SettingsMolecule" EntitySet="SettingsMolecule" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue" Association="VTS2Model.Store.FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue">
+      <End Role="AnalyticStatisticsItem" EntitySet="AnalyticStatisticsItem" />
+      <End Role="AnalyticStatisticsValue" EntitySet="AnalyticStatisticsValue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnerVehicleAssociationEntityLicenseEntity" Association="VTS2Model.Store.FK_PartnerVehicleAssociationEntityLicenseEntity">
+      <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+      <End Role="License" EntitySet="License" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PsaDatasetEntityPsaTraceEntity" Association="VTS2Model.Store.FK_PsaDatasetEntityPsaTraceEntity">
+      <End Role="PsaDataset" EntitySet="PsaDataset" />
+      <End Role="PsaTrace" EntitySet="PsaTrace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleEntityPsaDatasetEntity" Association="VTS2Model.Store.FK_VehicleEntityPsaDatasetEntity">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="PsaDataset" EntitySet="PsaDataset" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PsaParametersSetEntityPsaParameterDataEntity" Association="VTS2Model.Store.FK_PsaParametersSetEntityPsaParameterDataEntity">
+      <End Role="PsaParametersSet" EntitySet="PsaParametersSet" />
+      <End Role="PsaParameterData" EntitySet="PsaParameterData" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PsaTraceEntityPsaParametersSetEntity" Association="VTS2Model.Store.FK_PsaTraceEntityPsaParametersSetEntity">
+      <End Role="PsaTrace" EntitySet="PsaTrace" />
+      <End Role="PsaParametersSet" EntitySet="PsaParametersSet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SettingsMoleculeEntitySettingsAtomEntity" Association="VTS2Model.Store.FK_SettingsMoleculeEntitySettingsAtomEntity">
+      <End Role="SettingsMolecule" EntitySet="SettingsMolecule" />
+      <End Role="SettingsAtom" EntitySet="SettingsAtom" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SystemNewsSystemNewsLocalized" Association="VTS2Model.Store.FK_SystemNewsSystemNewsLocalized">
+      <End Role="SystemNews" EntitySet="SystemNews" />
+      <End Role="SystemNewsLocalized" EntitySet="SystemNewsLocalized" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnerVehicleAssociationEntityUserEntity" Association="VTS2Model.Store.FK_PartnerVehicleAssociationEntityUserEntity">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnerVehicleAssociationEntityVehicleEntity" Association="VTS2Model.Store.FK_PartnerVehicleAssociationEntityVehicleEntity">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleEntityVehicleEventEntity" Association="VTS2Model.Store.FK_VehicleEntityVehicleEventEntity">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="VehicleEvent" EntitySet="VehicleEvent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity" Association="VTS2Model.Store.FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity">
+      <End Role="VehicleCharacteristics" EntitySet="VehicleCharacteristics" />
+      <End Role="VehicleCharacteristicsItemGroup" EntitySet="VehicleCharacteristicsItemGroup" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity" Association="VTS2Model.Store.FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity">
+      <End Role="VehicleCharacteristicsItemGroup" EntitySet="VehicleCharacteristicsItemGroup" />
+      <End Role="VehicleCharacteristicsItem" EntitySet="VehicleCharacteristicsItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserEntityUserProfileEntity" Association="VTS2Model.Store.FK_UserEntityUserProfileEntity">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserProfile" EntitySet="UserProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_0" Association="VTS2Model.Store.FK_User_0">
+      <End Role="User" EntitySet="User" />
+      <End Role="User1" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AnalyticRuleSettings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RuleType" Type="int" Nullable="false" />
+    <Property Name="EngineFamilyType" Type="int" Nullable="true" />
+    <Property Name="EngineType" Type="int" Nullable="true" />
+    <Property Name="Reliability" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnalyticStatisticsItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VersionGenerated" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateGenerated" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="TargetEngineFamilyType" Type="int" Nullable="false" />
+    <Property Name="TargetEngineType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnalyticStatisticsValue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnalyticStatisticsItemId" Type="bigint" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+    <Property Name="SourceVehicleVin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SourcePsaParametersSetId" Type="bigint" Nullable="false" />
+    <Property Name="SourceDataCaptureDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="License">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="ServerDateIssued" Type="datetime" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Period" Type="int" Nullable="false" />
+    <Property Name="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PsaDataset">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateSaved" Type="datetime" Nullable="false" />
+    <Property Name="Guid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DateExported" Type="datetime" Nullable="false" />
+    <Property Name="VehicleEntityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PsaParameterData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PsaParametersSetEntityId" Type="bigint" Nullable="false" />
+    <Property Name="HasTimestamps" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="Units" Type="int" Nullable="false" />
+    <Property Name="Values" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Timestamps" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OriginalTypeId" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="AdditionalSourceInfo" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="PsaParametersSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PsaTraceEntityId" Type="bigint" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="EcuName" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="EcuLabel" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="OriginalTypeId" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="AdditionalSourceInfo" Type="nvarchar(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="PsaTrace">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PsaDatasetEntityId" Type="bigint" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Application" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Format" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="PhoneChannel" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Vin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ToolSerialNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="SavesetId" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Mileage" Type="int" Nullable="false" />
+    <Property Name="Manufacturer" Type="int" Nullable="false" />
+    <Property Name="VehicleModelName" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SettingsAtom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MinOptimal" Type="float" Nullable="false" />
+    <Property Name="MaxOptimal" Type="float" Nullable="false" />
+    <Property Name="MinAcceptable" Type="float" Nullable="false" />
+    <Property Name="MaxAcceptable" Type="float" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="SettingsMoleculeEntityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SettingsMolecule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OverrideOptimal" Type="bit" Nullable="false" />
+    <Property Name="OverrideAcceptable" Type="bit" Nullable="false" />
+    <Property Name="AnalyticRuleSettingsEntityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemNews">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IsBlocked" Type="bit" Nullable="false" />
+    <Property Name="DatePublished" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemNewsLocalized">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Header" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NewsContentText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Language" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SystemNewsId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnrecognizedVin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="RegisteredDate" Type="datetime" Nullable="false" />
+    <Property Name="Role" Type="int" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PrincipalId" Type="bigint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="UserVehicleAssociation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleEntityId" Type="bigint" Nullable="false" />
+    <Property Name="UserEntityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Manufacturer" Type="int" Nullable="false" />
+    <Property Name="ModelName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Registered" Type="datetime" Nullable="false" />
+    <Property Name="ProductionYear" Type="int" Nullable="false" />
+    <Property Name="Mileage" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleCharacteristics">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Language" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="GeneralVehicleInfo" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Vin" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleCharacteristicsItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleCharacteristicsItemsGroupEntityId" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleCharacteristicsItemGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="VehicleCharacteristicsEntityId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleEvent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Mileage" Type="int" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="YellowMileage" Type="int" Nullable="true" />
+    <Property Name="RedMileage" Type="int" Nullable="true" />
+    <Property Name="VehicleEntityId" Type="bigint" Nullable="false" />
+    <Property Name="NextReplacementPeriod" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgentVersion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VersionString" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DownloadLink" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ReleasedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity">
+    <End Role="AnalyticRuleSettings" Type="VTS2Model.Store.AnalyticRuleSettings" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SettingsMolecule" Type="VTS2Model.Store.SettingsMolecule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AnalyticRuleSettings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SettingsMolecule">
+        <PropertyRef Name="AnalyticRuleSettingsEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue">
+    <End Role="AnalyticStatisticsItem" Type="VTS2Model.Store.AnalyticStatisticsItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AnalyticStatisticsValue" Type="VTS2Model.Store.AnalyticStatisticsValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AnalyticStatisticsItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AnalyticStatisticsValue">
+        <PropertyRef Name="AnalyticStatisticsItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnerVehicleAssociationEntityLicenseEntity">
+    <End Role="UserVehicleAssociation" Type="VTS2Model.Store.UserVehicleAssociation" Multiplicity="1" />
+    <End Role="License" Type="VTS2Model.Store.License" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserVehicleAssociation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="License">
+        <PropertyRef Name="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PsaDatasetEntityPsaTraceEntity">
+    <End Role="PsaDataset" Type="VTS2Model.Store.PsaDataset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PsaTrace" Type="VTS2Model.Store.PsaTrace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PsaDataset">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PsaTrace">
+        <PropertyRef Name="PsaDatasetEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleEntityPsaDatasetEntity">
+    <End Role="Vehicle" Type="VTS2Model.Store.Vehicle" Multiplicity="1" />
+    <End Role="PsaDataset" Type="VTS2Model.Store.PsaDataset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PsaDataset">
+        <PropertyRef Name="VehicleEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PsaParametersSetEntityPsaParameterDataEntity">
+    <End Role="PsaParametersSet" Type="VTS2Model.Store.PsaParametersSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PsaParameterData" Type="VTS2Model.Store.PsaParameterData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PsaParametersSet">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PsaParameterData">
+        <PropertyRef Name="PsaParametersSetEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PsaTraceEntityPsaParametersSetEntity">
+    <End Role="PsaTrace" Type="VTS2Model.Store.PsaTrace" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PsaParametersSet" Type="VTS2Model.Store.PsaParametersSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PsaTrace">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PsaParametersSet">
+        <PropertyRef Name="PsaTraceEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SettingsMoleculeEntitySettingsAtomEntity">
+    <End Role="SettingsMolecule" Type="VTS2Model.Store.SettingsMolecule" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SettingsAtom" Type="VTS2Model.Store.SettingsAtom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SettingsMolecule">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SettingsAtom">
+        <PropertyRef Name="SettingsMoleculeEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SystemNewsSystemNewsLocalized">
+    <End Role="SystemNews" Type="VTS2Model.Store.SystemNews" Multiplicity="1" />
+    <End Role="SystemNewsLocalized" Type="VTS2Model.Store.SystemNewsLocalized" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SystemNews">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SystemNewsLocalized">
+        <PropertyRef Name="SystemNewsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnerVehicleAssociationEntityUserEntity">
+    <End Role="User" Type="VTS2Model.Store.User" Multiplicity="1" />
+    <End Role="UserVehicleAssociation" Type="VTS2Model.Store.UserVehicleAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserVehicleAssociation">
+        <PropertyRef Name="UserEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnerVehicleAssociationEntityVehicleEntity">
+    <End Role="Vehicle" Type="VTS2Model.Store.Vehicle" Multiplicity="1" />
+    <End Role="UserVehicleAssociation" Type="VTS2Model.Store.UserVehicleAssociation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserVehicleAssociation">
+        <PropertyRef Name="VehicleEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleEntityVehicleEventEntity">
+    <End Role="Vehicle" Type="VTS2Model.Store.Vehicle" Multiplicity="1" />
+    <End Role="VehicleEvent" Type="VTS2Model.Store.VehicleEvent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleEvent">
+        <PropertyRef Name="VehicleEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity">
+    <End Role="VehicleCharacteristics" Type="VTS2Model.Store.VehicleCharacteristics" Multiplicity="1" />
+    <End Role="VehicleCharacteristicsItemGroup" Type="VTS2Model.Store.VehicleCharacteristicsItemGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleCharacteristics">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleCharacteristicsItemGroup">
+        <PropertyRef Name="VehicleCharacteristicsEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity">
+    <End Role="VehicleCharacteristicsItemGroup" Type="VTS2Model.Store.VehicleCharacteristicsItemGroup" Multiplicity="1" />
+    <End Role="VehicleCharacteristicsItem" Type="VTS2Model.Store.VehicleCharacteristicsItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleCharacteristicsItemGroup">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VehicleCharacteristicsItem">
+        <PropertyRef Name="VehicleCharacteristicsItemsGroupEntityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserEntityUserProfileEntity">
+    <End Role="User" Type="VTS2Model.Store.User" Multiplicity="1" />
+    <End Role="UserProfile" Type="VTS2Model.Store.UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_0">
+    <End Role="User" Type="VTS2Model.Store.User" Multiplicity="0..1" />
+    <End Role="User1" Type="VTS2Model.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="PrincipalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VTS2Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="VTSDatabase" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="AnalyticRuleSettings" EntityType="VTS2Model.AnalyticRuleSettings" />
+          <EntitySet Name="AnalyticStatisticsItem" EntityType="VTS2Model.AnalyticStatisticsItem" />
+          <EntitySet Name="AnalyticStatisticsValue" EntityType="VTS2Model.AnalyticStatisticsValue" />
+          <EntitySet Name="License" EntityType="VTS2Model.License" />
+          <EntitySet Name="PsaDataset" EntityType="VTS2Model.PsaDataset" />
+          <EntitySet Name="PsaParameterData" EntityType="VTS2Model.PsaParameterData" />
+          <EntitySet Name="PsaParametersSet" EntityType="VTS2Model.PsaParametersSet" />
+          <EntitySet Name="PsaTrace" EntityType="VTS2Model.PsaTrace" />
+          <EntitySet Name="SettingsAtom" EntityType="VTS2Model.SettingsAtom" />
+          <EntitySet Name="SettingsMolecule" EntityType="VTS2Model.SettingsMolecule" />
+          <EntitySet Name="SystemNews" EntityType="VTS2Model.SystemNews" />
+          <EntitySet Name="SystemNewsLocalized" EntityType="VTS2Model.SystemNewsLocalized" />
+          <EntitySet Name="UnrecognizedVin" EntityType="VTS2Model.UnrecognizedVin" />
+          <EntitySet Name="User" EntityType="VTS2Model.User" />
+          <EntitySet Name="UserVehicleAssociation" EntityType="VTS2Model.UserVehicleAssociation" />
+          <EntitySet Name="Vehicle" EntityType="VTS2Model.Vehicle" />
+          <EntitySet Name="VehicleCharacteristics" EntityType="VTS2Model.VehicleCharacteristics" />
+          <EntitySet Name="VehicleCharacteristicsItem" EntityType="VTS2Model.VehicleCharacteristicsItem" />
+          <EntitySet Name="VehicleCharacteristicsItemGroup" EntityType="VTS2Model.VehicleCharacteristicsItemGroup" />
+          <EntitySet Name="VehicleEvent" EntityType="VTS2Model.VehicleEvent" />
+          <AssociationSet Name="FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity" Association="VTS2Model.FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity">
+            <End Role="AnalyticRuleSettings" EntitySet="AnalyticRuleSettings" />
+            <End Role="SettingsMolecule" EntitySet="SettingsMolecule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue" Association="VTS2Model.FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue">
+            <End Role="AnalyticStatisticsItem" EntitySet="AnalyticStatisticsItem" />
+            <End Role="AnalyticStatisticsValue" EntitySet="AnalyticStatisticsValue" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerVehicleAssociationEntityLicenseEntity" Association="VTS2Model.FK_PartnerVehicleAssociationEntityLicenseEntity">
+            <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+            <End Role="License" EntitySet="License" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PsaDatasetEntityPsaTraceEntity" Association="VTS2Model.FK_PsaDatasetEntityPsaTraceEntity">
+            <End Role="PsaDataset" EntitySet="PsaDataset" />
+            <End Role="PsaTrace" EntitySet="PsaTrace" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleEntityPsaDatasetEntity" Association="VTS2Model.FK_VehicleEntityPsaDatasetEntity">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="PsaDataset" EntitySet="PsaDataset" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PsaParametersSetEntityPsaParameterDataEntity" Association="VTS2Model.FK_PsaParametersSetEntityPsaParameterDataEntity">
+            <End Role="PsaParametersSet" EntitySet="PsaParametersSet" />
+            <End Role="PsaParameterData" EntitySet="PsaParameterData" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PsaTraceEntityPsaParametersSetEntity" Association="VTS2Model.FK_PsaTraceEntityPsaParametersSetEntity">
+            <End Role="PsaTrace" EntitySet="PsaTrace" />
+            <End Role="PsaParametersSet" EntitySet="PsaParametersSet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SettingsMoleculeEntitySettingsAtomEntity" Association="VTS2Model.FK_SettingsMoleculeEntitySettingsAtomEntity">
+            <End Role="SettingsMolecule" EntitySet="SettingsMolecule" />
+            <End Role="SettingsAtom" EntitySet="SettingsAtom" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SystemNewsSystemNewsLocalized" Association="VTS2Model.FK_SystemNewsSystemNewsLocalized">
+            <End Role="SystemNews" EntitySet="SystemNews" />
+            <End Role="SystemNewsLocalized" EntitySet="SystemNewsLocalized" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerVehicleAssociationEntityUserEntity" Association="VTS2Model.FK_PartnerVehicleAssociationEntityUserEntity">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerVehicleAssociationEntityVehicleEntity" Association="VTS2Model.FK_PartnerVehicleAssociationEntityVehicleEntity">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="UserVehicleAssociation" EntitySet="UserVehicleAssociation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleEntityVehicleEventEntity" Association="VTS2Model.FK_VehicleEntityVehicleEventEntity">
+            <End Role="Vehicle" EntitySet="Vehicle" />
+            <End Role="VehicleEvent" EntitySet="VehicleEvent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity" Association="VTS2Model.FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity">
+            <End Role="VehicleCharacteristics" EntitySet="VehicleCharacteristics" />
+            <End Role="VehicleCharacteristicsItemGroup" EntitySet="VehicleCharacteristicsItemGroup" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity" Association="VTS2Model.FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity">
+            <End Role="VehicleCharacteristicsItemGroup" EntitySet="VehicleCharacteristicsItemGroup" />
+            <End Role="VehicleCharacteristicsItem" EntitySet="VehicleCharacteristicsItem" />
+          </AssociationSet>
+          <EntitySet Name="AgentVersion" EntityType="VTS2Model.AgentVersion" />
+          <EntitySet Name="UserProfile" EntityType="VTS2Model.UserProfile" />
+          <AssociationSet Name="FK_UserEntityUserProfileEntity" Association="VTS2Model.FK_UserEntityUserProfileEntity">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_0" Association="VTS2Model.FK_User_0">
+            <End Role="User" EntitySet="User" />
+            <End Role="User1" EntitySet="User" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AnalyticRuleSettings">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="RuleType" Type="Int32" Nullable="false" />
+          <Property Name="EngineFamilyType" Type="Int32" />
+          <Property Name="EngineType" Type="Int32" />
+          <Property Name="Reliability" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SettingsMolecule" Relationship="VTS2Model.FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity" FromRole="AnalyticRuleSettings" ToRole="SettingsMolecule" />
+        </EntityType>
+        <EntityType Name="AnalyticStatisticsItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VersionGenerated" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="DateGenerated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="TargetEngineFamilyType" Type="Int32" Nullable="false" />
+          <Property Name="TargetEngineType" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AnalyticStatisticsValue" Relationship="VTS2Model.FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue" FromRole="AnalyticStatisticsItem" ToRole="AnalyticStatisticsValue" />
+        </EntityType>
+        <EntityType Name="AnalyticStatisticsValue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="AnalyticStatisticsItemId" Type="Int64" Nullable="false" />
+          <Property Name="Value" Type="Double" Nullable="false" />
+          <Property Name="SourceVehicleVin" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SourcePsaParametersSetId" Type="Int64" Nullable="false" />
+          <Property Name="SourceDataCaptureDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="AnalyticStatisticsItem" Relationship="VTS2Model.FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue" FromRole="AnalyticStatisticsValue" ToRole="AnalyticStatisticsItem" />
+        </EntityType>
+        <EntityType Name="License">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="State" Type="Int32" Nullable="false" />
+          <Property Name="ServerDateIssued" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="Period" Type="Int32" Nullable="false" />
+          <Property Name="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="UserVehicleAssociation" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityLicenseEntity" FromRole="License" ToRole="UserVehicleAssociation" />
+        </EntityType>
+        <EntityType Name="PsaDataset">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="DateSaved" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Guid" Type="Guid" Nullable="false" />
+          <Property Name="DateExported" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="VehicleEntityId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="PsaTrace" Relationship="VTS2Model.FK_PsaDatasetEntityPsaTraceEntity" FromRole="PsaDataset" ToRole="PsaTrace" />
+          <NavigationProperty Name="Vehicle" Relationship="VTS2Model.FK_VehicleEntityPsaDatasetEntity" FromRole="PsaDataset" ToRole="Vehicle" />
+        </EntityType>
+        <EntityType Name="PsaParameterData">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="PsaParametersSetEntityId" Type="Int64" Nullable="false" />
+          <Property Name="HasTimestamps" Type="Boolean" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="Units" Type="Int32" Nullable="false" />
+          <Property Name="Values" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Timestamps" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PsaParametersSet" Relationship="VTS2Model.FK_PsaParametersSetEntityPsaParameterDataEntity" FromRole="PsaParameterData" ToRole="PsaParametersSet" />
+          <Property Name="OriginalTypeId" Type="String" Nullable="true" />
+          <Property Name="AdditionalSourceInfo" Type="String" Nullable="true" />
+        </EntityType>
+        <EntityType Name="PsaParametersSet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="PsaTraceEntityId" Type="Int64" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PsaParameterData" Relationship="VTS2Model.FK_PsaParametersSetEntityPsaParameterDataEntity" FromRole="PsaParametersSet" ToRole="PsaParameterData" />
+          <NavigationProperty Name="PsaTrace" Relationship="VTS2Model.FK_PsaTraceEntityPsaParametersSetEntity" FromRole="PsaParametersSet" ToRole="PsaTrace" />
+          <Property Name="EcuName" Type="String" Nullable="true" />
+          <Property Name="EcuLabel" Type="String" Nullable="true" />
+          <Property Name="OriginalTypeId" Type="String" Nullable="true" />
+          <Property Name="AdditionalSourceInfo" Type="String" Nullable="true" />
+        </EntityType>
+        <EntityType Name="PsaTrace">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="PsaDatasetEntityId" Type="Int64" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Application" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Format" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PhoneChannel" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Vin" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ToolSerialNumber" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SavesetId" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Mileage" Type="Int32" Nullable="false" />
+          <Property Name="Manufacturer" Type="Int32" Nullable="false" />
+          <Property Name="VehicleModelName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="PsaDataset" Relationship="VTS2Model.FK_PsaDatasetEntityPsaTraceEntity" FromRole="PsaTrace" ToRole="PsaDataset" />
+          <NavigationProperty Name="PsaParametersSet" Relationship="VTS2Model.FK_PsaTraceEntityPsaParametersSetEntity" FromRole="PsaTrace" ToRole="PsaParametersSet" />
+        </EntityType>
+        <EntityType Name="SettingsAtom">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MinOptimal" Type="Double" Nullable="false" />
+          <Property Name="MaxOptimal" Type="Double" Nullable="false" />
+          <Property Name="MinAcceptable" Type="Double" Nullable="false" />
+          <Property Name="MaxAcceptable" Type="Double" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="SettingsMoleculeEntityId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="SettingsMolecule" Relationship="VTS2Model.FK_SettingsMoleculeEntitySettingsAtomEntity" FromRole="SettingsAtom" ToRole="SettingsMolecule" />
+        </EntityType>
+        <EntityType Name="SettingsMolecule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="OverrideOptimal" Type="Boolean" Nullable="false" />
+          <Property Name="OverrideAcceptable" Type="Boolean" Nullable="false" />
+          <Property Name="AnalyticRuleSettingsEntityId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="AnalyticRuleSettings" Relationship="VTS2Model.FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity" FromRole="SettingsMolecule" ToRole="AnalyticRuleSettings" />
+          <NavigationProperty Name="SettingsAtom" Relationship="VTS2Model.FK_SettingsMoleculeEntitySettingsAtomEntity" FromRole="SettingsMolecule" ToRole="SettingsAtom" />
+        </EntityType>
+        <EntityType Name="SystemNews">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="IsBlocked" Type="Boolean" Nullable="false" />
+          <Property Name="DatePublished" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="SystemNewsLocalized" Relationship="VTS2Model.FK_SystemNewsSystemNewsLocalized" FromRole="SystemNews" ToRole="SystemNewsLocalized" />
+        </EntityType>
+        <EntityType Name="SystemNewsLocalized">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Header" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="NewsContentText" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Language" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="SystemNewsId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="SystemNews" Relationship="VTS2Model.FK_SystemNewsSystemNewsLocalized" FromRole="SystemNewsLocalized" ToRole="SystemNews" />
+        </EntityType>
+        <EntityType Name="UnrecognizedVin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Vin" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Login" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Surname" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="RegisteredDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Role" Type="Int32" Nullable="false" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="UserVehicleAssociation" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityUserEntity" FromRole="User" ToRole="UserVehicleAssociation" />
+          <NavigationProperty Name="UserProfile" Relationship="VTS2Model.FK_UserEntityUserProfileEntity" FromRole="User" ToRole="UserProfile" />
+          <Property Type="Int64" Name="PrincipalId" />
+          <NavigationProperty Name="User1" Relationship="VTS2Model.FK_User_0" FromRole="User" ToRole="User1" />
+          <NavigationProperty Name="User2" Relationship="VTS2Model.FK_User_0" FromRole="User1" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserVehicleAssociation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VehicleEntityId" Type="Int64" Nullable="false" />
+          <Property Name="UserEntityId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="License" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityLicenseEntity" FromRole="UserVehicleAssociation" ToRole="License" />
+          <NavigationProperty Name="User" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityUserEntity" FromRole="UserVehicleAssociation" ToRole="User" />
+          <NavigationProperty Name="Vehicle" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityVehicleEntity" FromRole="UserVehicleAssociation" ToRole="Vehicle" />
+        </EntityType>
+        <EntityType Name="Vehicle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Vin" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Manufacturer" Type="Int32" Nullable="false" />
+          <Property Name="ModelName" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Registered" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ProductionYear" Type="Int32" Nullable="false" />
+          <Property Name="Mileage" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PsaDataset" Relationship="VTS2Model.FK_VehicleEntityPsaDatasetEntity" FromRole="Vehicle" ToRole="PsaDataset" />
+          <NavigationProperty Name="UserVehicleAssociation" Relationship="VTS2Model.FK_PartnerVehicleAssociationEntityVehicleEntity" FromRole="Vehicle" ToRole="UserVehicleAssociation" />
+          <NavigationProperty Name="VehicleEvent" Relationship="VTS2Model.FK_VehicleEntityVehicleEventEntity" FromRole="Vehicle" ToRole="VehicleEvent" />
+        </EntityType>
+        <EntityType Name="VehicleCharacteristics">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Language" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GeneralVehicleInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="true" />
+          <NavigationProperty Name="VehicleCharacteristicsItemGroup" Relationship="VTS2Model.FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity" FromRole="VehicleCharacteristics" ToRole="VehicleCharacteristicsItemGroup" />
+          <Property Type="String" Name="Vin" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VehicleCharacteristicsItem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VehicleCharacteristicsItemsGroupEntityId" Type="Int64" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="VehicleCharacteristicsItemGroup" Relationship="VTS2Model.FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity" FromRole="VehicleCharacteristicsItem" ToRole="VehicleCharacteristicsItemGroup" />
+        </EntityType>
+        <EntityType Name="VehicleCharacteristicsItemGroup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="VehicleCharacteristicsEntityId" Type="Int64" Nullable="false" />
+          <NavigationProperty Name="VehicleCharacteristics" Relationship="VTS2Model.FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity" FromRole="VehicleCharacteristicsItemGroup" ToRole="VehicleCharacteristics" />
+          <NavigationProperty Name="VehicleCharacteristicsItem" Relationship="VTS2Model.FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity" FromRole="VehicleCharacteristicsItemGroup" ToRole="VehicleCharacteristicsItem" />
+        </EntityType>
+        <EntityType Name="VehicleEvent">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comment" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Mileage" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="YellowMileage" Type="Int32" />
+          <Property Name="RedMileage" Type="Int32" />
+          <Property Name="VehicleEntityId" Type="Int64" Nullable="false" />
+          <Property Name="NextReplacementPeriod" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Vehicle" Relationship="VTS2Model.FK_VehicleEntityVehicleEventEntity" FromRole="VehicleEvent" ToRole="Vehicle" />
+        </EntityType>
+        <Association Name="FK_AnalyticRuleSettingsEntitySettingsMoleculeEntity">
+          <End Role="AnalyticRuleSettings" Type="VTS2Model.AnalyticRuleSettings" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SettingsMolecule" Type="VTS2Model.SettingsMolecule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnalyticRuleSettings">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SettingsMolecule">
+              <PropertyRef Name="AnalyticRuleSettingsEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AnalyticStatisticsItemEntityAnalyticStatisticsValue">
+          <End Role="AnalyticStatisticsItem" Type="VTS2Model.AnalyticStatisticsItem" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AnalyticStatisticsValue" Type="VTS2Model.AnalyticStatisticsValue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AnalyticStatisticsItem">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AnalyticStatisticsValue">
+              <PropertyRef Name="AnalyticStatisticsItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerVehicleAssociationEntityLicenseEntity">
+          <End Role="UserVehicleAssociation" Type="VTS2Model.UserVehicleAssociation" Multiplicity="1" />
+          <End Role="License" Type="VTS2Model.License" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserVehicleAssociation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="License">
+              <PropertyRef Name="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PsaDatasetEntityPsaTraceEntity">
+          <End Role="PsaDataset" Type="VTS2Model.PsaDataset" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PsaTrace" Type="VTS2Model.PsaTrace" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PsaDataset">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PsaTrace">
+              <PropertyRef Name="PsaDatasetEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleEntityPsaDatasetEntity">
+          <End Role="Vehicle" Type="VTS2Model.Vehicle" Multiplicity="1" />
+          <End Role="PsaDataset" Type="VTS2Model.PsaDataset" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PsaDataset">
+              <PropertyRef Name="VehicleEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PsaParametersSetEntityPsaParameterDataEntity">
+          <End Role="PsaParametersSet" Type="VTS2Model.PsaParametersSet" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PsaParameterData" Type="VTS2Model.PsaParameterData" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PsaParametersSet">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PsaParameterData">
+              <PropertyRef Name="PsaParametersSetEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PsaTraceEntityPsaParametersSetEntity">
+          <End Role="PsaTrace" Type="VTS2Model.PsaTrace" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="PsaParametersSet" Type="VTS2Model.PsaParametersSet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PsaTrace">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PsaParametersSet">
+              <PropertyRef Name="PsaTraceEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SettingsMoleculeEntitySettingsAtomEntity">
+          <End Role="SettingsMolecule" Type="VTS2Model.SettingsMolecule" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SettingsAtom" Type="VTS2Model.SettingsAtom" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SettingsMolecule">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SettingsAtom">
+              <PropertyRef Name="SettingsMoleculeEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SystemNewsSystemNewsLocalized">
+          <End Role="SystemNews" Type="VTS2Model.SystemNews" Multiplicity="1" />
+          <End Role="SystemNewsLocalized" Type="VTS2Model.SystemNewsLocalized" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SystemNews">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="SystemNewsLocalized">
+              <PropertyRef Name="SystemNewsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerVehicleAssociationEntityUserEntity">
+          <End Role="User" Type="VTS2Model.User" Multiplicity="1" />
+          <End Role="UserVehicleAssociation" Type="VTS2Model.UserVehicleAssociation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserVehicleAssociation">
+              <PropertyRef Name="UserEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerVehicleAssociationEntityVehicleEntity">
+          <End Role="Vehicle" Type="VTS2Model.Vehicle" Multiplicity="1" />
+          <End Role="UserVehicleAssociation" Type="VTS2Model.UserVehicleAssociation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserVehicleAssociation">
+              <PropertyRef Name="VehicleEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleEntityVehicleEventEntity">
+          <End Role="Vehicle" Type="VTS2Model.Vehicle" Multiplicity="1" />
+          <End Role="VehicleEvent" Type="VTS2Model.VehicleEvent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicle">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VehicleEvent">
+              <PropertyRef Name="VehicleEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleCharacteristicsEntityVehicleCharacteristicsItemsGroupEntity">
+          <End Role="VehicleCharacteristics" Type="VTS2Model.VehicleCharacteristics" Multiplicity="1" />
+          <End Role="VehicleCharacteristicsItemGroup" Type="VTS2Model.VehicleCharacteristicsItemGroup" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleCharacteristics">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VehicleCharacteristicsItemGroup">
+              <PropertyRef Name="VehicleCharacteristicsEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VehicleCharacteristicsItemsGroupEntityVehicleCharacteristicsItemEntity">
+          <End Role="VehicleCharacteristicsItemGroup" Type="VTS2Model.VehicleCharacteristicsItemGroup" Multiplicity="1" />
+          <End Role="VehicleCharacteristicsItem" Type="VTS2Model.VehicleCharacteristicsItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VehicleCharacteristicsItemGroup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="VehicleCharacteristicsItem">
+              <PropertyRef Name="VehicleCharacteristicsItemsGroupEntityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AgentVersion">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="VersionString" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DownloadLink" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ReleasedDate" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int64" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="UserId" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="VTS2Model.FK_UserEntityUserProfileEntity" FromRole="UserProfile" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_UserEntityUserProfileEntity">
+          <End Type="VTS2Model.User" Role="User" Multiplicity="1" />
+          <End Type="VTS2Model.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_0">
+          <End Type="VTS2Model.User" Role="User" Multiplicity="0..1" />
+          <End Type="VTS2Model.User" Role="User1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="User1">
+              <PropertyRef Name="PrincipalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VTS2ModelStoreContainer" CdmEntityContainer="VTSDatabase">
+    <EntitySetMapping Name="AnalyticRuleSettings">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.AnalyticRuleSettings)">
+        <MappingFragment StoreEntitySet="AnalyticRuleSettings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RuleType" ColumnName="RuleType" />
+          <ScalarProperty Name="EngineFamilyType" ColumnName="EngineFamilyType" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="Reliability" ColumnName="Reliability" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnalyticStatisticsItem">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.AnalyticStatisticsItem)">
+        <MappingFragment StoreEntitySet="AnalyticStatisticsItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VersionGenerated" ColumnName="VersionGenerated" />
+          <ScalarProperty Name="DateGenerated" ColumnName="DateGenerated" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="TargetEngineFamilyType" ColumnName="TargetEngineFamilyType" />
+          <ScalarProperty Name="TargetEngineType" ColumnName="TargetEngineType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnalyticStatisticsValue">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.AnalyticStatisticsValue)">
+        <MappingFragment StoreEntitySet="AnalyticStatisticsValue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AnalyticStatisticsItemId" ColumnName="AnalyticStatisticsItemId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SourceVehicleVin" ColumnName="SourceVehicleVin" />
+          <ScalarProperty Name="SourcePsaParametersSetId" ColumnName="SourcePsaParametersSetId" />
+          <ScalarProperty Name="SourceDataCaptureDateTime" ColumnName="SourceDataCaptureDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="License">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.License)">
+        <MappingFragment StoreEntitySet="License">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ServerDateIssued" ColumnName="ServerDateIssued" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Period" ColumnName="Period" />
+          <ScalarProperty Name="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" ColumnName="PartnerVehicleAssociationEntityLicenseEntity_LicenseEntity_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PsaDataset">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.PsaDataset)">
+        <MappingFragment StoreEntitySet="PsaDataset">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateSaved" ColumnName="DateSaved" />
+          <ScalarProperty Name="Guid" ColumnName="Guid" />
+          <ScalarProperty Name="DateExported" ColumnName="DateExported" />
+          <ScalarProperty Name="VehicleEntityId" ColumnName="VehicleEntityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PsaParameterData">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.PsaParameterData)">
+        <MappingFragment StoreEntitySet="PsaParameterData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PsaParametersSetEntityId" ColumnName="PsaParametersSetEntityId" />
+          <ScalarProperty Name="HasTimestamps" ColumnName="HasTimestamps" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Values" ColumnName="Values" />
+          <ScalarProperty Name="Timestamps" ColumnName="Timestamps" />
+          <ScalarProperty Name="OriginalTypeId" ColumnName="OriginalTypeId" />
+          <ScalarProperty Name="AdditionalSourceInfo" ColumnName="AdditionalSourceInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PsaParametersSet">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.PsaParametersSet)">
+        <MappingFragment StoreEntitySet="PsaParametersSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PsaTraceEntityId" ColumnName="PsaTraceEntityId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="EcuName" ColumnName="EcuName" />
+          <ScalarProperty Name="EcuLabel" ColumnName="EcuLabel" />
+          <ScalarProperty Name="OriginalTypeId" ColumnName="OriginalTypeId" />
+          <ScalarProperty Name="AdditionalSourceInfo" ColumnName="AdditionalSourceInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PsaTrace">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.PsaTrace)">
+        <MappingFragment StoreEntitySet="PsaTrace">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PsaDatasetEntityId" ColumnName="PsaDatasetEntityId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Application" ColumnName="Application" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="PhoneChannel" ColumnName="PhoneChannel" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ToolSerialNumber" ColumnName="ToolSerialNumber" />
+          <ScalarProperty Name="SavesetId" ColumnName="SavesetId" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="VehicleModelName" ColumnName="VehicleModelName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SettingsAtom">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.SettingsAtom)">
+        <MappingFragment StoreEntitySet="SettingsAtom">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MinOptimal" ColumnName="MinOptimal" />
+          <ScalarProperty Name="MaxOptimal" ColumnName="MaxOptimal" />
+          <ScalarProperty Name="MinAcceptable" ColumnName="MinAcceptable" />
+          <ScalarProperty Name="MaxAcceptable" ColumnName="MaxAcceptable" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="SettingsMoleculeEntityId" ColumnName="SettingsMoleculeEntityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SettingsMolecule">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.SettingsMolecule)">
+        <MappingFragment StoreEntitySet="SettingsMolecule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OverrideOptimal" ColumnName="OverrideOptimal" />
+          <ScalarProperty Name="OverrideAcceptable" ColumnName="OverrideAcceptable" />
+          <ScalarProperty Name="AnalyticRuleSettingsEntityId" ColumnName="AnalyticRuleSettingsEntityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemNews">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.SystemNews)">
+        <MappingFragment StoreEntitySet="SystemNews">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IsBlocked" ColumnName="IsBlocked" />
+          <ScalarProperty Name="DatePublished" ColumnName="DatePublished" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SystemNewsLocalized">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.SystemNewsLocalized)">
+        <MappingFragment StoreEntitySet="SystemNewsLocalized">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="NewsContentText" ColumnName="NewsContentText" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="SystemNewsId" ColumnName="SystemNewsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnrecognizedVin">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.UnrecognizedVin)">
+        <MappingFragment StoreEntitySet="UnrecognizedVin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="RegisteredDate" ColumnName="RegisteredDate" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PrincipalId" ColumnName="PrincipalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserVehicleAssociation">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.UserVehicleAssociation)">
+        <MappingFragment StoreEntitySet="UserVehicleAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleEntityId" ColumnName="VehicleEntityId" />
+          <ScalarProperty Name="UserEntityId" ColumnName="UserEntityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicle">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.Vehicle)">
+        <MappingFragment StoreEntitySet="Vehicle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="Registered" ColumnName="Registered" />
+          <ScalarProperty Name="ProductionYear" ColumnName="ProductionYear" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleCharacteristics">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.VehicleCharacteristics)">
+        <MappingFragment StoreEntitySet="VehicleCharacteristics">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="GeneralVehicleInfo" ColumnName="GeneralVehicleInfo" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleCharacteristicsItem">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.VehicleCharacteristicsItem)">
+        <MappingFragment StoreEntitySet="VehicleCharacteristicsItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleCharacteristicsItemsGroupEntityId" ColumnName="VehicleCharacteristicsItemsGroupEntityId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleCharacteristicsItemGroup">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.VehicleCharacteristicsItemGroup)">
+        <MappingFragment StoreEntitySet="VehicleCharacteristicsItemGroup">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VehicleCharacteristicsEntityId" ColumnName="VehicleCharacteristicsEntityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleEvent">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.VehicleEvent)">
+        <MappingFragment StoreEntitySet="VehicleEvent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="YellowMileage" ColumnName="YellowMileage" />
+          <ScalarProperty Name="RedMileage" ColumnName="RedMileage" />
+          <ScalarProperty Name="VehicleEntityId" ColumnName="VehicleEntityId" />
+          <ScalarProperty Name="NextReplacementPeriod" ColumnName="NextReplacementPeriod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgentVersion">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.AgentVersion)">
+        <MappingFragment StoreEntitySet="AgentVersion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VersionString" ColumnName="VersionString" />
+          <ScalarProperty Name="DownloadLink" ColumnName="DownloadLink" />
+          <ScalarProperty Name="ReleasedDate" ColumnName="ReleasedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfile">
+      <EntityTypeMapping TypeName="IsTypeOf(VTS2Model.UserProfile)">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

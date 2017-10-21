@@ -1,0 +1,25 @@
+﻿<UserControl 
+    x:Class="Agent.Localization.LanguageSelectionControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <ComboBox
+            MinWidth="90"
+            MinHeight="23"
+            Width="Auto"
+            x:Name="comboBoxLanguages">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock 
+                            Margin="5,2,0,0"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Text="{Binding Path=Locale, Mode=OneWay}">
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </Grid>
+</UserControl>

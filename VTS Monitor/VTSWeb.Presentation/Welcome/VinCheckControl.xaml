@@ -1,0 +1,49 @@
+﻿<UserControl
+    x:Class="VTSWeb.Presentation.Welcome.VinCheckControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Grid.Row="0"
+                Text="{Localization:Translate 
+                    Key=VinCheckForCompatibilityExplanationText}"/>
+
+        <TextBox
+                x:Name="textBoxVin"
+                Grid.Column="0"
+                Grid.Row="2"
+                MinWidth="130"/>
+
+        <Button
+                x:Name="buttonCheck"
+                Click="CheckClicked"
+                MinWidth="120"
+                Grid.Column="2"
+                Grid.Row="2"
+                Content="{Localization:Translate Key=Check}"/>
+
+        <TextBlock
+                x:Name="textBlockCheckResult"
+                Grid.Column="0"
+                Grid.Row="4"
+                Grid.ColumnSpan="3"
+                FontWeight="Bold" />
+    </Grid>
+</UserControl>

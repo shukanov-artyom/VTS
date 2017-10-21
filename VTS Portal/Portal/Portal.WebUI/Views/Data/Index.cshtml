@@ -1,0 +1,52 @@
+﻿@using VTS.Shared.DomainObjects
+@model IEnumerable<PsaDataset>
+@{
+    ViewBag.Title = "Data";
+}
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jsTree3/jstree.js"></script>
+<script src="~/Scripts/data.js"></script>
+
+<link href="~/Content/jsTree/themes/default/style.css" rel="stylesheet" />
+
+<div style="display: inline-block">
+    <div id="data-tree">
+        <ul>
+            @foreach (PsaDataset dataset in Model)
+            {
+                <li data-datatype="psa-dataset" data-id="@dataset.Id" data-jstree='{"opened" : true }'>
+                    @String.Format("Загруженные {0}", dataset.SavedDate.ToShortDateString())
+                    <ul>
+                        @foreach (PsaTrace trace in dataset.Traces)
+                        {
+                            <li data-datatype="psa-trace" data-id="@trace.Id">
+                                @String.Format("Снятые {0}", trace.Date.ToShortDateString())
+                                <ul>
+                                    @foreach (PsaParametersSet set in trace.ParametersSets)
+                                    {
+                                        <li data-datatype="psa-parameters-set" data-id="@set.Id">
+                                            @set.Type
+                                            <ul>
+                                                @foreach (PsaParameterData parameterData in set.Parameters)
+                                                {
+                                                    <li data-datatype="psa-parameter" data-id="@parameterData.Id">
+                                                        <span data-parameter-type="@parameterData.Type">@parameterData.Type</span>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+<div id="chart-view-div" style="display: inline-block; vertical-align: top">
+</div>
+
+

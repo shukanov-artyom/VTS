@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="UserDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PasswordHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegisteredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Role" type="xs:int" />
+          <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserDto" nillable="true" type="tns:UserDto" />
+  <xs:complexType name="DomainObjectDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DomainObjectDto" nillable="true" type="tns:DomainObjectDto" />
+  <xs:complexType name="AgentVersionDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DownloadLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReleasedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="VersionString" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AgentVersionDto" nillable="true" type="tns:AgentVersionDto" />
+  <xs:complexType name="ArrayOfUserDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserDto" nillable="true" type="tns:UserDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserDto" nillable="true" type="tns:ArrayOfUserDto" />
+  <xs:complexType name="ArrayOfVehicleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleDto" nillable="true" type="tns:VehicleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleDto" nillable="true" type="tns:ArrayOfVehicleDto" />
+  <xs:complexType name="VehicleDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Manufacturer" type="xs:int" />
+          <xs:element minOccurs="0" name="Mileage" type="xs:int" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductionYear" type="xs:int" />
+          <xs:element minOccurs="0" name="RegisteredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleDto" nillable="true" type="tns:VehicleDto" />
+  <xs:complexType name="VehicleInformationDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Engine" nillable="true" type="tns:EngineDto" />
+      <xs:element minOccurs="0" name="ProductionYear" type="xs:int" />
+      <xs:element minOccurs="0" name="VehicleModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleInformationDto" nillable="true" type="tns:VehicleInformationDto" />
+  <xs:complexType name="EngineDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Family" nillable="true" type="tns:EngineFamilyDto" />
+      <xs:element minOccurs="0" name="FuelType" type="xs:int" />
+      <xs:element minOccurs="0" name="InjectionType" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EngineDto" nillable="true" type="tns:EngineDto" />
+  <xs:complexType name="EngineFamilyDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Link" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EngineFamilyDto" nillable="true" type="tns:EngineFamilyDto" />
+  <xs:complexType name="ArrayOfAgentVersionDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AgentVersionDto" nillable="true" type="tns:AgentVersionDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgentVersionDto" nillable="true" type="tns:ArrayOfAgentVersionDto" />
+  <xs:complexType name="VehicleCharacteristicsDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GeneralVehicleInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ItemGroups" nillable="true" type="tns:ArrayOfVehicleCharacteristicsItemsGroupDto" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleCharacteristicsDto" nillable="true" type="tns:VehicleCharacteristicsDto" />
+  <xs:complexType name="ArrayOfVehicleCharacteristicsItemsGroupDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleCharacteristicsItemsGroupDto" nillable="true" type="tns:VehicleCharacteristicsItemsGroupDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleCharacteristicsItemsGroupDto" nillable="true" type="tns:ArrayOfVehicleCharacteristicsItemsGroupDto" />
+  <xs:complexType name="VehicleCharacteristicsItemsGroupDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CharacteristicsId" type="xs:long" />
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfVehicleCharacteristicsItemDto" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleCharacteristicsItemsGroupDto" nillable="true" type="tns:VehicleCharacteristicsItemsGroupDto" />
+  <xs:complexType name="ArrayOfVehicleCharacteristicsItemDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleCharacteristicsItemDto" nillable="true" type="tns:VehicleCharacteristicsItemDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleCharacteristicsItemDto" nillable="true" type="tns:ArrayOfVehicleCharacteristicsItemDto" />
+  <xs:complexType name="VehicleCharacteristicsItemDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="GroupId" type="xs:long" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleCharacteristicsItemDto" nillable="true" type="tns:VehicleCharacteristicsItemDto" />
+  <xs:complexType name="ArrayOfVehicleInformationDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleInformationDto" nillable="true" type="tns:VehicleInformationDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleInformationDto" nillable="true" type="tns:ArrayOfVehicleInformationDto" />
+  <xs:complexType name="AnalyticStatisticsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfAnalyticStatisticsItemDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnalyticStatisticsDto" nillable="true" type="tns:AnalyticStatisticsDto" />
+  <xs:complexType name="ArrayOfAnalyticStatisticsItemDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnalyticStatisticsItemDto" nillable="true" type="tns:AnalyticStatisticsItemDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnalyticStatisticsItemDto" nillable="true" type="tns:ArrayOfAnalyticStatisticsItemDto" />
+  <xs:complexType name="AnalyticStatisticsItemDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DateGenerated" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TargetEngineFamilyType" type="xs:int" />
+          <xs:element minOccurs="0" name="TargetEngineType" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="Values" nillable="true" type="tns:ArrayOfAnalyticStatisticsValueDto" />
+          <xs:element minOccurs="0" name="VersionGenerated" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AnalyticStatisticsItemDto" nillable="true" type="tns:AnalyticStatisticsItemDto" />
+  <xs:complexType name="ArrayOfAnalyticStatisticsValueDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnalyticStatisticsValueDto" nillable="true" type="tns:AnalyticStatisticsValueDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnalyticStatisticsValueDto" nillable="true" type="tns:ArrayOfAnalyticStatisticsValueDto" />
+  <xs:complexType name="AnalyticStatisticsValueDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnalyticStatisticsItemId" type="xs:long" />
+          <xs:element minOccurs="0" name="SourceDataCaptureDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SourcePsaParametersSetId" type="xs:long" />
+          <xs:element minOccurs="0" name="SourceVin" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Value" type="xs:double" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AnalyticStatisticsValueDto" nillable="true" type="tns:AnalyticStatisticsValueDto" />
+  <xs:complexType name="ArrayOfAnalyticRuleSettingsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnalyticRuleSettingsDto" nillable="true" type="tns:AnalyticRuleSettingsDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnalyticRuleSettingsDto" nillable="true" type="tns:ArrayOfAnalyticRuleSettingsDto" />
+  <xs:complexType name="AnalyticRuleSettingsDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EngineFamilyType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="EngineType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Reliability" type="xs:int" />
+          <xs:element minOccurs="0" name="RuleType" type="xs:int" />
+          <xs:element minOccurs="0" name="SettingsMolecule" nillable="true" type="tns:SettingsMoleculeDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AnalyticRuleSettingsDto" nillable="true" type="tns:AnalyticRuleSettingsDto" />
+  <xs:complexType name="SettingsMoleculeDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnalyticRuleSettingsId" type="xs:long" />
+          <xs:element minOccurs="0" name="OverrideAcceptable" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OverrideOptimal" type="xs:boolean" />
+          <xs:element minOccurs="0" name="PredefinedAtom" nillable="true" type="tns:SettingsAtomDto" />
+          <xs:element minOccurs="0" name="StatisticalAtom" nillable="true" type="tns:SettingsAtomDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SettingsMoleculeDto" nillable="true" type="tns:SettingsMoleculeDto" />
+  <xs:complexType name="SettingsAtomDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MaxAcceptable" type="xs:double" />
+          <xs:element minOccurs="0" name="MaxOptimal" type="xs:double" />
+          <xs:element minOccurs="0" name="MinAcceptable" type="xs:double" />
+          <xs:element minOccurs="0" name="MinOptimal" type="xs:double" />
+          <xs:element minOccurs="0" name="MoleculeId" type="xs:long" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SettingsAtomDto" nillable="true" type="tns:SettingsAtomDto" />
+  <xs:complexType name="ArrayOfPsaDatasetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PsaDatasetDto" nillable="true" type="tns:PsaDatasetDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPsaDatasetDto" nillable="true" type="tns:ArrayOfPsaDatasetDto" />
+  <xs:complexType name="PsaDatasetDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ExportedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Guid" type="ser:guid" />
+          <xs:element minOccurs="0" name="PsaVehicleId" type="xs:long" />
+          <xs:element minOccurs="0" name="SavedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Traces" nillable="true" type="tns:ArrayOfPsaTraceDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PsaDatasetDto" nillable="true" type="tns:PsaDatasetDto" />
+  <xs:complexType name="ArrayOfPsaTraceDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PsaTraceDto" nillable="true" type="tns:PsaTraceDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPsaTraceDto" nillable="true" type="tns:ArrayOfPsaTraceDto" />
+  <xs:complexType name="PsaTraceDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Format" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Manufacturer" type="xs:int" />
+          <xs:element minOccurs="0" name="Mileage" type="xs:int" />
+          <xs:element minOccurs="0" name="ParametersSets" nillable="true" type="tns:ArrayOfPsaParametersSetDto" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhoneChannel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PsaDatasetId" type="xs:long" />
+          <xs:element minOccurs="0" name="SavesetId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToolName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ToolSerialNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="VehicleModelName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PsaTraceDto" nillable="true" type="tns:PsaTraceDto" />
+  <xs:complexType name="ArrayOfPsaParametersSetDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PsaParametersSetDto" nillable="true" type="tns:PsaParametersSetDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPsaParametersSetDto" nillable="true" type="tns:ArrayOfPsaParametersSetDto" />
+  <xs:complexType name="PsaParametersSetDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdditionalSourceInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EcuLabel" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EcuName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OriginalTypeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:ArrayOfPsaParameterDataDto" />
+          <xs:element minOccurs="0" name="PsaTraceId" type="xs:long" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PsaParametersSetDto" nillable="true" type="tns:PsaParametersSetDto" />
+  <xs:complexType name="ArrayOfPsaParameterDataDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PsaParameterDataDto" nillable="true" type="tns:PsaParameterDataDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPsaParameterDataDto" nillable="true" type="tns:ArrayOfPsaParameterDataDto" />
+  <xs:complexType name="PsaParameterDataDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdditionalSourceInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HasTimestamps" type="xs:boolean" />
+          <xs:element minOccurs="0" name="OriginalTypeId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PsaParametersSetId" type="xs:long" />
+          <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Timestamps" nillable="true" type="q1:ArrayOfint" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="Units" type="xs:int" />
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PsaParameterDataDto" nillable="true" type="tns:PsaParameterDataDto" />
+  <xs:complexType name="ArrayOfVehicleEventDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleEventDto" nillable="true" type="tns:VehicleEventDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleEventDto" nillable="true" type="tns:ArrayOfVehicleEventDto" />
+  <xs:complexType name="VehicleEventDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Comment" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Mileage" type="xs:int" />
+          <xs:element minOccurs="0" name="NextReplacementPeriod" type="xs:int" />
+          <xs:element minOccurs="0" name="RedMileage" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+          <xs:element minOccurs="0" name="VehicleId" type="xs:long" />
+          <xs:element minOccurs="0" name="YellowMileage" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleEventDto" nillable="true" type="tns:VehicleEventDto" />
+  <xs:complexType name="ArrayOfSystemNewsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SystemNewsDto" nillable="true" type="tns:SystemNewsDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSystemNewsDto" nillable="true" type="tns:ArrayOfSystemNewsDto" />
+  <xs:complexType name="SystemNewsDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DatePublished" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="IsBlocked" type="xs:boolean" />
+          <xs:element minOccurs="0" name="SystemNewsLocalized" nillable="true" type="tns:ArrayOfSystemNewsLocalizedDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SystemNewsDto" nillable="true" type="tns:SystemNewsDto" />
+  <xs:complexType name="ArrayOfSystemNewsLocalizedDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SystemNewsLocalizedDto" nillable="true" type="tns:SystemNewsLocalizedDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSystemNewsLocalizedDto" nillable="true" type="tns:ArrayOfSystemNewsLocalizedDto" />
+  <xs:complexType name="SystemNewsLocalizedDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NewsContentText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SystemNewsId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SystemNewsLocalizedDto" nillable="true" type="tns:SystemNewsLocalizedDto" />
+</xs:schema>

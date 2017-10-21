@@ -1,0 +1,34 @@
+﻿<UserControl
+    x:Class="Agent.Common.Presentation.Characteristics.VehicleCharacteristicsItemsGroupControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <DataGrid
+            AutoGenerateColumns="False"
+            IsReadOnly="True"
+            ItemsSource="{Binding Path=Items}"
+            RowHeaderWidth="0"
+            HeadersVisibility="None">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Margin="2"
+                                Text="{Binding Path=Name}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Margin="2"
+                                Text="{Binding Path=Value}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,7578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Trace>
+<XML_InfosGenerales>
+<application>Lexia</application>
+<formatSortie>11</formatSortie>
+<typeFichier>2</typeFichier>
+<version>2.0</version>
+</XML_InfosGenerales>
+<chapitre code="001">
+<infoCons telfixe="123456789" telport="" fax="" pays="">
+<adr code="001">
+<phrase>
+<textlibre lang="RU">вапвапвп 34 ваыаы 1234456789 </textlibre>
+</phrase>
+</adr>
+<technicien>
+<phrase>
+<textlibre lang="RU">папа</textlibre>
+</phrase>
+</technicien>
+</infoCons>
+<infoOutil NumSerie="9780.Z5" NumMiseJrCd="Lexia (500.14)" NumMiseJrTele="inconnu" NumDAM="" VinSaisieClient="VF7LCKFUC74631358" kilometrage="" securite="0" Panne="0" DesignationPiece="" Cause_CL_APV="" constatation="" option="" DiagnosticCause="" RemedeIntervention="" immatriculation=""></infoOutil>
+<NomFichierSave> VF7LCKFUC74631358 9780.Z5</NomFichierSave>
+</chapitre>
+<chapitre code="002">
+<vehicule lcdv="1CB5">
+<phrase>
+<phrasethesau type="CITROEN">@P20015-CITTD</phrasethesau>
+</phrase>
+</vehicule>
+<opr num="777"></opr>
+</chapitre>
+<chapitre code="003">
+<lisfam>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P1992-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P3935-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P13160-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P17856-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P16906-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P5854-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P8078-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P428-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P13638-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P5682-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P19223-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P19224-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P439-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P9478-citact</phrasethesau>
+</phrase>
+</famille>
+</lisfam>
+<vin num="VF7LCKFUC74631358"></vin>
+</chapitre>
+<chapitre code="004">
+<lisfam typetest="TEST_GLOBAL">
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P1992-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P5854-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P13160-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P439-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P5682-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P19223-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P19224-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P17856-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P13638-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P3935-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P8078-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P16906-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P428-citact</phrasethesau>
+</phrase>
+</famille>
+<famille>
+<phrase>
+<phrasethesau type="ACTIA">@P9478-citact</phrasethesau>
+</phrase>
+</famille>
+</lisfam>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">BSI</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">COMBINE</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">AUTORADIO</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">ALARME</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">VCCF</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">MDP_CONDUCT</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">MDP_PASSAG</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">COMPTE_TOURS</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">SAC_AUTOLIV</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">ECRAN_A</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<phrasethesau type="ACTIA">@P3468-CITACT</phrasethesau>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">BSM</textlibre>
+</phrase>
+</systeme>
+<def codedef="0VC" pcode="B998">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P19078-CITACT@\+@P5623-CITACT</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">ABS8.1</textlibre>
+</phrase>
+</systeme>
+<def codedef="00Z">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P11833-THESAU</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+<Calcul>
+<systeme>
+<phrase>
+<textlibre lang="FR">GEP</textlibre>
+</phrase>
+</systeme>
+<def codedef="OBZ" pcode="C1210">
+<deflib>
+<phrase>
+<phrasethesau type="ACTIA">@P36181-CITACT</phrasethesau>
+</phrase>
+</deflib>
+</def>
+</Calcul>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">12.0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.000</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">10.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Разомкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">11.9</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.000</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">10.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Разомкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">12.0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.000</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">10.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.00</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Разомкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">10.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.000</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">10.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.86</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.86</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Разомкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">992</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">30.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.86</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">992</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">33.0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.86</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">960</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">35.0</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.92</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">928</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">35.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.88</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">960</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">35.8</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.82</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">928</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">36.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.53</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.82</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">928</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">36.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.10</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1600</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.120</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">39.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1504</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">40.6</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.59</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1536</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.120</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.59</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.70</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1536</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.47</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1536</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1504</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.1</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1504</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.6</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1536</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">41.6</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1536</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">42.6</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1440</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1376</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1344</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.120</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.14</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1376</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1408</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1440</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">43.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1408</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">44.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.31</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1440</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">44.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1408</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">44.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1408</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">44.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1440</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">45.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">1440</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">2.730</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">45.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.14</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">864</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">45.2</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.84</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">864</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">45.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.59</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">864</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">45.7</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">864</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">46.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">46.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.62</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">46.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">864</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">46.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">46.8</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">48.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.08</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">49.9</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.900</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.72</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.74</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.4</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.06</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">832</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.9</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.23</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.9</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.76</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.78</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+<chapitre code="009">
+<systeme famille="INJ">
+<phrase>
+<textlibre lang="RU">MM6LP</textlibre>
+</phrase>
+</systeme>
+<mpm IdEcran="@P33397-CITACT"></mpm>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P5424-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">800</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P1530-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P3126-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">14.3</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2953-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P1543-CITACT@\*</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">3.510</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2416-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P4896-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">нет</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P6066-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">50.9</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P408-CITACT</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12030-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.10</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P12031-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">0.80</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU">@P2411-CITACT@\*</textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+<identligne>
+<lignetitre>
+<phrase>
+<phrasethesau type="ACTIA">@P2286-CITACT</phrasethesau>
+</phrase>
+</lignetitre>
+<lignevaleur>
+<phrase>
+<textlibre lang="RU">Замкнутый контур</textlibre>
+</phrase>
+</lignevaleur>
+<ligneunite>
+<phrase>
+<textlibre lang="RU"></textlibre>
+</phrase>
+</ligneunite>
+</identligne>
+</chapitre>
+</Trace>

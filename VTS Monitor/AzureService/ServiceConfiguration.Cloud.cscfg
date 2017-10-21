@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="VTS.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=vtscloudservice;AccountKey=tGFlne4N2sUJSk/4ZGeyiibWeTilZEH78JXhCxAkdEkuAkWNFmUPVOHvx9TVyyA8yn2j0vnzNaUGatD80/Tt5A==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

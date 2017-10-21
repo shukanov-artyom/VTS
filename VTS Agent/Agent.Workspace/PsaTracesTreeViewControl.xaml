@@ -1,0 +1,366 @@
+﻿<UserControl 
+    x:Class="Agent.Workspace.PsaTracesTreeViewControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+    xmlns:ViewModels="clr-namespace:Agent.Workspace.ViewModels" 
+    xmlns:progressBar="clr-namespace:Agent.Common.Presentation.ProgressBar;assembly=Agent.Common.Presentation"
+    xmlns:data="clr-namespace:Agent.Common.Presentation.Data;assembly=Agent.Common.Presentation"
+    xmlns:Workspace="clr-namespace:Agent.Connector.Presentation.PSA.Workspace;assembly=Agent.Connector.Presentation.PSA"
+    xmlns:Workspace1="clr-namespace:Agent.Workspace"
+    MinHeight="100"
+    MinWidth="250">
+    
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Workspace1:PsaDataTreeToolbar
+                Grid.Row="0"
+                VerticalAlignment="Top"/>
+            <ScrollViewer
+                MinHeight="100"
+                Grid.Row="1"
+                HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Auto">
+                <TreeView
+                    Background="#f2f2f2"
+                    IsEnabled="{Binding IsWaitingMode, 
+                        Converter={StaticResource inverseBoolConverter}}"
+                    BorderThickness="0"
+                    SelectedItemChanged="SelectedTreeItemChanged"
+                    ItemsSource="{Binding Path=ByVehicles}"
+                    ItemContainerStyle="{StaticResource DataTreeViewItemContainerStyle}">
+
+                    <TreeView.Resources>
+                        <SolidColorBrush
+                            x:Key="{x:Static SystemColors.HighlightBrushKey}">
+                            Transparent
+                        </SolidColorBrush>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}">
+                            Black
+                        </SolidColorBrush>
+
+                        <HierarchicalDataTemplate 
+                            DataType="{x:Type ViewModels:ExportableVehicleViewModel}" 
+                            ItemsSource="{Binding Traces}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="7"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="7"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+<!--
+                                <Grid.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header="Задать пробег" />
+                                        <MenuItem Header="Скрыть" />
+                                    </ContextMenu>
+                                </Grid.ContextMenu> -->
+                                
+                                <CheckBox
+                                    IsChecked="{Binding Path=IsSelectedForExport}"
+                                    Margin="0,0,5,0"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="0"
+                                    Grid.Row="0">
+                                </CheckBox>
+
+                                <TextBlock
+                                    Background="Transparent"
+                                    VerticalAlignment="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    FontSize="14"
+                                    FontWeight="Bold">
+                                        <TextBlock.Text>
+                                            <Binding Path="ManufacturerAndModelName"/>
+                                        </TextBlock.Text>
+                                </TextBlock>
+
+                                <TextBox
+                                    Visibility="Visible"
+                                    VerticalAlignment="Center"
+                                    x:Name="textBlockVin"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    MinWidth="100"
+                                    IsReadOnly="{Binding Path=ChangeVinAllowed, 
+                                        Converter={StaticResource inverseBoolConverter}}"
+                                    Text="{Binding Path=Vin, Mode=TwoWay}">
+                                </TextBox>
+
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    Background="Transparent"
+                                    Visibility="Visible"
+                                    x:Name="textBlockMileageCaption"
+                                    Grid.Column="5"
+                                    Grid.Row="0"
+                                    Text="{Localization:TranslateExtension MileageColonText}">
+                                </TextBlock>
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    Background="Transparent"
+                                    x:Name="textBlockMileage"
+                                    Visibility="Visible"
+                                    Grid.Column="6"
+                                    Grid.Row="0"
+                                    Text="{Binding Path=Mileage}">
+                                </TextBlock>
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    Background="Transparent"
+                                    x:Name="textBlockMileageKm"
+                                    Visibility="Visible"
+                                    Grid.Column="8"
+                                    Grid.Row="0"
+                                    Text="{Localization:Translate UnitsKm}">
+                                </TextBlock>
+                            </Grid>
+
+                            <!--HierarchicalDataTemplate.Triggers>
+                                <DataTrigger
+                                        Binding="{Binding Path=IsSelected}"
+                                        Value="true">
+                                    <Setter 
+                                        TargetName="textBlockVin"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                    <Setter 
+                                        TargetName="textBlockMileageCaption"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                    <Setter 
+                                        TargetName="textBlockMileage"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                </DataTrigger>
+                            </HierarchicalDataTemplate.Triggers-->
+                        </HierarchicalDataTemplate>
+
+                        <HierarchicalDataTemplate 
+                            DataType="{x:Type Workspace:ExportablePsaTraceViewModel}" 
+                            ItemsSource="{Binding ParametersSets}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="4"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="4"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="3"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="7"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    Orientation="Horizontal">
+                                    <CheckBox
+                                        IsChecked="{Binding Path=IsSelectedForExport}"
+                                        Style="{StaticResource RegularCheckBoxStyle}"
+                                        VerticalAlignment="Center">
+                                    </CheckBox>
+                                    <Workspace1:TraceSynchronizationStatusControl 
+                                        DataContext="{Binding Path=SynchronizationStatus}"/>
+                                </StackPanel>
+                                <TextBlock
+                                    x:Name="textBlockDate"
+                                    Margin="0,3,0,3"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Text="{Binding Path=DateString}">
+                                </TextBlock>
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    Visibility="Collapsed"
+                                    x:Name="textBlockTime"
+                                    Text="{Binding Path=Date,
+                                    StringFormat={}{0:hh:mm}}"
+                                    Grid.Column="4"
+                                    Grid.Row="0">
+                                </TextBlock>
+                                <TextBlock
+                                    Visibility="Collapsed"
+                                    x:Name="textBlockMileageForMoment"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="6"
+                                    Grid.Row="0"
+                                    Text="{Localization:TranslateExtension MileageForTheMomentColon}"/>
+
+                                <TextBox
+                                    Visibility="Collapsed"
+                                    ToolTip="{Localization:TranslateExtension ClickToSetMileage}"
+                                    x:Name="textBlockMileageForMomentValue"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="7"
+                                    Grid.Row="0"
+                                    Text="{Binding Path=Mileage}">
+                                </TextBox>
+                            </Grid>
+
+                            <HierarchicalDataTemplate.Triggers>
+                                <DataTrigger
+                                        Binding="{Binding Path=IsSelected}"
+                                        Value="true">
+                                    <Setter 
+                                        TargetName="textBlockDate"
+                                        Property="FontWeight"
+                                        Value="Bold"/>
+                                    <Setter 
+                                        TargetName="textBlockMileageForMomentValue"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                    <Setter 
+                                        TargetName="textBlockMileageForMoment"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                    <Setter 
+                                        TargetName="textBlockTime"
+                                        Property="Visibility"
+                                        Value="Visible" />
+                                </DataTrigger>
+                            </HierarchicalDataTemplate.Triggers>
+                        </HierarchicalDataTemplate>
+
+                        <HierarchicalDataTemplate 
+                            DataType="{x:Type Workspace:ExportablePsaParametersSetViewModel}" 
+                            ItemsSource="{Binding Parameters}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    Orientation="Horizontal">
+                                    <CheckBox
+                                        IsChecked="{Binding Path=IsSelectedForExport}"
+                                        VerticalAlignment="Center">
+                                    </CheckBox>
+                                    <TextBlock 
+                                        Text="!"
+                                        FontWeight="Bold"
+                                        Margin="1,0,1,0"
+                                        Foreground="Red"
+                                        VerticalAlignment="Center"
+                                        Visibility="{Binding Path=ContainsUnrecognizedData,
+                                            Converter={StaticResource booleanToVisibilityConverter}, 
+                                            ConverterParameter=Direct}"/>
+                                </StackPanel>
+                                <TextBlock
+                                    x:Name="textBlockType"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Text="{Binding Path=Type}">
+                                </TextBlock>
+                                <TextBox
+                                    x:Name="textBlockOriginalName"
+                                    IsReadOnly="True"
+                                    VerticalAlignment="Center"
+                                    Visibility="{Binding Path=DebugMode, 
+                                        Converter={StaticResource booleanToVisibilityConverter},
+                                        Mode=OneWay}"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    Margin="5,0,0,0"
+                                    Text="{Binding Path=OriginalName, Mode=OneWay}">
+                                </TextBox>
+                            </Grid>
+
+                            <HierarchicalDataTemplate.Triggers>
+                                <DataTrigger
+                                        Binding="{Binding Path=IsSelected}"
+                                        Value="true">
+                                    <Setter 
+                                        TargetName="textBlockType"
+                                        Property="FontWeight"
+                                        Value="Bold"/>
+                                </DataTrigger>
+                            </HierarchicalDataTemplate.Triggers>
+                        </HierarchicalDataTemplate>
+
+                        <HierarchicalDataTemplate 
+                            DataType="{x:Type data:PsaParameterDataViewModel}" >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="5"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock
+                                    x:Name="textBlockType"
+                                    VerticalAlignment="Center"
+                                    Grid.Column="2"
+                                    Grid.Row="0"
+                                    Text="{Binding Path=Type}">
+                                </TextBlock>
+                                <TextBox
+                                    IsReadOnly="True"
+                                    x:Name="textBlockOriginalName"
+                                    VerticalAlignment="Center"
+                                    Visibility="{Binding Path=DebugMode, 
+                                        Converter={StaticResource booleanToVisibilityConverter},
+                                        Mode=OneWay}"
+                                    Grid.Column="3"
+                                    Grid.Row="0"
+                                    Margin="5,0,0,0"
+                                    Text="{Binding Path=OriginalName, Mode=OneWay}">
+                                </TextBox>
+                            </Grid>
+
+                            <HierarchicalDataTemplate.Triggers>
+                                <DataTrigger
+                                    Binding="{Binding Path=IsSelected}"
+                                    Value="true">
+                                    <Setter 
+                                        TargetName="textBlockType"
+                                        Property="FontWeight"
+                                        Value="Bold"/>
+                                </DataTrigger>
+                            </HierarchicalDataTemplate.Triggers>
+                        </HierarchicalDataTemplate>
+                    </TreeView.Resources>
+                </TreeView>
+            </ScrollViewer>
+        </Grid>
+
+        <progressBar:CircularProgressBarSmall
+            Visibility="{Binding Path=IsWaitingMode, 
+            Converter={StaticResource booleanToVisibilityConverter}, 
+            ConverterParameter=Direct}"/>
+
+    </Grid>
+</UserControl>

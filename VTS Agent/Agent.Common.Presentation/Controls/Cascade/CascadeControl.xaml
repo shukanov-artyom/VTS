@@ -1,0 +1,50 @@
+﻿<UserControl 
+    x:Class="Agent.Common.Presentation.Controls.Cascade.CascadeControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" x:Name="rowGraphs"/>
+            <RowDefinition Height="Auto" x:Name="rowControl"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl
+            Grid.Row="0">
+            <ScrollViewer
+                HorizontalScrollBarVisibility="Disabled"
+                VerticalScrollBarVisibility="Auto">
+                <StackPanel
+                    Orientation="Vertical"
+                    x:Name="stackPanelCascade">
+
+                </StackPanel>
+            </ScrollViewer>
+        </ContentControl>
+
+        <StackPanel
+            Margin="10,0,10,0"
+            HorizontalAlignment="Center"
+            Grid.Row="1"
+            Orientation="Horizontal">
+            <Button
+                Width="20"
+                Height="20"
+                Content="&lt;-"
+                HorizontalAlignment="Left"
+                Click="MoveLeftClick"/>
+            <Slider
+                Maximum="100"
+                Minimum="0"
+                MinWidth="320"
+                Margin="5" 
+                x:Name="sliderPosition"
+                ValueChanged="SliderValueChanged"/>
+            <Button
+                Width="20"
+                Height="20"
+                Content="-&gt;"
+                HorizontalAlignment="Right"
+                Click="MoveRightClick"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

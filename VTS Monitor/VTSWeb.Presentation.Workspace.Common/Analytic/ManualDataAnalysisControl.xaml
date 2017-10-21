@@ -1,0 +1,59 @@
+﻿<Common1:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Common.Analytic.ManualDataAnalysisControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Workspace.Common;assembly=VTSWeb.Presentation.Workspace.Common"
+    xmlns:Common1="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+   <Grid
+        x:Name="layoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Common1:HeaderedBorderControl
+            Header="{Localization:TranslateExtension
+                Key=HeaderSelectVehicle}"
+            x:Name="controlVehicleSelection"
+            Grid.Column="1"
+            Grid.Row="0"
+            Grid.ColumnSpan="5">
+            <Common:VehicleSelectionControl />
+        </Common1:HeaderedBorderControl>
+
+        <Common1:HeaderedBorderControl
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Header="{Localization:Translate 
+                Key=HeaderChronologicalParametersTree}"
+            x:Name="contentControlChronologicalDataTree"
+            Grid.Column="1"
+            Grid.Row="2">
+            <ContentControl
+                MinWidth="350"/>
+        </Common1:HeaderedBorderControl>
+
+        <Common1:HeaderedBorderControl
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Header="{Localization:Translate 
+                Key=HeaderItemDetails}"
+            x:Name="contentControlItemPresentation"
+            Grid.Column="3"
+            Grid.Row="2">
+            <ContentControl 
+                MinWidth="350"/>
+        </Common1:HeaderedBorderControl>
+    </Grid>
+</Common1:NavigatablePage>

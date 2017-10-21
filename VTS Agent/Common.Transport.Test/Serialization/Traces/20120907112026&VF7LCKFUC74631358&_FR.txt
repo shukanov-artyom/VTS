@@ -1,0 +1,1083 @@
+TRACE EXPERT
+Début d'acquisition de la Trace
+    Informations liées au point de vente
+        Code RRDI : 001
+        Technicien : &#1087;&#1072;&#1087;&#1072;
+    Version de l'outil
+        Lexia (500.14)
+
+Choix du véhicule
+    Famille véhicule
+        Citroën C4
+    N°OPR
+        777
+
+DIAGNOSTIC
+    Code VIN
+        VF7LCKFUC74631358
+    Familles présentes
+        calculateur BSI /
+        Afficheur multifonctions /
+        Autoradio ou radiotéléphone (partie autoradio) /
+        Boîtier combiné déporté /
+        Boîtier de servitude moteur /
+        combiné /
+        Injection /
+        ABS * /
+        Coussins gonflables conducteur et passager * /
+        Haut de colonne /
+        Module de porte conducteur /
+        Module de porte passager /
+        alarme /
+        Direction assistée
+
+
+test global
+    Familles interrogées
+        calculateur BSI /
+        combiné /
+        Autoradio ou radiotéléphone (partie autoradio) /
+        alarme /
+        Haut de colonne /
+        Module de porte conducteur /
+        Module de porte passager /
+        Boîtier combiné déporté /
+        Coussins gonflables conducteur et passager * /
+        Afficheur multifonctions /
+        Injection /
+        Boîtier de servitude moteur /
+        ABS * /
+        Direction assistée
+    BSI
+        Aucun défaut mémorisé
+    COMBINE
+        Aucun défaut mémorisé
+    AUTORADIO
+        Aucun défaut mémorisé
+    ALARME
+        Aucun défaut mémorisé
+    VCCF
+        Aucun défaut mémorisé
+    MDP_CONDUCT
+        Aucun défaut mémorisé
+    MDP_PASSAG
+        Aucun défaut mémorisé
+    COMPTE_TOURS
+        Aucun défaut mémorisé
+    SAC_AUTOLIV
+        Aucun défaut mémorisé
+    ECRAN_A
+        Aucun défaut mémorisé
+    inconnu
+        Aucun défaut mémorisé
+    BSM
+        présence de codes défauts
+        commande du lave-projecteurs Court-circuit au -
+        0VC - B998
+    ABS8.1
+        Aucun défaut mémorisé
+    GEP
+        présence de codes défauts
+        Défaut information moteur tournant
+        OBZ - C1210
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        0  tr/min
+    Tension batterie
+        12.0 Volt(s)
+    Temps d'injection 
+        0.000 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        10.1 °C
+    Tension sonde oxygène amont
+        0.00  mV
+    Tension sonde oxygène aval
+        0.00  mV
+    Etat régulation richesse
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        0  tr/min
+    Tension batterie
+        11.9 Volt(s)
+    Temps d'injection 
+        0.000 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        10.1 °C
+    Tension sonde oxygène amont
+        0.00  mV
+    Tension sonde oxygène aval
+        0.00  mV
+    Etat régulation richesse
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        0  tr/min
+    Tension batterie
+        12.0 Volt(s)
+    Temps d'injection 
+        0.000 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        10.1 °C
+    Tension sonde oxygène amont
+        0.00  mV
+    Tension sonde oxygène aval
+        0.00  mV
+    Etat régulation richesse
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        0  tr/min
+    Tension batterie
+        10.2 Volt(s)
+    Temps d'injection 
+        0.000 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        10.1 °C
+    Tension sonde oxygène amont
+        3.86  mV
+    Tension sonde oxygène aval
+        3.86  mV
+    Etat régulation richesse
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        992  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        30.7 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        3.86  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        992  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        33.0 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        3.86  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        960  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        35.0 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.92  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        928  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        35.4 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.88  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        960  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        35.8 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.82  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        928  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        36.2 °C
+    Tension sonde oxygène amont
+        0.53  mV
+    Tension sonde oxygène aval
+        0.82  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        928  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        36.2 °C
+    Tension sonde oxygène amont
+        0.10  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1600  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.120 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        39.3 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.76  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1504  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        40.6 °C
+    Tension sonde oxygène amont
+        0.59  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1536  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.120 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.1 °C
+    Tension sonde oxygène amont
+        0.59  mV
+    Tension sonde oxygène aval
+        0.70  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1536  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.1 °C
+    Tension sonde oxygène amont
+        0.47  mV
+    Tension sonde oxygène aval
+        0.72  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1536  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.1 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.72  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1504  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.1 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.72  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1504  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.6 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.72  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1536  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        41.6 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1536  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        42.6 °C
+    Tension sonde oxygène amont
+        0.74  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1440  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.2 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1376  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.2 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1344  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.120 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.2 °C
+    Tension sonde oxygène amont
+        0.14  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1376  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.2 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.74  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1408  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.7 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.76  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1440  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        43.7 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1408  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        44.2 °C
+    Tension sonde oxygène amont
+        0.31  mV
+    Tension sonde oxygène aval
+        0.76  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1440  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        44.2 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1408  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        44.2 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1408  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        44.7 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1440  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        45.2 °C
+    Tension sonde oxygène amont
+        0.80  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        1440  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        2.730 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        45.2 °C
+    Tension sonde oxygène amont
+        0.14  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        864  tr/min
+    Tension batterie
+        14.4 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        45.2 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.84  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        864  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        45.7 °C
+    Tension sonde oxygène amont
+        0.59  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        864  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        45.7 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        864  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        46.3 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        46.3 °C
+    Tension sonde oxygène amont
+        0.62  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        46.3 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        864  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        46.3 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        46.8 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        48.3 °C
+    Tension sonde oxygène amont
+        0.08  mV
+    Tension sonde oxygène aval
+        0.76  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        49.9 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.4 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.4 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.900 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.4 °C
+    Tension sonde oxygène amont
+        0.72  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.4 °C
+    Tension sonde oxygène amont
+        0.74  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.4 °C
+    Tension sonde oxygène amont
+        0.06  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        832  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.9 °C
+    Tension sonde oxygène amont
+        0.23  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.9 °C
+    Tension sonde oxygène amont
+        0.76  mV
+    Tension sonde oxygène aval
+        0.78  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Mesure paramètres : MM6LP
+    Nom de l'écran mémorisé
+        Injection Carburant et dépollution
+    Régime moteur
+        800  tr/min
+    Tension batterie
+        14.3 Volt(s)
+    Temps d'injection 
+        3.510 ms
+    Coupure de l'injection en décélération
+        &#1085;&#1077;&#1090; 
+    Température eau
+        50.9 °C
+    Tension sonde oxygène amont
+        0.10  mV
+    Tension sonde oxygène aval
+        0.80  mV
+    Etat régulation richesse
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+

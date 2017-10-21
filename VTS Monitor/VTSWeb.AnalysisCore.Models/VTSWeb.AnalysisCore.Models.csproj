@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{623FA6ED-52D1-4C26-B59A-BEC0FDA812E7}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWeb.AnalysisCore.Models</RootNamespace>
+    <AssemblyName>VTSWeb.AnalysisCore.Models</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="VtsSharedSilverlight">
+      <HintPath>..\..\VTS Shared\Output\VtsSharedSilverlight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticModel.cs" />
+    <Compile Include="AnalyticModelFactoryBase.cs" />
+    <Compile Include="AnalyticRuleBase.cs" />
+    <Compile Include="CommonRail\FuelPressureDelta\AnalyticModelFuelPressureDelta.cs" />
+    <Compile Include="CommonRail\FuelPressureDelta\AnalyticRuleFuelPressureDeltaForRpm.cs" />
+    <Compile Include="CommonRail\FuelPressureRegulatorCurrent\AnalyticModelFuelPressureRegulatorCurrent.cs" />
+    <Compile Include="CommonRail\FuelPressureRegulatorCurrent\AnalyticRuleFuelRegulatorCurrentForRpm.cs" />
+    <Compile Include="ElectricSystem\AnalyticModelElectricSystem.cs" />
+    <Compile Include="ElectricSystem\AnalyticModelFactoryElectricSystem.cs" />
+    <Compile Include="ElectricSystem\AnalyticRuleStartupUndervoltage.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelCylinderCoilChargeTime.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelCylinderCoilsChargeTime.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelCylinderCoilsStartupChargeTimePeak.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelFactoryPetrolEngineIgnition.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelPetrolEngineIgnition.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticRuleCylinderCoilChargePeakTime.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticRuleCylinderCoilChargeTimeForRpm.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticModelFactoryPetrolEngineInjection.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticRuleInjectionTimeStartupPeak.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticModelPetrolEngineInjection.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticModelPetrolEngineInjectionTime.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticRulePetrolEngineInjectionTimeForRpm.cs" />
+    <Compile Include="PetrolEnginePurification\AnalyticModelFactoryPetrolEnginePurification.cs" />
+    <Compile Include="CommonRail\InjectorCorrections\AnalyticModelInjectorCorrections.cs" />
+    <Compile Include="CommonRail\InjectorCorrections\AnalyticModelInjectorsCorrections.cs" />
+    <Compile Include="CommonRail\InjectorCorrections\AnalyticRuleInjectorCorrection.cs" />
+    <Compile Include="PetrolEnginePurification\AnalyticModelPetrolEnginePurification.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticModelLambdaProbes.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticModelLowerLambdaProbe.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticModelUpperLambdaProbe.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticRuleLambdaProbeVoltageForRpmBase.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticRuleLowerLamdaProbeVoltageForRpm.cs" />
+    <Compile Include="PetrolEnginePurification\Lambda\AnalyticRuleUpperLamdaProbeVoltageForRpm.cs" />
+    <Compile Include="VehicleAnalyticModelFactory.cs" />
+    <Compile Include="CommonRail\AnalyticModelFactoryCommonRail.cs" />
+    <Compile Include="CommonRail\AnalyticModelCommonRail.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleAnalyticModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Common\VTSWeb.AnalysisCore.Common.csproj">
+      <Project>{76C8AC69-3B9E-48EA-84FD-2408659C2D78}</Project>
+      <Name>VTSWeb.AnalysisCore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Interfaces\VTSWeb.AnalysisCore.Interfaces.csproj">
+      <Project>{6F0FB941-17CC-4E8F-BFBC-8AB57BCC456A}</Project>
+      <Name>VTSWeb.AnalysisCore.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Models.Settings.Persistency\VTSWeb.AnalysisCore.Models.Settings.Persistency.csproj">
+      <Project>{B260515D-EAAA-4DB0-A2FB-42982A10FADC}</Project>
+      <Name>VTSWeb.AnalysisCore.Models.Settings.Persistency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Models.Settings\VTSWeb.AnalysisCore.Models.Settings.csproj">
+      <Project>{07153014-0650-41AB-AD0D-9A4A4F240700}</Project>
+      <Name>VTSWeb.AnalysisCore.Models.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Recognition.Engines\VTSWeb.AnalysisCore.Recognition.Engines.csproj">
+      <Project>{D1258554-111B-449F-8C95-A110220FCD57}</Project>
+      <Name>VTSWeb.AnalysisCore.Recognition.Engines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Recognition\VTSWeb.AnalysisCore.Recognition.csproj">
+      <Project>{47BCBC91-6C48-4179-9E03-6E6BF6FF4800}</Project>
+      <Name>VTSWeb.AnalysisCore.Recognition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Tools\VTSWeb.AnalysisCore.Tools.csproj">
+      <Project>{9D8D570B-5CBA-4B5F-B03D-70669EB98A6F}</Project>
+      <Name>VTSWeb.AnalysisCore.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Common.Enums\VTSWeb.Common.Enums.csproj">
+      <Project>{CD37C676-DC92-4E7B-A015-C33B2034CB00}</Project>
+      <Name>VTSWeb.Common.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Common\VTSWeb.Common.csproj">
+      <Project>{4444C563-1DB7-4B8B-9BC9-AAE7F508C9F0}</Project>
+      <Name>VTSWeb.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.DomainObjects.Psa\VTSWeb.DomainObjects.Psa.csproj">
+      <Project>{FAC39A3F-C28B-4A83-A765-CC7B517BC951}</Project>
+      <Name>VTSWeb.DomainObjects.Psa</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.DomainObjects\VTSWeb.DomainObjects.csproj">
+      <Project>{409B69A4-EF17-48CC-9B1A-FDD85B93F117}</Project>
+      <Name>VTSWeb.DomainObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.VendorData\VTSWeb.VendorData.csproj">
+      <Project>{1211E943-A68E-4502-9E24-2B08F924D8BF}</Project>
+      <Name>VTSWeb.VendorData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

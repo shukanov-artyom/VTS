@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Agent.Workspace.DesktopElements.PeugeotDesktopButtonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Button
+            x:Name="peugeotButton"
+            Background="White"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="50"
+            Width="50"
+            Command="{Binding Path=PeugeotButtonClickedCommand}">
+            <StackPanel>
+                <Image Source="pack://application:,,,/Agent;component/Resources/Images/peugeot_logo_small_2.png" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,131 @@
+﻿<controls:ChildWindow 
+    x:Class="VTSWeb.AnalysisCore.Models.Settings.Presentation.AnalyticRuleSettingsCreationWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:Presentation="clr-namespace:VTSWeb.AnalysisCore.Models.Settings.Presentation"
+    xmlns:Progress="clr-namespace:VTSWeb.Presentation.Common.Progress;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    Style="{StaticResource ChildWindowStyle}"
+    Width="640"
+    Height="480">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="1"
+            HorizontalAlignment="Right"
+            FontSize="16"
+            FontWeight="Bold"
+            Text="{Localization:TranslateExtension 
+                Key=AnalyticRuleSettings}"/>
+
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="3"
+            Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    MinWidth="150"
+                    VerticalAlignment="Center"
+                    Text="{Localization:TranslateExtension 
+                        Key=RuleTypeColon}"/>
+                <ComboBox
+                    SelectionChanged="SelectedRuleTypeChanged"
+                    DisplayMemberPath="DisplayName"
+                    VerticalAlignment="Center"
+                    MinWidth="150"
+                    Margin="10,5,0,0"
+                    x:Name="comboBoxRuleType"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    MinWidth="150"
+                    VerticalAlignment="Center"
+                    Text="{Localization:TranslateExtension 
+                        Key=EngineFamilyColon}"/>
+                <ComboBox
+                    SelectionChanged="EngineFamilyTypeSelectionChanged"
+                    DisplayMemberPath="DisplayName"
+                    VerticalAlignment="Center"
+                    MinWidth="150"
+                    Margin="10,5,0,0"
+                    x:Name="comboBoxEngineFamilyType"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    MinWidth="150"
+                    VerticalAlignment="Center"
+                    Text="{Localization:TranslateExtension 
+                        Key=EngineTypeColon}"/>
+                <ComboBox
+                    SelectionChanged="OnEngineSelected"
+                    DisplayMemberPath="DisplayName"
+                    VerticalAlignment="Center"
+                    MinWidth="150"
+                    Margin="10,5,0,0"
+                    x:Name="comboBoxEngineType"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Presentation:AnalyticRuleSettingsPropertiesValuesControl
+            x:Name="controlProperties"
+            Grid.Column="1"
+            Grid.Row="5"/>
+
+        <TextBlock 
+            x:Name="textBlockAlreadyExists"
+            Visibility="Collapsed"
+            FontWeight="Bold"
+            Grid.Column="1"
+            Grid.Row="7"
+            Foreground="Red"
+            Text="{Localization:TranslateExtension 
+                Key=SettingsAlreadyExistText}"/>
+        
+        <StackPanel
+            HorizontalAlignment="Right"
+            Orientation="Horizontal"
+            Grid.Column="1"
+            Grid.Row="9">
+            <Progress:CircularProgressBarSmall
+                x:Name="progressBarCircular"
+                Visibility="Collapsed"
+                Margin="0,0,10,0"
+                Width="25"/>
+            <Button
+                IsEnabled="False"
+                x:Name="buttonOk"
+                Width="100"
+                Height="23"
+                Content="{Localization:TranslateExtension Key=CreateButtonText}"
+                Click="OkClicked"
+                HorizontalAlignment="Right"/>
+            <Button
+                Margin="10,0,0,0"
+                Width="100"
+                Height="23"
+                Content="{Localization:TranslateExtension Key=CancelText}"
+                Click="CancelClicked"
+                HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</controls:ChildWindow>

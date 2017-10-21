@@ -1,0 +1,98 @@
+﻿<UserControl 
+    x:Class="Agent.Workspace.PsaDataTreeToolbar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+    xmlns:unrecognized2="clr-namespace:Agent.Common.Presentation.Unrecognized;assembly=Agent.Common.Presentation">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <!--Style="{StaticResource LinkButtonStyle}"-->
+        <Button
+            Padding="3,1,3,1"
+            Grid.Column="3"
+            Grid.Row="1"
+            Command="{Binding Path=ExportCommand}"
+            HorizontalAlignment="Left"
+            Content="{Localization:TranslateExtension ExportText}">
+        </Button>
+
+        <Button
+            Padding="3,1,3,1"
+            Grid.Column="1"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Command="{Binding Path=SelectAllCommand}"
+            Content="{Localization:TranslateExtension SelectAllText}">
+        </Button>
+
+        <Button
+            Padding="3,1,3,1"
+            Grid.Column="7"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Command="{Binding Path=DeselectAllCommand}"
+            Content="{Localization:TranslateExtension ResetText}">
+        </Button>
+
+        <Button
+            Padding="3,1,3,1"
+            Grid.Column="5"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Command="{Binding Path=ImportCommand}"
+            Content="{Localization:TranslateExtension ImportText}">
+        </Button>
+
+        <Button
+            x:Name="buttonUnrecognizedData"
+            Padding="3,1,3,1"
+            Grid.Column="9"
+            Grid.Row="1"
+            HorizontalAlignment="Left"
+            Command="{Binding Path=ExportUnrecognizedCommand}"
+            Visibility="{Binding Path=IsEnabled, 
+                RelativeSource={x:Static RelativeSource.Self}, 
+                Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <Button.Content>
+                <StackPanel
+                    Orientation="Horizontal">
+                    <TextBlock Text="{Localization:TranslateExtension 
+                            UnrecognizedText}"/>
+                    <unrecognized2:BlinkingWarningControlSmall 
+                        Margin="2,0,0,0"
+                        ToolTip="{Localization:TranslateExtension
+                            UnrecognizedDataButtonTooltipText}"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+        <StackPanel
+            Grid.Column="0"
+            Grid.Row="3"
+            Background="DarkGray"
+            Margin="15,0,15,0">
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,54 @@
+﻿@using Html
+@using Html.Models
+@{
+    int culture = SiteSession.CurrentUICulture;
+    ViewBag.Title = Resource.TopicDetailsHeaderDataAnalysis;
+}
+
+<div class="root-element">
+    <h1>@Resource.PageHeaderDataAnalysis</h1>
+    <p>@Resource.PageTextDataAnalysis1</p>
+    <div class="center-image-holder">
+        <img src="../../Content/Images/analysisIllustration1.png"/>
+    </div>
+    <p>@Resource.PageTextDataAnalysis2</p>
+    <ul>
+        <li>@Resource.PageTextDataAnalysisListItem1</li>
+        <li>@Resource.PageTextDataAnalysisListItem2</li>
+        <li>@Resource.PageTextDataAnalysisListItem3</li>
+    </ul>
+    <h2>@Resource.PageHeaderDataAnalysis2</h2>
+    <p>@Resource.PageTextDataAnalysis3</p>
+    <h2>@Resource.PageHeaderDataAnalysis3</h2>
+    <p>@Resource.PageTextDataAnalysis4</p>
+    <div class="center-image-holder">
+        <img src="../../Content/Images/analysisIllustration2.png"/>
+    </div>
+    <h2>@Resource.PageHeaderDataCapture4</h2>
+    <ul class="wiki-links-list">
+        <ul>
+            <div class="wiki-link-block">
+                <div>
+                    <img src="../content/images/wiki.png"/>
+                    <h3><a href="@Resource.PageTextDataAnalysisWikiItem1Link">@Resource.PageTextDataAnalysisWikiItem1Text</a></h3>
+                </div>
+            </div>
+        </ul>
+        <ul>
+            <div class="wiki-link-block">
+                <div>
+                    <img src="../content/images/wiki.png"/>
+                    <h3><a href="@Resource.PageTextDataAnalysisWikiItem2Link">@Resource.PageTextDataAnalysisWikiItem2Text</a></h3>
+                </div>
+            </div>
+        </ul>
+        <ul>
+            <div class="wiki-link-block">
+                <div>
+                    <img src="../content/images/wiki.png"/>
+                    <h3><a href="@Resource.PageTextDataAnalysisWikiItem3Link">@Resource.PageTextDataAnalysisWikiItem3Text</a></h3>
+                </div>
+            </div>
+        </ul>
+    </ul>
+</div>

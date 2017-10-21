@@ -1,0 +1,46 @@
+﻿<UserControl 
+    x:Class="VTSWeb.Presentation.Workspace.Admin.Statistics.StatisticsGenerationInfoControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            VerticalAlignment="Center"
+            MinWidth="250"
+            Margin="20,0,0,0"
+            Grid.Column="0"
+            FontWeight="Bold"
+            Text="{Localization:TranslateExtension 
+                Key=StatisticsGenerationColon}"
+            x:Name="textBlockGenerationStepLabel"/>
+
+        <ProgressBar
+            Grid.Column="2"
+            Height="23"
+            Width="200"
+            x:Name="progressBarStatisticsGeneration"/>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Grid.Column="2"
+            x:Name="textBlockPercentage"/>
+        
+        <Button
+            x:Name="buttonTriggerGeneration"
+            Click="StartStatisticsGeneration"
+            Grid.Column="4"
+            Height="23"
+            Width="100"
+            Content="{Localization:TranslateExtension
+                Key=GenerateText}"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,52 @@
+﻿@using Html
+@using Html.Models
+@{
+    int culture = SiteSession.CurrentUICulture;
+    ViewBag.Title = Resource.TopicDetailsHeaderDataCapture;
+}
+
+<div class="root-element" id="data-capture-root">
+     <h1>@Resource.PageHeaderDataCapture</h1>
+    <div>
+        <h2>@Resource.PageHeaderDataCapture2</h2>
+        <div class="center-image-holder">
+            <img src="../Content/Images/captureIllustration1.png"/>
+        </div>
+        <p>@Resource.PageTextDataCapture1</p>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.WikiPageLinkDataCapture">@Resource.DataCaptureWikiPage</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel-cleaner" />
+    <div>
+        <h2>@Resource.PageHeaderDataCapture3</h2>
+        <div class="center-image-holder">
+            <img src="../Content/Images/captureIllustration2.png"/>
+        </div>
+        <p>@Resource.PageTextDataCapture2</p>
+    </div>
+    <div>
+        <h2>@Resource.PageHeaderDataCapture4</h2>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.WikiPageLinkDataCapture">@Resource.DataCaptureWikiPage</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.WikiPageLinkVtsAgent">@Resource.VtsAgentApplication</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.WikiPageLinkDataExport">@Resource.DataExport</a></h3>
+            </div>
+        </div>
+    </div>
+</div>

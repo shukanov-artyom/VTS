@@ -1,0 +1,41 @@
+﻿#vin-check-panel {
+    background: #818181; 
+    margin-top: 10px;
+    padding-bottom: 7px;
+}
+
+#vin-check-invitation {
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 6px;
+    float: left;
+}
+
+#input-vin {
+    width: 300px;
+    margin-top: 6px;
+    float: right;
+}
+
+#button-vin-submit {
+    padding: 0;
+    border-style: none;
+    background-image: url('../../Content/Images/check_btn_normal.png');
+    margin-top: 6px;
+    width: 124px;
+    height: 27px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+#button-vin-submit[disabled] {
+    background-image: url('../../Content/Images/check_btn_notavailable.png');
+}
+
+#vin-check-result p {
+    color: white;
+    margin-left: 20px;
+    margin-top: 1px;
+}

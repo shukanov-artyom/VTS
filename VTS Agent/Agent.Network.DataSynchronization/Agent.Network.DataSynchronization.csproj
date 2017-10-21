@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BD6050A-11BB-40B0-9314-FEBD6E029DA6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent.Network.DataSynchronization</RootNamespace>
+    <AssemblyName>Agent.Network.DataSynchronization</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSynchronizationStatus.cs" />
+    <Compile Include="DataSynchronizerStatusChangedEventHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Psa\PsaDataSynchronizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Instance\Agent.Common.Instance.csproj">
+      <Project>{3BEBDE5E-1413-4FAD-8634-447A630185D9}</Project>
+      <Name>Agent.Common.Instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common\Agent.Common.csproj">
+      <Project>{21539378-9A42-4546-8327-FF4FF88E7D08}</Project>
+      <Name>Agent.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Infrastructure\Agent.Infrastructure.csproj">
+      <Project>{42ecf03b-100d-495a-98b1-4bc9747d13b4}</Project>
+      <Name>Agent.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Metadata\Agent.Metadata.csproj">
+      <Project>{FA109915-77D6-456C-AF17-6D76ECB0633D}</Project>
+      <Name>Agent.Metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Logging\Agent.Logging.csproj">
+      <Project>{A9403843-FAD4-446E-A157-2A2CA6F228C7}</Project>
+      <Name>Agent.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.Monitor\Agent.Network.Monitor.csproj">
+      <Project>{927985D8-D0D6-428C-A50D-CDCD7931C28B}</Project>
+      <Name>Agent.Network.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Interfaces\Agent.Common.Interfaces.csproj">
+      <Project>{6853BCCB-216D-4FF7-ADB8-65FF46213A96}</Project>
+      <Name>Agent.Common.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

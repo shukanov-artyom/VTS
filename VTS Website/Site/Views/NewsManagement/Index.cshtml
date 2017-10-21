@@ -1,0 +1,28 @@
+﻿@using Html.Models
+@model IList<SystemNewsViewModel>
+@{
+    ViewBag.Title = "VTS System - News Management Admin Console";
+}
+
+<div class="root-element">
+    <table id="news-management-table">
+        <tr>
+            <th>ID</th>
+            <th>Date Published</th>
+            <th>Topic - flag_de</th>
+            <th>Text - flag_de</th>
+            <th>Topic - russian</th>
+            <th>Text - russian</th>
+            <th>Topic - belarusian</th>
+            <th>Text - belarusian</th>
+        </tr>
+        @foreach (SystemNewsViewModel newsViewModel in Model)
+        {
+            <tr>
+                @Html.Partial("_NewsItemView", newsViewModel)
+            </tr>
+        }
+    </table>
+    <br/>
+    @Html.ActionLink("Add New", "Create", "NewsManagement")
+</div>

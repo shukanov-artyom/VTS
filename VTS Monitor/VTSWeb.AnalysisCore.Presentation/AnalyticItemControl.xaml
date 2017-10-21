@@ -1,0 +1,45 @@
+﻿<UserControl
+    x:Class="VTSWeb.AnalysisCore.Presentation.AnalyticItemControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Converters="clr-namespace:VTSWeb.Presentation.Common.Converters;assembly=VTSWeb.Presentation.Common">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Converters:MarkToColorConverter
+                x:Name="MarkToColorConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <Ellipse
+            Grid.Column="0"
+            Height="22"
+            Width="32" 
+            Opacity="0.5"
+            StrokeThickness="0"
+            Fill="{Binding Path=Mark, Converter={StaticResource 
+                MarkToColorConverter}}"/>
+
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Grid.Column="0"
+            Text="{Binding Path=Mark, StringFormat=N1,Mode=OneWay}"/>
+
+        <TextBlock
+            FontSize="12"
+            FontWeight="Bold"
+            Grid.Column="2"
+            Text="{Binding Path=DisplayName, Mode=OneWay}"/>
+        
+    </Grid>
+</UserControl>

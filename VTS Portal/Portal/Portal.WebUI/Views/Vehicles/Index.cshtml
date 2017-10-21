@@ -1,0 +1,66 @@
+﻿@using VTS.Shared.DomainObjects
+
+@model List<Vehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/vehiclesIndex.js"></script>
+<script src="~/Scripts/vehiclesIndexLocalize.js"></script>
+
+<style>
+    #vehiclesTable td {
+        vertical-align: center;
+    }
+</style>
+
+<table id="vehiclesTable" class="table">
+    <thead>
+        <th id="table-header-vehicle-mark" class="text-center">Марка</th>
+        <th id="table-header-vehicle-vin" class="text-center">Vin</th>
+        <th id="table-header-vehicle-year">Год</th>
+        <th id="table-header-vehicle-mileage" class="text-right" >Пробег</th>
+    </thead>
+    <tbody>
+        @foreach (Vehicle vehicle in Model)
+        {
+            <tr>
+                <td class="text-left">@String.Format("{0} {1}", vehicle.Manufacturer, vehicle.Model)</td>
+                <td class="text-left">@vehicle.Vin</td>
+                <td class="text-right">@vehicle.ProductionYear</td>
+                <td class="text-right">@vehicle.Mileage</td>
+                <td>
+                    @Html.ActionLink("Данные", 
+                        "Index", 
+                        "Data", 
+                        new
+                        {
+                            vin = vehicle.Vin
+                        }, 
+                        new
+                        {
+                            @class = "btn btn-default btn-data text-left", 
+                            type = "submit", 
+                            id="button-data"
+                        })
+                </td>
+                <td>
+                    @Html.ActionLink("Характеристики", 
+                        "Characteristics", 
+                        "Vehicles", 
+                        new
+                        {
+                            vin = vehicle.Vin
+                        }, 
+                        new
+                        {
+                            @class = "btn btn-default btn-characteristics text-left", 
+                            type = "submit", 
+                            id="button-characteristics"
+                        })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

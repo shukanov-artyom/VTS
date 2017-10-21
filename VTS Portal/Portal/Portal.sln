@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.WebUI", "Portal.WebUI\Portal.WebUI.csproj", "{69DFCBFA-D9E6-4138-9AAD-34E47FEF14C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.WebUI.Tests", "Portal.WebUI.Tests\Portal.WebUI.Tests.csproj", "{3DBFA04A-4FDC-4187-BA22-8FC277AFCA18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Assemblers", "Portal.Assemblers\Portal.Assemblers.csproj", "{93794967-35C8-4F42-9C75-A0C1AFABF613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Service", "Portal.Service\Portal.Service.csproj", "{3000E955-D317-450E-86CB-BCA571124173}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69DFCBFA-D9E6-4138-9AAD-34E47FEF14C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DFCBFA-D9E6-4138-9AAD-34E47FEF14C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DFCBFA-D9E6-4138-9AAD-34E47FEF14C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DFCBFA-D9E6-4138-9AAD-34E47FEF14C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DBFA04A-4FDC-4187-BA22-8FC277AFCA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBFA04A-4FDC-4187-BA22-8FC277AFCA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBFA04A-4FDC-4187-BA22-8FC277AFCA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBFA04A-4FDC-4187-BA22-8FC277AFCA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93794967-35C8-4F42-9C75-A0C1AFABF613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93794967-35C8-4F42-9C75-A0C1AFABF613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93794967-35C8-4F42-9C75-A0C1AFABF613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93794967-35C8-4F42-9C75-A0C1AFABF613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3000E955-D317-450E-86CB-BCA571124173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3000E955-D317-450E-86CB-BCA571124173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3000E955-D317-450E-86CB-BCA571124173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3000E955-D317-450E-86CB-BCA571124173}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

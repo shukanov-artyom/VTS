@@ -1,0 +1,19 @@
+﻿@using Html.Models
+@{
+    ViewBag.Title = "VTS Website Administration Console";
+}
+
+<div class="root-element">
+    @if (Session["SiteSession"] == null ||
+        ((SiteSession)Session["SiteSession"]).User == null)
+    {
+        <div>
+            <h2>Administrative Logon required</h2>
+            <p>Please login with administrative credentials to do this operation.</p>
+        </div>
+        return;
+    }
+    <div>
+        @Html.ActionLink("News management", "Index", "NewsManagement")
+    </div>
+</div>

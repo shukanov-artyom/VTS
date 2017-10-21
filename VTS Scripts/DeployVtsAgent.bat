@@ -1,0 +1,1 @@
+powershell.exe -file ".\VTS Scripts\deployVtsAgent.ps1"

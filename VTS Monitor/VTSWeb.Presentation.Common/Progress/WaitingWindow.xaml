@@ -1,0 +1,16 @@
+﻿<controls:ChildWindow 
+    x:Class="VTSWeb.Presentation.Common.Progress.WaitingWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls" 
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common"
+    xmlns:Progress="clr-namespace:VTSWeb.Presentation.Common.Progress" HasCloseButton="False"
+    Background="Transparent"
+    BorderBrush="Transparent"
+    BorderThickness="0"
+    Width="120"
+    Height="120">
+    <Grid>
+        <Progress:CircularProgressBar/>
+    </Grid>
+</controls:ChildWindow>

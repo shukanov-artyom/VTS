@@ -1,0 +1,35 @@
+﻿<UserControl 
+    x:Class="VTSWeb.Presentation.Graph.Checkboxes.ParameterCheckBoxControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <CheckBox
+            Checked="CheckBoxChecked"
+            Unchecked="CheckBoxUnChecked"
+            x:Name="checkBox"
+            Grid.Column="0">
+            <StackPanel
+                    Orientation="Horizontal">
+                <Line
+                    x:Name="lineColored"
+                    Margin="3"
+                    VerticalAlignment="Center"
+                    StrokeThickness="4"
+                    Stroke="{Binding Path=Stroke}"
+                    X1="0" Y1="0"
+                    X2="20" Y2="0">
+                </Line>
+                <TextBlock
+                    x:Name="textBlockName"
+                    Text="{Binding Path=Text}">
+                </TextBlock>
+            </StackPanel>
+        </CheckBox>
+    </Grid>
+</UserControl>

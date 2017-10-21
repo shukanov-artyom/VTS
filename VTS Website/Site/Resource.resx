@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Analysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>VTS Automonitoring</value>
+    <comment>Название системы</comment>
+  </data>
+  <data name="AvailableAgentVersionsСolon" xml:space="preserve">
+    <value>Available Agent versions:</value>
+  </data>
+  <data name="BannerFourHeader" xml:space="preserve">
+    <value>Provide monitoring service to your customers</value>
+  </data>
+  <data name="BannerFourText1" xml:space="preserve">
+    <value>Share vehicle diagnostic data analysis results with your customers using VTS Monitor web application.</value>
+  </data>
+  <data name="BannerOneText1" xml:space="preserve">
+    <value>Convenient viewing of data captured by your Lexia/DiagBox tool from your or your customer's vehicle.</value>
+  </data>
+  <data name="BannerThreeHeader" xml:space="preserve">
+    <value>Watch your car's state</value>
+  </data>
+  <data name="BannerThreeText1" xml:space="preserve">
+    <value>Vehicles technical state analysis and monitoring based on chronologically supplied Lexia/Diagbox data.</value>
+  </data>
+  <data name="BannerTwoHeader" xml:space="preserve">
+    <value>Lexia/Diagbox integration.</value>
+  </data>
+  <data name="BannerTwoText1" xml:space="preserve">
+    <value>VTS Agent. Convenient and instant view of data graphs captured from your vehicle by Lexia / DiagBox.</value>
+  </data>
+  <data name="BannerZeroHeader" xml:space="preserve">
+    <value>VTS Automonitoring system</value>
+  </data>
+  <data name="BannerZeroText1" xml:space="preserve">
+    <value>A set of tools for car services and individuals aimed at monitoring your Peugeot/Citroen vehicle's technical state.</value>
+  </data>
+  <data name="Capture" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="DataCaptureHeader" xml:space="preserve">
+    <value>Diagnostic data capture</value>
+  </data>
+  <data name="WikiPageLinkDataCapture" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:datacapture</value>
+  </data>
+  <data name="DesktopApplicationName" xml:space="preserve">
+    <value>VTS Agent</value>
+  </data>
+  <data name="DetailsWithDots" xml:space="preserve">
+    <value>Details...</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Downloads" xml:space="preserve">
+    <value>Downloads</value>
+  </data>
+  <data name="DownloadsDisplayName" xml:space="preserve">
+    <value>Downloads</value>
+    <comment>Загрузки (название раздела закачек)</comment>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="FooterRightsReserved" xml:space="preserve">
+    <value>VTS Automonitoring 2013. All rights reserved.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Step1Caption" xml:space="preserve">
+    <value>Data capture</value>
+  </data>
+  <data name="Step1Text" xml:space="preserve">
+    <value>Capture vehicle data using your Lexia. Then preview them and export to a .vts file using VTS Agent free tool.</value>
+  </data>
+  <data name="Step2Caption" xml:space="preserve">
+    <value>Data analysis</value>
+  </data>
+  <data name="Step2Text" xml:space="preserve">
+    <value>Upload captured data to the VTS Monitor web application to analyse vehicle state.</value>
+  </data>
+  <data name="Step3Caption" xml:space="preserve">
+    <value>Pass results to Client</value>
+  </data>
+  <data name="Step3Text" xml:space="preserve">
+    <value>Provide your client with his vehicle data and analysis results using a registration key.</value>
+  </data>
+  <data name="TechSupport" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="TopicDetailsHeaderDataCapture" xml:space="preserve">
+    <value>Data capture</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="VtsAgent" xml:space="preserve">
+    <value>VTS Agent</value>
+  </data>
+  <data name="VtsAgentExplanationHeader" xml:space="preserve">
+    <value>VTS Agent is a tool for diagnostic data initial analysis and export to be later consumed by VTS Monitor application for further analysis.</value>
+  </data>
+  <data name="VtsMonitor" xml:space="preserve">
+    <value>VTS Мonitor</value>
+  </data>
+  <data name="WebApplicationName" xml:space="preserve">
+    <value>VTS Monitor</value>
+  </data>
+  <data name="Wiki" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="WikiDisplayName" xml:space="preserve">
+    <value>Wiki</value>
+    <comment>Имя ссылки на вики</comment>
+  </data>
+  <data name="WikiLink" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/</value>
+  </data>
+  <data name="DataCaptureWikiPage" xml:space="preserve">
+    <value>Diagnostic data capture</value>
+  </data>
+  <data name="DataExport" xml:space="preserve">
+    <value>Diagnostic data export</value>
+  </data>
+  <data name="FooterCopyrightText" xml:space="preserve">
+    <value>VTS Automonitoring 2013. All rights reserved</value>
+  </data>
+  <data name="PageHeaderDataCapture" xml:space="preserve">
+    <value>Diagnostic data capture and view</value>
+  </data>
+  <data name="PageHeaderDataCapture2" xml:space="preserve">
+    <value>Diagnostic data retrieval</value>
+  </data>
+  <data name="PageHeaderDataCapture3" xml:space="preserve">
+    <value>Use the features of the free VTS Agent tool for easy viewing of diagnostic data obtained by Lexia / DiagBox.</value>
+  </data>
+  <data name="PageHeaderDataCapture4" xml:space="preserve">
+    <value>More information at out Wiki:</value>
+  </data>
+  <data name="PageTextDataCapture1" xml:space="preserve">
+    <value>Diagnostic data is captured from the Peugeot / Citroen vehicle using the Lexia / DiagBox diagnostic kit. Please refer to our wiki to learn how to capture data that is optimal for processing through a VTS Automonitoring system.</value>
+  </data>
+  <data name="PageTextDataCapture2" xml:space="preserve">
+    <value>Lexia / DiagBox toolset does not provide a convenient tool to view captured diagnostic data. Use free VTS Agent tool to view captured data and to process it in VTS Monitor web application to get your customers' vehicles parameters quality estimation.</value>
+  </data>
+  <data name="VtsAgentApplication" xml:space="preserve">
+    <value>VTS Agent application</value>
+  </data>
+  <data name="WikiPageLinkDataExport" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:dataexport</value>
+  </data>
+  <data name="WikiPageLinkVtsAgent" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsagent</value>
+  </data>
+  <data name="TopicDetailsHeaderDataAnalysis" xml:space="preserve">
+    <value>Diagnostic data analysis</value>
+  </data>
+  <data name="PageHeaderDataAnalysis" xml:space="preserve">
+    <value>Diagnostic data analysis</value>
+  </data>
+  <data name="PageHeaderDataAnalysis2" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="PageHeaderDataAnalysis3" xml:space="preserve">
+    <value>System's abilities</value>
+  </data>
+  <data name="PageTextDataAnalysis1" xml:space="preserve">
+    <value>After receiving the diagnostic data using Lexia / DiagBox and viewing them in the VTS Agent application, you can export the data to a file for later analysis using VTS Monitor web app.</value>
+  </data>
+  <data name="PageTextDataAnalysis2" xml:space="preserve">
+    <value>Web application VTS monitor stores and processes the diagnostic data of machines, and allows, based on them:</value>
+  </data>
+  <data name="PageTextDataAnalysis3" xml:space="preserve">
+    <value>To participate in the VTS Monitor web application you will need to capture diagnostic data from vehicle and register a Partber account in the web app. You will be provided with a free trial 60 days license upon registration.</value>
+  </data>
+  <data name="PageTextDataAnalysis4" xml:space="preserve">
+    <value>The system determines the type of vehicle's engine and compares the parameters of all vehicle systems to reference values​​, as well as to those of other similar vehicles, and then outputs the evaluation of vehicle systems' state.</value>
+  </data>
+  <data name="PageTextDataAnalysisListItem1" xml:space="preserve">
+    <value>Evaluate the current state of the vehicle</value>
+  </data>
+  <data name="PageTextDataAnalysisListItem2" xml:space="preserve">
+    <value>Follow vehicle parameters evolution in time</value>
+  </data>
+  <data name="PageTextDataAnalysisListItem3" xml:space="preserve">
+    <value>Follow the terms of the current replacements</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem1Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsautomonitoring</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem1Text" xml:space="preserve">
+    <value>VTS Monitor web app</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem2Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:kickstart</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem2Text" xml:space="preserve">
+    <value>How to start working with the system</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem3Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsfileformat</value>
+  </data>
+  <data name="PageTextDataAnalysisWikiItem3Text" xml:space="preserve">
+    <value>What is .vts file</value>
+  </data>
+  <data name="AgentPrerequisitesWikiPage" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:agentsystemrequirements</value>
+  </data>
+  <data name="AgentPrerequisitesWikiPageLinkText" xml:space="preserve">
+    <value>Prerequisites</value>
+  </data>
+  <data name="AgentPrerequisitesWikiPageText" xml:space="preserve">
+    <value>VTS Agent prerequisites wiki page:</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More...</value>
+  </data>
+  <data name="PageHeaderDataShare" xml:space="preserve">
+    <value>Providing data to the Client</value>
+  </data>
+  <data name="PageHeaderDataShare2" xml:space="preserve">
+    <value>Registration key creation and passing it to Client</value>
+  </data>
+  <data name="PageHeaderDataShare3" xml:space="preserve">
+    <value>Payment method</value>
+  </data>
+  <data name="PageHeaderDataShare4" xml:space="preserve">
+    <value>Current replacements</value>
+  </data>
+  <data name="PageHeaderSystemOverview" xml:space="preserve">
+    <value>VTS System overview</value>
+  </data>
+  <data name="PageTextDataShare1" xml:space="preserve">
+    <value>There are two account types in the VTS Monitor system: </value>
+  </data>
+  <data name="PageTextDataShare2" xml:space="preserve">
+    <value>In terms of the VTS system Avtomonitoring partner is the owner of Lexia / DiagBox diagnostic system that serves the client machine. Accordingly, the client - the owner of the machine serviced by the Partner.</value>
+  </data>
+  <data name="PageTextDataShare4" xml:space="preserve">
+    <value>Registration key is generated by the Partner using the VTS Monitor application, and can be sent to the Customer by phone, e-mail or in any other convenient manner.</value>
+  </data>
+  <data name="PageTextDataShare5" xml:space="preserve">
+    <value>Partner pays for the VTS Automonitoring system service. Fees are charged for the purchase of licenses that have an expiration date. One license allows you to maintain a single vehicle. Partner charges a service fee to the customer, so reselling their services to the Client. Payments are made to the system by WebMoney or cash. The estimated cost of services is from 3 to 10 dollars a month for one car.</value>
+  </data>
+  <data name="PageTextDataShare6" xml:space="preserve">
+    <value>Partners and customers can contribute and update information on the current replacements made​​. The system will report the occurrence of the next term of the current replacement.</value>
+  </data>
+  <data name="PageTextDataShareListItem1" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="PageTextDataShareListItem2" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="PageTextDataShareWikiItem1Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:partner</value>
+  </data>
+  <data name="PageTextDataShareWikiItem1Link1" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:partner</value>
+  </data>
+  <data name="PageTextDataShareWikiItem1Text" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="PageTextDataShareWikiItem2Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:client</value>
+  </data>
+  <data name="PageTextDataShareWikiItem2Text" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="PageTextDataShareWikiItem3Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:registrationkey</value>
+  </data>
+  <data name="PageTextDataShareWikiItem3Text" xml:space="preserve">
+    <value>Registration key</value>
+  </data>
+  <data name="PageTextDataShareWikiItem4Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:license</value>
+  </data>
+  <data name="PageTextDataShareWikiItem4Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="PageTextDataShareWikiItem5Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:navigatablepagedata</value>
+  </data>
+  <data name="PageTextDataShareWikiItem5Text" xml:space="preserve">
+    <value>Current replacements monitoring system</value>
+  </data>
+  <data name="PageTextDataShareWikiItem6Link" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:prices</value>
+  </data>
+  <data name="PageTextDataShareWikiItem6Text" xml:space="preserve">
+    <value>Service prices</value>
+  </data>
+  <data name="AgentWikiPage" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsagent</value>
+  </data>
+  <data name="MonitorWikiPage" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsautomonitoring</value>
+  </data>
+  <data name="RegistrationKeyWikiLink" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:registrationkey</value>
+  </data>
+  <data name="SystemOverviewHeader1" xml:space="preserve">
+    <value>Automonitoring system</value>
+  </data>
+  <data name="SystemOverviewHeader2" xml:space="preserve">
+    <value>Reselling the Automonitoring service</value>
+  </data>
+  <data name="SystemOverviewHeader3" xml:space="preserve">
+    <value>VIN Check</value>
+  </data>
+  <data name="SystemOverviewHeader4" xml:space="preserve">
+    <value>System components</value>
+  </data>
+  <data name="SystemOverviewText1" xml:space="preserve">
+    <value>&lt;b&gt;VTS Automonitoring&lt;/b&gt; is an innovative system designed for car services and individual businessmen which allows to monitor and evaluate changes in car systems parameters for Peugeot / Citroen vehicles over a long period of observation. The system can evaluate different vehicle systems state, primarily engine systems.</value>
+  </data>
+  <data name="SystemOverviewText2" xml:space="preserve">
+    <value>The system is specially designed for the automonitoring service resale. &lt;a href="http://vtsautomonitoring.wikidot.com/wiki:partner"&gt;Partners&lt;/a&gt; around the world can use the system to evaluate the parameters of their &lt;a href="http://vtsautomonitoring.wikidot.com/wiki:client"&gt;Clients&lt;/a&gt; Peugeot/Citroen vehicles and easily share analysis results of the analysis withtheir customers to gain a competitive advantage in the field of vehicle diagnostics and service. &lt;a href="http://vtsautomonitoring.wikidot.com/wiki:registrationkey"&gt;Learn more...&lt;/a&gt;</value>
+  </data>
+  <data name="SystemOverviewText3" xml:space="preserve">
+    <value>You can check your vehicle for compatibility with the system. If the test is passed then this machine can be serviced by the system and you can get evaluation of its diagnostic data. You will need the vehicle's VIN to do a compatibility check. &lt;a href="http://vtsautomonitoring.wikidot.com/wiki:vincheck"&gt;Check the VIN...&lt;/a&gt;</value>
+  </data>
+  <data name="SystemOverviewText4" xml:space="preserve">
+    <value> — free application for easy and convenient view and export of diagnostic data obtained using Lexia / Diagbox diagnostic kit.</value>
+  </data>
+  <data name="SystemOverviewText5" xml:space="preserve">
+    <value> — web application for organizing and analysis of the data obtained using VTS Agent.</value>
+  </data>
+  <data name="SystemOverviewText6" xml:space="preserve">
+    <value> — a repository of information about the effective use of VTS Aгtomonitoring.</value>
+  </data>
+  <data name="SystemOverviewText7" xml:space="preserve">
+    <value>If you can not find the information you need on the wiki or have any abnormal behavior of the system, please contact technical support at vtsautomonitoring@gmail.com.</value>
+  </data>
+  <data name="TechnicalSupport" xml:space="preserve">
+    <value>Technical support</value>
+  </data>
+  <data name="VinCheckWikiPage" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vincheck</value>
+  </data>
+  <data name="VinLengthErrorText" xml:space="preserve">
+    <value>VIN must consist of 17 numbers and letters.</value>
+  </data>
+  <data name="UnableToGetVehicleData" xml:space="preserve">
+    <value>Unfortunately the system could not get data for this VIN.</value>
+  </data>
+  <data name="CaseVinSupported" xml:space="preserve">
+    <value>In case the vehicle is compatible with the VTS Automonitoring, the system will identify the car model and the type of its engine.</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="CheckYourVinCompatibilityInvitation" xml:space="preserve">
+    <value>Check your VIN compatibility with the system.</value>
+  </data>
+  <data name="HowToProcessThisVehicleDiagnosticData" xml:space="preserve">
+    <value>How can i analyse this vehicle's diagnostic data?</value>
+  </data>
+  <data name="UnsupportedManufacturerMessage" xml:space="preserve">
+    <value>Unfortunately only Citroen, Peugeot and Opel vehicles are supported. Please contact our Support if you have questions on other manufacturers.</value>
+  </data>
+  <data name="VehiclenotSupportedText" xml:space="preserve">
+    <value>Unfortunately this vehicle is not supported. We have picked you your VIN to include in support, please follow our news.</value>
+  </data>
+  <data name="VehicleRecognizedMessageFormat" xml:space="preserve">
+    <value>Vehicle recognized: {0}, engine: {1}. {2}</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="ValidationRequired" xml:space="preserve">
+    <value>Validation required</value>
+  </data>
+  <data name="LogOnModelPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="LogOnModelUsername" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="LogOnErrorMessage" xml:space="preserve">
+    <value>Logon error. Please check your credentials.</value>
+  </data>
+  <data name="WikiPageLinkSupport" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:support</value>
+  </data>
+  <data name="WikiPageLinkAgent" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:vtsagent</value>
+  </data>
+  <data name="DownloadLastAgentVersion" xml:space="preserve">
+    <value>Download last version</value>
+  </data>
+</root>

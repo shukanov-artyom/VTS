@@ -1,0 +1,24 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IVtsWebService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpsBinding_IVtsWebService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="Transport" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://vtswebservice.azurewebsites.net/VtsWebService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IVtsWebService"
+                contract="VTSWebService.IVtsWebService" name="BasicHttpBinding_IVtsWebService" />
+            <endpoint address="https://vtswebservice.azurewebsites.net/VtsWebService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpsBinding_IVtsWebService"
+                contract="VTSWebService.IVtsWebService" name="BasicHttpsBinding_IVtsWebService" />
+        </client>
+    </system.serviceModel>
+</configuration>

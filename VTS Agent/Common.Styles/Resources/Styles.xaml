@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="RegularButtonStyle.xaml" />
+        <ResourceDictionary Source="RegularListBoxStyle.xaml" />
+        <ResourceDictionary Source="RegularTextBoxStyle.xaml" />
+        <ResourceDictionary Source="RegularTextBlockStyle.xaml" />
+        <ResourceDictionary Source="RegularCheckBoxStyle.xaml" />
+        <ResourceDictionary Source="RegularComboBoxStyle.xaml" />
+        <ResourceDictionary Source="RegularDataGridStyle.xaml" />
+        <ResourceDictionary Source="RegularProgressBarStyle.xaml" />
+        <ResourceDictionary Source="RegularGroupBoxStyle.xaml" />
+
+        <ResourceDictionary Source="LargeTextBlockStyle.xaml" />
+        <ResourceDictionary Source="EventParameterButtonStyle.xaml" />
+        <ResourceDictionary Source="MainTabControlTabStyle.xaml" />
+        <ResourceDictionary Source="ApplicationBottomPanelGridStyle.xaml"/>
+        <ResourceDictionary Source="ApplicationHeaderBorderStyle.xaml"/>
+        <ResourceDictionary Source="ApplicationHeaderGridStyle.xaml"/>
+        <ResourceDictionary Source="ApplicationHeaderStyle.xaml"/>
+        <ResourceDictionary Source="MainTabControlTabItemTemplate.xaml"/>
+        <ResourceDictionary Source="RegularTabItemStyle.xaml"/>
+        <ResourceDictionary Source="CharacteristicsTabItemStyle.xaml"/>
+        <ResourceDictionary Source="LinkButtonStyle.xaml"/>
+        <ResourceDictionary Source="DataTreeViewItemContainerStyle.xaml"/>
+
+        <!-- Toolbar buttons -->
+        <ResourceDictionary Source="Toolbar\AddToolbarButtonStyle.xaml" />
+        <ResourceDictionary Source="Toolbar\EditToolbarButtonStyle.xaml" />
+        <ResourceDictionary Source="Toolbar\DeleteToolbarButtonStyle.xaml" />
+        <ResourceDictionary Source="Toolbar\ToolbarButtonStyle.xaml" />
+        
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

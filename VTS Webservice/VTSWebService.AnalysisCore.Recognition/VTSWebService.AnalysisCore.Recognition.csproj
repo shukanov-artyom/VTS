@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3686E4CA-AEF0-4B1F-9DF6-16F6CC207066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWebService.AnalysisCore.Recognition</RootNamespace>
+    <AssemblyName>VTSWebService.AnalysisCore.Recognition</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EngineRecognizerFactory.cs" />
+    <Compile Include="IEngineRecognizer.cs" />
+    <Compile Include="IVehicleModelRecognizer.cs" />
+    <Compile Include="IVehicleProductionYearRecognizer.cs" />
+    <Compile Include="Opel\OpelEngineRecognizer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Psa\EngineFamilyRecognizers\EngineFamilyRecognizerByEngineValue.cs" />
+    <Compile Include="Psa\EngineFamilyRecognizers\EngineFamilyRecognizerByFamilyValue.cs" />
+    <Compile Include="Psa\EngineFamilyRecognizers\PsaEngineFamilyRecognizer.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\EngineModelRecognizerDt.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\EngineModelRecognizerKr.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\EngineModelRecognizerMMC.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizer.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerDk.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerDv.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerEb.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerEc.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerEs.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerEwDw.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerPrince.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerTu.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerXu.cs" />
+    <Compile Include="Psa\EngineModelRecognizers\PsaEngineModelRecognizerXud.cs" />
+    <Compile Include="Psa\IPsaEngineModelRecognizer.cs" />
+    <Compile Include="Psa\PsaEngineModelRecognizerFactory.cs" />
+    <Compile Include="Psa\PsaEngineRecognizer.cs" />
+    <Compile Include="Psa\PsaVehicleModelRecognizer.cs" />
+    <Compile Include="Psa\PsaVehicleProductionYearRecognizer.cs" />
+    <Compile Include="VehicleInfoRecognizer.cs" />
+    <Compile Include="VehicleModelRecognizerFactory.cs" />
+    <Compile Include="VehicleProductionYearRecognizerFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VTS.AnalysisCore.Common\VTS.AnalysisCore.Common.csproj">
+      <Project>{3174442A-3049-4548-98C7-E0768F81BC6F}</Project>
+      <Name>VTS.AnalysisCore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.AnalysisCore.Enums\VTSWebService.AnalysisCore.Enums.csproj">
+      <Project>{7A1D1C6F-0073-4CB8-AAF0-CBFF7E569E14}</Project>
+      <Name>VTSWebService.AnalysisCore.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DataAccess\VTSWebService.DataAccess.csproj">
+      <Project>{845699A2-6354-4CD5-BD38-1D441B3EB72C}</Project>
+      <Name>VTSWebService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.VendorInfo\VTSWebService.VendorInfo.csproj">
+      <Project>{D4BD36F2-9012-4A4F-A2B9-BA567B3B0902}</Project>
+      <Name>VTSWebService.VendorInfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

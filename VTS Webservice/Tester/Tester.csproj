@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA0EECEC-B7C7-4475-B121-BB2F06366876}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tester</RootNamespace>
+    <AssemblyName>Tester</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared">
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticDataAutoUpdateTester.cs" />
+    <Compile Include="PortableDataFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\serv\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.AgentVersionDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.AnalyticRuleSettingsDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.PsaDatasetDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.SystemNewsDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.UserDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.VehicleCharacteristicsDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.VehicleDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.VehicleEventDto.datasource" />
+    <None Include="Properties\DataSources\VTSWebService.DataContracts.VehicleInformationDto.datasource" />
+    <None Include="Service References\serv\VtsWebService.wsdl" />
+    <None Include="Service References\serv\VtsWebService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\serv\VtsWebService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\serv\VtsWebService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\serv\VtsWebService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tester.DataImport\Tester.DataImport.csproj">
+      <Project>{6B050073-D7A9-4F30-84A0-C7821C29D8DC}</Project>
+      <Name>Tester.DataImport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTS.AnalysisCore.Common\VTS.AnalysisCore.Common.csproj">
+      <Project>{3174442A-3049-4548-98C7-E0768F81BC6F}</Project>
+      <Name>VTS.AnalysisCore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.AnalysisCore.Recognition\VTSWebService.AnalysisCore.Recognition.csproj">
+      <Project>{3686E4CA-AEF0-4B1F-9DF6-16F6CC207066}</Project>
+      <Name>VTSWebService.AnalysisCore.Recognition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DataAccess\VTSWebService.DataAccess.csproj">
+      <Project>{845699A2-6354-4CD5-BD38-1D441B3EB72C}</Project>
+      <Name>VTSWebService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DataContracts\VTSWebService.DataContracts.csproj">
+      <Project>{C067786C-4CC0-4242-AD8E-37256C27DF63}</Project>
+      <Name>VTSWebService.DataContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DomainObjects.Assemblers\VTSWebService.DomainObjects.Assemblers.csproj">
+      <Project>{2DFB7755-EEC6-48FC-8B7B-2A909E51DB8F}</Project>
+      <Name>VTSWebService.DomainObjects.Assemblers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.Emailing\VTSWebService.Emailing.csproj">
+      <Project>{F2C12097-8300-4D88-8C95-5AAED541E6AC}</Project>
+      <Name>VTSWebService.Emailing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.VendorInfo\VTSWebService.VendorInfo.csproj">
+      <Project>{D4BD36F2-9012-4A4F-A2B9-BA567B3B0902}</Project>
+      <Name>VTSWebService.VendorInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService\VTSWebService.csproj">
+      <Project>{C96E807B-D8EF-4632-AF71-F7FEA9774F36}</Project>
+      <Name>VTSWebService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\serv\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\serv\VtsWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\serv\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\serv\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\serv\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

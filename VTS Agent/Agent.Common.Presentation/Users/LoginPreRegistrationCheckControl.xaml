@@ -1,0 +1,18 @@
+﻿<UserControl 
+    x:Class="Agent.Common.Presentation.Users.LoginPreRegistrationCheckControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:progressBar="clr-namespace:Agent.Common.Presentation.ProgressBar">
+    <StackPanel
+        Orientation="Horizontal">
+        <progressBar:CircularProgressBarTiny
+            VerticalAlignment="Center"
+            Visibility="Collapsed"
+            x:Name="progressBarCircular"
+            Margin="7,0,0,0"/>
+        <TextBlock
+            VerticalAlignment="Center"
+            x:Name="textBlock"
+            Margin="7,0,0,0"/>
+    </StackPanel>
+</UserControl>

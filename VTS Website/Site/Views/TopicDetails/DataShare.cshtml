@@ -1,0 +1,70 @@
+﻿@using Html
+@using Html.Models
+@{
+    int culture = SiteSession.CurrentUICulture;
+    ViewBag.Title = Resource.PageHeaderDataShare;
+}
+
+<div class="root-element">
+    <h1>@Resource.PageHeaderDataShare</h1>
+    <p>@Resource.PageTextDataShare1</p>
+    <ul>
+        <li>
+            @Resource.PageTextDataShareListItem1
+        </li>
+        <li>
+            @Resource.PageTextDataShareListItem2
+        </li>
+    </ul>
+    <p>@Resource.PageTextDataShare2</p>
+    <div class="center-image-holder">
+        <img src="../content/images/dataShareIllustration1.png"/>
+    </div>
+    <h2>@Resource.PageHeaderDataShare2</h2>
+    <p>@Resource.PageTextDataShare4</p>
+    <h2>@Resource.PageHeaderDataShare3</h2>
+    <p>@Resource.PageTextDataShare5</p>
+    <h2>@Resource.PageHeaderDataShare4</h2>
+    <p>@Resource.PageTextDataShare6</p>
+    <div>
+        <h2>@Resource.PageHeaderDataCapture4</h2>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem1Link">@Resource.PageTextDataShareWikiItem1Text</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem2Link">@Resource.PageTextDataShareWikiItem2Text</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem3Link">@Resource.PageTextDataShareWikiItem3Text</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem4Link">@Resource.PageTextDataShareWikiItem4Text</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem5Link">@Resource.PageTextDataShareWikiItem5Text</a></h3>
+            </div>
+        </div>
+        <div class="wiki-link-block">
+            <div>
+                <img src="../content/images/wiki.png"/>
+                <h3><a href="@Resource.PageTextDataShareWikiItem6Link">@Resource.PageTextDataShareWikiItem6Text</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+

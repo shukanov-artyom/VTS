@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <FxCopDir>$(SolutionDir)Tools\FxCop\</FxCopDir> 
+        <CodeAnalysisCulture>en-US</CodeAnalysisCulture>
+        <CodeAnalysisRuleSet>$(SolutionDir)FxCop.ruleset</CodeAnalysisRuleSet>
+        <RunCodeAnalysis>true</RunCodeAnalysis> 
+        <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <Import Project="$(FxCopDir)Msbuild\Microsoft.CodeAnalysis.Targets" />
+
+    <Target Name="CodeAnalysisLogHeader" BeforeTargets="RunCodeAnalysis" Condition="$(RunCodeAnalysis) == 'true'">
+        <Message Text="Text, Executing Code Analysis (FxCop) on $(MsBuildProjectName)" Importance="High" />
+    </Target>
+</Project>

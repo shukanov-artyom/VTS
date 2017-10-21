@@ -1,0 +1,63 @@
+﻿#steps-panel {
+    overflow: hidden;
+    margin-top: 10px;
+    background: #818181;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.step-panel {
+    padding: 0;
+    width: 292px;
+    float: left;
+    margin-left: 20px;
+    background: #818181
+}
+
+.step-text-holder {
+    background-color: #919191;
+    padding-left: 4px;
+    padding-right: 4px;
+    height: 80px;
+}
+.step-text-holder p {
+    color: black;
+}
+
+.step-image-holder{
+    background: silver;
+    height: 250px;
+}
+
+.step-image-holder:hover{
+    background: #fdb404;
+    height: 250px;
+}
+
+.step-image-holder p {
+    float: right;
+    margin-top: 210px;
+    margin-right:5%
+}
+
+.step-caption {
+    float: left;
+}
+
+.step-caption h2 {
+    margin-left: 10px;
+    margin-top: 0px;
+    color: #036;
+}
+
+#step1-image-holder {
+    background-image:url('../Images/step1.png');
+}
+
+#step2-image-holder {
+    background-image:url('../Images/step2.png');
+}
+
+#step3-image-holder {
+    background-image:url('../Images/step3.png');
+}

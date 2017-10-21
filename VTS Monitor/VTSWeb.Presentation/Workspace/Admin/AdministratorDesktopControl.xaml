@@ -1,0 +1,170 @@
+﻿<Common1:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Admin.AdministratorDesktopControl" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common1="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="partnersButton"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="50"
+            Width="50" 
+            Click="PartnersButtonClick" />
+        
+        <Button
+            x:Name="endUsersButton"
+            Grid.Column="1"
+            Grid.Row="3"
+            Height="50"
+            Width="50"/>
+
+        <!--Button
+            Click="LicensesButtonClicked"
+            x:Name="licensesButton"
+            Grid.Column="1"
+            Grid.Row="7"
+            Height="50"
+            Width="50"/-->
+
+        <!--Button
+            x:Name="registrationKeysButton"
+            Grid.Column="1"
+            Grid.Row="5"
+            Height="50"
+            Width="50" 
+            Click="RegistrationKeysButtonClick" /-->
+
+        <Button
+            x:Name="analyticRulesSettingsButton"
+            Grid.Column="1"
+            Grid.Row="9"
+            Height="50"
+            Width="50" 
+            Click="AnalyticRulesSettingsButtonClick" />
+
+        <Button
+            x:Name="buttonStatisticsGeneration"
+            Grid.Column="1"
+            Grid.Row="11"
+            Height="50"
+            Width="50" 
+            Click="ButtonClickStatisticsGeneration" />
+
+        <Button
+            x:Name="buttonStatisticsAggregation"
+            Grid.Column="1"
+            Grid.Row="13"
+            Height="50"
+            Width="50" 
+            Click="ButtonClickStatisticsAggregation" />
+
+        <Button
+            x:Name="buttonSystemNews"
+            Grid.Column="1"
+            Grid.Row="15"
+            Height="50"
+            Width="50" 
+            Click="ButtonClickSystemNews" />
+
+        <Common1:ExplanatoryTextBlock
+            Grid.Row="1"
+            Grid.Column="3"
+            MainText="{Localization:TranslateExtension 
+                    Key=Partners}"
+            ExplanatoryText="{Localization:TranslateExtension 
+                    Key=PartnersExplanatoryText}"/>
+
+        <TextBlock
+            Text="{Localization:Translate Key=EndUsers}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="3"
+            Grid.Column="3"/>
+
+        <!--TextBlock
+            Text="{Localization:Translate Key=Licenses}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="7"
+            Grid.Column="3"/>
+
+        <TextBlock
+            Text="{Localization:Translate Key=RegistrationKeys}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="5"
+            Grid.Column="3"/-->
+
+        <TextBlock
+            Text="{Localization:Translate Key=AnalyticRulesSettings}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="9"
+            Grid.Column="3"/>
+
+        <TextBlock
+            Text="{Localization:Translate Key=StatisticsGeneration}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="11"
+            Grid.Column="3"/>
+
+        <TextBlock
+            Text="{Localization:Translate Key=StatisticsAggregation}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="13"
+            Grid.Column="3"/>
+
+        <TextBlock
+            Text="{Localization:Translate Key=SystemNews}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="15"
+            Grid.Column="3"/>
+    </Grid>
+</Common1:NavigatablePage>

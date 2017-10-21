@@ -1,0 +1,179 @@
+﻿<Window x:Class="Agent.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+        xmlns:Localization2="clr-namespace:Agent.Localization" 
+        xmlns:users="clr-namespace:Agent.Common.Presentation.Users;assembly=Agent.Common.Presentation"
+        xmlns:Workspace="clr-namespace:Agent.Workspace;assembly=Agent.Workspace"
+        Title="{Localization:Translate MainWindowTitle}"
+        Width="900"
+        Height="600"
+        UseLayoutRounding="True" 
+        SnapsToDevicePixels="True"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Grid
+            Style="{StaticResource ApplicationHeaderGridStyle}"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition 
+                    x:Name="titleColumn"
+                    Width="Auto" />
+                <ColumnDefinition 
+                    x:Name="preSlashLineColumn"
+                    Width="15" />
+                <ColumnDefinition 
+                    x:Name="slashLineColumn"
+                    Width="70" />
+                <ColumnDefinition 
+                    x:Name="upperLineColumn"
+                    Width="*" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="1"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+            <Border
+                Grid.Column="0"
+                Grid.Row="0"
+                Style="{StaticResource ApplicationHeaderBorderStyle}">
+            </Border>
+            <TextBlock
+                Grid.Column="1"
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Style="{StaticResource ApplicationHeaderStyle}"
+                Text="{Localization:Translate ApplicationHeader}">
+            </TextBlock>
+            
+            <StackPanel
+                Height="1"
+                Grid.Row="3"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Background="DarkGray">
+            </StackPanel>
+            
+            <Line
+                StrokeThickness="1"
+                Stroke="DarkGray"
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="3"
+                X2="86"
+                Y1="34"
+                X1="15"
+                Y2="0">
+            </Line>
+
+            <StackPanel
+                Height="1"
+                Grid.Column="4"
+                Grid.Row="1"
+                Background="DarkGray">
+            </StackPanel>
+
+            <Grid
+                Grid.Column="3"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                HorizontalAlignment="Right"
+                Margin="0,5,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <users:LoggedUserToolbarItemControl
+                    x:Name="controlLoggeUser"
+                    Grid.Column="0"/>
+
+                <Rectangle 
+                    Grid.Column="1"
+                    Height="30"
+                    Width="1"
+                    Fill="DarkGray"/>
+
+                <Button
+                    Grid.Column="2"
+                    MinHeight="23"
+                    Click="ShowAboutWindow"
+                    Margin="10,0,10,0">
+                    <TextBlock
+                        Margin="5,0,5,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="{Localization:Translate AboutText}"/>
+                </Button>
+
+                <Localization2:LanguageSelectionControl 
+                    Grid.Column="3"/>
+                
+                <!--Button
+                    MinHeight="23"
+                    Click="ShowAnalyseWindow"
+                    Margin="0,0,10,0">
+                    <TextBlock
+                        Margin="5,0,5,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="{Localization:Translate AnalyseDataButtonText}"/>
+                </Button-->
+            </Grid>
+        </Grid>
+
+        <Workspace:PsaDataControl 
+            x:Name="psaDataControl"
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="3,3,0,0"/>
+
+        <Grid
+            x:Name="bottomBarGrid"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Grid.Row="2"
+            Style="{StaticResource ApplicationBottomPanelGridStyle}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Margin="10,0,0,0"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Text="{Localization:TranslateExtension Disclaimer}"/>
+            <TextBlock 
+                Grid.Column="2"
+                x:Name="textBlockVersion"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,0,20,0"
+                FontSize="12"/>
+        </Grid>
+    </Grid>
+</Window>

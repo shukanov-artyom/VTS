@@ -1,0 +1,13 @@
+﻿@model Html.Models.SystemNewsViewModel
+
+@{
+    ViewBag.Title = "VTS News Management - Edit News item";
+}
+
+<div class="root-element">
+    @using (Html.BeginForm())
+    {
+        @Html.EditorForModel(Model)
+        <input type="submit" value="Save" />
+    }
+</div>

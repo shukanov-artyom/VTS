@@ -1,0 +1,103 @@
+﻿<UserControl
+    x:Class="VTSWeb.Presentation.Workspace.Partner.DataUpload.UploadedDataControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:BindingConverters="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:TreeItems1="clr-namespace:VTSWeb.Presentation.Workspace.Common.TreeItems;assembly=VTSWeb.Presentation.Workspace.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    xmlns:Graph="clr-namespace:VTSWeb.Presentation.Graph;assembly=VTSWeb.Presentation.Graph">
+
+    <UserControl.Resources>
+        <sdk:HierarchicalDataTemplate 
+            x:Key="ParameterTemplate">
+            <Grid>
+                <TreeItems1:ParameterTreeItemControl/>
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+        
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Parameters}"
+            ItemTemplate="{StaticResource ParameterTemplate}"
+            x:Key="ParametersSetTemplate">
+            <Grid>
+                <TreeItems1:ParametersSetTreeItemControl/>
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+        
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=ParametersSets}"
+            ItemTemplate="{StaticResource ParametersSetTemplate}"
+            x:Key="TraceTemplate">
+            <Grid
+                x:Name="traceTemplate">
+                <TreeItems1:TraceTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+        
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Traces}"
+            ItemTemplate="{StaticResource TraceTemplate}"
+            x:Key="VehicleTemplate">
+            <Grid
+                x:Name="gridVehicleTemplate">
+                <TreeItems1:VehicleTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+    </UserControl.Resources>
+    
+    <Grid
+        x:Name="mainGrid"
+        SizeChanged="OnGridSizeChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.Resources>
+            <ResourceDictionary>
+                <BindingConverters:InverseBoolValueConverter
+                x:Key="BoolValueConverter" />
+            </ResourceDictionary>
+        </Grid.Resources>
+
+        <BindingConverters:HeaderedBorderControl
+            Header="{Localization:Translate Key=HeaderDataTree}"
+            Grid.Column="1"
+            Grid.Row="1"
+            x:Name="mainTreeViewBorderControl">
+            <sdk:TreeView 
+                MinHeight="300"
+                IsEnabled="{Binding Path=IsWaitingMode, 
+                    Converter={StaticResource BoolValueConverter},
+                    Mode=TwoWay}"
+                SelectedItemChanged="OnGridSelectedItemChanged"
+                ItemsSource="{Binding Path=ByVehicle, 
+                    Mode=OneWay}"
+                ItemTemplate="{StaticResource VehicleTemplate}"
+                BorderThickness="0">
+            </sdk:TreeView>
+        </BindingConverters:HeaderedBorderControl>
+
+        <BindingConverters:HeaderedBorderControl
+            Header="{Localization:Translate Key=HeaderDataGraphs}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            x:Name="controlUpperLowerControls"
+            Grid.Column="3"
+            Grid.Row="1">
+            <Graph:DataGraphsControl 
+                MinHeight="300"/>
+        </BindingConverters:HeaderedBorderControl>
+    </Grid>
+</UserControl>

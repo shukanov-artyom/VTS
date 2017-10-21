@@ -1,0 +1,3567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivatedText" xml:space="preserve">
+    <value>Актываваная</value>
+  </data>
+  <data name="AddressColonText" xml:space="preserve">
+    <value>Адрас:</value>
+  </data>
+  <data name="AddressText" xml:space="preserve">
+    <value>Адрас</value>
+  </data>
+  <data name="AfterVehicleRegisteredMessage" xml:space="preserve">
+    <value>Пасля рэгiстрацыi машыны вы зможаце захоўваць для яе дыягнастычныя дадзеныя, ўносіць запісы аб падзеях (аб замене дэталяў, 
+праведзеных ТО і т.п) і праглядаць яе статыстычныя і храналагічныя параметры.</value>
+  </data>
+  <data name="AnnulateText" xml:space="preserve">
+    <value>Ануляваць</value>
+  </data>
+  <data name="AppHeader" xml:space="preserve">
+    <value>VTS Манiтор</value>
+  </data>
+  <data name="BackText" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="BasedOnFileLabel" xml:space="preserve">
+    <value>(выходзячы з дадзеных загружанага файла)</value>
+  </data>
+  <data name="BlockText" xml:space="preserve">
+    <value>Заблакаваць</value>
+  </data>
+  <data name="CancelKeyButtonText" xml:space="preserve">
+    <value>Ануляваць</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Адмена</value>
+  </data>
+  <data name="CheckDataConsistency" xml:space="preserve">
+    <value>Праверце правільнасць дадзеных</value>
+  </data>
+  <data name="CheckingImportableData" xml:space="preserve">
+    <value>Праверка дадзеных перад захоўваннем</value>
+  </data>
+  <data name="CheckLoginAvailabilityMessage" xml:space="preserve">
+    <value>Праверце імя на дасяжнасць каб працягнуць рэгістрацыю</value>
+  </data>
+  <data name="CheckLoginText" xml:space="preserve">
+    <value>праверыць</value>
+  </data>
+  <data name="CheckText" xml:space="preserve">
+    <value>праверыць</value>
+  </data>
+  <data name="ChronoParameterIdleRpmColdExplanatoryText" xml:space="preserve">
+    <value>&lt;Comment&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmColdText" xml:space="preserve">
+    <value>Халодны старт</value>
+  </data>
+  <data name="ChronoParameterIdleRpmHotExplanatoryText" xml:space="preserve">
+    <value>&lt;Comment&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmHotText" xml:space="preserve">
+    <value>Гарачы старт</value>
+  </data>
+  <data name="ChronoParameterIdleRpmMediumExplanatoryText" xml:space="preserve">
+    <value>&lt;Comment&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmMediumText" xml:space="preserve">
+    <value>Сярэдні старт</value>
+  </data>
+  <data name="ChronoParamGroupDisplayNameEngine" xml:space="preserve">
+    <value>Рухавік</value>
+  </data>
+  <data name="ChronoParamGroupDisplayNameEngineInjection" xml:space="preserve">
+    <value>Рухавік – Упырск</value>
+  </data>
+  <data name="ChronoParamTypeDisplayNameIdleEngineRpm" xml:space="preserve">
+    <value>Абарачэнні халастога ходу</value>
+  </data>
+  <data name="ChronoParamTypeDisplayNameInjectorCorrections" xml:space="preserve">
+    <value>Карэкцыі інжэктараў</value>
+  </data>
+  <data name="CleintRegistrationWindowHeader" xml:space="preserve">
+    <value>Рэгістрацыя ўліковага запісу</value>
+  </data>
+  <data name="ClientKeyExplanatoryText" xml:space="preserve">
+    <value>На кліенцкі ключ можна зарэгістраваць толькі адну машыну, таму ў дадзеным спісе не паказаны ключы, на якія ўжо зарэгістраваны машыны.</value>
+  </data>
+  <data name="ClientKeysText" xml:space="preserve">
+    <value>Кліенцкія ключы</value>
+  </data>
+  <data name="ClientRegistrationKeys" xml:space="preserve">
+    <value>Рэгістрацыйныя ключы для кліентаў</value>
+  </data>
+  <data name="ClientsFreeKeysText" xml:space="preserve">
+    <value>Свабодныя ключы для кліентаў</value>
+  </data>
+  <data name="CommentText" xml:space="preserve">
+    <value>Каментар</value>
+  </data>
+  <data name="CommentTextSavingMessage" xml:space="preserve">
+    <value>Тэкст каментара будзе за'аваны пасля націску Enter</value>
+  </data>
+  <data name="ContactDataColon" xml:space="preserve">
+    <value>Кантактныя дадзеныя:</value>
+  </data>
+  <data name="ContactDataText" xml:space="preserve">
+    <value>Кантактныя дадзеныя:</value>
+  </data>
+  <data name="ContactPersonColonText" xml:space="preserve">
+    <value>Кантактная асоба:</value>
+  </data>
+  <data name="ContactPersonText" xml:space="preserve">
+    <value>Кантактная асоба:</value>
+  </data>
+  <data name="ContinueText" xml:space="preserve">
+    <value>Працягнуць</value>
+  </data>
+  <data name="CreateButtonText" xml:space="preserve">
+    <value>Стварыць</value>
+  </data>
+  <data name="CreateText" xml:space="preserve">
+    <value>Стварыць</value>
+  </data>
+  <data name="CurrentSelectedFileStubTextName" xml:space="preserve">
+    <value>Не абраны</value>
+  </data>
+  <data name="CurrentUploadedFileLabel" xml:space="preserve">
+    <value>Абраць файл з дадзенымі:</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Кліенты</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Дадзеныя</value>
+  </data>
+  <data name="DatabaseInformationRetrievalError" xml:space="preserve">
+    <value>Памылка пры атрыманні інфармацыі з базы дадзеных</value>
+  </data>
+  <data name="DataContentsVehicleLabel" xml:space="preserve">
+    <value>Дадзеныя для машыны:</value>
+  </data>
+  <data name="DataInputCheck" xml:space="preserve">
+    <value>Праверка ўведзеных дадзеных</value>
+  </data>
+  <data name="DataPersistedExplanation" xml:space="preserve">
+    <value>Вы можаце прагледзець усе захаваныя дадзеныя ў падзеле "Дадзеныя". Для ўсёй загружанай дыягнастычнай інфармацыі сістэма аўтаматычна вылічыць храналагічныя параметры і выдасць папярэджанні, якія можна праглядзець у адпаведным падзеле.</value>
+  </data>
+  <data name="DataPersistedHeader" xml:space="preserve">
+    <value>Дадзеныя захаваны</value>
+  </data>
+  <data name="DataSaveToDatabase" xml:space="preserve">
+    <value>Захаванне дадзеных у базу</value>
+  </data>
+  <data name="DatasetsQuantityPerFileLabel" xml:space="preserve">
+    <value>Набораў дадзеных у файле:</value>
+  </data>
+  <data name="DatasetsText" xml:space="preserve">
+    <value>Наборы дадзеных:</value>
+  </data>
+  <data name="DataTodisplayChoose" xml:space="preserve">
+    <value>Выбар дадзеных, якія адлюстроўваюцца</value>
+  </data>
+  <data name="DaysBeforeExpired" xml:space="preserve">
+    <value>Дзён да выцячэння</value>
+  </data>
+  <data name="DaysText" xml:space="preserve">
+    <value>дзён</value>
+  </data>
+  <data name="DeliveredKeyRadioButtonRegText" xml:space="preserve">
+    <value>Выкарыстоўваючы выдадзены карыстальніцкі ключ</value>
+  </data>
+  <data name="DeliveredKeysText" xml:space="preserve">
+    <value>Выдадзеныя канчатковым карыстальнікам ключы</value>
+  </data>
+  <data name="DeliveredText" xml:space="preserve">
+    <value>Выданыя</value>
+  </data>
+  <data name="DeliveredToClient" xml:space="preserve">
+    <value>Цi выдадзены клiенту</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Апiсанне</value>
+  </data>
+  <data name="DetailsText" xml:space="preserve">
+    <value>Падрабязнасцi</value>
+  </data>
+  <data name="DgKyDlvdd" xml:space="preserve">
+    <value>Рэгістрацыйны ключ пазначаны як дастаўлены кліенту. Цяпер на гэты ключ можа быць зарэгістраваная машына і ўнесены дыягнастычныя дадзеныя.</value>
+  </data>
+  <data name="DiagnosticData" xml:space="preserve">
+    <value>Дыягнастычня дадзеныя</value>
+  </data>
+  <data name="DiagnosticData1" xml:space="preserve">
+    <value>Дыягнастычня дадзеныя</value>
+  </data>
+  <data name="DiagnosticDataUpload" xml:space="preserve">
+    <value>Загрузка дыягнастычных дадзеных</value>
+  </data>
+  <data name="EmailColonText" xml:space="preserve">
+    <value>E-Mail:</value>
+  </data>
+  <data name="EmailLabelText" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="EmailNotSetErrorMessage" xml:space="preserve">
+    <value>Адрас электроннай пошты не зададзены</value>
+  </data>
+  <data name="EmailText" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EmitentText" xml:space="preserve">
+    <value>Эмiтэнт</value>
+  </data>
+  <data name="EmptyUserRadioButtonRegText" xml:space="preserve">
+    <value>На карыстальнiка, якi яшчэ не мае зарэгiстраваных машын</value>
+  </data>
+  <data name="EndUsers" xml:space="preserve">
+    <value>Канчатковыя карыстальнікі</value>
+  </data>
+  <data name="EnterTheSystem" xml:space="preserve">
+    <value>Увайдзіце ў сістэму</value>
+  </data>
+  <data name="ErrorCreatingKey" xml:space="preserve">
+    <value>Памылка пры стварэннi ключа</value>
+  </data>
+  <data name="ErrorSavingData" xml:space="preserve">
+    <value>Памылка пры захаваннi дадзеных</value>
+  </data>
+  <data name="ErrorTryRefreshRelogin" xml:space="preserve">
+    <value>Памылка. Паспрабуйце аднавiць альбо пералагiньцеся.</value>
+  </data>
+  <data name="ExitText" xml:space="preserve">
+    <value>Выхад</value>
+  </data>
+  <data name="ExpiredTextFem" xml:space="preserve">
+    <value>Выцекла</value>
+  </data>
+  <data name="ExtraVehicleRadioButtonRegText" xml:space="preserve">
+    <value>Як дадатковую для зарэгiстраванага карытсальнiка</value>
+  </data>
+  <data name="FileCloseButtonLabel" xml:space="preserve">
+    <value>Зачынiць файл...</value>
+  </data>
+  <data name="FileUploadButtonLabel" xml:space="preserve">
+    <value>Адчынiць файл...</value>
+  </data>
+  <data name="FileUploadRequestLabel" xml:space="preserve">
+    <value>Абярыце файл з дадзенымі для загрузкi:</value>
+  </data>
+  <data name="For1000Rpm" xml:space="preserve">
+    <value>Пры 1000 аб/хв</value>
+  </data>
+  <data name="For2000Rpm" xml:space="preserve">
+    <value>Пры 2000 аб/хв</value>
+  </data>
+  <data name="For3000Rpm" xml:space="preserve">
+    <value>Пры 3000 аб/хв</value>
+  </data>
+  <data name="ForwardText" xml:space="preserve">
+    <value>Уперад</value>
+  </data>
+  <data name="FreePartnerKeysLabelText" xml:space="preserve">
+    <value>Свабодныя ключы для рэгістрацыі партнёраў</value>
+  </data>
+  <data name="FreePartnerRegistrationKeys" xml:space="preserve">
+    <value>Свабодныя рэгістрацыйныя ключы</value>
+  </data>
+  <data name="FreeText" xml:space="preserve">
+    <value>Свабодныя</value>
+  </data>
+  <data name="FreeTextFem" xml:space="preserve">
+    <value>Свабодная</value>
+  </data>
+  <data name="GeneralPeriod" xml:space="preserve">
+    <value>Агульны тэрмiн дзеяння</value>
+  </data>
+  <data name="GeneralText" xml:space="preserve">
+    <value>Агульны</value>
+  </data>
+  <data name="ImportImpossibleCaption" xml:space="preserve">
+    <value>Не магу iмпартаваць</value>
+  </data>
+  <data name="IncorrectKeyProvidedText" xml:space="preserve">
+    <value>Уведзены некарэктны ключ, звяжыцеся з пастаўшчыком паслуг для атрымання сапраўднага рэгістрацыйнага ключа.</value>
+  </data>
+  <data name="InjectorCorrectionsMedianValuesExplanatoryText" xml:space="preserve">
+    <value>Асераднёныя па абаротах паказчыкі карэкцыі фарсунак дызельнага рухавіка. Вылічаюцца пры наяўнасці дадзеных для 1000, 2000 і 3000 аб/хв</value>
+  </data>
+  <data name="InjectorCorrectionsMedianValuesText" xml:space="preserve">
+    <value>Сярэднiя значэннi</value>
+  </data>
+  <data name="InjectorCorrectionsRangeValuesExplanatoryText" xml:space="preserve">
+    <value>Гранічныя (мін. і макс.) паказчыкі карэкцыі фарсунак дызельнага рухавіка. Вылічаюцца асобна для кожнай фарсункі пры 1000, 2000 і 3000 аб/хв</value>
+  </data>
+  <data name="InjectorCorrectionsRangeValuesText" xml:space="preserve">
+    <value>Гранiчныя значэннi</value>
+  </data>
+  <data name="IssuanceRequestOperationsText" xml:space="preserve">
+    <value>Аперацыі з запытамі на выдачу ліцэнзіі</value>
+  </data>
+  <data name="IssuanceRequestsText" xml:space="preserve">
+    <value>Запыты на выдачу</value>
+  </data>
+  <data name="KeyColumnName" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="KeysDeliveredToClientsText" xml:space="preserve">
+    <value>Ключы, якiя былi выдадзены клiентам</value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="KeyValueText" xml:space="preserve">
+    <value>Значэнне ключа</value>
+  </data>
+  <data name="KmText" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="LicenseAConsumptionExplanatoryText" xml:space="preserve">
+    <value>Для стварэння ключа актывуецца адна свабодная ліцэнзія класа A</value>
+  </data>
+  <data name="LicenseARadioButtonText" xml:space="preserve">
+    <value>А - для рэгістрацыі карыстальнікаў ці машын</value>
+  </data>
+  <data name="LicenseClassColonText" xml:space="preserve">
+    <value>Клас лiцензii:</value>
+  </data>
+  <data name="LicenseExpirationMessageStub" xml:space="preserve">
+    <value>Тэрмiн дзеяння ліцэнзіi для гэтай машыны скончыўся. Падоўжыць яго вы можаце на старонцы аперацый з ліцэнзіямі. Нумар ліцэнзіі: № {0}</value>
+  </data>
+  <data name="LicenseExpirationPeriodDisplayStringFormat" xml:space="preserve">
+    <value>мінае праз {0} дзён</value>
+  </data>
+  <data name="LicenseExpiredDaysStringFormat" xml:space="preserve">
+    <value>мiнула {0} дзён таму</value>
+  </data>
+  <data name="LicenseForProlongationText" xml:space="preserve">
+    <value>Ліцэнзія на прадаўжэнне:</value>
+  </data>
+  <data name="LicenseIssuanceRequestSend" xml:space="preserve">
+    <value>Адпраўка запыту на ліцэнзію</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep1" xml:space="preserve">
+    <value>Крок 1. Выбар тыпу і перыяду ліцэнзіі</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep2" xml:space="preserve">
+    <value>Крок 2. Выбар колькасці патрэбных ліцэнзій</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep3" xml:space="preserve">
+    <value>Крок 3. Пацвярджэнне правільнасці дадзеных</value>
+  </data>
+  <data name="LicenseIssuanceSendRequest" xml:space="preserve">
+    <value>Адправіць запыт</value>
+  </data>
+  <data name="LicenseNumberStringFormat" xml:space="preserve">
+    <value>Лiцензiя №{0} </value>
+  </data>
+  <data name="LicensePeriodDisplayStringFormat" xml:space="preserve">
+    <value>Перыяд: {0} дзён, </value>
+  </data>
+  <data name="LicensePeriodText" xml:space="preserve">
+    <value>Перыяд дзеяння ліцэнзіі:</value>
+  </data>
+  <data name="LicensePickUpExplanatoryMessage" xml:space="preserve">
+    <value>Абярыце ліцэнзію з спісу. Калі вы анулюеце ключ, ліцэнзія вернецца вам. Створаны ключ можна выдаць кліенту, каб ён змог зарэгістравацца ў сістэме. На выдадзены ключ можна ўнесці дадзеныя па машыне, каб кліент пасля рэгістрацыі змог іх прагледзець. Заўсёды адзначайце ключ як выдадзены перад тым як даставіць яго кліенту, каб іншы карыстальнік не выдаў гэты ключ іншаму кліенту.</value>
+  </data>
+  <data name="LicenseProlongationExplanatoryText" xml:space="preserve">
+    <value>Тут вы можаце паслаць запыт на падаўжэнне ліцэнзіі. Як толькі падаўжэнне ліцэнзіі будзе аплачана і адміністратар ўхваліць падаўжэнне, ліцэнзія зноў стане актыўнай.</value>
+    <comment>Изменить при автоматизации лицензирования</comment>
+  </data>
+  <data name="LicenseProlongationText" xml:space="preserve">
+    <value>падаўжэнне ліцэнзіі</value>
+  </data>
+  <data name="LicenseQuantityText" xml:space="preserve">
+    <value>Колькасць ліцэнзій:</value>
+  </data>
+  <data name="LicenseRequestBackText" xml:space="preserve">
+    <value>&lt; Назад</value>
+  </data>
+  <data name="LicenseRequestFailureText" xml:space="preserve">
+    <value>Няўдача. Паспрабуйце яшчэ раз, магчыма праблемы з падключэннем да сеткі.</value>
+  </data>
+  <data name="LicenseRequestFrowardText" xml:space="preserve">
+    <value>Далей &gt;</value>
+  </data>
+  <data name="LicenseRequestSentInformationText" xml:space="preserve">
+    <value>Запыт адпраўлены, яго стан вы можаце праверыць у раздзеле "Статус маіх запытаў."</value>
+  </data>
+  <data name="LicenseRequestToIssueText" xml:space="preserve">
+    <value>Запыт на ліцэнзію да выдачы:</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>Ліцэнзіі</value>
+  </data>
+  <data name="LicensesExplanatoryText" xml:space="preserve">
+    <value>Аперацыі з ліцэнзіямі для рэгістрацыі кліентаў і машын: запыт на атрыманне і падаўжэнне ліцэнзій, прагляд выдадзеных ліцэнзій і іх стану</value>
+  </data>
+  <data name="LicensesIssuedText" xml:space="preserve">
+    <value>ліцэнзіі выдадзены</value>
+  </data>
+  <data name="LicenseStartDateStringFormat" xml:space="preserve">
+    <value> ад {0:dd MMMM yyyy}</value>
+  </data>
+  <data name="LicenseText" xml:space="preserve">
+    <value>Лiцэнзiя</value>
+  </data>
+  <data name="LicReqQntt" xml:space="preserve">
+    <value>Запыт: ліцэнзія {0} ў колькасці {1}</value>
+  </data>
+  <data name="LoginAccessibilityCheckLabel" xml:space="preserve">
+    <value>Калі ласка, праверце цi дасяжна імя каб працягнуць рэгістрацыю</value>
+  </data>
+  <data name="LoginColon" xml:space="preserve">
+    <value>Логін:</value>
+  </data>
+  <data name="LoginInaccessibleLabel" xml:space="preserve">
+    <value>Такі лагін некарэктны ці ўжо заняты. Калі ласка, абярыце іншы.</value>
+  </data>
+  <data name="LoginIncorrectMessage" xml:space="preserve">
+    <value>Такі лагін некарэктны ці ўжо заняты. Калі ласка, абярыце іншы.</value>
+  </data>
+  <data name="LoginNotSetErrorMessage" xml:space="preserve">
+    <value>Лагін не зададзены</value>
+  </data>
+  <data name="LoginOccupiedErrorMessage" xml:space="preserve">
+    <value>Лагін ужо заняты</value>
+  </data>
+  <data name="LoginTextBlockText" xml:space="preserve">
+    <value>Лагiн:</value>
+  </data>
+  <data name="LoginWithNewAcc" xml:space="preserve">
+    <value>Увайсці ў сістэму пад новым акаунтам пасля завяршэння</value>
+  </data>
+  <data name="LogonHyperlinkButtonText" xml:space="preserve">
+    <value>Уваход у сістэму</value>
+  </data>
+  <data name="LogoutHyperlinkButtonText" xml:space="preserve">
+    <value>Выхад з сістэмы</value>
+  </data>
+  <data name="MadatoryDataText" xml:space="preserve">
+    <value>Абавязковыя дадзеныя</value>
+  </data>
+  <data name="MarkKeyAsDeliveredButtonText" xml:space="preserve">
+    <value>У выданыя</value>
+  </data>
+  <data name="MedianInjectorCorrDataHeader" xml:space="preserve">
+    <value>Асераднёныя значэння карэкцый інжэктараў</value>
+  </data>
+  <data name="MileageColon" xml:space="preserve">
+    <value>Прабег:</value>
+  </data>
+  <data name="MileageLabel" xml:space="preserve">
+    <value>Агульны прабег:</value>
+  </data>
+  <data name="MyLicensesText" xml:space="preserve">
+    <value>Ліцэнзіі ў маім распараджэнні</value>
+  </data>
+  <data name="NameColon" xml:space="preserve">
+    <value>Iмя:</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Iмя</value>
+  </data>
+  <data name="NameText1" xml:space="preserve">
+    <value>Iмя:</value>
+  </data>
+  <data name="NavigatablePageHeaderAvailableLicenses" xml:space="preserve">
+    <value>Лiцэнзii – дасяжныя</value>
+  </data>
+  <data name="NavigatablePageHeaderClients" xml:space="preserve">
+    <value>Клiенты</value>
+  </data>
+  <data name="NavigatablePageHeaderData" xml:space="preserve">
+    <value>Дадзеныя</value>
+  </data>
+  <data name="NavigatablePageHeaderDataAnalysis" xml:space="preserve">
+    <value>Аналiз дадзеных</value>
+  </data>
+  <data name="NavigatablePageHeaderDataUpload" xml:space="preserve">
+    <value>Загрузка дадзеных</value>
+  </data>
+  <data name="NavigatablePageHeaderDesktop" xml:space="preserve">
+    <value>Рабочы стол</value>
+  </data>
+  <data name="NavigatablePageHeaderLicenses" xml:space="preserve">
+    <value>Лiцэнзii</value>
+  </data>
+  <data name="NavigatablePageHeaderPartners" xml:space="preserve">
+    <value>Партнёры</value>
+  </data>
+  <data name="NavigatablePageHeaderRegKeys" xml:space="preserve">
+    <value>Рэгістрацыйныя ключы</value>
+  </data>
+  <data name="NavigatablePageHeaderVehicles" xml:space="preserve">
+    <value>Машыны</value>
+  </data>
+  <data name="NewKeyRadioButtonRegText" xml:space="preserve">
+    <value>Стварыць новы рэгістрацыйны ключ і ўнесці дадзеныя на яго</value>
+  </data>
+  <data name="NoDataSelectedForImport" xml:space="preserve">
+    <value>Дадзеныя для імпарту не выбраны. Абярыце дадзеныя і паспрабуйце яшчэ раз.</value>
+  </data>
+  <data name="ObligatoryData" xml:space="preserve">
+    <value>Абавязковыя дадзеныя</value>
+  </data>
+  <data name="OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OptionalData" xml:space="preserve">
+    <value>Апцыянальныя дадзеныя</value>
+  </data>
+  <data name="OptionalDataReminderText" xml:space="preserve">
+    <value>Гэтыя дадзеныя неабавязкова ўводзіць зараз, іх можна запоўніць ў любы час пасля рэгістрацыі на старонцы карыстацкага профілю.</value>
+  </data>
+  <data name="OptionalDataText" xml:space="preserve">
+    <value>Апцыянальныя дадзеныя</value>
+  </data>
+  <data name="OptionalRegDataMessage" xml:space="preserve">
+    <value>Гэтыя дадзеныя неабавязкова ўводзіць зараз, іх можна запоўніць ў любы час пасля рэгістрацыі на старонцы карыстацкага профілю.</value>
+  </data>
+  <data name="OrganizationColon" xml:space="preserve">
+    <value>Арганізацыя:</value>
+  </data>
+  <data name="OrgNameNotSetErrorMessage" xml:space="preserve">
+    <value>Назва арганізацыі не зададзена</value>
+  </data>
+  <data name="ParametersQuantityColon" xml:space="preserve">
+    <value>Колькасць параметраў:</value>
+  </data>
+  <data name="PartnerKeysText" xml:space="preserve">
+    <value>Партнёрскiя ключы</value>
+  </data>
+  <data name="PartnerLicensesOperationsText" xml:space="preserve">
+    <value>Аперацыі з ліцэнзіямі для партнёраў</value>
+  </data>
+  <data name="PartnerRegisterKeyEmissionWindowText" xml:space="preserve">
+    <value>Стварэнне ключа для рэгістрацыі партнёра</value>
+  </data>
+  <data name="PartnerRegistrationWindowHeader" xml:space="preserve">
+    <value>Рэгістрацыя партнёрскага ўліковага запісу</value>
+  </data>
+  <data name="Partners" xml:space="preserve">
+    <value>Партнёры</value>
+  </data>
+  <data name="PartnersExplanatoryText" xml:space="preserve">
+    <value>Спіс зарэгістраваных партнёраў, аперацыі з партнёрскімі ўліковымі запісамі</value>
+  </data>
+  <data name="PartnerVehiclesHeaderText" xml:space="preserve">
+    <value>Зарэгістраваныя машыны</value>
+  </data>
+  <data name="PartnerWhoHasRequestedText" xml:space="preserve">
+    <value>Партнёр, якi запытаў:</value>
+  </data>
+  <data name="PasswordColon" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="PasswordTextBlockText" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Тэлефон</value>
+  </data>
+  <data name="PhoneColonText" xml:space="preserve">
+    <value>Тэлефон:</value>
+  </data>
+  <data name="PhoneText" xml:space="preserve">
+    <value>Тэлефон:</value>
+  </data>
+  <data name="ProfileFilling" xml:space="preserve">
+    <value>Запаўненне профілю</value>
+  </data>
+  <data name="ProlongationPeriodQuestionText" xml:space="preserve">
+    <value>На які тэрмін будзем працягваць?</value>
+  </data>
+  <data name="ProlongationRequestAlreadyExists" xml:space="preserve">
+    <value>Памылка</value>
+  </data>
+  <data name="ProlongationRequestAlreadyExistsExplanation" xml:space="preserve">
+    <value>Запыт на падаўжэнне гэтай ліцэнзіі ўжо адпраўлены, і другі не можа быць створаны пакуль не адобраны першы. Звяжыцеся з адміністратарам - магчыма, гэта паскорыць апрацоўку запыту.</value>
+  </data>
+  <data name="ProlongationRequestOperationsText" xml:space="preserve">
+    <value>Падаўжэнне пратэрмінаваных ліцэнзій</value>
+  </data>
+  <data name="ProlongationRequestSent" xml:space="preserve">
+    <value>Запыт на падаўжэнне ліцэнзіі адпраўлены</value>
+  </data>
+  <data name="ProlongationRequestSentExplanation" xml:space="preserve">
+    <value>Як толькі запыт будзе адобраны, ліцэнзія зноў актывуецца і звязаныя з ёй дадзеныя будуць даступныя для прагляду.</value>
+    <comment>После отправки запроса на продление лицензии</comment>
+  </data>
+  <data name="ProlongationRequestsText" xml:space="preserve">
+    <value>Запыты на падаўжэнне</value>
+  </data>
+  <data name="ProlongLicenseText" xml:space="preserve">
+    <value>Прадоўжыць абранае</value>
+  </data>
+  <data name="ProlongText" xml:space="preserve">
+    <value>Прадоўжыць</value>
+  </data>
+  <data name="QuantityRequestedText" xml:space="preserve">
+    <value>Колькасць запытаных асобнікаў:</value>
+  </data>
+  <data name="RangeInjectorCorrDataHeader" xml:space="preserve">
+    <value>Калідор гранічных значэнняў карэкцый інжэктараў</value>
+  </data>
+  <data name="RefreshListText" xml:space="preserve">
+    <value>Aбнавіць спіс</value>
+  </data>
+  <data name="RefreshText" xml:space="preserve">
+    <value>Aбнавіць</value>
+  </data>
+  <data name="RegisteredClients" xml:space="preserve">
+    <value>Зарэгістраваныя кліенты</value>
+  </data>
+  <data name="RegisteredColon" xml:space="preserve">
+    <value>Зарэгістраваны:</value>
+  </data>
+  <data name="RegisteredPartners" xml:space="preserve">
+    <value>Зарэгістраваныя партнёры</value>
+  </data>
+  <data name="RegisteredToText" xml:space="preserve">
+    <value>Зарэгістравана на</value>
+  </data>
+  <data name="RegisterHyperlinkButtonText" xml:space="preserve">
+    <value>Рэгістрацыя</value>
+  </data>
+  <data name="RegisteringVehicleData" xml:space="preserve">
+    <value>Дадзеныя аб машыне, якая рэгiструецца</value>
+  </data>
+  <data name="RegisterSelectedWay" xml:space="preserve">
+    <value>Зарэгістраваць абраным спосабам -&gt;</value>
+  </data>
+  <data name="RegistrationKeyCreation" xml:space="preserve">
+    <value>Стварэнне рэгістрацыйнага ключа</value>
+  </data>
+  <data name="RegistrationKeyDeliveranceText" xml:space="preserve">
+    <value>Выдача ключа</value>
+  </data>
+  <data name="RegistrationKeyFormatMessage" xml:space="preserve">
+    <value>Фармат рэгістрацыйнага ключа:</value>
+  </data>
+  <data name="RegistrationKeyForVehicleMessage" xml:space="preserve">
+    <value>Ключ, на які зарэгістраваная машына, пазначаны як выдадзены кліенту. Пасля рэгістрацыі ў сістэме з гэтым ключом кліент зможа праглядзець захаваныя дадзеныя аб сваёй машыне.</value>
+  </data>
+  <data name="RegistrationKeys" xml:space="preserve">
+    <value>Рэгістрацыйныя ключы</value>
+  </data>
+  <data name="RegistrationKeySelectionText" xml:space="preserve">
+    <value>Выбар рэгістрацыйнага ключа</value>
+  </data>
+  <data name="RegistrationKeysExplanatoryText" xml:space="preserve">
+    <value>Аперацыі з рэгістрацыйнымі ключамі: cтварэнне рэг. ключоў (спатрэбіцца ліцэнзія класа А), ануляванне ключоў або ўстанаўленне адзнакі аб выдачы ключа кліенту.</value>
+  </data>
+  <data name="RegistrationProcessText" xml:space="preserve">
+    <value>Працэс рэгістрацыі</value>
+  </data>
+  <data name="RegKeyActivation" xml:space="preserve">
+    <value>Актывацыя рэгістрацыйнага ключа</value>
+  </data>
+  <data name="RegKeyExplanationText" xml:space="preserve">
+    <value>Рэгістрацыйны ключ - унікальны ідэнтыфікатар (GUID), які дазволіць сістэме распазнаць вас як карыстальніка і прадаставіць адпаведны ўзровень доступу пасля рэгістрацыі.</value>
+  </data>
+  <data name="RegKeyInputRequest" xml:space="preserve">
+    <value>Калі ласка, увядзіце ваш рэгістрацыйны ключ:</value>
+  </data>
+  <data name="RemoveText" xml:space="preserve">
+    <value>Выдалiць</value>
+  </data>
+  <data name="RequestForLicenseText" xml:space="preserve">
+    <value>Запытаць ліцэнзію</value>
+  </data>
+  <data name="RequestsStatusText" xml:space="preserve">
+    <value>Статус маіх запытаў</value>
+  </data>
+  <data name="ResetText" xml:space="preserve">
+    <value>Скiнуць</value>
+  </data>
+  <data name="RKCancT" xml:space="preserve">
+    <value>Ануляванне ключа</value>
+  </data>
+  <data name="RKCancWrn" xml:space="preserve">
+    <value>Вы збіраецеся ануляваць выдадзены карыстальніку ключ. Пасля гэтага карыстальнік ня зможа выкарыстаць яго для рэгістрацыі. Працягнуць?</value>
+  </data>
+  <data name="RKCcldT" xml:space="preserve">
+    <value>Рэгістрацыйны ключ ануляваны. Ліцэнзія дэактываваная і зноў даступная для выкарыстання.</value>
+  </data>
+  <data name="RKyDctvt" xml:space="preserve">
+    <value>Ануляванне ключа</value>
+  </data>
+  <data name="SavedData" xml:space="preserve">
+    <value>Захаваныя дадзеныя</value>
+  </data>
+  <data name="SavedDataAnalysis" xml:space="preserve">
+    <value>Аналiз дадзеных</value>
+  </data>
+  <data name="SavedDataAnalysisExplanatoryText" xml:space="preserve">
+    <value>Аўтаматычны аналіз захаваных дадзеных, сачэнне за зменамі параметраў машыны за час назіранняў</value>
+  </data>
+  <data name="SaveSelectedButtonLabel" xml:space="preserve">
+    <value>Захаваць абранае</value>
+  </data>
+  <data name="SelectVehicleText" xml:space="preserve">
+    <value>Выберыце аўтамабіль з спісу:</value>
+  </data>
+  <data name="SelectVehicleText1" xml:space="preserve">
+    <value>Выберыце аўтамабіль з спісу:</value>
+  </data>
+  <data name="SendingRequest" xml:space="preserve">
+    <value>Адпраўка запыту</value>
+  </data>
+  <data name="ShowPasswordButtonText" xml:space="preserve">
+    <value>паказаць</value>
+  </data>
+  <data name="ShowPasswordText" xml:space="preserve">
+    <value>Паказаць пароль</value>
+  </data>
+  <data name="ShowText" xml:space="preserve">
+    <value>паказаць</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="SurnameColon" xml:space="preserve">
+    <value>Фамiлiя:</value>
+  </data>
+  <data name="SurnameText" xml:space="preserve">
+    <value>Фамiлiя</value>
+  </data>
+  <data name="SurnameText1" xml:space="preserve">
+    <value>Фамiлiя:</value>
+  </data>
+  <data name="TitleColonText" xml:space="preserve">
+    <value>Назва:</value>
+  </data>
+  <data name="ToDelivered" xml:space="preserve">
+    <value>У выданыя</value>
+  </data>
+  <data name="ToIssueText" xml:space="preserve">
+    <value>Выдаць</value>
+  </data>
+  <data name="UnableToOpenFile" xml:space="preserve">
+    <value>Не ўдалось загрузiць файл</value>
+  </data>
+  <data name="UnregiseredVehiclesDetected" xml:space="preserve">
+    <value>Знойдзены незарэгістраваныя машыны</value>
+  </data>
+  <data name="UnregiseredVehiclesDetectedExplanation" xml:space="preserve">
+    <value>Нельга ўнесці дадзеныя на незарэгістраваную машыну, таму перад захаваннем дыягнастычнай інфармацыі машыну трэба зарэгістраваць адным з дасяжных спосабаў. Клікніце на дадзеныя па машыне на экране "Загрузка дыягнастычных дадзеных", каб зарэгістраваць аўтамабіль.</value>
+  </data>
+  <data name="UnregiseredVehiclesListHeader" xml:space="preserve">
+    <value>Vin незарегістраваных машын:</value>
+  </data>
+  <data name="UploadData" xml:space="preserve">
+    <value>Загрузка дадзеных</value>
+  </data>
+  <data name="UploadDataExplanatoryText" xml:space="preserve">
+    <value>Загрузка дадзеных у фармаце .vts, экспартаваных з дыягнастычнай сістэмы.</value>
+  </data>
+  <data name="UserLogonWindowTitle" xml:space="preserve">
+    <value>Уваход карыстальніка ў сістэму</value>
+  </data>
+  <data name="UserNotFoundMessage" xml:space="preserve">
+    <value>Карыстальнік не знойдзены. Праверце уведзеныя дадзеныя.</value>
+  </data>
+  <data name="ValuesQuantityColon" xml:space="preserve">
+    <value>Колькасць значэнняў:</value>
+  </data>
+  <data name="VehicleDataRetrievalErrorMessage" xml:space="preserve">
+    <value>Не атрымалася атрымаць з базы дадзеных звесткі аб зарэгістраваных машынах</value>
+  </data>
+  <data name="VehicleDataRetrievalInProgressMessage" xml:space="preserve">
+    <value>Атрыманне данных аб машыне</value>
+  </data>
+  <data name="VehicleNotRegisteredHeader" xml:space="preserve">
+    <value>Машына не зарэгістраваная ў сістэме</value>
+  </data>
+  <data name="VehicleRegisteredExplanatory1Text" xml:space="preserve">
+    <value>Вы можаце ўбачыць яе на экране зарэгістраваных машын. На яе зараз могуць быць унесены дадзеныя, якія стануць даступныя кліенту для прагляду пасля таго, як ён зарэгіструецца ў сістэме па выдадзенаму яму ключу.</value>
+  </data>
+  <data name="VehicleRegisteredExplanatory2Text" xml:space="preserve">
+    <value>Пры рэгістрацыі машыны была задзейнічана адна ліцэнзія класа A - тая ж самая, што пры стварэнні рэгістрацыйнага ключа. Пасля рэгістрацыі карыстальніка вы зможаце зарэгістраваць на яго імя дадатковыя машыны, гэта запатрабуе ліцэнзіі класа А.</value>
+  </data>
+  <data name="VehicleRegisteredText" xml:space="preserve">
+    <value>Машына зарэгістравана</value>
+  </data>
+  <data name="VehicleRegistrationInDatabaseText" xml:space="preserve">
+    <value>Рэгістрацыя машыны ў базе дадзеных</value>
+  </data>
+  <data name="VehicleRegistrationRequirementsText" xml:space="preserve">
+    <value>Зарэгістраваць машыну ў сістэме можна адным з наступных спосабаў:</value>
+  </data>
+  <data name="VehicleRegistrationText" xml:space="preserve">
+    <value>Рэгістрацыя аўтамабіля</value>
+  </data>
+  <data name="Vehicles" xml:space="preserve">
+    <value>Машыны</value>
+  </data>
+  <data name="VehicleText" xml:space="preserve">
+    <value>Транспартны сродак</value>
+  </data>
+  <data name="VinLabel" xml:space="preserve">
+    <value>Vin:</value>
+  </data>
+  <data name="WhoHasRequestedText" xml:space="preserve">
+    <value>Хто запытаў</value>
+  </data>
+  <data name="WorkingWithDatabaseText" xml:space="preserve">
+    <value>Аперацыi з базай дадзеных</value>
+  </data>
+  <data name="BasicBlocksSupply" xml:space="preserve">
+    <value>Электрасiлкаванне асноўных блокаў</value>
+  </data>
+  <data name="BasicParameters1" xml:space="preserve">
+    <value>Асноўныя параметры 1</value>
+  </data>
+  <data name="BasicParameters2" xml:space="preserve">
+    <value>Асноўныя параметры 2</value>
+  </data>
+  <data name="ClimateDevices" xml:space="preserve">
+    <value>Кліматычнае абсталяванне</value>
+  </data>
+  <data name="ControlPanelParameters" xml:space="preserve">
+    <value>Параметры панэлі кіравання</value>
+  </data>
+  <data name="DrivingInfo" xml:space="preserve">
+    <value>Інфармацыя аб кіраванні</value>
+  </data>
+  <data name="ElectricSystemInfo" xml:space="preserve">
+    <value>Інфармацыя па электрасістэмe</value>
+  </data>
+  <data name="FapAdditiveParameters" xml:space="preserve">
+    <value>Параметры прысадкi FAP</value>
+  </data>
+  <data name="Ignition" xml:space="preserve">
+    <value>Запальванне</value>
+  </data>
+  <data name="InjectionInformation" xml:space="preserve">
+    <value>Упырск і сістэма ачысткі</value>
+  </data>
+  <data name="OdometerScreenState" xml:space="preserve">
+    <value>Унутраны стан ВК-дысплея адометра</value>
+  </data>
+  <data name="ParticleFilterInfo" xml:space="preserve">
+    <value>Інфармацыя пра сажавы фільтр</value>
+  </data>
+  <data name="Purification" xml:space="preserve">
+    <value>Ачыстка</value>
+  </data>
+  <data name="TripData" xml:space="preserve">
+    <value>Шляхавыя дадзеныя</value>
+  </data>
+  <data name="AcceleratorPedalHardSpotSignal1" xml:space="preserve">
+    <value>Палажэнне педалі газу кропка 1</value>
+  </data>
+  <data name="AcceleratorPedalHardSpotSignal2" xml:space="preserve">
+    <value>Палажэнне педалі газу кропка 2</value>
+  </data>
+  <data name="AcceleratorPedalPosition" xml:space="preserve">
+    <value>Палажэнне педалі газу</value>
+  </data>
+  <data name="ActivationOfElectricalConsumers" xml:space="preserve">
+    <value>Актывацыя спажыўцоў электраэнергіі</value>
+  </data>
+  <data name="AdditionalHeatingStatus" xml:space="preserve">
+    <value>Стан дадатковага падагрэву</value>
+  </data>
+  <data name="BasicInjectionAdvance" xml:space="preserve">
+    <value>Базавае апярэджанне ўпырску</value>
+  </data>
+  <data name="BatteryVoltage" xml:space="preserve">
+    <value>Напружанне акумулятара</value>
+  </data>
+  <data name="BlowerCopyVoltage" xml:space="preserve">
+    <value>Дубляванае напружанне вентылятара печкі</value>
+  </data>
+  <data name="BodyworkVanPlusStatus" xml:space="preserve">
+    <value>Плюс (+) VAN на корпусе</value>
+  </data>
+  <data name="BonnetLock" xml:space="preserve">
+    <value>Замок капота</value>
+  </data>
+  <data name="BootLampControlRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле кантролю лямпы асвятлення багажніка</value>
+  </data>
+  <data name="BootLightingCommand" xml:space="preserve">
+    <value>Каманда на асвятленне багажніка</value>
+  </data>
+  <data name="BootLock" xml:space="preserve">
+    <value>Замок багажніка</value>
+  </data>
+  <data name="BootLockingControl" xml:space="preserve">
+    <value>Кантроль закрыцця замка багажніка</value>
+  </data>
+  <data name="BootOpeningRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле адкрыцця замка багажніка</value>
+  </data>
+  <data name="BootOpeningRequest" xml:space="preserve">
+    <value>Запыт на адкрыццё багажніка</value>
+  </data>
+  <data name="BrakeFluidLevel" xml:space="preserve">
+    <value>Узровень тармазной вадкасці</value>
+  </data>
+  <data name="BrakeLiningsWear" xml:space="preserve">
+    <value>Знос тармазных калодак</value>
+  </data>
+  <data name="BrakePedal" xml:space="preserve">
+    <value>Палажэнне педалі тормазу</value>
+  </data>
+  <data name="BrightnessButton" xml:space="preserve">
+    <value>Кнопка яркасці</value>
+  </data>
+  <data name="CamshaftCrankshaftSync" xml:space="preserve">
+    <value>Cінхраназацыя становішча размеркавальнага вала / каленчатага вала</value>
+  </data>
+  <data name="CanisterElectrovalveOCR" xml:space="preserve">
+    <value>ЦСА электроклапана рэзервуара</value>
+  </data>
+  <data name="CanisterSolenoidValveStatus" xml:space="preserve">
+    <value>Стан электрамагнітнага клапана абсорбера пароў бензіну</value>
+  </data>
+  <data name="CatalyticConverterCheck" xml:space="preserve">
+    <value>Кантроль каталітычнага нейтралізатара</value>
+  </data>
+  <data name="CatConverterDownstreamTemperature" xml:space="preserve">
+    <value>Тэмпература на выхадзе з каталітычнага нейтралізатара</value>
+  </data>
+  <data name="CatConverterUpstreamTemperature" xml:space="preserve">
+    <value>Тэмпература на ўваходзе ў каталітычны нейтралізатар</value>
+  </data>
+  <data name="ChildSafetyActivationControl" xml:space="preserve">
+    <value>Кантроль актывацыі абароны дзіцяці</value>
+  </data>
+  <data name="ChildSafetyDeactivationControl" xml:space="preserve">
+    <value>Кантроль дэактывацыі абароны дзіцяці</value>
+  </data>
+  <data name="ClutchPedalSignal" xml:space="preserve">
+    <value>Стан педалі счаплення</value>
+  </data>
+  <data name="CodedEngineImmobiliserProgrammingStatus" xml:space="preserve">
+    <value>Стан праграмавання кадаванага імабілайзера</value>
+  </data>
+  <data name="ComfortVanPlusStatus" xml:space="preserve">
+    <value>Плюс (+) VAN - камфорт</value>
+  </data>
+  <data name="CompleteHeatingLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі поўнага падагрэву</value>
+  </data>
+  <data name="ConditionerCoolingCircuitPressure" xml:space="preserve">
+    <value>Ціск ў контуры кандыцыянера паветра</value>
+  </data>
+  <data name="ConditioningCutOffRequest" xml:space="preserve">
+    <value>Запыт на выключэнне клімат-кантролю</value>
+  </data>
+  <data name="ControlPanelBrightnessLevel" xml:space="preserve">
+    <value>Узровень яркасці падсветкі панэлі кіравання</value>
+  </data>
+  <data name="CoolantLevelWarning" xml:space="preserve">
+    <value>Папярэджанне аб нізкім узроўні астуджальнай вадкасці</value>
+  </data>
+  <data name="CylinderCoilChargeTime1" xml:space="preserve">
+    <value>Час зарада катушкі цыліндра 1</value>
+  </data>
+  <data name="CylinderCoilChargeTime14" xml:space="preserve">
+    <value>Час зарада катушкі цыліндраў 1/4</value>
+  </data>
+  <data name="CylinderCoilChargeTime2" xml:space="preserve">
+    <value>Час зарада катушкі цыліндра 2</value>
+  </data>
+  <data name="CylinderCoilChargeTime23" xml:space="preserve">
+    <value>Час зарада катушкі цыліндраў 2/3</value>
+  </data>
+  <data name="CylinderCoilChargeTime3" xml:space="preserve">
+    <value>Час зарада катушкі цыліндра 3</value>
+  </data>
+  <data name="CylinderCoilChargeTime4" xml:space="preserve">
+    <value>Час зарада катушкі цыліндра 4</value>
+  </data>
+  <data name="DeadlockingControl" xml:space="preserve">
+    <value>Кантроль блакавання замка</value>
+  </data>
+  <data name="DeflationDetectionFrontLhTyrePressure" xml:space="preserve">
+    <value>Паказанні датчыка зніжэння ціску пярэдняга левага кола</value>
+  </data>
+  <data name="DeflationDetectionFrontRhTyrePressure" xml:space="preserve">
+    <value>Паказанні датчыка зніжэння ціску пярэдняга правага кола</value>
+  </data>
+  <data name="DeflationDetectionRearLhTyrePressure" xml:space="preserve">
+    <value>Паказанні датчыка зніжэння ціску задняга левага кола</value>
+  </data>
+  <data name="DeflationDetectionRearRhTyrePressure" xml:space="preserve">
+    <value>Паказанні датчыка зніжэння ціску задняга правага колы</value>
+  </data>
+  <data name="DeicingLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі абароны ад абледзянення</value>
+  </data>
+  <data name="DieselPressureRegulatorRatio" xml:space="preserve">
+    <value>ЦСА рэгулятара ціску ў паліўнай сістэме</value>
+  </data>
+  <data name="DieselWaterAirPumpRelayOutputStatus" xml:space="preserve">
+    <value>Статус на выхадзе рэле паветранай / паліўнай помпы дызельнага рухавіка</value>
+  </data>
+  <data name="DippedBeamControl" xml:space="preserve">
+    <value>Кантроль блізкага святла</value>
+  </data>
+  <data name="DisplayedFuelLevel" xml:space="preserve">
+    <value>Адлюстраваны ўзровень паліва</value>
+  </data>
+  <data name="DistanceTravelledSinceLastRegeneration" xml:space="preserve">
+    <value>Прабег пасля апошняй рэгенерацыі</value>
+  </data>
+  <data name="DistributionStatus" xml:space="preserve">
+    <value>Стан размеркавання</value>
+  </data>
+  <data name="DriverSeatBeltFastened" xml:space="preserve">
+    <value>Вадзіцельскі рамень бяспекі прышпілены</value>
+  </data>
+  <data name="EconomyModeStatus" xml:space="preserve">
+    <value>Эканамічны рэжым</value>
+  </data>
+  <data name="ECULocking" xml:space="preserve">
+    <value>Замыканне блока кіравання (ECU)</value>
+  </data>
+  <data name="ElectropumpAssemblyMotorCurrent" xml:space="preserve">
+    <value>Ток электрарухавіка электрапомпы</value>
+  </data>
+  <data name="ElectropumpAssemblyMotorTerminalsVoltage" xml:space="preserve">
+    <value>Напружанне на клемах электрарухавіка электрапомпы</value>
+  </data>
+  <data name="EngineCoolantTemperature" xml:space="preserve">
+    <value>Тэмпература астуджальнай вадкасці</value>
+  </data>
+  <data name="EngineOilTemperature" xml:space="preserve">
+    <value>Тэмпература маторнага масла</value>
+  </data>
+  <data name="EngineRpm" xml:space="preserve">
+    <value>Хуткасць кручэння рухавіка</value>
+  </data>
+  <data name="EngineRunningInformation" xml:space="preserve">
+    <value>Інфармацыя аб працы рухавіка</value>
+  </data>
+  <data name="EngineRunningOutputControl" xml:space="preserve">
+    <value>Кантроль працы рухавіка</value>
+  </data>
+  <data name="EngineTorque" xml:space="preserve">
+    <value>Крутоўны момант рухавіка</value>
+  </data>
+  <data name="EspDeactivationRequest" xml:space="preserve">
+    <value>Запыт на дэактывацыю ESP</value>
+  </data>
+  <data name="EspEcuSupplyVoltage" xml:space="preserve">
+    <value>Напружанне сілкавання блока кіравання ESP</value>
+  </data>
+  <data name="EvaporatorIcingUpSafetyStatus" xml:space="preserve">
+    <value>Статус абароны выпарніка ад абледзянення</value>
+  </data>
+  <data name="EvaporatorSensorTemperature" xml:space="preserve">
+    <value>Тэмпература датчыка выпарніка</value>
+  </data>
+  <data name="ExhaustCycleRatio" xml:space="preserve">
+    <value>ЦСА электраклапану сістэмы РВГ</value>
+  </data>
+  <data name="ExhaustRecirculationGateCycle" xml:space="preserve">
+    <value>ЦСА электраклапану засланкі сістэмы РВГ</value>
+  </data>
+  <data name="ExteriorAirTemperature" xml:space="preserve">
+    <value>Тэмпература паветра звонку</value>
+  </data>
+  <data name="FactoryModeStatus" xml:space="preserve">
+    <value>Заводскі рэжым</value>
+  </data>
+  <data name="FanAssemblyControl" xml:space="preserve">
+    <value>Кантроль вентылятара</value>
+  </data>
+  <data name="FanAssemblyHighSpeedControl" xml:space="preserve">
+    <value>Кантроль высокай хуткасці групы вентылятараў астуджэння рухавіка</value>
+  </data>
+  <data name="FanAssemblyLowSpeedControl" xml:space="preserve">
+    <value>Кантроль нiзкай хуткасці групы вентылятараў астуджэння рухавіка</value>
+  </data>
+  <data name="FanMidSpeedControl" xml:space="preserve">
+    <value>Кіраванне сярэдняй хуткасцю вентылятара</value>
+  </data>
+  <data name="FanRelayOutput" xml:space="preserve">
+    <value>Выхад рэле вентылятара</value>
+  </data>
+  <data name="FanUnitReferenceSpeed" xml:space="preserve">
+    <value>Зададзеная хуткасць кручэння вентылятара астуджэння рухавіка</value>
+  </data>
+  <data name="FanUnitSpeedSetting" xml:space="preserve">
+    <value>Устаноўленая хуткасць кручэння вентылятара</value>
+  </data>
+  <data name="FilteredFuelLevel" xml:space="preserve">
+    <value>Узровень палiва (фiльтраваны)</value>
+  </data>
+  <data name="FlamePresence" xml:space="preserve">
+    <value>Наяўнасць узгарання</value>
+  </data>
+  <data name="ForcedDeicingLoadShedding" xml:space="preserve">
+    <value>Прымусовы скід нагрузкі абароны ад абледзянення</value>
+  </data>
+  <data name="ForcedFanUnitLowSpeedLoadShedding" xml:space="preserve">
+    <value>Прымусовы скід нагрузкі вентылятара на нiзкай хуткасці</value>
+  </data>
+  <data name="ForcedFanUnitMidSpeedLoadShedding" xml:space="preserve">
+    <value>Прымусовы скід нагрузкі вентылятара на сярэдняй хуткасці</value>
+  </data>
+  <data name="FrontLeftHandLockUnlockingInformation" xml:space="preserve">
+    <value>Інфармацыя аб адмыканні пярэдняга левага замка</value>
+  </data>
+  <data name="FrontLeftWheelSpeed" xml:space="preserve">
+    <value>Хуткасць левага пярэднягя кола</value>
+  </data>
+  <data name="FrontLhTyrePressureStatus" xml:space="preserve">
+    <value>Ацэнка ціску ў пярэднім левым коле</value>
+  </data>
+  <data name="FrontLhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Статус датчыка ціску пярэдняга левага кола</value>
+  </data>
+  <data name="FrontRhTyrePressureStatus" xml:space="preserve">
+    <value>Ацэнка ціску ў пярэднім правым коле</value>
+  </data>
+  <data name="FrontRhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Статус датчыка ціску пярэдняга правага кола</value>
+  </data>
+  <data name="FrontRightHandLockUnlockingInformation" xml:space="preserve">
+    <value>Інфармацыя аб адмыканні пярэдняга правага замка</value>
+  </data>
+  <data name="FrontRightWheelSpeed" xml:space="preserve">
+    <value>Хуткасць правага пярэднягя кола</value>
+  </data>
+  <data name="FrontSillLightingControl" xml:space="preserve">
+    <value>Кантроль асвятлення пярэдніх парогаў</value>
+  </data>
+  <data name="FuelPumpRelayOutputStatus" xml:space="preserve">
+    <value>Статус на выхадзе рэле паліўнай помпы</value>
+  </data>
+  <data name="FuelPumpStatus" xml:space="preserve">
+    <value>Стан паліўнай помпы</value>
+  </data>
+  <data name="FuelPumpSupplyCutOff" xml:space="preserve">
+    <value>Адсечка напружаняя на паліўнай помпе</value>
+  </data>
+  <data name="FuelRegulatorCurrent" xml:space="preserve">
+    <value>Ток рэгулятара ціску дызельнага паліва</value>
+  </data>
+  <data name="FuelSenderImpedance" xml:space="preserve">
+    <value>Супраціўленне датчыка ўзроўню паліва</value>
+  </data>
+  <data name="FuelSystemPressure" xml:space="preserve">
+    <value>Вымераны ціск паліва</value>
+  </data>
+  <data name="FuelSystemPressureDelta" xml:space="preserve">
+    <value>Разыходжанне паміж вымярэнным і намінальным ціскам паліва</value>
+  </data>
+  <data name="FuelTemperature" xml:space="preserve">
+    <value>Тэмпература паліва</value>
+  </data>
+  <data name="Gearbox" xml:space="preserve">
+    <value>Тып скрынкі перадач</value>
+  </data>
+  <data name="GearboxGear" xml:space="preserve">
+    <value>Уключаная перадача</value>
+  </data>
+  <data name="GrossFuelLevel" xml:space="preserve">
+    <value>Узровень паліва (брута)</value>
+  </data>
+  <data name="HazardWarningLampPushButton" xml:space="preserve">
+    <value>Націск кнопкі аварыйнага сігнала</value>
+  </data>
+  <data name="HeadlampBeamCorrectorFault" xml:space="preserve">
+    <value>Наяўнасць памылкі карэктара фар</value>
+  </data>
+  <data name="HeadlampWasherControl" xml:space="preserve">
+    <value>Кантроль амывальніка фараў</value>
+  </data>
+  <data name="HeatedRearScreenPushButton" xml:space="preserve">
+    <value>Націск кнопкі абагравання задняга шкла</value>
+  </data>
+  <data name="HeatingStatus" xml:space="preserve">
+    <value>Абаграванне</value>
+  </data>
+  <data name="HigherOxygenSensorState" xml:space="preserve">
+    <value>Стан верхняга кіслароднага зонда</value>
+  </data>
+  <data name="HigherOxygenVoltage" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда (датчык на ўваходзе)</value>
+  </data>
+  <data name="HornControl" xml:space="preserve">
+    <value>Кантроль гукавага сігнала</value>
+  </data>
+  <data name="IgnitionAdvance" xml:space="preserve">
+    <value>Апярэджанне вугла запальвання</value>
+  </data>
+  <data name="IncandescentElementStatus" xml:space="preserve">
+    <value>Стан лямпы напальвання</value>
+  </data>
+  <data name="InjectionAdvance" xml:space="preserve">
+    <value>Апярэджанне папярэдняга ўпырску</value>
+  </data>
+  <data name="InjectionOffWhenSlowdown" xml:space="preserve">
+    <value>Выключэнне сістэмы ўпырску пры зніжэнні паскарэння</value>
+  </data>
+  <data name="InjectionTime" xml:space="preserve">
+    <value>Час упырску</value>
+  </data>
+  <data name="InjectionVolumeSetting" xml:space="preserve">
+    <value>Запатрабаваны аб'ём ўпырску паліва</value>
+  </data>
+  <data name="Injector1Correction" xml:space="preserve">
+    <value>Карэкцыя падачы паліва фарсункай 1</value>
+  </data>
+  <data name="Injector2Correction" xml:space="preserve">
+    <value>Карэкцыя падачы паліва фарсункай 2</value>
+  </data>
+  <data name="Injector3Correction" xml:space="preserve">
+    <value>Карэкцыя падачы паліва фарсункай 3</value>
+  </data>
+  <data name="Injector4Correction" xml:space="preserve">
+    <value>Карэкцыя падачы паліва фарсункай 4</value>
+  </data>
+  <data name="InjectorsVoltage" xml:space="preserve">
+    <value>Нагрузка на інжэктары</value>
+  </data>
+  <data name="InletAirHeaterThrottleOpenCycleRatio" xml:space="preserve">
+    <value>ЦСА электрамагнітнага клапана перапускной засланкі</value>
+  </data>
+  <data name="InteriorLampControl" xml:space="preserve">
+    <value>Кантроль лямпы ўнутранага асвятлення</value>
+  </data>
+  <data name="InteriorLampControlRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле кантролю лямпы ўнутранага святла</value>
+  </data>
+  <data name="InteriorLampRequest" xml:space="preserve">
+    <value>Запыт на ўнутранае асвятленне</value>
+  </data>
+  <data name="LeftBlownAirTemperature" xml:space="preserve">
+    <value>Тэмпература паветра левага паветравода</value>
+  </data>
+  <data name="LeftHandIndicatorsControl" xml:space="preserve">
+    <value>Кантроль левых паказальнікаў павароту</value>
+  </data>
+  <data name="LockLockingControl" xml:space="preserve">
+    <value>Кантроль закрыцця замка</value>
+  </data>
+  <data name="LocksDeadlockingRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле блакіроўкі замка</value>
+  </data>
+  <data name="LocksLockingRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле закрыцця замка</value>
+  </data>
+  <data name="LocksUnlockingRelayOutput" xml:space="preserve">
+    <value>Сігнал на выхадзе рэле адкрыцця замка</value>
+  </data>
+  <data name="LockUnlockingControl" xml:space="preserve">
+    <value>Кантроль адкрыцця замка</value>
+  </data>
+  <data name="LowBrakeFluidWarning" xml:space="preserve">
+    <value>Папярэджанне аб нізкім узроўні тармазной вадкасці</value>
+  </data>
+  <data name="LowerOxygenSensorState" xml:space="preserve">
+    <value>Стан ніжняга кіслароднага зонда</value>
+  </data>
+  <data name="LowerOxygenVoltage" xml:space="preserve">
+    <value>Напружанне ніжняка кіслароднага зонда (датчык на выхадзе)</value>
+  </data>
+  <data name="LowScreenWashLevelDisplay" xml:space="preserve">
+    <value>Індыкатар нізкага узроуню амываючай вадкасці</value>
+  </data>
+  <data name="MainBeamControl" xml:space="preserve">
+    <value>Кантроль далёкага святла</value>
+  </data>
+  <data name="MainBrakeSignal" xml:space="preserve">
+    <value>Сігнал з першага датчыка тармазной сістэмы (разомкн. пры адпушчанай педалі)</value>
+  </data>
+  <data name="MaintenanceIndicator" xml:space="preserve">
+    <value>Індыкатар абслугоўвання</value>
+  </data>
+  <data name="ManifoldPressure" xml:space="preserve">
+    <value>Ціск у калектары</value>
+  </data>
+  <data name="MeasuredAirVolume" xml:space="preserve">
+    <value>Замеранае спажыванне паветра</value>
+  </data>
+  <data name="MeasuredOilLevel" xml:space="preserve">
+    <value>Узровень масла</value>
+  </data>
+  <data name="MeteringPumpSpeed" xml:space="preserve">
+    <value>Хуткасць помпы-дазатара</value>
+  </data>
+  <data name="MixingStatusLeft" xml:space="preserve">
+    <value>Стан сістэмы змешвання - левы</value>
+  </data>
+  <data name="MixingStatusRight" xml:space="preserve">
+    <value>Стан сістэмы змешвання - правы</value>
+  </data>
+  <data name="MixRegState" xml:space="preserve">
+    <value>Стан рэгулявання складу сумесі</value>
+  </data>
+  <data name="NoLoadShedding" xml:space="preserve">
+    <value>Няма скіда нагрузкі</value>
+  </data>
+  <data name="NominalTurbinePressure" xml:space="preserve">
+    <value>Зададзены (намінальны) ціск, які павінен стварацца турбакампрэсарам</value>
+  </data>
+  <data name="NumberOfServicesPerformed" xml:space="preserve">
+    <value>Колькасць продзеных сервісаў</value>
+  </data>
+  <data name="OdometerResetButton" xml:space="preserve">
+    <value>Кнопка скіду адометра</value>
+  </data>
+  <data name="OilLevelFunction" xml:space="preserve">
+    <value>Функцыя індыкацыі узроўня масла</value>
+  </data>
+  <data name="OilPressureWarning" xml:space="preserve">
+    <value>Папярэджанне аб ціску масла</value>
+  </data>
+  <data name="OilTemperature" xml:space="preserve">
+    <value>Тэмпература масла</value>
+  </data>
+  <data name="ParkingBrake" xml:space="preserve">
+    <value>Паркавальны тормаз</value>
+  </data>
+  <data name="PartialHeatingLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі частковага падагрэву</value>
+  </data>
+  <data name="ParticleFilterInletOutletPressureDifference" xml:space="preserve">
+    <value>Перапад ціскаў на ўваходзе / выхадзе з фільтра цвёрдых часціц</value>
+  </data>
+  <data name="ParticleFilterStatus" xml:space="preserve">
+    <value>Стан забруджвання фільтра</value>
+  </data>
+  <data name="PassengerSeatBeltFastened" xml:space="preserve">
+    <value>Пасажырскі рэмень бяспекі прышпілены</value>
+  </data>
+  <data name="PlusVanSupply" xml:space="preserve">
+    <value>Напружанне "+" VAN</value>
+  </data>
+  <data name="PostInjectionFlow" xml:space="preserve">
+    <value>Выдатак паліва, падаванага падчас фазы наступнага ўпырску</value>
+  </data>
+  <data name="PostInjectionPhasing" xml:space="preserve">
+    <value>Фаза наступнага упырску</value>
+  </data>
+  <data name="PowerSupplyOfRainSensor" xml:space="preserve">
+    <value>Сілкаванне датчыка дажджу</value>
+  </data>
+  <data name="PreheaterPlugLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі свечак папярэдняга падагрэву</value>
+  </data>
+  <data name="PreHeatRelay" xml:space="preserve">
+    <value>Рэле перадпускавага / наступнага падагрэву</value>
+  </data>
+  <data name="PresenceOfPlusAccessories" xml:space="preserve">
+    <value>Наяўнасць "+" на аксесуарах</value>
+  </data>
+  <data name="PresenceOfPlusIgnition" xml:space="preserve">
+    <value>Наяўнасць "+" на запальванні</value>
+  </data>
+  <data name="RearElectricWindowSwitchesDeactivation" xml:space="preserve">
+    <value>Дэактывацыя выключальнікаў задніх электрашклапад'ёмнікаў</value>
+  </data>
+  <data name="RearElectricWindowSwitchesSupply" xml:space="preserve">
+    <value>Сілкаванне выключальнікаў задніх электрашклапад'ёмнікаў</value>
+  </data>
+  <data name="RearFogLampsControl" xml:space="preserve">
+    <value>Кантроль задніх супрацьтуманных фараў</value>
+  </data>
+  <data name="RearLeftHandDoorSwitch" xml:space="preserve">
+    <value>Ручка задняй левай дзверы</value>
+  </data>
+  <data name="RearLeftWheelSpeed" xml:space="preserve">
+    <value>Хуткасць левага задняга кола</value>
+  </data>
+  <data name="RearLhTyrePressureStatus" xml:space="preserve">
+    <value>Ацэнка ціску ў заднім левым коле</value>
+  </data>
+  <data name="RearLhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Стан датчыка ціску ў заднім левым коле</value>
+  </data>
+  <data name="RearLhWindowLowerControl" xml:space="preserve">
+    <value>Кантроль апускання задняга левага шкла</value>
+  </data>
+  <data name="RearLhWindowRaiseControl" xml:space="preserve">
+    <value>Кантроль падняцця задняга левага шкла</value>
+  </data>
+  <data name="RearRhTyrePressureStatus" xml:space="preserve">
+    <value>Ацэнка ціску ў заднім правым коле</value>
+  </data>
+  <data name="RearRhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Статус датчыка ціску задняга правага кола</value>
+  </data>
+  <data name="RearRhWindowLowerControl" xml:space="preserve">
+    <value>Кантроль апускання задняга правага шкла</value>
+  </data>
+  <data name="RearRhWindowRaiseControl" xml:space="preserve">
+    <value>Кантроль падняцця задняга правага шкла</value>
+  </data>
+  <data name="RearRightHandDoorSwitch" xml:space="preserve">
+    <value>Ручка задняй правай дзверы</value>
+  </data>
+  <data name="RearRightWheelSpeed" xml:space="preserve">
+    <value>Хуткасць правага задняга кола</value>
+  </data>
+  <data name="RearScreenWashControl" xml:space="preserve">
+    <value>Кантроль задняга амывальніка шкла</value>
+  </data>
+  <data name="RearScreenWiperControl" xml:space="preserve">
+    <value>Кантроль задняга шклоачышчальніка</value>
+  </data>
+  <data name="RearWiperParkedPositionInformation" xml:space="preserve">
+    <value>Інфармацыя аб паркавальным становішчы задняга шклоачышчальніка</value>
+  </data>
+  <data name="RecirculationStatus" xml:space="preserve">
+    <value>Стан рэцыркуляцыі</value>
+  </data>
+  <data name="RedundantBrakeSignal" xml:space="preserve">
+    <value>Сігнал з дадатковага датчыка тармазной сістэмы (замкнуты пры адпушчанай педалі)</value>
+  </data>
+  <data name="RegenerationAssistanceRequest" xml:space="preserve">
+    <value>Запыт на выкананне рэгенерацыі</value>
+  </data>
+  <data name="RelayLowSpeedVent" xml:space="preserve">
+    <value>Рэле малой хуткасці групы вентылятара ахладжэння рухавіка</value>
+  </data>
+  <data name="ReservoirCap" xml:space="preserve">
+    <value>Вечка паліўнага бака</value>
+  </data>
+  <data name="ReverseGearInfo" xml:space="preserve">
+    <value>Iнфармацыя аб задняй перадачы</value>
+  </data>
+  <data name="RhAndLhIndicatorRelayOutput" xml:space="preserve">
+    <value>Выхад рэле правых і левых паказальнікаў павароту</value>
+  </data>
+  <data name="RightBlownAirTemperature" xml:space="preserve">
+    <value>Тэмпература паветра правага паветравода</value>
+  </data>
+  <data name="RightHandIndicatorsControl" xml:space="preserve">
+    <value>Кантроль правых паказальнікаў павароту</value>
+  </data>
+  <data name="Sensor1Voltage" xml:space="preserve">
+    <value>Напружанне ў ланцугу сілкавання датчыкаў 1 (кулачковыя валы)</value>
+  </data>
+  <data name="Sensor2Voltage" xml:space="preserve">
+    <value>Напружанне ў ланцугу сілкавання датчыкаў 2 (іншае)</value>
+  </data>
+  <data name="SidelampsControl" xml:space="preserve">
+    <value>Кантроль бакавых лямпаў</value>
+  </data>
+  <data name="SlowSpeedWindscreenWiperControl" xml:space="preserve">
+    <value>Кантроль шклоачышчальнікаў лабавога шкла на нізкай хуткасці</value>
+  </data>
+  <data name="SmoothedConsumption" xml:space="preserve">
+    <value>Згладжанае значэнне расходу паліва</value>
+  </data>
+  <data name="SparkPlugSpeed" xml:space="preserve">
+    <value>Хуткасць свечак запальвання</value>
+  </data>
+  <data name="SpeedElectropumpAssemblyMotor" xml:space="preserve">
+    <value>Хуткасць кручэння электрарухавіка электрапомпы</value>
+  </data>
+  <data name="SpeedVent" xml:space="preserve">
+    <value>Рэле высокай хуткасці групы вентылятара ахладжэння рухавіка</value>
+  </data>
+  <data name="SteeringElectropumpTemperature" xml:space="preserve">
+    <value>Тэмпература электрапомпы рулявога кіравання</value>
+  </data>
+  <data name="SteeringWheelRotationAngleDataPresence" xml:space="preserve">
+    <value>Наяўнасць індыкацыі вугла павароту рулявога кола</value>
+  </data>
+  <data name="SteeringWheelRotationDirection" xml:space="preserve">
+    <value>Кірунак кручэння рулявога кола</value>
+  </data>
+  <data name="SteeringWheelSpeed" xml:space="preserve">
+    <value>Хуткасць кручэння рулявога кола</value>
+  </data>
+  <data name="SunlightSensorDuskValue" xml:space="preserve">
+    <value>Узровень змяркання датчыка сонечнага святла</value>
+  </data>
+  <data name="SupplyRelayControl" xml:space="preserve">
+    <value>Упраўленне рэле сілкавання</value>
+  </data>
+  <data name="SuspensionControlButton" xml:space="preserve">
+    <value>Кнопка кантролю падвескі</value>
+  </data>
+  <data name="ThirdCylOff" xml:space="preserve">
+    <value>Адключэнне трэцяга поршня</value>
+  </data>
+  <data name="ThrottleAngle" xml:space="preserve">
+    <value>Вугал дросельнай засланкі</value>
+  </data>
+  <data name="ThrottlePositionVoltage" xml:space="preserve">
+    <value>Напружанне, якое адпавядае становішчу дросельнай засланкі</value>
+  </data>
+  <data name="ThrottleStatus" xml:space="preserve">
+    <value>Становішча дроселя</value>
+  </data>
+  <data name="TotalFuelAdditiveQuantity" xml:space="preserve">
+    <value>Агульная колькасць прысадкі</value>
+  </data>
+  <data name="TotalMileage" xml:space="preserve">
+    <value>Агульны прабег</value>
+  </data>
+  <data name="TripometerDisplayUnits" xml:space="preserve">
+    <value>Адзінкі вымярэння лічыльніка пройдзенага шляху</value>
+  </data>
+  <data name="TurbineCycleRatio" xml:space="preserve">
+    <value>ЦСА электроклапан ціску ў турбакампрэсары</value>
+  </data>
+  <data name="TurbinePressure" xml:space="preserve">
+    <value>Вымераны ціск паветра пасля турбакампрэсара</value>
+  </data>
+  <data name="Unsupported" xml:space="preserve">
+    <value>Нераспазнаны тып дадзеных</value>
+  </data>
+  <data name="ValidityOfTyreDeflationSensorStatusParameters" xml:space="preserve">
+    <value>Правільнасць паказанняў датчыкаў ціску ў колах</value>
+  </data>
+  <data name="VehicleProtectionStatusLedControl" xml:space="preserve">
+    <value>Святладыёд кантролю абароны транспартнага сродку</value>
+  </data>
+  <data name="VehicleSpeed" xml:space="preserve">
+    <value>Хуткасць аўтамабіля</value>
+  </data>
+  <data name="VehicleSpeedSignalPresence" xml:space="preserve">
+    <value>Наяўнасць сігналу аб хуткасці руху аўтамабіля</value>
+  </data>
+  <data name="VoltageInjector1and4" xml:space="preserve">
+    <value>Напружанне на інжэктарах 1 і 4</value>
+  </data>
+  <data name="VoltageInjector2and3" xml:space="preserve">
+    <value>Напружанне на інжэктарах 2 і 3</value>
+  </data>
+  <data name="VoltageValueOnBlower" xml:space="preserve">
+    <value>Напружанне на сістэме падачы паветра печкі</value>
+  </data>
+  <data name="VolumetricBreakinDetection" xml:space="preserve">
+    <value>Аб'ёмны датчык ўзлому</value>
+  </data>
+  <data name="VolumetricProtectionDeactivation" xml:space="preserve">
+    <value>Дэактывацыя абароны з дапамогай аб'ёмнага датчыка</value>
+  </data>
+  <data name="WaterInDiesel" xml:space="preserve">
+    <value>Вада ў дызелі</value>
+  </data>
+  <data name="WaterPump" xml:space="preserve">
+    <value>Вадзяная помпа</value>
+  </data>
+  <data name="WaterTemperature" xml:space="preserve">
+    <value>Тэмпература вады</value>
+  </data>
+  <data name="WindscreenWasherControl" xml:space="preserve">
+    <value>Кантроль пярэдняга амывальніка шкла</value>
+  </data>
+  <data name="WindscreenWiperControl" xml:space="preserve">
+    <value>Кантроль шклоачышчальнікаў лабавога шкла</value>
+  </data>
+  <data name="WindscreenWiperControlAtHighSpeed" xml:space="preserve">
+    <value>Кантроль шклоачышчальнікаў лабавога шкла на высокай хуткасці</value>
+  </data>
+  <data name="WindscreenWiperParkedPositionInformation" xml:space="preserve">
+    <value>Інфармацыя аб паркавальным становішчы пярэдняга шклоачышчальніка</value>
+  </data>
+  <data name="DifferentElectricSupplyAndImmobilizer" xml:space="preserve">
+    <value>Розныя віды электрасілкавання і iмабiлайзер</value>
+  </data>
+  <data name="EngineCoolingAndClimateUnit" xml:space="preserve">
+    <value>Астуджэнне рухавіка і кліматычная ўсталёўка</value>
+  </data>
+  <data name="DynamicInformation" xml:space="preserve">
+    <value>Дынамічныя дадзеныя</value>
+  </data>
+  <data name="HeatingAndVentilation" xml:space="preserve">
+    <value>Абаграванне і вентыляцыя</value>
+  </data>
+  <data name="ElectricPumpData" xml:space="preserve">
+    <value>Дадзеныя электрычнай помпы</value>
+  </data>
+  <data name="FuelTankCap" xml:space="preserve">
+    <value>Вечка паліўнага бака</value>
+  </data>
+  <data name="HeaterSensorsAndFanState" xml:space="preserve">
+    <value>Стан датчыкаў і вентылятара печкі</value>
+  </data>
+  <data name="OrganizationText" xml:space="preserve">
+    <value>Арганізацыя</value>
+  </data>
+  <data name="ApproveRequestWindowText" xml:space="preserve">
+    <value>Падцвердзіце прадаўжэне абранай ліцэнзіі.</value>
+  </data>
+  <data name="ApproveRequestWindowCaption" xml:space="preserve">
+    <value>Адабрэнне запыту</value>
+  </data>
+  <data name="LPRApprovedMessage" xml:space="preserve">
+    <value>Запыт на ліцэнзію адобраны</value>
+  </data>
+  <data name="TyresPressure" xml:space="preserve">
+    <value>Цiск у шынах</value>
+  </data>
+  <data name="Doors" xml:space="preserve">
+    <value>Дзверы</value>
+  </data>
+  <data name="InstrumentalIndication" xml:space="preserve">
+    <value>Індыкацыя прыладаў</value>
+  </data>
+  <data name="Lighting" xml:space="preserve">
+    <value>Асвятленне</value>
+  </data>
+  <data name="LoadSheddingLevel" xml:space="preserve">
+    <value>Узровень скіду нагрузкі</value>
+  </data>
+  <data name="Locks" xml:space="preserve">
+    <value>Замкі</value>
+  </data>
+  <data name="LowFapAdditiveLevel" xml:space="preserve">
+    <value>Нізкі узровень прысадкі FAP</value>
+  </data>
+  <data name="MeasuredData" xml:space="preserve">
+    <value>Вынікі замераў</value>
+  </data>
+  <data name="ProblemsDetectedWhenTransmittingTheUnlockCode" xml:space="preserve">
+    <value>Праблемы пры перадачы кода разблакоўкі</value>
+  </data>
+  <data name="TotalAdditiveAmountDepositedCounter1" xml:space="preserve">
+    <value>Агульная колькасць прысадкі, спажытая фільтрам (лічыльнік 1)</value>
+  </data>
+  <data name="TotalAdditiveAmountDepositedCounter2" xml:space="preserve">
+    <value>Агульная колькасць прысадкі, узятая з бака (лічыльнік 2)</value>
+  </data>
+  <data name="VisibilityControl" xml:space="preserve">
+    <value>Кантраляванне бачнасці</value>
+  </data>
+  <data name="Mixed" xml:space="preserve">
+    <value>Розныя параметры</value>
+  </data>
+  <data name="ActiveText" xml:space="preserve">
+    <value>Актыўная</value>
+  </data>
+  <data name="IdText" xml:space="preserve">
+    <value>Ід.</value>
+  </data>
+  <data name="LicenseStartDate" xml:space="preserve">
+    <value>Пачатак дзеяння</value>
+  </data>
+  <data name="StateText" xml:space="preserve">
+    <value>Стан</value>
+  </data>
+  <data name="NotActivatedText" xml:space="preserve">
+    <value>Не актываваная</value>
+  </data>
+  <data name="ChronoParamTypeDisplayNameIdleRpmFuelPressure" xml:space="preserve">
+    <value>Ціск паліва на халастым ходзе</value>
+  </data>
+  <data name="ParameterPointsCountText" xml:space="preserve">
+    <value>Колькасць кропак:</value>
+  </data>
+  <data name="ParameterTypeText" xml:space="preserve">
+    <value>Тып параметра:</value>
+  </data>
+  <data name="ClickToZoomGraphText" xml:space="preserve">
+    <value>Клікніце на графіку каб павялічыць</value>
+  </data>
+  <data name="FuelPressureAtIdleRpmTabHeader" xml:space="preserve">
+    <value>Ціск паліва на халастым ходзе</value>
+  </data>
+  <data name="FuelRegulatorOcrToIdleRpmRatioTabHeader" xml:space="preserve">
+    <value>Суадносіны ЦСА рэгулятара да аб. Х/Х</value>
+  </data>
+  <data name="MeasureUnitsColonText" xml:space="preserve">
+    <value>Адзінкі вымярэння:</value>
+  </data>
+  <data name="NameColonText" xml:space="preserve">
+    <value>Імя:</value>
+  </data>
+  <data name="UnitsAmper" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="UnitsBar" xml:space="preserve">
+    <value>бар</value>
+  </data>
+  <data name="UnitsCelsiusDegree" xml:space="preserve">
+    <value>°C</value>
+  </data>
+  <data name="UnitsCelsiusDegreePerSecond" xml:space="preserve">
+    <value>°C/с</value>
+  </data>
+  <data name="UnitsDegree" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="UnitsGramm" xml:space="preserve">
+    <value>г</value>
+  </data>
+  <data name="UnitsHour" xml:space="preserve">
+    <value>г</value>
+  </data>
+  <data name="UnitsKm" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="UnitsKmH" xml:space="preserve">
+    <value>км/г</value>
+  </data>
+  <data name="UnitsLitre" xml:space="preserve">
+    <value>л</value>
+  </data>
+  <data name="UnitsLitrePer100Km" xml:space="preserve">
+    <value>л/100 км</value>
+  </data>
+  <data name="UnitsLux" xml:space="preserve">
+    <value>лк</value>
+  </data>
+  <data name="UnitsM3PerHour" xml:space="preserve">
+    <value>м³/г</value>
+  </data>
+  <data name="UnitsMgPerStroke" xml:space="preserve">
+    <value>мг/ход поршня</value>
+  </data>
+  <data name="UnitsMile" xml:space="preserve">
+    <value>міля</value>
+  </data>
+  <data name="UnitsMilliamper" xml:space="preserve">
+    <value>мА</value>
+  </data>
+  <data name="UnitsMillibar" xml:space="preserve">
+    <value>мбар</value>
+  </data>
+  <data name="UnitsMillilitre" xml:space="preserve">
+    <value>мл</value>
+  </data>
+  <data name="UnitsMilliohm" xml:space="preserve">
+    <value>мОм</value>
+  </data>
+  <data name="UnitsMillisec" xml:space="preserve">
+    <value>мс</value>
+  </data>
+  <data name="UnitsMillivolt" xml:space="preserve">
+    <value>мВ</value>
+  </data>
+  <data name="UnitsMinute" xml:space="preserve">
+    <value>хв</value>
+  </data>
+  <data name="UnitsMm3PerStroke" xml:space="preserve">
+    <value>мм³/ход поршня</value>
+  </data>
+  <data name="UnitsMpH" xml:space="preserve">
+    <value>міль/г</value>
+  </data>
+  <data name="UnitsNewtonMetre" xml:space="preserve">
+    <value>Нм</value>
+  </data>
+  <data name="UnitsNoUnits" xml:space="preserve">
+    <value>Няма адзінак вымярэння</value>
+  </data>
+  <data name="UnitsOhm" xml:space="preserve">
+    <value>Ом</value>
+  </data>
+  <data name="UnitsPercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="UnitsRpm" xml:space="preserve">
+    <value>аб/хв</value>
+  </data>
+  <data name="UnitsSec" xml:space="preserve">
+    <value>с</value>
+  </data>
+  <data name="UnitsUnsupported" xml:space="preserve">
+    <value>Нераспазнаныя</value>
+  </data>
+  <data name="UnitsVolt" xml:space="preserve">
+    <value>В</value>
+  </data>
+  <data name="ContactPersonTextNoColon" xml:space="preserve">
+    <value>Кантактная асоба</value>
+  </data>
+  <data name="LicenseProlongationPeriodText" xml:space="preserve">
+    <value>Перыяд прадаўжэння</value>
+  </data>
+  <data name="OwnerText" xml:space="preserve">
+    <value>Уладальнік</value>
+  </data>
+  <data name="VentilationDistribution" xml:space="preserve">
+    <value>Вентыляцыя – размеркаванне</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Выдаліць</value>
+  </data>
+  <data name="DataDeletedText" xml:space="preserve">
+    <value>Дадзеныя выдаленыя</value>
+  </data>
+  <data name="DataRemovalExplanatoryText" xml:space="preserve">
+    <value>Выдаліць дадзеныя? Калі вы захавалі адпаведны .vts файл, тыя ж самые дадзеныя можна імпартаваць пазней яшчэ раз.</value>
+  </data>
+  <data name="DataRemovalText" xml:space="preserve">
+    <value>Выдаленне дадзеных</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Памылка</value>
+  </data>
+  <data name="SelectedDataDeletedText" xml:space="preserve">
+    <value>Абраныя дадзеныя паспяхова выдаленыя</value>
+  </data>
+  <data name="AggregatesState" xml:space="preserve">
+    <value>Стан агрэгатаў</value>
+  </data>
+  <data name="ControlPanelElementsState" xml:space="preserve">
+    <value>Стан элементаў панэлі кіравання</value>
+  </data>
+  <data name="Variables" xml:space="preserve">
+    <value>Пераменныя асяроддзя</value>
+  </data>
+  <data name="AirConditioningAuthorisation" xml:space="preserve">
+    <value>Дазвол на ўключэнне кліматычнай усталёўкі</value>
+  </data>
+  <data name="AirConditioningBlowerLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі вентылятара кандыцыянера</value>
+  </data>
+  <data name="AirConditioningCompressorControl" xml:space="preserve">
+    <value>Кантроль кампрэсара кандыцыянера</value>
+  </data>
+  <data name="AirConditioningCompressorLoadShedding" xml:space="preserve">
+    <value>Скід нагрузкі кампрэсара кандыцыянера</value>
+  </data>
+  <data name="AirConditioningCompressorRelayOutput" xml:space="preserve">
+    <value>Выхад рэле кампрэсара кандыцыянера</value>
+  </data>
+  <data name="AirConditioningPushButton" xml:space="preserve">
+    <value>Націск кнопкі кандыцыянера</value>
+  </data>
+  <data name="AirConditioningRequestInput" xml:space="preserve">
+    <value>Уваход каманды на ўключэнне кліматычнай усталёўкі</value>
+  </data>
+  <data name="AirFlowVolume" xml:space="preserve">
+    <value>Аб'ёмны выдатак паветра</value>
+  </data>
+  <data name="AirIntake" xml:space="preserve">
+    <value>Забор паветра</value>
+  </data>
+  <data name="AirPumpControl" xml:space="preserve">
+    <value>Кіраванне паветраным насосам</value>
+  </data>
+  <data name="AirTemperature" xml:space="preserve">
+    <value>Тэмпература паветра</value>
+  </data>
+  <data name="AirTurbine" xml:space="preserve">
+    <value>Паветраная турбіна</value>
+  </data>
+  <data name="AirTurbineSpeed" xml:space="preserve">
+    <value>Хуткасць паветранай турбіны</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Сігналізацыя</value>
+  </data>
+  <data name="AlternatorExcitationVoltage" xml:space="preserve">
+    <value>Напружанне ўзбуджэння на генератары пераменнага току</value>
+  </data>
+  <data name="AtmosphericPressure" xml:space="preserve">
+    <value>Атмасферны ціск</value>
+  </data>
+  <data name="AutomaticGearboxInParkPosition" xml:space="preserve">
+    <value>Аўтаматычная скрынка перадач у пазіцыі паркоўкі</value>
+  </data>
+  <data name="AutomaticGearboxRecognition" xml:space="preserve">
+    <value>Аутаматычнае вызначэнне перадачы</value>
+  </data>
+  <data name="AutomaticGearboxSnowProgramRequest" xml:space="preserve">
+    <value>Запыт на "снежную" праграму аўтаматычнай скрынкі перадач</value>
+  </data>
+  <data name="AutomaticLightingMode" xml:space="preserve">
+    <value>Аўтаматычны выбар рэжыма асвятлення</value>
+  </data>
+  <data name="AverageDistanceOfLast5Regenerations" xml:space="preserve">
+    <value>Сярэдні прабег паміж 5 апошнімі рэгенерацыямі</value>
+  </data>
+  <data name="AverageFuelConsumption" xml:space="preserve">
+    <value>Сярэдні расход паліва</value>
+  </data>
+  <data name="AverageJourneyConsumption" xml:space="preserve">
+    <value>Сярэдні расход паліва за паездку</value>
+  </data>
+  <data name="PaymentSystemCash" xml:space="preserve">
+    <value>Наяўныя</value>
+  </data>
+  <data name="PaymentSystemColonText" xml:space="preserve">
+    <value>Плацежная сістэма:</value>
+  </data>
+  <data name="PaymentSystemPayPal" xml:space="preserve">
+    <value>PayPal</value>
+  </data>
+  <data name="PaymentSystemWebMoney" xml:space="preserve">
+    <value>WebMoney</value>
+  </data>
+  <data name="TrialLicenseIssuedInformationText" xml:space="preserve">
+    <value>Вам была выдадзена тэставая ліцэнзія на 60 дзён. Гэтага дастаткова для рэгістрацыі 1 кліента i абслугоўвання 1 яго машыны. Пасля выцячэння ліцензію прыйдзецца прадоўжыць. Пры неабходнасці вы можаце запытаць дадатковыя ліцэнзіі.</value>
+  </data>
+  <data name="NoDataTextBrackets" xml:space="preserve">
+    <value>&lt;Няма дадзеных&gt;</value>
+  </data>
+  <data name="VehicleRegistrationByNewKeyCreationStep1HeaderText" xml:space="preserve">
+    <value>Крок 1: Выбар неактываванай ліцэнзіі</value>
+  </data>
+  <data name="VehicleRegistrationByNewKeyCreationStep1TopExplanatoryText" xml:space="preserve">
+    <value>Калі ласка, абярыце ліцэнзію з спісу. Яна патрэбна для генерацыі рэгістрацыйнага ключа, на які будзе зарэгістраваная машына. </value>
+  </data>
+  <data name="VehicleRegistrationByNewKeyCreationStep1BottomExplanatoryText" xml:space="preserve">
+    <value>Спіс адлюстроўвае толькi яшчэ не актываваныя ліцэнзii. Пабачыць усе вашы лiцэнзii вы можаце ў падзеле "Лiцэнзii"</value>
+  </data>
+  <data name="ErrorReportingWindowDescriptionText" xml:space="preserve">
+    <value>Нешта пайшло не так. Калi ласка, скапiруйце тэкст памылкi i адпраўце па электронная пошце на адрас тэхнiчнай падтрымкi праграмы. Мы пастараемся выправiць сiтуацыю так хутка, як магчыма.</value>
+  </data>
+  <data name="ErrorReportingWindowHeaderText" xml:space="preserve">
+    <value>Памылка</value>
+  </data>
+  <data name="RegistrationKeyCreationInProgressText" xml:space="preserve">
+    <value>Ствараецца рэгістрацыйны ключ...</value>
+  </data>
+  <data name="CommentColonText" xml:space="preserve">
+    <value>Каментар:</value>
+  </data>
+  <data name="KeyColonText" xml:space="preserve">
+    <value>Ключ:</value>
+  </data>
+  <data name="VehRegistrationWithKeyCreationStep2Header" xml:space="preserve">
+    <value>Крок 2: стварэнне новага рэгістрацыйнага ключа</value>
+  </data>
+  <data name="NewKeyForVehRegistationCreatedAdditionalExplanatoryText" xml:space="preserve">
+    <value>Пасля атрымання ключа кліент можа зарэгістравацца ў сістэме і адразу ж праглядзець дадзеныя па сваёй машыне.</value>
+  </data>
+  <data name="NewKeyForVehRegistationCreatedExplanatoryText" xml:space="preserve">
+    <value>Для рэгістрацыі гэтай машыны быў створаны рэгістрацыйны ключ. Вы можаце пазначыць яго як выдадзены на старонцы рэгістрацыйных ключоў, пасля чаго выдаць кліенту (ўладальніку машыны).</value>
+  </data>
+  <data name="VehicleRegistrationByNewKeyCreationText" xml:space="preserve">
+    <value>Крок 3: рэгістрацыя машыны на новы ключ</value>
+  </data>
+  <data name="VehicleRegistrationInProgressText" xml:space="preserve">
+    <value>Рэгiстрацыя машыны...</value>
+  </data>
+  <data name="VehicleRegisteredAtNewKeyMessage" xml:space="preserve">
+    <value>Машына зарэгістравана на новы рэгістрацыйны ключ. Цяпер вы можаце ўносіць дадзеныя на гэтую машыну і даць кліенту доступ да іх з дапамогай рэгістрацыйнага ключа. Не забывайце сачыць за тэрмінам заканчэння ліцэнзіі.</value>
+  </data>
+  <data name="NavigatablePageHeaderAutomaticDataAnalysis" xml:space="preserve">
+    <value>Аўтаматычны аналіз дадзеных</value>
+  </data>
+  <data name="NavigatablePageHeaderManualDataAnalysis" xml:space="preserve">
+    <value>Ручны аналіз дадзеных</value>
+  </data>
+  <data name="ManualParametersControlExplanatoryMainText" xml:space="preserve">
+    <value>Змены параметраў з цягам часу</value>
+  </data>
+  <data name="ManualParametersControlExplanatoryText" xml:space="preserve">
+    <value>Раздзел дазваляе ацэньваць змяненне розных параметраў машыны з цягам часу. Дадзеныя прадстаўлены ў форме храналагічных графікаў.</value>
+  </data>
+  <data name="AutomaticParametersControlExplanatoryMainText" xml:space="preserve">
+    <value>Ацэнка стану сiстэм машыны</value>
+  </data>
+  <data name="AutomaticParametersControlExplanatoryText" xml:space="preserve">
+    <value>Праграма аўтаматычна вызначае ці знаходзяцца параметры сістэм аўтамабіля ў дапушчальных межах і выдае рэкамендацыі.</value>
+  </data>
+  <data name="AnalysisCoreAnalysisInProgress" xml:space="preserve">
+    <value>Апрацоўка дадзеных...</value>
+  </data>
+  <data name="LeaveFieldEmptyIfYouHaveNoKey" xml:space="preserve">
+    <value>Калі у вас няма рэгістрацыйнага ключа, проста пакіньце поле пустым.</value>
+  </data>
+  <data name="PleaseWaitMessage" xml:space="preserve">
+    <value>Калі ласка, пачакайце</value>
+  </data>
+  <data name="VendorVehicleDataRetrievalInProgress" xml:space="preserve">
+    <value>Атрыманне дадзеных вытворцы аб машыне...</value>
+  </data>
+  <data name="VendorVehicleDataPersistenceInProgress" xml:space="preserve">
+    <value>Захаванне дадзеных аб машыне...</value>
+  </data>
+  <data name="SelectDataToImportMessage" xml:space="preserve">
+    <value>Зараз вы можаце абраць дыягнастычня дадзеныя для гэтай машыны i захаваць iх у сiстэме для для далейшага аналізу.</value>
+  </data>
+  <data name="VehicleDataPersistedSuccessfullyMessage" xml:space="preserve">
+    <value>Характарыстыкi машыны захаваныя ў сiстэме</value>
+  </data>
+  <data name="CharacteristicsText" xml:space="preserve">
+    <value>Характарыстыкі</value>
+  </data>
+  <data name="DiagnosticParametersControl" xml:space="preserve">
+    <value>Кантроль дыягнастычных параметраў</value>
+  </data>
+  <data name="DiagnosticParametersControlExplanatoryText" xml:space="preserve">
+    <value>Аўтаматычны альбо ручны аналіз назапашаных дыягнастычных дадзеных </value>
+  </data>
+  <data name="SavedDataExplanatoryText" xml:space="preserve">
+    <value>Падзел дазваляе праглядзець імпартаваныя дадзеныя ў першапачатковым выглядзе без аналітычнай апрацоўкі</value>
+  </data>
+  <data name="ServiceLog" xml:space="preserve">
+    <value>Журнал тэхнічнага абслугоўвання</value>
+  </data>
+  <data name="ServiceLogExplanatoryText" xml:space="preserve">
+    <value>Рэгіструйце тут усе замены дэталяў і расходнікаў, і журнал аўтаматычна нагадае вам аб перыядычных заменах, якія набліжаюцца</value>
+  </data>
+  <data name="AnalyticRulesSettings" xml:space="preserve">
+    <value>Наладкі аналітычных мадэляў</value>
+  </data>
+  <data name="NavigatablePageHeaderAnalyticRulesSettings" xml:space="preserve">
+    <value>Наладкі аналітычных мадэляў</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара ДП сістэмы Common Rail пры 1000 аб/хв</value>
+  </data>
+  <data name="EngineFamilyColon" xml:space="preserve">
+    <value>Сямейства рухавікоў:</value>
+  </data>
+  <data name="EngineTypeColon" xml:space="preserve">
+    <value>Тып рухавіка:</value>
+  </data>
+  <data name="RuleTypeColon" xml:space="preserve">
+    <value>Тып правіла:</value>
+  </data>
+  <data name="ItemsCountText" xml:space="preserve">
+    <value>Колькасць элементаў:</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара ДП сістэмы Common Rail пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара ДП сістэмы Common Rail пры 3000 аб/хв</value>
+  </data>
+  <data name="VehicleCharacteristicsSavedMessage" xml:space="preserve">
+    <value>Характарыстыкі машыны захаваны ў базе дадзеных, рэгістрацыя машыны на гэтым завершана.</value>
+  </data>
+  <data name="VehicleRegisteredSuccessfullyHeader" xml:space="preserve">
+    <value>Машына зарэгістравана</value>
+  </data>
+  <data name="GenerateText" xml:space="preserve">
+    <value>Згенераваць...</value>
+  </data>
+  <data name="NavigatablePageHeaderStatisticsGeneration" xml:space="preserve">
+    <value>Генерацыя статыстыкi</value>
+  </data>
+  <data name="StatisticsGeneration" xml:space="preserve">
+    <value>Генерацыя статыстыкi</value>
+  </data>
+  <data name="StatisticsGenerationColon" xml:space="preserve">
+    <value>Генерацыя статыстыкi:</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameInjectorCorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя CommonRail інжэктара на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameInjectorCorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя CommonRail інжэктара на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameInjectorCorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя CommonRail інжэктара на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticsItemDetailsCaption" xml:space="preserve">
+    <value>Падрабязнасці элемента статыстыкі</value>
+  </data>
+  <data name="ApplyText" xml:space="preserve">
+    <value>Прымянiць</value>
+  </data>
+  <data name="DiscretionColon" xml:space="preserve">
+    <value>Дыскрэтызацыя:</value>
+  </data>
+  <data name="EngineModelColon" xml:space="preserve">
+    <value>Мадэль рухавiка:</value>
+  </data>
+  <data name="IncorrectDiscretionValueMessage" xml:space="preserve">
+    <value>Некарэктнае значэнне дыскрэтызацыi!</value>
+  </data>
+  <data name="StatisticsElementTypeColon" xml:space="preserve">
+    <value>Тып элемента статыстыкi:</value>
+  </data>
+  <data name="SaveAllText" xml:space="preserve">
+    <value>Захаваць усё</value>
+  </data>
+  <data name="AggregateText" xml:space="preserve">
+    <value>Агрэгаваць</value>
+  </data>
+  <data name="NavigatablePageHeaderStatisticsAggregation" xml:space="preserve">
+    <value>Агрэгацыя статыстыкі</value>
+  </data>
+  <data name="StatisticsAggregation" xml:space="preserve">
+    <value>Агрэгацыя статыстыкі</value>
+  </data>
+  <data name="StatisticsAggregationColon" xml:space="preserve">
+    <value>Агрэгацыя статыстыкі:</value>
+  </data>
+  <data name="CharacteristicsRetrievalFailed" xml:space="preserve">
+    <value>Не ўдалося атрымаць характарыстыкі аўтамабіля</value>
+  </data>
+  <data name="RetryText" xml:space="preserve">
+    <value>Паўтарыць...</value>
+  </data>
+  <data name="AnalyticRuleSettings" xml:space="preserve">
+    <value>Наладкi аналiтычнага правiла</value>
+  </data>
+  <data name="AnalyticRuleTypeStubAny" xml:space="preserve">
+    <value>&lt;Усе&gt;</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Захаваць</value>
+  </data>
+  <data name="SettingsAlreadyExistText" xml:space="preserve">
+    <value>Такія наладкі ўжо існуюць!</value>
+  </data>
+  <data name="MaxAcceptableRaluesRange" xml:space="preserve">
+    <value>Калідор гранічна дапушчальных значэнняў</value>
+  </data>
+  <data name="OptimalValuesRange" xml:space="preserve">
+    <value>Калідор аптымальных значэнняў</value>
+  </data>
+  <data name="PredefinedValuesColon" xml:space="preserve">
+    <value>Зададзеныя значэнні:</value>
+  </data>
+  <data name="StatisticalValuesColon" xml:space="preserve">
+    <value>Статыстычныя значэнні:</value>
+  </data>
+  <data name="UsePredefined" xml:space="preserve">
+    <value>Карыстаць зададзеныя</value>
+  </data>
+  <data name="UseStatistical" xml:space="preserve">
+    <value>Карыстаць статыстычныя</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCommonRail" xml:space="preserve">
+    <value>Сістэма ўпырска Common Rail</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorsCorrections" xml:space="preserve">
+    <value>Карэкцыі інжэктараў</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections1" xml:space="preserve">
+    <value>Карэкцыi - iнжэктар 1</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections2" xml:space="preserve">
+    <value>Карэкцыi - iнжэктар 2</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections3" xml:space="preserve">
+    <value>Карэкцыi - iнжэктар 3</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections4" xml:space="preserve">
+    <value>Карэкцыi - iнжэктар 4</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm1000" xml:space="preserve">
+    <value>На 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm2000" xml:space="preserve">
+    <value>На 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm3000" xml:space="preserve">
+    <value>На 3000 аб/хв</value>
+  </data>
+  <data name="MarksHistory" xml:space="preserve">
+    <value>Гiсторыя адзнак</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCommonRail" xml:space="preserve">
+    <value>Ацэнка стану сістэмы ўпырска Common Rail на базе яе параметраў, такіх як карэкцыі фарсунак, ціск паліва на розных абаротах рухавіка і да т.п.</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelInjectorCorrections1" xml:space="preserve">
+    <value>Ацэнкі карэкцый фарсункі 1 на розных абаротах рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelInjectorCorrections2" xml:space="preserve">
+    <value>Ацэнкі карэкцый фарсункі 2 на розных абаротах рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelInjectorCorrections3" xml:space="preserve">
+    <value>Ацэнкі карэкцый фарсункі 3 на розных абаротах рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelInjectorCorrections4" xml:space="preserve">
+    <value>Ацэнкі карэкцый фарсункі 4 на розных абаротах рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelInjectorsCorrections" xml:space="preserve">
+    <value>Ацэнка стану фарсунак сістэмы Common Rail на падставе значэнняў карэкцый</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleInjectorCorrectionRpm1000" xml:space="preserve">
+    <value>Ацэнка карэкцыі фарсункі на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleInjectorCorrectionRpm2000" xml:space="preserve">
+    <value>Ацэнка карэкцыі фарсункі на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleInjectorCorrectionRpm3000" xml:space="preserve">
+    <value>Ацэнка карэкцыі фарсункі на 3000 аб/хв</value>
+  </data>
+  <data name="NavigatablePageHeaderVehicleEvents" xml:space="preserve">
+    <value>Журнал абслугоўвання</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CashPaymentInformationText" xml:space="preserve">
+    <value>Пры аплаце наяўнымі апрацоўка запыту адбываецца ўручную адміністратарам сістэмы пасля факту аплаты. На гэта можа спатрэбіцца час, таму рэкамендуемы спосаб аплаты - праз адну з плацежных сістэм.</value>
+  </data>
+  <data name="NavigatablePageHeaderLicenseIssuance" xml:space="preserve">
+    <value>Крама лiцэнзiй</value>
+  </data>
+  <data name="LicenseClassDisplayNameA" xml:space="preserve">
+    <value>Клас A</value>
+  </data>
+  <data name="PaymentMethodColon" xml:space="preserve">
+    <value>Спосаб аплаты:</value>
+  </data>
+  <data name="PurchaseText" xml:space="preserve">
+    <value>Купiць</value>
+  </data>
+  <data name="WhichLicenseWillWeBuyQuestion" xml:space="preserve">
+    <value>Якую лiцэнзiю купляем?</value>
+  </data>
+  <data name="CalculatePrice" xml:space="preserve">
+    <value>Вылічыць кошт</value>
+  </data>
+  <data name="WebMoneyPaymentInfoDetaisExplanation" xml:space="preserve">
+    <value>Сістэма выставіць рахунак на ўведзены нумар кашалька. Пасля таго, як аплата будзе праведзена, набытыя ліцэнзіі будуць у вашым распараджэнні. Калі ласка, не зачыняйце акно сістэмы падчас правядзення аперацыі для карэктнай апрацоўкі ўсіх запытаў.</value>
+  </data>
+  <data name="WmzPurseToBillColon" xml:space="preserve">
+    <value>Кашалёк WMZ для выстаўлення рахунку:</value>
+  </data>
+  <data name="AllOperationsColon" xml:space="preserve">
+    <value>Усе аперацыі:</value>
+  </data>
+  <data name="RequiresAttentionColon" xml:space="preserve">
+    <value>Патрабуе ўвагі:</value>
+  </data>
+  <data name="CheckBoxRemindAboutEvent" xml:space="preserve">
+    <value>Наступная замена павiнна адбыцца праз:</value>
+  </data>
+  <data name="DateColon" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="ServiceEventProperties" xml:space="preserve">
+    <value>Падрабязнасцi сервiснай аперацыi</value>
+  </data>
+  <data name="TypeColon" xml:space="preserve">
+    <value>Тып:</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameAirFilterChange" xml:space="preserve">
+    <value>Замена паветранага фiльтра</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameBodyRepair" xml:space="preserve">
+    <value>Рамонт кузава</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCabinFilterChange" xml:space="preserve">
+    <value>Замена салоннага паветранага фільтра</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCabinRepair" xml:space="preserve">
+    <value>Рамонт салона</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameConditioningRepair" xml:space="preserve">
+    <value>Рамонт кандыцыянера</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantChange" xml:space="preserve">
+    <value>Замена астуджальнай вадкасці</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantPumpChange" xml:space="preserve">
+    <value>Замена помпы астуджальнай вадкасці</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantSystemRepair" xml:space="preserve">
+    <value>Рамонт астуджальнай сістэмы</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameEngineRepair" xml:space="preserve">
+    <value>Рамонт рухавiка</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameGeneratorBeltChange" xml:space="preserve">
+    <value>Замена рамяня генератара</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameGlassMirrorsRepair" xml:space="preserve">
+    <value>Рамонт шкла і люстэркаў</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOilChange" xml:space="preserve">
+    <value>Замена алею</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOilFilterChange" xml:space="preserve">
+    <value>Замена алейнага фiльтра</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOther" xml:space="preserve">
+    <value>Іншае</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameSuspensionRepair" xml:space="preserve">
+    <value>Рамонт падвескi</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameTimingBeltChange" xml:space="preserve">
+    <value>Замена рамяня ГРМ</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameWheelsRepair" xml:space="preserve">
+    <value>Ремонт колаў</value>
+  </data>
+  <data name="CurrentVehicleMileage" xml:space="preserve">
+    <value>Бягучы прабег машины:</value>
+  </data>
+  <data name="EventMileageColon" xml:space="preserve">
+    <value>Прабег на момант аперацыі:</value>
+  </data>
+  <data name="MileageShouldNoBeMoreThanCurrentErrorMessage" xml:space="preserve">
+    <value>Прабег на момант аперацыі не павінен быць больш за бягучы. Магчыма, трэба задаць новы бягучы прабег машыны.</value>
+  </data>
+  <data name="PlannedNextReplacementAppearsInThePastErrorMessage" xml:space="preserve">
+    <value>Запланаваная наступная аперацыя апынулася ў мінулым!</value>
+  </data>
+  <data name="VehicleEventMileageNotSetErrorMessage" xml:space="preserve">
+    <value>Не зададзены прабег на момант аперацыі!</value>
+  </data>
+  <data name="VehicleEventTypeNotSelectedErrorMessage" xml:space="preserve">
+    <value>Абярыце тып аперацыі!</value>
+  </data>
+  <data name="InPeriodTextWithGaps" xml:space="preserve">
+    <value> праз </value>
+  </data>
+  <data name="ErrorMessagePurseNotSet" xml:space="preserve">
+    <value>Некарэктны WMID</value>
+  </data>
+  <data name="LicensesPeriodNotSetError" xml:space="preserve">
+    <value>Тэрмін дзеяння ліцэнзіі не зададзены</value>
+  </data>
+  <data name="LicensesQuantityNotSetError" xml:space="preserve">
+    <value>Не зададзена колькасць ліцэнзій</value>
+  </data>
+  <data name="PaymentSystemNotSelectedError" xml:space="preserve">
+    <value>Не абрана плацежная сістэма</value>
+  </data>
+  <data name="ActiveDiscountsColon" xml:space="preserve">
+    <value>Дзейныя зніжкі:</value>
+  </data>
+  <data name="CheckYourPaymentRequestsMessage" xml:space="preserve">
+    <value>Сістэма выслала рахунак на прадастаўлены кашалёк. Уважліва праверце суму рахунку, аплаціце яго, затым націсніце кнопку "Гатова". Калі ў вас ёсць сумненні ў правільнасці выстаўлення рахунку, не саромейцеся звярнуцца ў нашу тэхпадтрымку.</value>
+  </data>
+  <data name="CurrencyDisplayNameDollar" xml:space="preserve">
+    <value>$</value>
+  </data>
+  <data name="CurrencyDisplayNameWMZ" xml:space="preserve">
+    <value>WMZ</value>
+  </data>
+  <data name="DiscountDisplayNameDataForDeficitEngineType" xml:space="preserve">
+    <value>За "дэфіцытны" тып рухавіка</value>
+  </data>
+  <data name="DiscountDisplayNameDataQuality" xml:space="preserve">
+    <value>За якасць дыягнастычных дадзеных</value>
+  </data>
+  <data name="DiscountDisplayNameDataRequiredMinimumCompliance" xml:space="preserve">
+    <value>За адпаведнасць правілу "неабходнага мінімума"</value>
+  </data>
+  <data name="DiscountDisplayNameDataUniformityOverTime" xml:space="preserve">
+    <value>За раўнамернасць дадзеных у часе</value>
+  </data>
+  <data name="DiscountDisplayNameUserAgeInSystem" xml:space="preserve">
+    <value>За ўзрост карыстальніка ў сістэме</value>
+  </data>
+  <data name="FinalPriceColon" xml:space="preserve">
+    <value>Канчатковая цана:</value>
+  </data>
+  <data name="LicensePriceHeader" xml:space="preserve">
+    <value>Цана ліцэнзій</value>
+  </data>
+  <data name="PayedByCacheMessage" xml:space="preserve">
+    <value>Запыт будзе захоўвацца да таго часу, пакуль не будзе аплочаны. Вам засталося толькі прыдумаць як перадаць грошы адміністратару сістэмы, які адразу ж выдасць вам запытаныя ліцэнзіі.</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Аплата</value>
+  </data>
+  <data name="PaymentNotFoundErrorMessage" xml:space="preserve">
+    <value>Нешта пайшло не так – запыт на аплату быў адпраўлены, але зараз мы не можам яго знайсці. Паспрабуйце яшчэ раз с пачатку.</value>
+  </data>
+  <data name="PaymentNotYetPerformedTextMessage" xml:space="preserve">
+    <value>Аплата яшчэ не завершана</value>
+  </data>
+  <data name="PayRequestLaterMessage" xml:space="preserve">
+    <value>Калі вы зараз адменіце плацёж, то ў любы час зможаце працягнуць на старонцы запытаў на ліцэнзію. Ваш запыт будзе захоўвацца, пакуль не будзе аплочаны.</value>
+  </data>
+  <data name="Ready" xml:space="preserve">
+    <value>Гатова</value>
+  </data>
+  <data name="RequestHasBeenSentText" xml:space="preserve">
+    <value>Запыт на ліцэнзію адпраўлены</value>
+  </data>
+  <data name="InvoiceDescriptionFormat" xml:space="preserve">
+    <value>Рахунак за ліцэнзіі сістэмы VTS Automonitoring, ідэнтыфікатар плацяжу: {0}</value>
+  </data>
+  <data name="RequestSatisfied" xml:space="preserve">
+    <value>Гатова</value>
+  </data>
+  <data name="RequestSatisfiedInformationText" xml:space="preserve">
+    <value>Набытыя ліцэнзіі ў вашым распараджэнні. На старонцы кіравання ліцэнзіямі вы можаце прагледзець тэрміны іх дзеяння i сачыць за датай заканчэння. Калі тэрмін іх дзеяння скончыцца, рэкамендуем падаўжаць ўсе ліцэнзіі адразу, каб атрымаць зніжку па колькасці ліцэнзій.</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Нумар рахунку</value>
+  </data>
+  <data name="LicenseIssuanceByRequest" xml:space="preserve">
+    <value>Выпіска ліцэнзіі па запыту</value>
+  </data>
+  <data name="NotSatisfiedText" xml:space="preserve">
+    <value>Не задаволены</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Спосаб аплаты</value>
+  </data>
+  <data name="SatisfiedText" xml:space="preserve">
+    <value>Задаволены</value>
+  </data>
+  <data name="LicenseRequests" xml:space="preserve">
+    <value>Запыты на ліцэнзію</value>
+  </data>
+  <data name="NavigatablePageHeaderLicenseRequests" xml:space="preserve">
+    <value>Запыты на ліцэнзію</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="RequestIdentifier" xml:space="preserve">
+    <value>Идэнтыфiкатар запыту</value>
+  </data>
+  <data name="LicenseProlongationWindowStep1ExplanationText" xml:space="preserve">
+    <value>Мы збіраемся падоўжыць выбраныя ліцэнзіі, яны адлюстраваны ў спісе ніжэй. Праверце, што няма памылкі:</value>
+  </data>
+  <data name="LicensesProlongation" xml:space="preserve">
+    <value>Падаўжэнне ліцэнзій</value>
+  </data>
+  <data name="PaymentPerformedTextMessage" xml:space="preserve">
+    <value>Аплочана</value>
+  </data>
+  <data name="DataAnalysis" xml:space="preserve">
+    <value>Аналiз дыягнастычных дадзеных</value>
+  </data>
+  <data name="EngineText" xml:space="preserve">
+    <value>Рухавiк</value>
+  </data>
+  <data name="IncorrectVinErrorText" xml:space="preserve">
+    <value>У Vin павiнна быць 17 лiтар альбо лiчбаў</value>
+  </data>
+  <data name="UnfortunatelyVehicleIsNotSupportedMessage" xml:space="preserve">
+    <value>На жаль, машына не падтрымлiваецца</value>
+  </data>
+  <data name="UnsupportedManufacturerErrorText" xml:space="preserve">
+    <value>Падтрымлiваюцца толькi машыны Peugeot i Citroen</value>
+  </data>
+  <data name="VehicleRecognizedText" xml:space="preserve">
+    <value>Машына распазнаная</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>Праверыць</value>
+  </data>
+  <data name="LoginWelcomeMessage" xml:space="preserve">
+    <value>Калi ў вас ужо ёсць акаунт, увайдзiце ў сiстэму. Калi яшчэ не – зарэгиструйцеся. Гэта бясплатна.</value>
+  </data>
+  <data name="VinCheck" xml:space="preserve">
+    <value>Праверка VIN</value>
+  </data>
+  <data name="VinCheckForCompatibilityExplanationText" xml:space="preserve">
+    <value>Праверце свой VIN на сумяшчальнасць з сiстэмай</value>
+  </data>
+  <data name="WelcomeHeaderText" xml:space="preserve">
+    <value>Запрашаем у сiстэму VTS Automonitoring</value>
+  </data>
+  <data name="NoInformationForThisVin" xml:space="preserve">
+    <value>Няма дадзеных для гэтага VIN</value>
+  </data>
+  <data name="HeaderDataTree" xml:space="preserve">
+    <value>ДРЭВА ДАДЗЕНЫХ</value>
+  </data>
+  <data name="HeaderSelectVehicle" xml:space="preserve">
+    <value>ВЫБАР МАШЫНЫ</value>
+  </data>
+  <data name="HeaderDataGraphs" xml:space="preserve">
+    <value>ГРАФІКІ ДАДЗЕНЫХ</value>
+  </data>
+  <data name="HeaderFileUpload" xml:space="preserve">
+    <value>ВЫБАР ФАЙЛА</value>
+  </data>
+  <data name="HeaderChronologicalParametersTree" xml:space="preserve">
+    <value>ДРЭВА ХРАНАЛАГIЧНЫХ ПАРАМЕТРАЎ</value>
+  </data>
+  <data name="HeaderItemDetails" xml:space="preserve">
+    <value>ПАДРАБЯЗНАСЦI</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLowerLambaProbeVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLowerLambaProbeVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLowerLambaProbeVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга кіслароднага зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameUpperLambaProbeVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameUpperLambaProbeVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameUpperLambaProbeVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга кіслароднага зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelPetrolEnginePurification" xml:space="preserve">
+    <value>Ацэнка працы падсістэмы каталітычнай нейтралізацыі выхлапных газаў</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelLambdaProbes" xml:space="preserve">
+    <value>Лямбда-зонды</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelLowerLambdaProbe" xml:space="preserve">
+    <value>Ніжні лямбда-зонд</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEnginePurification" xml:space="preserve">
+    <value>Рухавік – каталітычны нейтралізатар</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelUpperLambdaProbe" xml:space="preserve">
+    <value>Верхні лямбда-зонд</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpm" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpm" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaLowerVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaLowerVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaLowerVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне ніжняга лямбда-зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaUpperVoltageAt1000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaUpperVoltageAt2000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameLambdaUpperVoltageAt3000Rpm" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда пры 3000 аб/хв</value>
+  </data>
+  <data name="StateMarks" xml:space="preserve">
+    <value>Ацэнка стану</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelElectricSystem" xml:space="preserve">
+    <value>Ацэнка стану электрычнай сістэмы</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelLambdaProbes" xml:space="preserve">
+    <value>Аналіз напружання на лямбда-зондах у розных рэжымах работы рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleStartupUndervoltage" xml:space="preserve">
+    <value>Прасадка напружання пры заводзе рухавіка </value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelElectricSystem" xml:space="preserve">
+    <value>Электрычная сістэма</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleStartupUndervoltage" xml:space="preserve">
+    <value>Прасадка напружання пры заводзе рухавіка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameEngineStartUndervoltage" xml:space="preserve">
+    <value>Прасадка напружання пры заводзе рухавіка</value>
+  </data>
+  <data name="AnalyticStatisticItemTypeDisplayNameEngineStartUndervoltage" xml:space="preserve">
+    <value>Прасадка напружання пры заводзе рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelFuelPressureDelta" xml:space="preserve">
+    <value>Розніца паміж ціскам паліва, запытаным кампутарам, і сапраўдным ціскам паліва, створаным у сістэме ў адказ на запыт</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelPressureDeltaForRpmRpm1000" xml:space="preserve">
+    <value>Розніца паміж ціскам паліва, запытаным кампутарам, і сапраўдным ціскам паліва, створаным у сістэме ў адказ на запыт на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelPressureDeltaForRpmRpm2000" xml:space="preserve">
+    <value>Розніца паміж ціскам паліва, запытаным кампутарам, і сапраўдным ціскам паліва, створаным у сістэме ў адказ на запыт на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelPressureDeltaForRpmRpm3000" xml:space="preserve">
+    <value>Розніца паміж ціскам паліва, запытаным кампутарам, і сапраўдным ціскам паліва, створаным у сістэме ў адказ на запыт на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelFuelPressureDelta" xml:space="preserve">
+    <value>Розніца паміж замераным і намінальным ціскам паліва</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm1000" xml:space="preserve">
+    <value>На 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm2000" xml:space="preserve">
+    <value>На 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm3000" xml:space="preserve">
+    <value>На 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta1000Rpm" xml:space="preserve">
+    <value>Розніца паміж замераным і намінальным ціскам паліва на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta2000Rpm" xml:space="preserve">
+    <value>Розніца паміж замераным і намінальным ціскам паліва на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta3000Rpm" xml:space="preserve">
+    <value>Розніца паміж замераным і намінальным ціскам паліва на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 1 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 1 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 1 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 2 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 2 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 2 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 3 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 3 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 3 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 4 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 4 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Час зарада індукцыйнай шпулькі цыліндра 4 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilsChargeTime" xml:space="preserve">
+    <value>Час зараду катушак запальвання</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilsStartupChargeTimePeak" xml:space="preserve">
+    <value>Пiкавы час зараду катушак запальвання пры старце рухавiка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineIgnition" xml:space="preserve">
+    <value>Запальванне</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі 1 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі 2 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі 2 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі 2 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilChargeTime1" xml:space="preserve">
+    <value>Час зарада шпулькі 1 цыліндра</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilChargeTime2" xml:space="preserve">
+    <value>Час зарада шпулькі 2 цыліндра</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilChargeTime3" xml:space="preserve">
+    <value>Час зарада шпулькі 3 цыліндра</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilChargeTime4" xml:space="preserve">
+    <value>Час зарада шпулькі 4 цыліндра</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilsStartupChargeTimePeak" xml:space="preserve">
+    <value>Пікавы час зарада шпулек запальвання кожнага з цыліндраў (пачатковы час зарада шпулькі запальвання пры старце рухавіка)</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelPetrolEngineIgnition" xml:space="preserve">
+    <value>Аналіз стану сістэмы запальвання бензінавага рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelUpperLambdaProbe" xml:space="preserve">
+    <value>Аналіз напружання верхняга лямбда-зонда для розных абаротаў</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime1" xml:space="preserve">
+    <value>Шпулька 1</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime2" xml:space="preserve">
+    <value>Шпулька 2</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime3" xml:space="preserve">
+    <value>Шпулька 3</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime4" xml:space="preserve">
+    <value>Шпулька 4</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime1" xml:space="preserve">
+    <value>Стартавы пік часу зарада шпулькі 1</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime2" xml:space="preserve">
+    <value>Стартавы пік часу зарада шпулькі 2</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime3" xml:space="preserve">
+    <value>Стартавы пік часу зарада шпулькі 3</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime4" xml:space="preserve">
+    <value>Стартавы пік часу зарада шпулькі 4</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькі 1 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькі 1 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькі 1 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькі 2 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькі 2 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькі 2 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькі 3 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькі 3 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькі 3 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькі 4 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькі 4 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькі 4 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelCylinderCoilsChargeTime" xml:space="preserve">
+    <value>Час зараду катушак запальвання</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelLowerLambdaProbe" xml:space="preserve">
+    <value>Аналіз напружанняў ніжняга лямбда-зонда на розных абаротах</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargePeakTime1" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі запальвання цыліндру 1 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargePeakTime2" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі запальвання цыліндру 2 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargePeakTime3" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі запальвання цыліндру 3 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargePeakTime4" xml:space="preserve">
+    <value>Пікавы час зарада шпулькі запальвання цыліндру 4 пры старце рухавіка</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 1 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 1 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 1 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 2 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 2 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 2 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 3 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 3 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 3 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm1000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 4 на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm2000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 4 на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm3000" xml:space="preserve">
+    <value>Час зарада шпулькi запальвання цылiндра 4 на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleLowerLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Напружанне нiжняга лямбда-зонда на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleLowerLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Напружанне нiжняга лямбда-зонда на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleLowerLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Напружанне нiжняга лямбда-зонда на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleUpperLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleUpperLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleUpperLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Напружанне верхняга лямбда-зонда на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineInjection" xml:space="preserve">
+    <value>Упырск</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineInjectionTime" xml:space="preserve">
+    <value>Час упырску</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm1000" xml:space="preserve">
+    <value>Оценка времени впрыска на 1000 об/мин</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm2000" xml:space="preserve">
+    <value>Оценка времени впрыска на 2000 об/мин</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm3000" xml:space="preserve">
+    <value>Оценка времени впрыска на 3000 об/мин</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt1000Rpm" xml:space="preserve">
+    <value>Час упырску на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt2000Rpm" xml:space="preserve">
+    <value>Час упырску на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt3000Rpm" xml:space="preserve">
+    <value>Час упырску на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelPetrolEngineInjection" xml:space="preserve">
+    <value>Аналіз стану сістэмы ўпырску на аснове розных параметраў</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelPetrolEngineInjectionTime" xml:space="preserve">
+    <value>Аналіз часу ўпырску на розных абарачэннях</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRulePetrolEngineInjectionTimeForRpm1000" xml:space="preserve">
+    <value>Аналіз часу ўпырску бензінавага рухавіка на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRulePetrolEngineInjectionTimeForRpm2000" xml:space="preserve">
+    <value>Аналіз часу ўпырску бензінавага рухавіка на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRulePetrolEngineInjectionTimeForRpm3000" xml:space="preserve">
+    <value>Аналіз часу ўпырску бензінавага рухавіка на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleInjectionTimeStartupPeak" xml:space="preserve">
+    <value>Пiкавы час упырску пры старце рухавiка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectionTimeStartupPeak" xml:space="preserve">
+    <value>Пiкавы час упырску пры старце рухавiка</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeStartupPeak" xml:space="preserve">
+    <value>Пiкавы час упырску пры старце рухавiка</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>Логін</value>
+  </data>
+  <data name="PartnerDiagnosticData" xml:space="preserve">
+    <value>Дыягнастычныя дадзеныя партнёра</value>
+  </data>
+  <data name="RegisteredDate" xml:space="preserve">
+    <value>Дата рэгістрацыі</value>
+  </data>
+  <data name="CannotSaveForUnregisteredVehiclesMessage" xml:space="preserve">
+    <value>Немагчыма захаваць дадзеныя для незарэгiстраванай машыны!</value>
+  </data>
+  <data name="ForeignVehicleDetectedMessage" xml:space="preserve">
+    <value>Знойдзены дадзеныя для машыны, якая зарэгістравана на іншага карыстальніка. Такія дадзеныя захаваць немагчыма. Калі ласка, звярніцеся у службу тэхнічнай падтрымкі vtsautomonitoring@gmail.com</value>
+  </data>
+  <data name="PleaseSelectLicensesToProlongMessage" xml:space="preserve">
+    <value>Ліцэнзіі не абраныя. Калі ласка, адзначце ліцэнзіі на падаўжэнне і паспрабуйце яшчэ раз.</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent1000Rpm" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent2000Rpm" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent3000Rpm" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticModelFuelPressureRegulatorCurrent" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelRegulatorCurrentForRpmRpm1000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelRegulatorCurrentForRpmRpm2000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDescriptionTextAnalyticRuleFuelRegulatorCurrentForRpmRpm3000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelFuelPressureRegulatorCurrent" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm1000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm2000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm3000" xml:space="preserve">
+    <value>Ток рэгулятара ціску паліва на 3000 аб/хв</value>
+  </data>
+  <data name="StatisticsItemSource" xml:space="preserve">
+    <value>Вытокi элемента статыстыкi</value>
+  </data>
+  <data name="DatasetIds" xml:space="preserve">
+    <value>ID набораў дадзеных</value>
+  </data>
+  <data name="DatasetsQuantityShort" xml:space="preserve">
+    <value>К-ць набораў дадз.</value>
+  </data>
+  <data name="MarkReliabilityColonText" xml:space="preserve">
+    <value>Надзейнасць адзнакі:</value>
+  </data>
+  <data name="ReliabilityHighDisplayName" xml:space="preserve">
+    <value>Высокая</value>
+  </data>
+  <data name="ReliabilityLowDisplayName" xml:space="preserve">
+    <value>Нізкая</value>
+  </data>
+  <data name="ReliabilityMediumDisplayName" xml:space="preserve">
+    <value>Сярэдняя</value>
+  </data>
+  <data name="ReliabilityMediumHighDisplayName" xml:space="preserve">
+    <value>Вышэй за сярэднюю</value>
+  </data>
+  <data name="ReliabilityMediumLowDisplayName" xml:space="preserve">
+    <value>Ніжэй за сярэднюю</value>
+  </data>
+  <data name="ReliabilityUnknownDisplayName" xml:space="preserve">
+    <value>Невядома</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 1 ДП сістэмы Common Rail пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 1 ДП сістэмы Common Rail пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 1 ДП сістэмы Common Rail пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 2 ДП сістэмы Common Rail пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 2 ДП сістэмы Common Rail пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 2 ДП сістэмы Common Rail пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 3 ДП сістэмы Common Rail пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 3 ДП сістэмы Common Rail пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 3 ДП сістэмы Common Rail пры 3000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 4 ДП сістэмы Common Rail пры 1000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 4 ДП сістэмы Common Rail пры 2000 аб/хв</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Карэкцыя інжэктара 4 ДП сістэмы Common Rail пры 3000 аб/хв</value>
+  </data>
+  <data name="NavigatablePageHeaderSystemNews" xml:space="preserve">
+    <value>Навіны сістэмы</value>
+  </data>
+  <data name="SystemNews" xml:space="preserve">
+    <value>Навіны сістэмы</value>
+  </data>
+  <data name="FooterCopyrightText" xml:space="preserve">
+    <value>VTS Автомониторинг 2013. Все права защищены.</value>
+  </data>
+  <data name="DesktopMessagesCaption" xml:space="preserve">
+    <value>ПАВЕДАМЛЕННІ СІСТЭМЫ</value>
+  </data>
+  <data name="DesktopMessagesLoadingMessageText" xml:space="preserve">
+    <value>Загрузка паведамленняў...</value>
+  </data>
+  <data name="DesktopMessagePartnerNoVehiclesRegistered" xml:space="preserve">
+    <value>У вас яшчэ няма зарэгістраваных машын. Каб зарэгістраваць першую машыну, зніміце з яе даные, экспартуйце іх з дапамогай VTS Агент, і загрузіце ў сістэму атрыманы .vts файл у раздзеле "Дадзеныя" -&gt; "Загрузка дыягнастычных дадзеных". Рэгістрацыя машыны - частка працэсу першай загрузкі дадзеных.</value>
+  </data>
+  <data name="DesktopMessagePartnerOnlyOneVehicleRegistered" xml:space="preserve">
+    <value>На ваш уліковы запіс зарэгістраваная толькі адна машына. Для рэгістрацыі наступных машын вам спатрэбіцца ліцэнзія, якую можна запытаць у раздзеле "Ліцэнзіі" -&gt; "Запытаць ліцэнзію"</value>
+  </data>
+  <data name="InstrumentationMeasurements" xml:space="preserve">
+    <value>Інструментальныя вымярэнні</value>
+  </data>
+  <data name="FinishedExclamation" xml:space="preserve">
+    <value>Завершана!</value>
+  </data>
+  <data name="CapturedWord" xml:space="preserve">
+    <value>Знятыя</value>
+  </data>
+  <data name="UploadedWord" xml:space="preserve">
+    <value>Запампаваныя</value>
+  </data>
+  <data name="LevelOfRadioSignal" xml:space="preserve">
+    <value>Якасць радыёсігнала</value>
+  </data>
+  <data name="MixRegStateInput" xml:space="preserve">
+    <value>Стан рэгулявання складу сумесі на ўваходзе</value>
+  </data>
+  <data name="MixRegStateOutput" xml:space="preserve">
+    <value>Стан рэгулявання складу сумесі на выхадзе</value>
+  </data>
+  <data name="QualityOfRadioSignal" xml:space="preserve">
+    <value>Узровень радыёсігнала</value>
+  </data>
+  <data name="RadioConfiguration" xml:space="preserve">
+    <value>Канфігурацыя радыё</value>
+  </data>
+  <data name="AdditionalGearAndSafety" xml:space="preserve">
+    <value>Дадатковыя прылады и бязпека</value>
+  </data>
+  <data name="AudioAndComputer" xml:space="preserve">
+    <value>Аудыё і кампутар</value>
+  </data>
+  <data name="BasicParameters3" xml:space="preserve">
+    <value>Асноўныя параметры 3</value>
+  </data>
+  <data name="BoardComputer" xml:space="preserve">
+    <value>Бартавы кампутар</value>
+  </data>
+  <data name="CommandsAndRelays" xml:space="preserve">
+    <value>Каманды і рэле</value>
+  </data>
+  <data name="ControlButtonsStates" xml:space="preserve">
+    <value>Стан кіруючых кнопак</value>
+  </data>
+  <data name="Immobilizer" xml:space="preserve">
+    <value>Імабілайзер</value>
+  </data>
+  <data name="Keys" xml:space="preserve">
+    <value>Ключы</value>
+  </data>
+  <data name="MixingState" xml:space="preserve">
+    <value>Змешванне паветра</value>
+  </data>
+  <data name="ParametersSet1" xml:space="preserve">
+    <value>Розныя параметры</value>
+  </data>
+  <data name="ParametersSet2" xml:space="preserve">
+    <value>Розныя параметры</value>
+  </data>
+  <data name="ParametersSet3" xml:space="preserve">
+    <value>Розныя параметры</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Кнопкі радыё</value>
+  </data>
+  <data name="RequestedAirVolumeFlow" xml:space="preserve">
+    <value>Запатрабаваны аб'ём падачы паветра</value>
+  </data>
+  <data name="SoftwareVersions" xml:space="preserve">
+    <value>Версіі прашывак і праграм</value>
+  </data>
+  <data name="UnitsAndNotations" xml:space="preserve">
+    <value>Адзінкі вымярэння і натацыі</value>
+  </data>
+  <data name="AirCollectorTemperature" xml:space="preserve">
+    <value>Тэмпература паветранага калектара</value>
+  </data>
+  <data name="AlarmButtonState" xml:space="preserve">
+    <value>Стан кнопкі аварыйнай сігналізацыі</value>
+  </data>
+  <data name="AudioButton" xml:space="preserve">
+    <value>Кнопка "Аудыё"</value>
+  </data>
+  <data name="AuxiliaryAudioInputActivationState" xml:space="preserve">
+    <value>Стан актывацыі дапаможнага аудыёувахода</value>
+  </data>
+  <data name="AVInputSensors" xml:space="preserve">
+    <value>Уваходны датчык AV</value>
+  </data>
+  <data name="BoardComputerOption" xml:space="preserve">
+    <value>Опцыя бартавога кампутара</value>
+  </data>
+  <data name="BoardComputerState" xml:space="preserve">
+    <value>Стан бартавога кампутара</value>
+  </data>
+  <data name="BrightnessLevelRheostat" xml:space="preserve">
+    <value>Ржэгулятар узроўня яркасці</value>
+  </data>
+  <data name="BrightnessPlusSwitchState" xml:space="preserve">
+    <value>Кнопка "Плюс" яркасці</value>
+  </data>
+  <data name="CDChangerPresenceOnVANBusSetting" xml:space="preserve">
+    <value>Наяўнасць CD-чэйнджэра на VAN-шыне</value>
+  </data>
+  <data name="CdEjectButtonState" xml:space="preserve">
+    <value>Стан кнопкі вымання дыска</value>
+  </data>
+  <data name="CentralLockButtonState" xml:space="preserve">
+    <value>Стан кнопкі цэнтральнага замка</value>
+  </data>
+  <data name="ConfiguredAutoradioPresenceOnVanBus" xml:space="preserve">
+    <value>Сканфігураваная наяўнасць аўтарадыё адыё на шыне VAN</value>
+  </data>
+  <data name="DateDisplayNotation" xml:space="preserve">
+    <value>Натацыя адлюстравання даты</value>
+  </data>
+  <data name="DiagnosticsVersionIndex" xml:space="preserve">
+    <value>Індэкс версіі дыягнастычнага праграмнага камплекту</value>
+  </data>
+  <data name="DisplayColorSchemeType" xml:space="preserve">
+    <value>Тып колеравай схемы дысплея</value>
+  </data>
+  <data name="EgrThrottlePositionFeedback" xml:space="preserve">
+    <value>Зваротная сувязь палажэння засланкі РВГ</value>
+  </data>
+  <data name="EgrValvePositionFeedback" xml:space="preserve">
+    <value>Зваротная сувязь палажэння клапана РВГ</value>
+  </data>
+  <data name="ElectrovalveTurboPositionFeedback" xml:space="preserve">
+    <value>Зваротная сувязь палажэння электраклапана турбіны</value>
+  </data>
+  <data name="FaderFunction" xml:space="preserve">
+    <value>Функцыя згасання</value>
+  </data>
+  <data name="FrequencyBandAM" xml:space="preserve">
+    <value>Паласа частот АМ</value>
+  </data>
+  <data name="HeatingFramePushState" xml:space="preserve">
+    <value>Стан кнопкі контура абагравання</value>
+  </data>
+  <data name="InformationAboutAutoVolumeRadioFunction" xml:space="preserve">
+    <value>Інфармацыя аб функцыі радыё "аўтаматычная гучнасць"</value>
+  </data>
+  <data name="LightingTableConfiguration" xml:space="preserve">
+    <value>Канфігураця табліцы асвятлення</value>
+  </data>
+  <data name="MeasuredInjectionVolume" xml:space="preserve">
+    <value>Замераны аб'ём упырску</value>
+  </data>
+  <data name="OverspeedingAlertFunction" xml:space="preserve">
+    <value>Функцыя папярэджання аб перавышэнні хуткасці</value>
+  </data>
+  <data name="ProgrammingOfExteriorTemperature" xml:space="preserve">
+    <value>Запраграмаванае адлюстраванне тэмпературы звонку</value>
+  </data>
+  <data name="PsaCalcDecale" xml:space="preserve">
+    <value>Таблічка калькулятара PSA</value>
+  </data>
+  <data name="RadioSearchButtonMinus" xml:space="preserve">
+    <value>Кнопка "мінус" пошуку радыёстанцыі</value>
+  </data>
+  <data name="RadioSearchButtonPlus" xml:space="preserve">
+    <value>Кнопка "плюс" пошуку радыёстанцыі</value>
+  </data>
+  <data name="RadioVolumeButtonMinus" xml:space="preserve">
+    <value>Кнопка "мінус" рэгулятара гука радыё</value>
+  </data>
+  <data name="RadioVolumeButtonPlus" xml:space="preserve">
+    <value>Кнопка "плюс" рэгулятара гука радыё</value>
+  </data>
+  <data name="RequestForBVAProgramSport" xml:space="preserve">
+    <value>Запыт на рэжым АКПП "Спорт"</value>
+  </data>
+  <data name="RequestForBVAProgramSportState" xml:space="preserve">
+    <value>Стан запыта на рэжым АКПП "Спорт"</value>
+  </data>
+  <data name="SensibilityCurveLoDx" xml:space="preserve">
+    <value>Крывая адчувальнасці LoDx</value>
+  </data>
+  <data name="SoftwareVersion" xml:space="preserve">
+    <value>Версія праграмы</value>
+  </data>
+  <data name="SupplierCode" xml:space="preserve">
+    <value>Код пастаўшчыка</value>
+  </data>
+  <data name="TemperatureUnit" xml:space="preserve">
+    <value>Адзінкі вымярэння тэмпературы</value>
+  </data>
+  <data name="UsageGeographicalZone" xml:space="preserve">
+    <value>Геаграфічны рэгіён карыстання</value>
+  </data>
+  <data name="VinCodeVerification" xml:space="preserve">
+    <value>Верыфікацыя VIN</value>
+  </data>
+  <data name="VolumeAndDistanceUnits" xml:space="preserve">
+    <value>Адзинкі вымярэння аб'ёма і адлегласці </value>
+  </data>
+  <data name="VolumeLevelCorrectionAlgorythm" xml:space="preserve">
+    <value>Алгарытм карэкцыі узроўня гуку</value>
+  </data>
+  <data name="VolumeLevelDependencyFromVehicleSpeed" xml:space="preserve">
+    <value>Залежнасць узроўня гучнасці ад хуткасці машыны</value>
+  </data>
+  <data name="AbrDefault" xml:space="preserve">
+    <value>ABR па замаўчанні</value>
+  </data>
+  <data name="DefaultAdditiveSystem" xml:space="preserve">
+    <value>Сістэма паліўнай прысадкі па замаўчанню</value>
+  </data>
+  <data name="DeicingCommand" xml:space="preserve">
+    <value>Каманда на антыабледзяненне</value>
+  </data>
+  <data name="HighPressureFuelPumpFuelSupply" xml:space="preserve">
+    <value>Падача паліва помпай высокага ціску</value>
+  </data>
+  <data name="InjectorsCommandError" xml:space="preserve">
+    <value>Памылка каманды інжэктараў</value>
+  </data>
+  <data name="InternalTemperature" xml:space="preserve">
+    <value>Унутраная тэмпература</value>
+  </data>
+  <data name="MassAdditiveFap" xml:space="preserve">
+    <value>Маса прысадкі у фільтры</value>
+  </data>
+  <data name="MeasuredFuelLevel" xml:space="preserve">
+    <value>Замераны узровень паліва</value>
+  </data>
+  <data name="MinimumFuelLevelAlert" xml:space="preserve">
+    <value>Папярэджанне аб мінімальным узроўні паліва</value>
+  </data>
+  <data name="MixingShutterStatus" xml:space="preserve">
+    <value>Стан засланкі змешвальніка паветра</value>
+  </data>
+  <data name="WindscreenWasherLiquidMinimumLevel" xml:space="preserve">
+    <value>Мінімальны ўзровень вадкасці ў баку амывальніка</value>
+  </data>
+  <data name="AdditionalHeatingCommand" xml:space="preserve">
+    <value>Дадатковая каманда награвання</value>
+  </data>
+  <data name="BsiAntiscan" xml:space="preserve">
+    <value>BSI Антыскан</value>
+  </data>
+  <data name="BsiEmpty" xml:space="preserve">
+    <value>BSI пусты</value>
+  </data>
+  <data name="BsiPair" xml:space="preserve">
+    <value>Пара BSI</value>
+  </data>
+  <data name="BsiUnlock" xml:space="preserve">
+    <value>Разблакаванне BSI</value>
+  </data>
+  <data name="CalculatorStatus" xml:space="preserve">
+    <value>Стан калькулятара</value>
+  </data>
+  <data name="ChildSafetyLeft" xml:space="preserve">
+    <value>Бяспека дзіцяці (левы)</value>
+  </data>
+  <data name="ChildSafetyRight" xml:space="preserve">
+    <value>Бяспека дзіцяці (правы)</value>
+  </data>
+  <data name="CorrectCommunicationWithKeyTransponder" xml:space="preserve">
+    <value>Карэктная камунікацыя с транспондарам ключа</value>
+  </data>
+  <data name="FirstAirHeaterThrottleScan" xml:space="preserve">
+    <value>Першае сканаванне засланкі награвальніка паветра</value>
+  </data>
+  <data name="FirstEgrThrottleScan" xml:space="preserve">
+    <value>Першае сканаванне засланкі EGR</value>
+  </data>
+  <data name="FrontFogLampsControl" xml:space="preserve">
+    <value>Кантроль пярэдніх супрацьтуманак</value>
+  </data>
+  <data name="Key1Sync" xml:space="preserve">
+    <value>Сінхранізацыя ключа 1</value>
+  </data>
+  <data name="Key2Sync" xml:space="preserve">
+    <value>Сінхранізацыя ключа 2</value>
+  </data>
+  <data name="Key3Sync" xml:space="preserve">
+    <value>Сінхранізацыя ключа 3</value>
+  </data>
+  <data name="Key4Sync" xml:space="preserve">
+    <value>Сінхранізацыя ключа 4</value>
+  </data>
+  <data name="Key5Sync" xml:space="preserve">
+    <value>Сінхранізацыя ключа 5</value>
+  </data>
+  <data name="LastAirHeaterThrottleScan" xml:space="preserve">
+    <value>Апошняе сканаванне засланкі награвальніка паветра</value>
+  </data>
+  <data name="MeasuredFanSpeed" xml:space="preserve">
+    <value>Замераная хуткасць вентылятара</value>
+  </data>
+  <data name="NumberOfActiveKeys" xml:space="preserve">
+    <value>Колькасць актыўных ключоў</value>
+  </data>
+  <data name="NumberOfSynchronizedRadiokeys" xml:space="preserve">
+    <value>Колькасць сінхранізаваных радыёключоў</value>
+  </data>
+  <data name="SunroofAndWindowRelay" xml:space="preserve">
+    <value>Рэле люка і вокнаў</value>
+  </data>
+  <data name="TelecodingVariableError" xml:space="preserve">
+    <value>Памылка пераменнай тэлекодынга</value>
+  </data>
+  <data name="TransponderAntiscanActive" xml:space="preserve">
+    <value>Антыскан транспондэра актыўны</value>
+  </data>
+  <data name="AirConditioningCircuitHighPressureProtection" xml:space="preserve">
+    <value>Абарона высокага ціску контура кандыцыянера</value>
+  </data>
+  <data name="AirConditioningCircuitLowPressureProtection" xml:space="preserve">
+    <value>Абарона нізкага ціску контура кандыцыянера</value>
+  </data>
+  <data name="AirConditioningCompressorCommand" xml:space="preserve">
+    <value>Каманда кампрэсара кандыцыянера</value>
+  </data>
+  <data name="ClimateControlFunctioningMode" xml:space="preserve">
+    <value>Рэжым работы клімат-кантролю</value>
+  </data>
+  <data name="ElectromagneticModulationActivationTimes" xml:space="preserve">
+    <value>>Час актывацыі электрамагнітнай мадуляцыі</value>
+  </data>
+  <data name="EPDECollector" xml:space="preserve">
+    <value>Калектар EPDE</value>
+  </data>
+  <data name="GearboxRule" xml:space="preserve">
+    <value>Правіла скрыні перадач</value>
+  </data>
+  <data name="OilPressure" xml:space="preserve">
+    <value>Ціск алею</value>
+  </data>
+  <data name="PressureSetting" xml:space="preserve">
+    <value>Наладка ціску</value>
+  </data>
+  <data name="ThrottlePosition" xml:space="preserve">
+    <value>Стан засланкі дроселя</value>
+  </data>
+<data name="AirConditionerCompressorOnOffState" xml:space="preserve">
+    <value>Стан уключэння кампрэсара кандыцыянера</value>
+  </data>
+  <data name="ClimateAirConditioningFanCommand" xml:space="preserve">
+    <value>Кіраванне вентылятарам кліматычнага ўсталявання</value>
+  </data>
+  <data name="EvaporatorTemperatureSensorState" xml:space="preserve">
+    <value>Стан датчыка тэмпературы ў выпаральніку</value>
+  </data>
+  <data name="ElectricEnergyGenerationCommand" xml:space="preserve">
+    <value>Каманда на генерацыю электраэнергіі</value>
+  </data>
+  <data name="BatteryVoltageSecure" xml:space="preserve">
+    <value>Абароненае напружанне батарэі</value>
+  </data>
+  <data name="ElectricEnergyGenerationRegulationCommand" xml:space="preserve">
+    <value>Каманда на рэгуляцыю выраблення электраэнергіі</value>
+  </data>
+  <data name="ElectricLoadLevel" xml:space="preserve">
+    <value>Узровень электрычнай нагрузкі</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder1" xml:space="preserve">
+    <value>Вугал апярэджання запальвання цыліндра 1</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder2" xml:space="preserve">
+    <value>Вугал апярэджання запальвання цыліндра 2</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder3" xml:space="preserve">
+    <value>Вугал апярэджання запальвання цыліндра 3</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder4" xml:space="preserve">
+    <value>Вугал апярэджання запальвання цыліндра 4</value>
+  </data>
+  <data name="MaximumIgnitionAdvance" xml:space="preserve">
+    <value>Максімальнае пераджэнне запальвання</value>
+  </data>
+  <data name="NoiseLevelMeasuredByDetonationSensor" xml:space="preserve">
+    <value>Узровень шуму, замераны датчыкам дэтанацыі</value>
+  </data>
+  <data name="OptimalIgnitionAdvance" xml:space="preserve">
+    <value>Аптымальнае апераджэнне запальвання</value>
+  </data>
+  <data name="RequestedManagedThermostatValue" xml:space="preserve">
+    <value>Запытанае значэнне кіраванага тэрмастата</value>
+  </data>
+  <data name="LightSensorOutput" xml:space="preserve">
+    <value>Выхад датчыка сонечнага святла</value>
+  </data>
+  <data name="BatteryChargePercentage" xml:space="preserve">
+    <value>Адсотак зараду батарэі</value>
+  </data>
+  <data name="BatteryChargePercentagePrecise" xml:space="preserve">
+    <value>Дакладны адсотак зараду батарэі</value>
+  </data>
+  <data name="BatteryCurrent" xml:space="preserve">
+    <value>Ток батарэі</value>
+  </data>
+  <data name="BatteryTemperature" xml:space="preserve">
+    <value>Тэмпература батарэі</value>
+  </data>
+  <data name="AutomaticGearboxEnterTimeMeasured" xml:space="preserve">
+    <value>Хуткасць увахода ў аўтаматычную скрыню перадач (замераная)</value>
+  </data>
+  <data name="AutomaticGearboxEnterTimeRequested" xml:space="preserve">
+    <value>Хуткасць увахода ў аўтаматычную скрыню перадач (запатрабаваная)</value>
+  </data>
+  <data name="AutomaticGearboxExitTimeMeasured" xml:space="preserve">
+    <value>Хуткасць выхада з аўтаматычнай скрыні перадач (замераная)</value>
+  </data>
+  <data name="AutomaticGearboxExitTimeRequested" xml:space="preserve">
+    <value>Хуткасць выхада з аўтаматычнай скрыні перадач (запатрабаваная)</value>
+  </data>
+  <data name="GearboxHandlePosition" xml:space="preserve">
+    <value>Становішча рукаятки пераключэння перадач</value>
+  </data>
+  <data name="OilPressureSensorVoltage" xml:space="preserve">
+    <value>Напружанне датчыка ціску алею</value>
+  </data>
+  <data name="OilTemperatureSensorVoltage" xml:space="preserve">
+    <value>Напружанне датчыка тэмпературы алею</value>
+  </data>
+  <data name="MultifunctionalSwitch1OrImpulseMinusContact" xml:space="preserve">
+    <value>Кантакт пераключальніка 1 альбо імпульснага ( – ) пераключальніка</value>
+  </data>
+  <data name="MultifunctionalSwitchPNContact" xml:space="preserve">
+    <value>Кантакт шматфункцыянальнага пераключальніка P/N</value>
+  </data>
+  <data name="MultifunctionalSwitchS1OrImpulsePlusContact" xml:space="preserve">
+    <value>Кантакт шматфункцыянальнага пераключальніка S1 альбо імпульснага ( + ) пераключальніка</value>
+  </data>
+  <data name="MultifunctionalSwitchS2Contact" xml:space="preserve">
+    <value>Кантакт шматфункцыянальнага пераключальніка S2</value>
+  </data>
+  <data name="MultifunctionalSwitchS3Contact" xml:space="preserve">
+    <value>Кантакт шматфункцыянальнага пераключальніка S3</value>
+  </data>
+  <data name="MultifunctionalSwitchS4Contact" xml:space="preserve">
+    <value>Кантакт шматфункцыянальнага пераключальніка S4</value>
+  </data>
+</root>

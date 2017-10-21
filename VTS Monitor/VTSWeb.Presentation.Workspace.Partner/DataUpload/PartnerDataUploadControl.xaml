@@ -1,0 +1,61 @@
+﻿<Common:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Partner.DataUpload.PartnerDataUploadControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:DataUpload="clr-namespace:VTSWeb.Presentation.Workspace.Partner.DataUpload"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    xmlns:progress="clr-namespace:VTSWeb.Presentation.Common.Progress;assembly=VTSWeb.Presentation.Common"
+    xmlns:Converters="clr-namespace:VTSWeb.Presentation.Common.Converters;assembly=VTSWeb.Presentation.Common">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Converters:BoolToVisibilityConverter 
+                x:Name="boolToVisConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Common:HeaderedBorderControl
+            Header="{Localization:TranslateExtension 
+                Key=HeaderFileUpload}"
+            x:Name="fileSelectionControl"
+            HorizontalAlignment="Left"
+            Grid.Row="1"
+            Grid.Column="1" 
+            Grid.ColumnSpan="3">
+            <DataUpload:FileUploadSelectionControl/>
+        </Common:HeaderedBorderControl>
+
+        <progress:CircularProgressBar
+            Grid.Row="3"
+            Grid.Column="1"
+            x:Name="progressBarCircular"
+            Visibility="{Binding Path=IsWaitingMode,
+                Converter={StaticResource boolToVisConverter},
+                ConverterParameter=Direct}"/>
+        
+        <DataUpload:UploadedDataControl
+            x:Name="dataControl"
+            Grid.Row="3"
+            Grid.Column="1" 
+            Visibility="{Binding Path=IsWaitingMode,
+                Converter={StaticResource boolToVisConverter},
+                ConverterParameter=Inverse}" />
+    </Grid>
+</Common:NavigatablePage>

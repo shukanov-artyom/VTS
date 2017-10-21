@@ -1,0 +1,33 @@
+﻿@model Html.Models.SystemNewsViewModel
+
+<td>
+    @Model.Id
+</td>
+<td>
+    @Model.Date.ToLongDateString()
+</td>
+<td>
+    @Model.TopicEnglish
+</td>
+<td>
+    @Model.TextEnglish
+</td>
+<td>
+    @Model.TopicRussian
+</td>
+<td>
+    @Model.TextRussian
+</td>
+<td>
+    @Model.TopicBelarusian
+</td>
+<td>
+    @Model.TextBelarusian
+</td>
+<td>
+    @Html.ActionLink("Edit", "Edit", new {id=Model.Id})
+</td>
+<td>
+    @Html.ActionLink("Delete", "Delete", new {id=Model.Id})
+</td>
+

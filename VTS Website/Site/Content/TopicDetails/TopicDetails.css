@@ -1,0 +1,11 @@
+﻿body {
+}
+
+#images-series-with-subscriptions-table {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#images-series-with-subscriptions-table td {
+    text-align: center;
+}

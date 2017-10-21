@@ -1,0 +1,62 @@
+﻿<Common1:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Common.SavedDataControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Workspace.Common;assembly=VTSWeb.Presentation.Workspace.Common"
+    xmlns:Common1="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    xmlns:Data="clr-namespace:VTSWeb.Presentation.Workspace.Common.Data"
+    xmlns:Graph="clr-namespace:VTSWeb.Presentation.Graph;assembly=VTSWeb.Presentation.Graph">
+
+    <Grid
+        x:Name="layoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <Common1:HeaderedBorderControl
+            Header="{Localization:Translate Key=HeaderSelectVehicle}"
+            x:Name="controlVehicleSelection"
+            Margin="0,10,0,0"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.Row="0">
+            <Common:VehicleSelectionControl 
+                MinWidth="350"/>
+        </Common1:HeaderedBorderControl>
+
+        <Common1:HeaderedBorderControl
+            x:Name="treeControlVehicleDatasets"
+            Header="{Localization:TranslateExtension Key=HeaderDataTree}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Grid.Column="1"
+            Grid.Row="2">
+            <Data:VehicleDatasetsTreeControl 
+                MinWidth="350"
+                MinHeight="200"/>
+        </Common1:HeaderedBorderControl>
+       
+        <Common1:HeaderedBorderControl
+            Header="{Localization:Translate Key=HeaderDataGraphs}"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            x:Name="controlUpperLowerControls"
+            Grid.Column="3"
+            Grid.Row="2">
+            <Graph:DataGraphsControl 
+                MinWidth="250"
+                MinHeight="200"/>
+        </Common1:HeaderedBorderControl>
+    </Grid>
+</Common1:NavigatablePage>

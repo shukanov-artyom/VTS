@@ -1,0 +1,33 @@
+﻿#news-panel {
+    background: #818181;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+#news-header {
+    text-align: center;
+    height: 44px;
+    width: 113px;
+}
+
+#news-header h2 {
+    padding-top: 5px;
+    color: white;
+}
+
+#news-item div{
+    text-decoration: none;
+}
+
+#news-item div h4{
+    color: white;
+}
+
+#news-item div p{
+    color: white;
+}
+
+#news-header {
+    background-image: url('../../Content/Images/news.png');
+    margin: 0;
+}

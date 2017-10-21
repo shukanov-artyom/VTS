@@ -1,0 +1,259 @@
+﻿        EngineRpm, Частота вращения двигателя
+        FuelSystemPressure, Измеренное давление топлива
+        FuelSystemPressureDelta, Расхождение между измеренным и номинальным давлением топлива
+        Injector1Correction, Коррекция подачи топлива форсункой 1
+        Injector2Correction, Коррекция подачи топлива форсункой 2
+        Injector3Correction, Коррекция подачи топлива форсункой 3
+        Injector4Correction, Коррекция подачи топлива форсункой 4
+        CamshaftCrankshaftSync, Cинхронизация положения распределительного вала/коленчатого вала
+        DieselPressureRegulatorRatio, ЦСО регулятора давления в топливной системе
+        InjectionVolumeSetting, Затребованный объём впрыска топлива
+        VoltageInjector1and4, Напряжение на инжекторах 1 и 4
+        VoltageInjector2and3, Напряжение на инжекторах 2 и 3
+        InjectorsVoltage, Напряжение на инжекторах
+        MeasuredAirVolume, Измеренное потребление воздуха
+        ExhaustCycleRatio, ЦСО электроклапана системы РВГ
+        FuelRegulatorCurrent, Ток регулятора давления дизельного топлива
+        InjectionAdvance, Опережение предварительного впрыска
+        BasicInjectionAdvance, Базовое опережение впрыска
+        ThirdCylOff, Отключение трётьего поршня
+        TurbinePressure, Измеренное давление воздуха после турбокомпрессора
+        NominalTurbinePressure, Задаваемое (номинальное) давление, создаваемого турбокомпрессором
+        TurbineCycleRatio, ЦСО электроклапана давления в турбокомпрессоре
+        AtmosphericPressure, Атмосферное давление
+        WaterTemperature, Температура воды
+        AirTemperature, Температура воздуха
+        FuelTemperature, Температура топлива
+        ExhaustRecirculationGateCycle, ЦСО электроклапана заслонки системы РВГ
+        BatteryVoltage, Напряжение аккумулятора
+        Sensor1Voltage, Напряжение в цепи питания датчиков 1 (кулачковые валы)
+        Sensor2Voltage, Напряжение в цепи питания датчиков 1 (другое)
+        PreHeatRelay, Реле предпускового/последующего подогрева
+        ConditioningCutOffRequest, Запрос на выключение климат-контроля
+        RelayLowSpeedVent, Реле малой скорости группы вентилятора охлаждения двигателя
+        SpeedVent, Реле высокой скорости группы вентилятора охлаждения двигателя
+        InjectionTime, Время впрыска
+        InjectionOffWhenSlowdown, Выключение системы впрыска при снижении ускорения
+        LowerOxygenVoltage, Напряжение нижнего кислородного зонда (датчик на выходе)
+        HigherOxygenVoltage, Напряжение верхнего кислородного зонда (датчик на входе)
+        MixRegState, Состояние регулирования состава смеси
+        Unsupported, Неподдерживаемый тип данных
+        ParticleFilterStatus, Состояние загрязенения фильтра
+        RegenerationAssistanceRequest, Запрос на выполнение регенерации
+        CatConverterUpstreamTemperature, Температура на входе в каталитический нейтрализатор
+        CatConverterDownstreamTemperature, Температура на выходе из каталитического нейтрализатора
+        ParticleFilterInletOutletPressureDifference, Перепад давлений на входе/выходе из фильтра твердых частиц
+        EngineCoolantTemperature, Температура охлаждающей жидкости
+        AirFlowVolume, Объемный расход воздуха
+        InletAirHeaterThrottleOpenCycleRatio, ЦСО электромагнитного клапана перепускной заслонки
+        PostInjectionFlow, Расход топлива, подаваемого во время фазы последующего впрыска
+        PostInjectionPhasing, Фаза последующего впрыска
+        TotalFuelAdditiveQuantity, Общее количество присадки
+        DistanceTravelledSinceLastRegeneration, Пробег после последней регенерации
+        AverageDistanceOfLast5Regenerations, Cредний пробег между 5 последними регенерациями
+        ActivationOfElectricalConsumers, Активация потребителей электроэнергии
+        VehicleSpeed, Скорость автомобиля
+        AcceleratorPedalPosition, Положение педали газа
+        GearboxGear, Включенная передача
+        AutomaticGearboxRecognition, Автоматическое определение передачи
+        MainBrakeSignal, Сигнал с основной тормозной системы
+        RedundantBrakeSignal, Сигнал с дополнительной тормозной системы
+        ClutchPedalSignal, Положение педали сцепления
+        AcceleratorPedalHardSpotSignal1, Положение педали газа точка 2
+        AcceleratorPedalHardSpotSignal2, Положение педали газа точка 1
+        ThrottleStatus, Положение дросселя
+        ThrottlePositionVoltage, Напряжение, соответствующее положению дроссельной заслонки
+        ThrottleAngle, Угол дроссельной заслонки
+        ManifoldPressure, Давление коллектора
+        CanisterSolenoidValveStatus, Cостояние электромагнитного клапана абсорбера паров бензина
+        CanisterElectrovalveOCR, ЦСО электроклапана резервуара
+        IgnitionAdvance, Опережение угла зажигания
+        CylinderCoilChargeTime14, Время заряда катушки цилиндров 1/4
+        CylinderCoilChargeTime23, Время заряда катушки цилиндров 2/3
+        HigherOxygenSensorState, Состояние верхнего кислородного зонда
+        LowerOxygenSensorState, Состояние нижнего кислородного зонда
+        CatalyticConverterCheck, Контроль каталитического нейтрализатора
+        FanAssemblyLowSpeedControl, Контроль малой скорости группы вентиляторов охлаждения двигателя
+        FanAssemblyHighSpeedControl, Контроль высокой скорости группы вентиляторов охлаждения двигателя
+        FanUnitReferenceSpeed, Заданная скорость вращения вентилятора охлаждения двигателя
+        AirConditioningAuthorisation, Разрешение на включение климатической установки
+        AirConditioningRequestInput, Вход команды на включение климатической установки
+        EngineTorque, Крутящий момент двигателя
+        SupplyRelayControl, Управление реле питания
+        ECULocking, Запирание блока управления (ECU)
+        CodedEngineImmobiliserProgrammingStatus, Состояние программирования кодируемого иммобилайзера
+        ProblemsDetectedWhenTransmittingTheUnlockCode, Проблемы при передаче кода открытия
+        EspEcuSupplyVoltage, Напряжение питания блока управления ESP
+        FrontLeftWheelSpeed, Скорость левого переднего колеса
+        FrontRightWheelSpeed, Скорость правого переднего колеса
+        RearLeftWheelSpeed, Скорость левого заднего колеса
+        RearRightWheelSpeed, Скорость правого заднего колеса
+        BrakeFluidLevel, Уровень тормозной жидкости
+        BrakeLiningsWear, Износ тормозных колодок
+        SpeedElectropumpAssemblyMotor, Скорость вращения электродвигателя электронасоса
+        SteeringWheelSpeed, Скорость вращения рулевого колеса
+        SteeringWheelRotationDirection, Направление вращения рулевого колеса
+        EngineOilTemperature, Температура моторного масла
+        ElectropumpAssemblyMotorCurrent, Ток электродвигателя электронасоса
+        ElectropumpAssemblyMotorTerminalsVoltage,  Напряжение на клеммах электродвигателя электронасоса
+        EngineRunningInformation, Информация о работающем двигателе
+        BrightnessButton, Кнопка яркости
+        OdometerResetButton, Кнопка сброса одометра
+        TripometerDisplayUnits, Единицы измерения счётчика пройдённого пути
+        MaintenanceIndicator, Индикатор обслуживания
+        OilLevelFunction, Функция индикации уровня масла
+        Gearbox, Тип коробки передач
+        RearElectricWindowSwitchesSupply, Питание на выключателях задних электростеклоподъёмников
+        PowerSupplyOfRainSensor, Питание датчика дождя
+        EngineRunningOutputControl, Контроль работающего двигателя
+        RearElectricWindowSwitchesDeactivation, Деактивация выключателей задних электростеклоподъёмников
+        BodyworkVanPlusStatus, Плюс (+) VAN на корпусе
+        ComfortVanPlusStatus, Плюс (+) VAN - комфорт
+        EconomyModeStatus, Экономичный режим
+        FactoryModeStatus, Заводской режим
+        PresenceOfPlusAccessories, Наличие "+" на аксессуарах
+        PresenceOfPlusIgnition, Наличие "+" на зажигании
+        AlternatorExcitationVoltage, Напряжение возбуждения на генераторе переменного тока
+        FuelPumpSupplyCutOff, Отсечка напряжения на топливном насосе
+        FuelPumpRelayOutputStatus, Статус на выходе реле топливного насоса
+        AirPumpControl, Управление воздушным насосом
+        DieselWaterAirPumpRelayOutputStatus, Статус на выходе реле воздушного/топливного насоса дизельного двигателя
+        SmoothedConsumption, Сглаженное значение расхода топлива
+        TotalMileage, Общий пробег
+        AverageFuelConsumption, Средний расход топлива
+        AverageJourneyConsumption, Средний расход топлива за поездку
+        FanRelayOutput, Выход реле вентилятора
+        AirConditioningCompressorRelayOutput, Выход реле компрессора кондиционера
+        EvaporatorIcingUpSafetyStatus, Статус защиты испарителя от обледенения
+        EvaporatorSensorTemperature, Температура датчика испарителя
+        FanMidSpeedControl, Управление средней скоростью вентилятора
+        AirConditioningCompressorControl, Контроль компрессора кондиционера
+        FanUnitSpeedSetting, Установленная скорость вращения вентилятора
+        EspDeactivationRequest, Запрос на деактивацию ESP
+        AutomaticGearboxSnowProgramRequest, Запрос на "снежную" программу автоматической коробки передач
+        ParkingBrake, Парковочный тормоз
+        BrakePedal, Положение педали тормоза
+        ReverseGearInfo, Информация о включенной задней передаче
+        DriverSeatBeltFastened, Водительский ремень безопасности пристёгнут
+        PassengerSeatBeltFastened, Пассажирский ремень безопасности пристёгнут
+        AutomaticGearboxInParkPosition, Автоматическая коробка в положении парковки
+        FrontLhWheelTyreDeflationDetectionSensorStatus, Статус датчика давления переднего левого колеса
+        FrontRhWheelTyreDeflationDetectionSensorStatus, Статус датчика давления переднего правого колеса
+        RearRhWheelTyreDeflationDetectionSensorStatus, Статус датчика давления заднего правого колеса
+        RearLhWheelTyreDeflationDetectionSensorStatus, Статус датчика давления заднего левого колеса
+        ValidityOfTyreDeflationSensorStatusParameters, Правильность показаний датчиков давления в колёсах
+        DeflationDetectionFrontLhTyrePressure, Показания датчика снижения давления переднего левого колеса
+        DeflationDetectionFrontRhTyrePressure, Показания датчика снижения давления переднего правого колеса
+        DeflationDetectionRearRhTyrePressure, Показания датчика снижения давления заднего правого колеса
+        DeflationDetectionRearLhTyrePressure, Показания датчика снижения давления заднего левого колеса
+        FrontLhTyrePressureStatus, Оценка давления в переднем левом колесе
+        FrontRhTyrePressureStatus, Оценка давления в переднем правом колесе
+        RearRhTyrePressureStatus, Оценка давления в заднем правом колесе
+        RearLhTyrePressureStatus, Оценка давления в заднем левом колесе
+        FrontSillLightingControl, Контроль освещения передних порогов
+        RearFogLampsControl, Контроль задних противотуманных фар
+        RightHandIndicatorsControl, Контроль правых указателей поворота
+        LeftHandIndicatorsControl, Контроль левых указателей поворота
+        BootLightingCommand, Команда на освещение багажника
+        InteriorLampControl, Контроль лампы внутреннего освещения
+        HornControl, Контроль звукового сигнала
+        DippedBeamControl, Контроль ближнего света
+        MainBeamControl, Контроль дальнего света
+        InteriorLampRequest, Запрос на внутреннее освещение
+        AutomaticLightingMode, Автоматический выбор режима освещения
+        HeadlampBeamCorrectorFault, Наличие ошибки корректора фар
+        InteriorLampControlRelayOutput, Сигнал на выходе реле контроля лампы внутреннего света
+        BootLampControlRelayOutput, Сигнал на выходе реле контроля лампы освещения багажника
+        RhAndLhIndicatorRelayOutput, Сигнал на выходе реле контроля ламп указателей поворота
+        SidelampsControl, Контроль боковых ламп
+        VolumetricBreakinDetection, Объёмный датчик взлома
+        VolumetricProtectionDeactivation, Деактивация защиты с помощью объёмного датчика
+        BonnetLock, Замок капота
+        BootLock, Замок багажника
+        LockLockingControl, Контроль закрытия замка
+        LockUnlockingControl, Контроль открытия замка
+        DeadlockingControl, Контроль блокировки замка
+        BootLockingControl, Контроль закрытия замка багажника
+        RearRightHandDoorSwitch, Ручка задней правой двери
+        RearLeftHandDoorSwitch, Ручка задней левой двери
+        BootOpeningRequest, Запрос на открытие багажника
+        LocksLockingRelayOutput, Сигнал на выходе реле закрытия замка
+        LocksUnlockingRelayOutput, Сигнал на выходе реле открытия замка
+        LocksDeadlockingRelayOutput, Сигнал на выходе реле блокировки замка
+        BootOpeningRelayOutput, Сигнал на выходе реле открытия замка багажника
+        FrontRightHandLockUnlockingInformation, Информация об отпирании переднего правого замка
+        FrontLeftHandLockUnlockingInformation, Информация об отпирании переднего левого замка
+        ChildSafetyActivationControl, Контроль активации защиты ребёнка
+        ChildSafetyDeactivationControl, Контроль деактивации защиты ребёнка
+        CoolantLevelWarning, Предупреждение о низком уровне охлаждающей жидкости
+        OilPressureWarning, Предупреждение о давлении масла
+        WaterInDiesel, Вода в дизеле
+        MeasuredOilLevel, Уровень масла
+        GrossFuelLevel, Уровень топлива (брутто)
+        ExteriorAirTemperature, Температура воздуха снаружи
+        OilTemperature, Температура масла
+        FilteredFuelLevel, Уровень топлива (фильтрованный)
+        DisplayedFuelLevel, Отображаемый уровень топлива
+        NumberOfServicesPerformed, Количество пройденных сервисов
+        FuelSenderImpedance, Сопротивление датчика уровня топлива
+        LowBrakeFluidWarning, Предупреждение о низком уровне тормозной жидкости
+        SunlightSensorDuskValue, Уровень сумерек датчика солнечного света
+        VehicleProtectionStatusLedControl, Светодиод контроля защиты транспортного средства
+        LowScreenWashLevelDisplay, Индикатор низкого уровня омывающей жидкости
+        RearRhWindowRaiseControl, Контроль поднятия заднего правого стекла
+        RearLhWindowRaiseControl, Контроль поднятия заднего левого стекла
+        RearRhWindowLowerControl, Контроль опускания заднего правого стекла
+        RearLhWindowLowerControl, Контроль опускания заднего левого стекла
+        RearScreenWiperControl, Контроль заднего стеклоочистителя
+        WindscreenWiperControlAtHighSpeed, Контроль стеклоочистителей лобового стекла на высокой скорости
+        SlowSpeedWindscreenWiperControl, Контроль стеклоочистителей лобового стекла на низкой скорости
+        WindscreenWiperControl, Контроль стеклоочистителей лобового стекла
+        RearScreenWashControl, Контроль заднего стеклоомывателя
+        WindscreenWasherControl, Контроль переднего стеклоомывателя
+        HeadlampWasherControl, Контроль омывателя фар
+        RearWiperParkedPositionInformation, Информация о парковочном положении заднего стеклоочистителя
+        WindscreenWiperParkedPositionInformation, Информация о парковочном положении переднего стеклоочистителя
+        HeatedRearScreenPushButton, Нажатие кнопки обогрева заднего стекла
+        HazardWarningLampPushButton, Нажатие кнопки аварийного сигнала
+        AirConditioningPushButton, Нажатие кнопки кондиционера
+        ControlPanelBrightnessLevel, Уровень яркости подсветки панели управления
+        SuspensionControlButton, Кнопка контроля подвески
+        AirTurbineSpeed, Скорость воздушной турбины
+        MeteringPumpSpeed, Скорость насоса-дозатора
+        SparkPlugSpeed, Скорость свечей зажигания
+        AdditionalHeatingStatus, Состояние дополнительного подогрева
+        HeatingStatus, Подогрев
+        FlamePresence, Наличие возгорания
+        IncandescentElementStatus, Состояние лампы накаливания
+        FuelPumpStatus, Состояние топливного насоса
+        AirTurbine, Воздушная турбина
+        WaterPump, Водяной насос
+        NoLoadShedding, Нет сброса нагрузки
+        PreheaterPlugLoadShedding, Сброс нагрузки свечей предварительного подогрева
+        ForcedFanUnitMidSpeedLoadShedding, Принудительный сброс нагрузки вентилятора на средней скорости
+        ForcedFanUnitLowSpeedLoadShedding, Принудительный сброс нагрузки вентилятора на низкой скорости
+        ForcedDeicingLoadShedding, Принудительный сброс нагрузки защиты от обледенения
+        DeicingLoadShedding, Сброс нагрузки защиты от обледенения
+        PartialHeatingLoadShedding, Сброс нагрузки частичного подогрева
+        CompleteHeatingLoadShedding, Сброс нагрузки полного подогрева
+        AirConditioningBlowerLoadShedding, Сброс нагрузки нагнетателя кондиционера
+        AirConditioningCompressorLoadShedding, Сброс нагрузки компрессора кондиционера
+        ReservoirCap, Крышка бака
+        PlusVanSupply, Напряжение "+" VAN
+        LeftBlownAirTemperature, Температура воздуха левого воздуховода
+        RightBlownAirTemperature, Температура воздуха правого воздуховода
+        BlowerCopyVoltage, Дублированное напряжение вентилятора печки
+        VoltageValueOnBlower, Напряжение на системе подачи воздуха печки
+        MixingStatusLeft, Состояние системы смешивания – левый
+        MixingStatusRight, Состояние системы смешивания – правый
+        DistributionStatus, Состояние распределения
+        RecirculationStatus, Состояние рециркуляции
+        FanAssemblyControl, Контроль вентилятора
+        ConditionerCoolingCircuitPressure, Давление в контуре кондиционера воздуха
+        VehicleSpeedSignalPresence, Наличие сигнала о скорости движения автомобиля
+        SteeringWheelRotationAngleDataPresence, Наличие индикации угла поворота рулевого колеса
+        SteeringElectropumpTemperature, Температура электронасоса рулевого управления
+        CylinderCoilChargeTime1, Время заряда катушки цилиндра 1
+        CylinderCoilChargeTime2, Время заряда катушки цилиндра 2
+        CylinderCoilChargeTime3, Время заряда катушки цилиндра 3
+        CylinderCoilChargeTime4, Время заряда катушки цилиндра 4

@@ -1,0 +1,72 @@
+﻿<UserControl 
+    x:Class="VTS.LoggedUserBarControl" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+    <Grid 
+        x:Name="layoutRoot"
+        Style="{StaticResource ApplicationLoginStatusBarGridStyle}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="1"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="hyperlinkButtonLogon"
+                Grid.Column="1"
+                Margin="0,3,3,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Content="{Localization:TranslateExtension 
+                    Key=LogonHyperlinkButtonText}"
+                Click="LogonButtonClick">
+            </Button>
+            <TextBlock
+                Foreground="White"
+                x:Name="hyperlinkButtonLoggedUserName"
+                Grid.Column="1"
+                Margin="0,3,3,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center">
+            </TextBlock>
+
+            <Line
+                VerticalAlignment="Center"
+                X1="0" Y1="0"
+                X2="0" Y2="15"
+                Stroke="White"
+                Grid.Column="2">
+            </Line>
+
+            <Button
+                x:Name="hyperlinkButtonRegister"
+                Margin="3,3,5,0"
+                Grid.Column="3"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Content="{Localization:TranslateExtension 
+                    Key=RegisterHyperlinkButtonText}"
+                Click="OnRegisterClicked">
+            </Button>
+            <Button
+                x:Name="hyperlinkButtonLogout"
+                Margin="3,3,5,0"
+                Grid.Column="3"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Content="{Localization:TranslateExtension 
+                    Key=LogoutHyperlinkButtonText}" 
+                Click="ButtonLogoutClick">
+            </Button>
+            
+            <Common:LanguageSelectionControl 
+                Margin="5,0,0,0"
+                HorizontalAlignment="Left"
+                Grid.Column="0"/>
+        </Grid>
+    </Grid>
+</UserControl>

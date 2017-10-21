@@ -1,0 +1,25 @@
+﻿<UserControl
+    x:Class="Agent.Workspace.Views.ParametersSetSettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl
+            x:Name="detailsControl"
+            Grid.Row="0"/>
+
+        <Border
+            Grid.Row="1"
+            BorderThickness="1"
+            Margin="5,5,1,1"
+            BorderBrush="DarkGray">
+            <ContentControl
+                x:Name="contentControlView"/> 
+        </Border>
+
+    </Grid>
+</UserControl>

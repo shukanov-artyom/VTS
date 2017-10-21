@@ -1,0 +1,25 @@
+﻿@using VTS.Shared.DomainObjects
+@model VehicleCharacteristics
+@{
+    ViewBag.Title = "Characteristics";
+}
+
+<h2 class="text-center">@Model.GeneralVehicleInfo</h2>
+<h3 class="text-center">@Model.Vin</h3>
+<br/>
+@foreach (VehicleCharacteristicsItemsGroup group in Model.ItemsGroups)
+{
+    <h4 class="text-left">@group.Name</h4>
+    <table class="table">
+        <tbody>
+            @foreach (VehicleCharacteristicsItem item in group.Items)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

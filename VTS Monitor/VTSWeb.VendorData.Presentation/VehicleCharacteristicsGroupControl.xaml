@@ -1,0 +1,13 @@
+﻿<UserControl 
+    x:Class="VTSWeb.VendorData.Presentation.VehicleCharacteristicsGroupControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    
+    <Grid>
+        <sdk:DataGrid
+            HeadersVisibility="None"
+            AutoGenerateColumns="True"
+            ItemsSource="{Binding Path=Items, Mode=OneWay}"/>
+    </Grid>
+</UserControl>

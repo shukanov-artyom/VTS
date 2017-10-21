@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07153014-0650-41AB-AD0D-9A4A4F240700}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWeb.AnalysisCore.Models.Settings</RootNamespace>
+    <AssemblyName>VTSWeb.AnalysisCore.Models.Settings</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="VtsSharedSilverlight">
+      <HintPath>..\..\VTS Shared\Output\VtsSharedSilverlight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalyticModelSettings.cs" />
+    <Compile Include="AnalyticRuleSettings.cs" />
+    <Compile Include="CommonRail\AnalyticModelSettingsCommonRail.cs" />
+    <Compile Include="ElectricSystem\AnalyticModelSettingsElectricSystem.cs" />
+    <Compile Include="PetrolEngineIgnition\AnalyticModelSettingsPetrolEngineIgnition.cs" />
+    <Compile Include="PetrolEngineInjection\AnalyticModelSettingsPetrolEngineInjection.cs" />
+    <Compile Include="PetrolEnginePurification\AnalyticModelSettingsPetrolEnginePurification.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingsAtom.cs" />
+    <Compile Include="SettingsMolecule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Common\VTSWeb.AnalysisCore.Common.csproj">
+      <Project>{76C8AC69-3B9E-48EA-84FD-2408659C2D78}</Project>
+      <Name>VTSWeb.AnalysisCore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Interfaces\VTSWeb.AnalysisCore.Interfaces.csproj">
+      <Project>{6F0FB941-17CC-4E8F-BFBC-8AB57BCC456A}</Project>
+      <Name>VTSWeb.AnalysisCore.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.AnalysisCore.Recognition.Engines\VTSWeb.AnalysisCore.Recognition.Engines.csproj">
+      <Project>{D1258554-111B-449F-8C95-A110220FCD57}</Project>
+      <Name>VTSWeb.AnalysisCore.Recognition.Engines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Common.Enums\VTSWeb.Common.Enums.csproj">
+      <Project>{CD37C676-DC92-4E7B-A015-C33B2034CB00}</Project>
+      <Name>VTSWeb.Common.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.DomainObjects\VTSWeb.DomainObjects.csproj">
+      <Project>{409B69A4-EF17-48CC-9B1A-FDD85B93F117}</Project>
+      <Name>VTSWeb.DomainObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

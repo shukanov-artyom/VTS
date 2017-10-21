@@ -1,0 +1,26 @@
+﻿#footer {
+    background: yellowgreen;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#images-loader {
+    visibility: hidden;
+    background-image:url('../Images/banner3back.jpg');
+    background-image:url('../Images/banner2back.jpg');
+    background-image:url('../Images/banner1back.jpg');
+    background-image:url('../Images/banner4back.jpg');
+}
+
+#footer p{
+    float: left;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#developers-link {
+    float: right;
+    margin-right: 10px;
+}
+

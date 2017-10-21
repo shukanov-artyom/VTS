@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Api", "Api\Api.xproj", "{7E722F88-7447-448F-8CC7-BF55669B945E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{BD63649F-0E1D-44A2-A496-FBD3F40FC224}"
+	ProjectSection(SolutionItems) = preProject
+		vtswebapi.PublishSettings = vtswebapi.PublishSettings
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VtsWebApi.Persistency", "VtsWebApi.Persistency\VtsWebApi.Persistency.xproj", "{E4A63D64-DBEC-415E-994F-4994CF8C8620}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VtsWebApi.Domain", "VtsWebApi.Domain\VtsWebApi.Domain.xproj", "{3A6A598D-C8A1-48BD-916F-9E4A70EC6C01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E722F88-7447-448F-8CC7-BF55669B945E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E722F88-7447-448F-8CC7-BF55669B945E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E722F88-7447-448F-8CC7-BF55669B945E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E722F88-7447-448F-8CC7-BF55669B945E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A63D64-DBEC-415E-994F-4994CF8C8620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A63D64-DBEC-415E-994F-4994CF8C8620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A63D64-DBEC-415E-994F-4994CF8C8620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A63D64-DBEC-415E-994F-4994CF8C8620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6A598D-C8A1-48BD-916F-9E4A70EC6C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6A598D-C8A1-48BD-916F-9E4A70EC6C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6A598D-C8A1-48BD-916F-9E4A70EC6C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6A598D-C8A1-48BD-916F-9E4A70EC6C01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

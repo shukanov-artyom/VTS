@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="Agent.Workspace.CannotDisplayVehicleCharacteristicsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Localization="clr-namespace:Agent.Localization;assembly=Agent.Localization">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel
+            Grid.Column="1"
+            Grid.Row="1"
+            Orientation="Vertical">
+            <TextBlock
+                FontSize="16"
+                TextWrapping="Wrap"
+                FontWeight="Bold"
+                Margin="5,15,5,15"
+                HorizontalAlignment="Center"
+                Text="{Localization:TranslateExtension CannotDisplayVehicleCharacteristics}"/>
+            <TextBlock
+                TextWrapping="Wrap"
+                FontSize="12"
+                FontWeight="Bold"
+                Margin="5,15,5,15"
+                HorizontalAlignment="Center"
+                Text="{Localization:Translate CannotDisplayCharacteristicsExplanation}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

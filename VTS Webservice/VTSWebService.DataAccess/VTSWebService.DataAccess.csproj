@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{845699A2-6354-4CD5-BD38-1D441B3EB72C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWebService.DataAccess</RootNamespace>
+    <AssemblyName>VTSWebService.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentVersion.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticRuleSettings.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticStatisticsItem.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AnalyticStatisticsValue.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="License.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PsaDataset.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsaParameterData.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsaParametersSet.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PsaTrace.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsAtom.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsMolecule.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemNews.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemNewsLocalized.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnrecognizedVin.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserVehicleAssociation.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleCharacteristics.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleCharacteristicsItem.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleCharacteristicsItemGroup.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleEvent.cs">
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VtsDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VtsDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VtsDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VtsDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VtsDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VtsDataModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="VtsDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VtsDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="VtsDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VtsDataModel.edmx</DependentUpon>
+      <LastGenOutput>VtsDataModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="VtsDataModel.edmx.diagram">
+      <DependentUpon>VtsDataModel.edmx</DependentUpon>
+    </None>
+    <None Include="VtsDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>VtsDataModel.edmx</DependentUpon>
+      <LastGenOutput>VtsDataModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="VtsDataModel.edmx.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

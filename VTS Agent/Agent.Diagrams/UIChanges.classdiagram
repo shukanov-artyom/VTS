@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="0.0.22.483" Id="1717fdb4-88ec-43ae-b3cd-14e95d0ac059" name="UIChanges" linkedPackageId="4e68a098-8ae0-4ac3-810d-e24b2878ebdb" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0dd79b10-6d27-4b6a-9178-fb4e5d2791e7" name="MainWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="afee98b2-ee18-4444-b26f-3c1a1b49bb6e" />
+        <targetEnds>
+          <association Id="6aca7379-7127-4b60-bf81-1eb7c1b1fdf9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f590f670-96d5-4969-a308-d4549b276c66" LastKnownName="WorkspaceControl" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="591d1fba-a96a-496f-b150-6afefe91a068" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6cbe4942-998b-4957-b670-c9d55f478690" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="02dee6b0-e6e3-47fa-a681-79cfcc62efe8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="8b3a42b1-ff45-4e8a-80e5-840c63f18a78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9369dbb2-6fdf-401d-bcc5-b1bb67e562fc" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f590f670-96d5-4969-a308-d4549b276c66" name="WorkspaceControl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="48f89646-08d0-49a2-9918-425a5a0e8478" />
+        <targetEnds>
+          <association Id="e5e868e6-2dfa-4e7d-aabc-c54308e31e25" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="fdf8b908-5af9-4dcd-bdb9-4f3ea360f355" LastKnownName="WorkspaceController" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="110083b5-7309-4a35-8de1-35c6ecd7525f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74a3c439-142a-4279-a729-2651f88fe460" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87b9468d-6cd9-45ec-b837-7d23df3681d0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="0f5aaf94-7083-4990-860f-c8dda047a124" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e2f9c188-f127-40ee-89b1-a7a7fb349e60" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fdf8b908-5af9-4dcd-bdb9-4f3ea360f355" name="WorkspaceController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1ace2fd-572c-45c6-bb1f-ac3f20b2e297" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62034681-a6f8-4397-9f9f-01d038b91281" name="PsaDataControl" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f767320f-8b80-4467-b536-65acf43c010e" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4e68a098-8ae0-4ac3-810d-e24b2878ebdb" name="Agent.Diagrams">
+    <elementDefinition Id="c9e8c2cf-2143-43fc-a0fd-151a21cd48e6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="782446fa-11a4-4c9a-b479-2197204c1d52">
+        <profileInstance Id="d234211d-0181-4ac7-9c68-d37493b146fd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="30d07890-1d21-47bc-bebc-13ade38892bd">
+        <profileInstance Id="e5877d9f-96b2-4f07-bb46-17aff1478628" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,1083 @@
+EXPERT TRACE
+Start of Trace acquisition
+    Information about the dealer
+        RRDI code : 001
+        Technician : &#1087;&#1072;&#1087;&#1072;
+    Tool version
+        Lexia (500.14)
+
+Choice of vehicle
+    vehicle model
+        Citroën C4
+    RPO no.
+        777
+
+DIAGNOSTIC
+    VIN code
+        VF7LCKFUC74631358
+    Families present
+        BSI ECU /
+        Multifunction display /
+        Radio or radiotelephone (radio part) /
+        Separate instrument panel /
+        Engine relay unit /
+        instrument panel /
+        Injection /
+        ABS * /
+        Driver's and passenger's * airbags /
+        Top of column /
+        Driver's door module /
+        Passenger's door module /
+        alarm /
+        Power steering
+
+
+global test
+    Families interrogated
+        BSI ECU /
+        instrument panel /
+        Radio or radiotelephone (radio part) /
+        alarm /
+        Top of column /
+        Driver's door module /
+        Passenger's door module /
+        Separate instrument panel /
+        Driver's and passenger's * airbags /
+        Multifunction display /
+        Injection /
+        Engine relay unit /
+        ABS * /
+        Power steering
+    BSI
+        No fault saved
+    COMBINE
+        No fault saved
+    AUTORADIO
+        No fault saved
+    ALARME
+        No fault saved
+    VCCF
+        No fault saved
+    MDP_CONDUCT
+        No fault saved
+    MDP_PASSAG
+        No fault saved
+    COMPTE_TOURS
+        No fault saved
+    SAC_AUTOLIV
+        No fault saved
+    ECRAN_A
+        No fault saved
+    not recognised
+        No fault saved
+    BSM
+        fault codes present
+        headlamp wash control Short circuit to -
+        0VC - B998
+    ABS8.1
+        No fault saved
+    GEP
+        fault codes present
+        Fault: engine running information
+        OBZ - C1210
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        0  rpm
+    battery voltage
+        12.0 Volt(s)
+    Injection time 
+        0.000 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        10.1 °C
+    Upstream oxygen sensor voltage
+        0.00  mv
+    Downstream oxygen sensor status
+        0.00  mv
+    Mixture adjustment state
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        0  rpm
+    battery voltage
+        11.9 Volt(s)
+    Injection time 
+        0.000 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        10.1 °C
+    Upstream oxygen sensor voltage
+        0.00  mv
+    Downstream oxygen sensor status
+        0.00  mv
+    Mixture adjustment state
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        0  rpm
+    battery voltage
+        12.0 Volt(s)
+    Injection time 
+        0.000 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        10.1 °C
+    Upstream oxygen sensor voltage
+        0.00  mv
+    Downstream oxygen sensor status
+        0.00  mv
+    Mixture adjustment state
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        0  rpm
+    battery voltage
+        10.2 Volt(s)
+    Injection time 
+        0.000 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        10.1 °C
+    Upstream oxygen sensor voltage
+        3.86  mv
+    Downstream oxygen sensor status
+        3.86  mv
+    Mixture adjustment state
+        &#1056;&#1072;&#1079;&#1086;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        992  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        30.7 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        3.86  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        992  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        33.0 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        3.86  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        960  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        35.0 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.92  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        928  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        35.4 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.88  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        960  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        35.8 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.82  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        928  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        36.2 °C
+    Upstream oxygen sensor voltage
+        0.53  mv
+    Downstream oxygen sensor status
+        0.82  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        928  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        36.2 °C
+    Upstream oxygen sensor voltage
+        0.10  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1600  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.120 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        39.3 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.76  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1504  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        40.6 °C
+    Upstream oxygen sensor voltage
+        0.59  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1536  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.120 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.1 °C
+    Upstream oxygen sensor voltage
+        0.59  mv
+    Downstream oxygen sensor status
+        0.70  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1536  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.1 °C
+    Upstream oxygen sensor voltage
+        0.47  mv
+    Downstream oxygen sensor status
+        0.72  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1536  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.1 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.72  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1504  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.1 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.72  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1504  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.6 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.72  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1536  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        41.6 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1536  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        42.6 °C
+    Upstream oxygen sensor voltage
+        0.74  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1440  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.2 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1376  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.2 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1344  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.120 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.2 °C
+    Upstream oxygen sensor voltage
+        0.14  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1376  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.2 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.74  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1408  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.7 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.76  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1440  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        43.7 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1408  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        44.2 °C
+    Upstream oxygen sensor voltage
+        0.31  mv
+    Downstream oxygen sensor status
+        0.76  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1440  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        44.2 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1408  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        44.2 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1408  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        44.7 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1440  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        45.2 °C
+    Upstream oxygen sensor voltage
+        0.80  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        1440  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        2.730 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        45.2 °C
+    Upstream oxygen sensor voltage
+        0.14  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        864  rpm
+    battery voltage
+        14.4 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        45.2 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.84  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        864  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        45.7 °C
+    Upstream oxygen sensor voltage
+        0.59  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        864  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        45.7 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        864  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        46.3 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        46.3 °C
+    Upstream oxygen sensor voltage
+        0.62  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        46.3 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        864  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        46.3 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        46.8 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        48.3 °C
+    Upstream oxygen sensor voltage
+        0.08  mv
+    Downstream oxygen sensor status
+        0.76  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        49.9 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.4 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.4 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.900 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.4 °C
+    Upstream oxygen sensor voltage
+        0.72  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.4 °C
+    Upstream oxygen sensor voltage
+        0.74  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.4 °C
+    Upstream oxygen sensor voltage
+        0.06  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        832  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.9 °C
+    Upstream oxygen sensor voltage
+        0.23  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.9 °C
+    Upstream oxygen sensor voltage
+        0.76  mv
+    Downstream oxygen sensor status
+        0.78  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+
+Parameter measurements : MM6LP
+    Name of saved screen
+        Fuel injection and emission control
+    Engine speed
+        800  rpm
+    battery voltage
+        14.3 Volt(s)
+    Injection time 
+        3.510 ms
+    Injection cut-off during deceleration
+        &#1085;&#1077;&#1090; 
+    Coolant temperature
+        50.9 °C
+    Upstream oxygen sensor voltage
+        0.10  mv
+    Downstream oxygen sensor status
+        0.80  mv
+    Mixture adjustment state
+        &#1047;&#1072;&#1084;&#1082;&#1085;&#1091;&#1090;&#1099;&#1081; &#1082;&#1086;&#1085;&#1090;&#1091;&#1088; 
+

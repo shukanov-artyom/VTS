@@ -1,0 +1,23 @@
+﻿#banner-switch-panel {
+    background: transparent;
+}
+
+#banner-switch-panel ul {
+    margin-left: 800px;
+    margin-top: -25px;
+}
+
+#banner-switch-panel ul li {
+    padding: 0;
+    list-style: none;
+    display: inline;
+}
+
+.banner-selector-button {
+    height: 17px; 
+    width: 17px; 
+    background-color: transparent;
+    border: transparent;
+    border-style: none; 
+    background-image:url(../../Content/Images/banner_unactive.png)
+}

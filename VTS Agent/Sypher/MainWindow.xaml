@@ -1,0 +1,39 @@
+﻿<Window x:Class="Sypher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sypher">
+    <Grid>
+        <StackPanel
+            Orientation="Vertical">
+            <Border
+                BorderThickness="1"
+                BorderBrush="Blue">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock
+                        Text="source string:"/>
+                    <TextBox
+                        MinWidth="200"
+                        x:Name="sourceBox"
+                        Margin="10">
+                    </TextBox>
+                    <TextBlock
+                        Text="password:"/>
+                    <TextBox
+                        MinWidth="200"
+                        x:Name="pwdBox"
+                        Margin="10">
+                    </TextBox>
+                </StackPanel>
+            </Border>
+            <TextBox
+                MinWidth="200"
+                x:Name="targetBox"
+                Margin="10">
+            </TextBox>
+            <Button
+                Padding="2"
+                Click="Translate"
+                Content="Translate"/>
+        </StackPanel>
+    </Grid>
+</Window>

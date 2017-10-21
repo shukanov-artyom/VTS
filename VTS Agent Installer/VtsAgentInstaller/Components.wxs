@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?include Variables.wxi?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER" DiskId="1" FileSource="$(var.AgentOutputDirectory)">
+      <Component Guid="CC2300AA-DE01-4E6D-B0C2-DA1CCAE10D82" Id="ProductComponent">
+        <File Id="Agent.exe" Name="Agent.exe"/>
+        <File Id="Agent.exe.config" Name="Agent.exe.config"/>
+        <File Id="Agent.BusinessObjects" Name="Agent.BusinessObjects.dll"/>
+        <File Id="Agent.Common" Name="Agent.Common.dll"/>
+        <File Id="Agent.Common.Instance" Name="Agent.Common.Instance.dll"/>
+        <File Id="Agent.Common.Presentation" Name="Agent.Common.Presentation.dll"/>
+        <File Id="Agent.Connector" Name="Agent.Connector.dll"/>
+        <File Id="Agent.Connector.Presentation.PSA" Name="Agent.Connector.Presentation.PSA.dll"/>
+        <File Id="Agent.Connector.PSA" Name="Agent.Connector.PSA.dll"/>
+        <File Id="Agent.Connector.PSA.TypeConversion" Name="Agent.Connector.PSA.TypeConversion.dll"/>
+        <File Id="Agent.Evaluation" Name="Agent.Evaluation.dll"/>
+        <File Id="Agent.Host" Name="Agent.Host.dll"/>
+        <File Id="Agent.Localization" Name="Agent.Localization.dll"/>
+        <File Id="Agent.Logging" Name="Agent.Logging.dll"/>
+        <File Id="Agent.Metadata" Name="Agent.Metadata.dll"/>
+        <File Id="Agent.Network.DataSynchronization" Name="Agent.Network.DataSynchronization.dll"/>
+        <File Id="Agent.Network.Monitor" Name="Agent.Network.Monitor.dll"/>
+        <File Id="Agent.Vendors" Name="Agent.Vendors.dll"/>
+		<File Id="Agent.Workspace" Name="Agent.Workspace.dll"/>
+		<File Id="Agent.Infrastructure" Name="Agent.Infrastructure.dll"/>
+        <File Id="Common.Interfaces" Name="Common.Interfaces.dll"/>
+        <File Id="Common.Styles" Name="Common.Styles.dll"/>
+        <File Id="Common.Transport" Name="Common.Transport.dll"/>
+        <File Id="DevExpress.Charts.v11.2.Core" Name="DevExpress.Charts.v11.2.Core.dll"/>
+        <File Id="DevExpress.Data.v11.2" Name="DevExpress.Data.v11.2.dll"/>
+        <File Id="DevExpress.Xpf.Charts.v11.2" Name="DevExpress.Xpf.Charts.v11.2.dll"/>
+        <File Id="DevExpress.Xpf.Core.v11.2" Name="DevExpress.Xpf.Core.v11.2.dll"/>
+        <File Id="ICSharpCode.SharpZipLib" Name="ICSharpCode.SharpZipLib.dll"/>
+        <File Id="log4net" Name="log4net.dll"/>
+        <File Id="VtsShared" Name="VtsShared.dll"/>
+        <File Id="FirebirdSql.Data.FirebirdClient" Name="FirebirdSql.Data.FirebirdClient.dll"/>
+		<File Id="Ninject" Name="Ninject.dll"/>
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="LANGFOLDERBE" DiskId="1" FileSource="$(var.AgentOutputDirectoryLocalizationBe)">
+      <Component Id="LOCALIZATIONBE" Guid="578D678F-0CA0-4916-981F-3974C63DAA28">
+        <File Id="Agent.Localization.resources.be" Name="Agent.Localization.resources.dll"/>
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="LANGFOLDERRU" DiskId="1" FileSource="$(var.AgentOutputDirectoryLocalizationRu)">
+      <Component Id="LOCALIZATIONRU" Guid="A28D7EB6-1BC0-40D6-979B-4C4960848642">
+        <File Id="Agent.Localization.resources.ru" Name="Agent.Localization.resources.dll"/>
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <Component Id="VTSAgentApplicationShortcut" Guid="EE064371-6524-4A6E-9C84-5AAF8C1AE3F2">
+        <Shortcut Id="VtaAgentShortcut" Name="VTS Agent" Description="$(var.ProductName)" Target="[INSTALLFOLDER]Agent.exe" WorkingDirectory="INSTALLFOLDER"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" Key="Software\$(var.Manufacturer)\$(var.ProductName)" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+</Wix>

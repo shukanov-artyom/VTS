@@ -1,0 +1,79 @@
+﻿<UserControl 
+    x:Class="VTSWeb.AnalysisCore.Presentation.VehicleAnalyticModelControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:Presentation="clr-namespace:VTSWeb.AnalysisCore.Presentation"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <UserControl.Resources>
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Subitems}"
+            x:Key="AnalyticItemTemplate">
+            <Presentation:AnalyticItemControl/>
+        </sdk:HierarchicalDataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <sdk:TreeView 
+            MinHeight="300"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            x:Name="mainTreeView"
+            SelectedItemChanged="OnGridSelectedItemChanged"
+            ItemsSource="{Binding Path=Subitems, 
+                Mode=OneWay}"
+            ItemTemplate="{StaticResource AnalyticItemTemplate}"
+            BorderThickness="0"
+            Grid.Column="1"
+            Grid.Row="1">
+        </sdk:TreeView>
+
+        <StackPanel
+            Orientation="Vertical"
+            Grid.Column="3"
+            Grid.Row="1">
+            <StackPanel
+                Visibility="Collapsed"
+                x:Name="stackPanelReliability"
+                Margin="20,5,0,5"
+                Orientation="Horizontal">
+                <TextBlock
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Text="{Localization:TranslateExtension 
+                        Key=MarkReliabilityColonText}"/>
+                <TextBlock
+                    FontSize="12"
+                    FontWeight="Bold"
+                    Margin="5,0,0,0"
+                    x:Name="textBlockReliability"/>
+            </StackPanel>
+            <TextBox
+                Margin="10,0,10,0"
+                IsReadOnly="True"
+                FontSize="12"
+                TextWrapping="Wrap"
+                x:Name="textBlockItemInformation"
+                Visibility="Collapsed"
+                MinHeight="30"/>
+            <ContentControl
+                VerticalAlignment="Bottom"
+                x:Name="contentControlMarksHistory"/>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

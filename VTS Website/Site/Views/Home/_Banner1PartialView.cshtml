@@ -1,0 +1,13 @@
+﻿@using System.Threading
+@using Html
+@using Html.Models
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+
+<div id="banner-zero" class="banner-root">
+    <h3>@Html.ActionLink(Resource.LearnMore, "GeneralOverview", "TopicDetails")</h3>
+    <h1>@Resource.BannerZeroHeader</h1>
+    <h1 id="explanatory-text-banner1">@Resource.BannerZeroText1</h1>
+</div>

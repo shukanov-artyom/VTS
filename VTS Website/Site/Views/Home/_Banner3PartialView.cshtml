@@ -1,0 +1,12 @@
+﻿@using System.Threading
+@using Html
+@using Html.Models
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+<div id="banner3-root" class="banner-root">
+    <h3>@Html.ActionLink(Resource.LearnMore, "DataAnalysis", "TopicDetails")</h3>
+    <h1>@Resource.BannerThreeHeader</h1>
+    <h1 id="explanatory-text-banner3">@Resource.BannerThreeText1</h1>
+</div>

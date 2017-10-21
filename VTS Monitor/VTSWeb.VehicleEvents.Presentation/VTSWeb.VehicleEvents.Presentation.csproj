@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70C26013-F14A-426D-AFCF-A024AFA849DE}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWeb.VehicleEvents.Presentation</RootNamespace>
+    <AssemblyName>VTSWeb.VehicleEvents.Presentation</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="VtsSharedSilverlight, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\VTS Shared\Output\VtsSharedSilverlight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleEventControl.xaml.cs">
+      <DependentUpon>VehicleEventControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleEventTypeViewModel.cs" />
+    <Compile Include="VehicleEventViewModel.cs" />
+    <Compile Include="VehicleEventWindow.xaml.cs">
+      <DependentUpon>VehicleEventWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleEventsControl.xaml.cs">
+      <DependentUpon>VehicleEventsControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="VehicleEventControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VehicleEventWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VehicleEventsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VTSWeb.Common\VTSWeb.Common.csproj">
+      <Project>{4444C563-1DB7-4B8B-9BC9-AAE7F508C9F0}</Project>
+      <Name>VTSWeb.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.DomainObjects\VTSWeb.DomainObjects.csproj">
+      <Project>{409B69A4-EF17-48CC-9B1A-FDD85B93F117}</Project>
+      <Name>VTSWeb.DomainObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Localization\VTSWeb.Localization.csproj">
+      <Project>{BAAE4884-E648-4D22-86C5-91094B5F5F3E}</Project>
+      <Name>VTSWeb.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Presentation.Workspace.Common\VTSWeb.Presentation.Workspace.Common.csproj">
+      <Project>{0EADA069-BA29-4A7E-B424-883ED4CF352A}</Project>
+      <Name>VTSWeb.Presentation.Workspace.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Presentation.Common\VTSWeb.Presentation.Common.csproj">
+      <Project>{A7CFCD6D-CBAF-4152-B15F-740446452BB8}</Project>
+      <Name>VTSWeb.Presentation.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.Presentation.Styles\VTSWeb.Presentation.Styles.csproj">
+      <Project>{1BFFA3D0-C840-4A8D-A70F-8EA2BBE04AD6}</Project>
+      <Name>VTSWeb.Presentation.Styles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.VehicleEvents.Persistency\VTSWeb.VehicleEvents.Persistency.csproj">
+      <Project>{4C318500-BEFF-4BAE-B565-CC0E3AFC0730}</Project>
+      <Name>VTSWeb.VehicleEvents.Persistency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWeb.VTSWebService\VTSWeb.VTSWebService.csproj">
+      <Project>{713C4CE6-42F8-4F32-A9B6-F58EC265EAF1}</Project>
+      <Name>VTSWeb.VTSWebService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

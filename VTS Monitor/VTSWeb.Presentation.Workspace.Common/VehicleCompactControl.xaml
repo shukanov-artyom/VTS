@@ -1,0 +1,24 @@
+﻿<UserControl 
+    x:Class="VTSWeb.Presentation.Workspace.Common.VehicleCompactControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Grid x:Name="LayoutRoot">
+        <StackPanel
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="1"
+                VerticalAlignment="Center"
+                FontSize="12"
+                FontWeight="Bold"
+                Text="{Binding Path=ManufacturerAndModel, 
+                    Mode=OneWay}">
+            </TextBlock>
+            <TextBlock
+                Margin="1"
+                VerticalAlignment="Center"
+                Text="{Binding Path=Vin, Mode=OneWay}">
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

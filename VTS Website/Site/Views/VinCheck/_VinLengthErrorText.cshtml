@@ -1,0 +1,9 @@
+﻿@using System.Threading
+@using Html
+@using Html.Models
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+
+<p style="color: #fa8a0f; font-weight: bold">@Resource.VinLengthErrorText</p>

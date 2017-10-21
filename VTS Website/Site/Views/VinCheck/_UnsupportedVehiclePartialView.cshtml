@@ -1,0 +1,10 @@
+﻿@using System.Threading
+@using Html
+@using Html.Models
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+
+<p class="vin-check-error-message">@Resource.VehiclenotSupportedText</p>
+

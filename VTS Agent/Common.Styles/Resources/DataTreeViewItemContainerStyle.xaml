@@ -1,0 +1,57 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style
+        x:Key="DataTreeViewItemContainerStyle"
+        TargetType="{x:Type TreeViewItem}">
+        <!-- Style for the selected item -->
+        <Setter
+            Property="IsSelected"
+            Value="{Binding Path=IsSelected}"/>
+        <Setter
+            Property="BorderThickness"
+            Value="1"/>
+        <Setter
+            Property="Background"
+            Value="Transparent" />
+
+        <Style.Triggers>
+            <!-- Selected and has focus -->
+            <Trigger 
+                Property="IsSelected"
+                Value="True">
+                <Setter
+                    Property="BorderBrush"
+                    Value="DarkGray"/>
+                <Setter
+                    Property="Background"
+                    Value="Transparent"/>
+            </Trigger>
+            <!-- Selected but does not have the focus -->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition 
+                        Property="IsSelected" 
+                        Value="True"/>
+                    <Condition 
+                        Property="IsSelectionActive"
+                        Value="False"/>
+                </MultiTrigger.Conditions>
+                <Setter
+                    Property="BorderBrush"
+                    Value="DarkGray"/>
+                <Setter
+                    Property="Background"
+                    Value="Transparent"/>
+            </MultiTrigger>
+        </Style.Triggers>
+        <Style.Resources>
+            <Style
+                TargetType="Border">
+                <Setter
+                    Property="CornerRadius"
+                    Value="2"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+</ResourceDictionary>

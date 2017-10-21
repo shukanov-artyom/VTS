@@ -1,0 +1,161 @@
+﻿<UserControl 
+    x:Class="VTSWeb.UserRegistration.ClientRegistration.MandatoryClientRegistrationPropertiesControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Progress="clr-namespace:VTSWeb.Presentation.Common.Progress;assembly=VTSWeb.Presentation.Common"
+    xmlns:Converters="clr-namespace:VTSWeb.Presentation.Common.Converters;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Converters:BoolToVisibilityConverter 
+                x:Name="boolToVisConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="3"
+            Text="{Localization:TranslateExtension Key=LoginColon}">
+        </TextBlock>
+
+        <TextBox
+            x:Name="textBoxLogin"
+            TextInput="OnLoginTextInput"
+            Text="{Binding Path=Login, Mode=TwoWay,
+                UpdateSourceTrigger=PropertyChanged}"
+            Margin="5,0,0,0"
+            Grid.Column="2"
+            Grid.Row="3">
+        </TextBox>
+
+        <TextBlock
+            x:Name="textBlockLoginCheckResult"
+            Grid.Column="3"
+            Grid.Row="3"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontWeight="Bold"
+            Width="20"
+            Text="{Binding Path=LoginCheckState, Mode=TwoWay, 
+                UpdateSourceTrigger=PropertyChanged}">
+        </TextBlock>
+
+        <Progress:CircularProgressBarTiny
+            x:Name="circularProgressBar"
+            Visibility="Collapsed"
+            Grid.Column="3"
+            Grid.Row="3"/>
+
+        <HyperlinkButton
+            x:Name="hyperLinkButtonCheckLogin"
+            Click="OnCheckLoginClicked"
+            Grid.Row="3"
+            Grid.Column="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="{Localization:TranslateExtension Key=CheckLoginText}"
+            Margin="3,0,0,0">
+        </HyperlinkButton>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="5"
+            VerticalAlignment="Center"
+            Text="{Localization:TranslateExtension Key=PasswordText}">
+        </TextBlock>
+        <TextBox
+            Text="{Binding Path=Password, Mode=TwoWay, 
+                UpdateSourceTrigger=PropertyChanged}"
+            Visibility="{Binding ElementName=checkBoxShowPassword, 
+                Path=IsChecked, 
+                Converter={StaticResource boolToVisConverter}, 
+                ConverterParameter=Direct}"
+            Margin="5,0,0,0"
+            Grid.Column="2"
+            Grid.Row="5">
+        </TextBox>
+        <PasswordBox
+            Password="{Binding Path=Password, Mode=TwoWay, 
+                UpdateSourceTrigger=PropertyChanged}"
+            Visibility="{Binding ElementName=checkBoxShowPassword, 
+                Path=IsChecked, 
+                Converter={StaticResource boolToVisConverter}, 
+                ConverterParameter=Inverse}"
+            Margin="5,0,0,0"
+            Grid.Column="2"
+            Grid.Row="5">
+        </PasswordBox>
+
+        <CheckBox
+            Grid.Column="3"
+            Grid.ColumnSpan="3"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="{Localization:TranslateExtension Key=ShowPasswordButtonText}"
+            Margin="3,0,0,0"
+            Grid.Row="5"
+            x:Name="checkBoxShowPassword">
+        </CheckBox>
+
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="7"
+            VerticalAlignment="Center"
+            Text="{Localization:TranslateExtension Key=EmailLabelText}">
+        </TextBlock>
+        <TextBox
+            Text="{Binding Path=Email, Mode=TwoWay, 
+                UpdateSourceTrigger=PropertyChanged}"
+            Margin="5,0,0,0"
+            Grid.Column="2"
+            Grid.ColumnSpan="3"
+            Grid.Row="7">
+        </TextBox>
+
+        <TextBlock
+            x:Name="textBlockInfoMessage"
+            TextWrapping="Wrap"
+            Grid.Row="9"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Text="{Localization:TranslateExtension Key=LoginAccessibilityCheckLabel}">
+        </TextBlock>
+
+        <TextBlock
+            x:Name="textBlockLoginValidationMessage"
+            TextWrapping="Wrap"
+            Grid.Row="11"
+            Grid.Column="1"
+            Grid.ColumnSpan="4"
+            Text="{Localization:TranslateExtension Key=LoginInaccessibleLabel}"
+            Visibility="Collapsed">
+        </TextBlock>
+    </Grid>
+</UserControl>

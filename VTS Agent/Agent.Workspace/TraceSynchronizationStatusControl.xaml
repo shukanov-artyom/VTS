@@ -1,0 +1,112 @@
+﻿<UserControl
+    x:Class="Agent.Workspace.TraceSynchronizationStatusControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:progressBar="clr-namespace:Agent.Common.Presentation.ProgressBar;assembly=Agent.Common.Presentation"
+    xmlns:localization="clr-namespace:Agent.Localization;assembly=Agent.Localization">
+
+    <Grid>
+
+        <progressBar:CircularProgressBarTiny
+            ToolTip="{localization:TranslateExtension TooltipDataSynchronizationInProgress}"
+            Visibility="{Binding Path=IsInProgress, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}"/>
+
+        <Border
+            ToolTip="{localization:Translate TooltipDataSynchronizationDataNotSupported}"
+            BorderThickness="1"
+            BorderBrush="Red"
+            Height="13"
+            Width="13"
+            Visibility="{Binding Path=IsDataUnsupported, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Red"
+                Text="?"
+                FontWeight="Bold"/>
+        </Border>
+
+        <Border
+            ToolTip="{localization:Translate TooltipDataSynchronizationUnknown}"
+            BorderThickness="1"
+            BorderBrush="Gray"
+            Height="13"
+            Width="13"
+            Visibility="{Binding Path=IsUnknown, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Gray"
+                Text="?"
+                FontWeight="Bold"/>
+        </Border>
+
+        <Border
+            ToolTip="{localization:TranslateExtension TooltipDataSynchronizationFinished}"
+            BorderThickness="1"
+            BorderBrush="Green"
+            Height="13"
+            Width="13"
+            Visibility="{Binding Path=IsFinished, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Green"
+                Text="✓"
+                FontWeight="Bold"/>
+        </Border>
+
+        <Border
+            ToolTip="{localization:TranslateExtension TooltipDataSynchronizationFailed}"
+            BorderThickness="1"
+            BorderBrush="Red"
+            Height="13"
+            Width="13"
+            Visibility="{Binding Path=IsFailed, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Red"
+                Text="!"
+                FontWeight="Bold"/>
+        </Border>
+
+        <TextBlock
+            ToolTip="{localization:TranslateExtension TooltipDataSynchronizationStopped}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Visibility="{Binding Path=IsNetworkNotAccessible, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}"
+            Foreground="Gray"
+            Text="■"
+            FontWeight="Bold"/>
+
+        <Border
+            ToolTip="{localization:TranslateExtension TooltipDataSynchronizationVehicleNotSupported}"
+            BorderThickness="1"
+            BorderBrush="Red"
+            Height="13"
+            Width="13"
+            Visibility="{Binding Path=IsVehicleUnsupported, 
+            Converter={StaticResource booleanToVisibilityConverter},
+            ConverterParameter=Direct}">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="Red"
+                Text="A"
+                FontWeight="Bold"/>
+        </Border>
+    </Grid>
+</UserControl>

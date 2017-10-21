@@ -1,0 +1,1 @@
+powershell "'.\VTS Scripts\GenerateNunitFileForSolution.ps1'"

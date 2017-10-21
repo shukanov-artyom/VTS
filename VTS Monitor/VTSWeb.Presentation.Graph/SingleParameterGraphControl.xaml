@@ -1,0 +1,72 @@
+﻿<UserControl 
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"  
+    x:Class="VTSWeb.Presentation.Graph.SingleParameterGraphControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Crosshair="clr-namespace:VTSWeb.Presentation.Graph.Crosshair">
+    
+    <Grid 
+        x:Name="LayoutRoot"
+        MouseLeftButtonUp="OnGridMouseClick">
+        <dxc:ChartControl
+            Margin="5,0,0,0"
+            BorderThickness="0"
+            Grid.Column="0"
+            Grid.Row="6"
+            Grid.ColumnSpan="2"
+            x:Name="chart">
+        <dxc:ChartControl.Diagram>
+            <dxc:XYDiagram2D 
+                    x:Name="diagram">
+                <dxc:XYDiagram2D.Series>
+                    <dxc:LineSeries2D
+                            ValueScaleType="Numerical"
+                            ArgumentScaleType="Numerical"
+                            DataSource="{Binding DataForGraph}"
+                            MarkerVisible="False"
+                            ShowInLegend="False"
+                            ArgumentDataMember="Argument"
+                            ValueDataMember="Value"
+                            x:Name="series">
+                        <dxc:LineSeries2D.Label>
+                            <dxc:SeriesLabel 
+                                    Visible="False"/>
+                        </dxc:LineSeries2D.Label>
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D.Series>
+                <dxc:XYDiagram2D.AxisX>
+                    <dxc:AxisX2D 
+                            TickmarksMinorVisible="True"
+                            GridLinesMinorVisible="True"
+                            GridLinesVisible="True"
+                            x:Name="axisX">
+                        <dxc:AxisX2D.Label>
+                            <dxc:AxisLabel 
+                                    Staggered="False" />
+                        </dxc:AxisX2D.Label>
+                    </dxc:AxisX2D>
+                </dxc:XYDiagram2D.AxisX>
+                <dxc:XYDiagram2D.AxisY>
+                    <dxc:AxisY2D
+                            GridLinesMinorVisible="True"
+                            GridLinesVisible="True"
+                            x:Name="axisY">
+                        <dxc:AxisY2D.Range>
+                            <dxc:AxisRange 
+                                    MaxValue="{Binding MaxYValue}"
+                                    MinValue="{Binding MinYValue}"/>
+                        </dxc:AxisY2D.Range>
+                    </dxc:AxisY2D>
+                </dxc:XYDiagram2D.AxisY>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl.Diagram>
+        </dxc:ChartControl>
+        
+        <Crosshair:CanvasControl
+            x:Name="canvas"
+            Grid.Column="0"
+            Grid.Row="6"
+            Grid.ColumnSpan="2">
+        </Crosshair:CanvasControl>
+    </Grid>
+</UserControl>

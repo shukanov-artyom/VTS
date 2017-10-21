@@ -1,0 +1,5 @@
+﻿29.04.2013
+	development log file added
+	Configuration Manager settings fixed
+	Analytic rule settings properties development started
+	Aggregated rules updating with stored predefined data developed

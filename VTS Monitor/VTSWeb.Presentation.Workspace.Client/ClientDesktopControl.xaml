@@ -1,0 +1,88 @@
+﻿<Common:NavigatablePage 
+    x:Class="VTSWeb.Presentation.Workspace.Client.ClientDesktopControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Common="clr-namespace:VTSWeb.Presentation.Common;assembly=VTSWeb.Presentation.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="buttonSavedData"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="50"
+            Width="50" 
+            Click="SavedDataButtonClick" />
+
+        <Button
+            Click="DataAnalysisButtonClicked"
+            x:Name="buttonDataAnalysis"
+            Grid.Column="1"
+            Grid.Row="3"
+            Height="50"
+            Width="50"/>
+
+        <Button
+            x:Name="buttonServiceEvents"
+            Click="ButtonServiceLogClicked"
+            Grid.Column="1"
+            Grid.Row="5"
+            Height="50"
+            Width="50"/>
+
+        <TextBlock
+            Text="{Localization:TranslateExtension Key=SavedData}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="1"
+            Grid.Column="3">
+        </TextBlock>
+
+        <TextBlock
+            Text="{Localization:TranslateExtension Key=DataAnalysis}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="3"
+            Grid.Column="3">
+        </TextBlock>
+
+        <TextBlock
+            Text="{Localization:TranslateExtension Key=ServiceLog}"
+            FontSize="18"
+            FontWeight="Bold"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Grid.Row="5"
+            Grid.Column="3">
+        </TextBlock>
+
+    </Grid>
+</Common:NavigatablePage>

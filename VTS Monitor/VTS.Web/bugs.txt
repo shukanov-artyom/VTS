@@ -1,0 +1,19 @@
+﻿
+!!! end of vehicle registration on delivered key is incorrect!
+!!! i can upload data on another partner's vehicle without any warning!
+
+- client sees Partner 60-days license message after registration
+
+- license issuance dialog in Admin console final stage - layout
+- LicenseRequestApprovalWindow (for manual licenses approval) sucks
+
+- license activation with key creation step 1 window layout - data grid
+
+- i can ingest vehicle data when the vehicle is registere to another partner. It shows it as registered like it's mine but it's not mine
+
+- cannot refresh the "saved data" page if there is only 1 vehicle
+
+- cannot issue licenses from admin console by Cash requests, exception
+
+- Clients button in Admin console does not work
+

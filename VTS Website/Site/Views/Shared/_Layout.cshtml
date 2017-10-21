@@ -1,0 +1,133 @@
+﻿@using System.Threading
+@using Html.Models
+@using Html
+<!DOCTYPE html>
+@{
+    int culture = SiteSession.CurrentUICulture;
+    Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="VTS Automonitoring official web site. Portal to VTS Monitor and VTS Agent application, has links to the project Wiki." />
+    <meta name="description" content="Официальный сайт системы VTS Автомониторинг. Информационный портал приложений VTS Агент и VTS Монитор. Ссылка на проектную вики." />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+    <body>
+        <div class="root-element" id="fixed-header">
+            <select 
+                class="currentCulture" 
+                name="selectCulture" 
+                id="cultureDDL" 
+                onchange="changeCurrentCulture(this.value)">
+                @if (culture == 0)
+                {
+                    <option value="0" selected="selected">English</option>
+                    <option value="1">Русский</option>
+                    <option value="2">Беларуская</option>
+                }
+                else if (culture == 1)
+                {
+                    <option value="0">English</option>
+                    <option value="1" selected="selected">Русский</option>
+                    <option value="2">Беларуская</option>
+                }
+                else if (culture == 2)
+                {
+                    <option value="0">English</option>
+                    <option value="1">Русский</option>
+                    <option value="2" selected="selected">Беларуская</option>
+                }
+                else
+                {
+                    throw new ArgumentException();
+                }
+            </select>
+            <div id="navigation-links">
+                <ul>
+                    <li>
+                        @Html.ActionLink(@Resource.Home, "Index", "Home")
+                    </li>
+                    <li>
+                        <a href="http://vtsapp.azurewebsites.net">@Resource.WebApplicationName</a>
+                    </li>
+                    <li>
+                        <a href="@Resource.WikiPageLinkAgent">@Resource.DesktopApplicationName</a>
+                    </li>
+                    <li>
+                        @Html.ActionLink(@Resource.Downloads, "Index", "Downloads")
+                    </li>
+                    <li>
+                        <a href=@Resource.WikiLink>@Resource.Wiki</a>
+                    </li>
+                    <li>
+                        <a href=@Resource.WikiPageLinkSupport>@Resource.TechSupport</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="social-networks">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/vtsautomon">
+                            <img src="../../Content/Images/twitter-logo.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/groups/579492548754036/">
+                            <img src="../../Content/Images/facebook_logo_detail.png"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://vk.com/vtsautomonitoring">
+                            <img src="../../Content/Images/vk-app-logo.png"/>
+                        </a>
+                    </li>
+                    <!--li>
+                        <a href="http://vk.com">
+                            <img src="../../Content/Images/odnoklassniki.png"/>
+                        </a>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+        <div class="panel-cleaner"></div>
+        @RenderBody()
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @RenderSection("scripts", required: false)
+    </body>
+
+    <div id="footer" class="root-element">
+        <div>
+            <p>@Resource.FooterCopyrightText</p>
+        </div>
+        <div id="developers-link">
+            @if (Session["SiteSession"] == null ||
+                ((SiteSession)Session["SiteSession"]).User == null)
+            {
+                 @Html.ActionLink("Logon", "Logon", "Session")
+            }
+            else
+            {
+                <p>@String.Format("Logged as {0} ", ((SiteSession)Session["SiteSession"]).User.Name)</p>
+                @Html.ActionLink(" Logoff", "Logoff", "Session")
+            }
+            <a href="http://vtsdevelopment.wikidot.com">Dev</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var paramObject = {
+            UrlChangeCulture: '@Url.Content("~/Session/ChangeCurrentCulture")'
+    }
+
+    function changeCurrentCulture(culture) {
+        document.location = paramObject.UrlChangeCulture + "?culture=" + culture;
+        return true;
+    }
+</script>
+</html>

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4E45D68-D704-40BA-BDBF-89D8B92A41A9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent.Workspace</RootNamespace>
+    <AssemblyName>Agent.Workspace</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core">
+      <HintPath>..\External\DevExpress.Charts.v11.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2">
+      <HintPath>..\External\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v11.2">
+      <HintPath>..\External\DevExpress.Xpf.Charts.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v11.2">
+      <HintPath>..\External\DevExpress.Xpf.Core.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Scheduler.v11.2">
+      <HintPath>..\External\DevExpress.Xpf.Scheduler.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v11.2.Core">
+      <HintPath>..\External\DevExpress.XtraScheduler.v11.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared">
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CannotDisplayVehicleCharacteristicsControl.xaml.cs">
+      <DependentUpon>CannotDisplayVehicleCharacteristicsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataExportedInformationalWindow.xaml.cs">
+      <DependentUpon>DataExportedInformationalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataViewControlFactory.cs" />
+    <Compile Include="DesktopElements\CitroenDesktopButtonControl.xaml.cs">
+      <DependentUpon>CitroenDesktopButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopElements\PeugeotDesktopButtonControl.xaml.cs">
+      <DependentUpon>PeugeotDesktopButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventArguments\PsaTreeSelectionChangedEventArgs.cs" />
+    <Compile Include="Filtering\MileageAbsenceWarningWindow.xaml.cs">
+      <DependentUpon>MileageAbsenceWarningWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Filtering\PsaPreExportDataFilter.cs" />
+    <Compile Include="Filtering\PsaPreExportDataValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PsaDataControl.xaml.cs">
+      <DependentUpon>PsaDataControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PsaDataTreeToolbar.xaml.cs">
+      <DependentUpon>PsaDataTreeToolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PsaTracesTreeViewControl.xaml.cs">
+      <DependentUpon>PsaTracesTreeViewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TraceSynchronizationStatusControl.xaml.cs">
+      <DependentUpon>TraceSynchronizationStatusControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UnrecognizedDataExportTypeSelectionWindow.xaml.cs">
+      <DependentUpon>UnrecognizedDataExportTypeSelectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleSelectionControl.xaml.cs">
+      <DependentUpon>VehicleSelectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AllDataViewModel.cs" />
+    <Compile Include="ViewModels\ChronologyDataViewModel.cs" />
+    <Compile Include="ViewModels\Chronology\AnalyticRuleStatsPerVehicleViewModel.cs" />
+    <Compile Include="ViewModels\Chronology\AnalyticStatisticsValueViewModel.cs" />
+    <Compile Include="ViewModels\Chronology\ChronoFolderViewModel.cs" />
+    <Compile Include="ViewModels\Clienting\ClientCreationViewModel.cs" />
+    <Compile Include="ViewModels\Clienting\ClientsViewModel.cs" />
+    <Compile Include="ViewModels\Clienting\UserViewModel.cs" />
+    <Compile Include="ViewModels\EvaluationDataViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationFolderViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationFolderViewModelBase.cs" />
+    <Compile Include="ViewModels\Evaluation\EvaluationRootFolderViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\RuleEvaluationChronologyViewModel.cs" />
+    <Compile Include="ViewModels\Evaluation\VehicleEvaluationRootFolderViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\MaintenanceLogViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\VehicleEventTypeViewModel.cs" />
+    <Compile Include="ViewModels\Maintenance\VehicleEventViewModel.cs" />
+    <Compile Include="ViewModels\PsaDatasetViewModel.cs" />
+    <Compile Include="ViewModels\PsaDataViewModel.cs" />
+    <Compile Include="ViewModels\PsaParametersSetViewModel.cs" />
+    <Compile Include="ViewModels\PsaTraceViewModel.cs" />
+    <Compile Include="ViewModels\PsaVehicleViewModel.cs" />
+    <Compile Include="ViewModels\RuleTypeTreePathResolver.cs" />
+    <Compile Include="ViewModels\ServiceRequestingViewModel.cs" />
+    <Compile Include="ViewModels\VehicleSelectionViewModel.cs" />
+    <Compile Include="Views\Chrono\ChronologicalDataItemViewFactory.cs" />
+    <Compile Include="Views\Chrono\ChronologicalFolderControl.xaml.cs">
+      <DependentUpon>ChronologicalFolderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Chrono\ChronologicalItemControl.xaml.cs">
+      <DependentUpon>ChronologicalItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Chrono\IChronologicalDataItemView.cs" />
+    <Compile Include="Views\Clienting\ClientCreationWindow.xaml.cs">
+      <DependentUpon>ClientCreationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clienting\ClientsControl.xaml.cs">
+      <DependentUpon>ClientsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clienting\VehicleSelectionWindow.xaml.cs">
+      <DependentUpon>VehicleSelectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataItemViewFactory.cs" />
+    <Compile Include="Views\Evaluation\EvaluationDataItemViewFactory.cs" />
+    <Compile Include="Views\Evaluation\EvaluationTabItemControl.xaml.cs">
+      <DependentUpon>EvaluationTabItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Evaluation\IEvaluationDataItemView.cs" />
+    <Compile Include="Views\Evaluation\VehicleEvaluationDataItemControl.xaml.cs">
+      <DependentUpon>VehicleEvaluationDataItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventLogControl.xaml.cs">
+      <DependentUpon>EventLogControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IDataItemView.cs" />
+    <Compile Include="Views\LeftMileageToColorConverter.cs" />
+    <Compile Include="Views\MaintenanceLog\InsuranceControl.xaml.cs">
+      <DependentUpon>InsuranceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaintenanceLog\MaintenanceEventWindow.xaml.cs">
+      <DependentUpon>MaintenanceEventWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaintenanceLog\MedicalControl.xaml.cs">
+      <DependentUpon>MedicalControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MaintenanceLog\TechReviewControl.xaml.cs">
+      <DependentUpon>TechReviewControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParameterDetailsControl.xaml.cs">
+      <DependentUpon>ParameterDetailsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParametersSetView.xaml.cs">
+      <DependentUpon>ParametersSetView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ParameterView.xaml.cs">
+      <DependentUpon>ParameterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PsaParametersSetAnalysisControl.xaml.cs">
+      <DependentUpon>PsaParametersSetAnalysisControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PsaParametersSetTabbedView.xaml.cs">
+      <DependentUpon>PsaParametersSetTabbedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceEventDetailsControl.xaml.cs">
+      <DependentUpon>ServiceEventDetailsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VehicleEventWindow.xaml.cs">
+      <DependentUpon>VehicleEventWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VinPersistency\LexiaGraphVinPersistency.cs" />
+    <Compile Include="VinPersistency\LexiaTraceVinPersistency.cs" />
+    <Compile Include="VinPersistency\TraceVinPersistencyFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="CannotDisplayVehicleCharacteristicsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataExportedInformationalWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DesktopElements\CitroenDesktopButtonControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DesktopElements\PeugeotDesktopButtonControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Filtering\MileageAbsenceWarningWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PsaDataControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PsaDataTreeToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PsaTracesTreeViewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TraceSynchronizationStatusControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UnrecognizedDataExportTypeSelectionWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VehicleSelectionControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Chrono\ChronologicalFolderControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Chrono\ChronologicalItemControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Clienting\ClientCreationWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Clienting\ClientsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Clienting\VehicleSelectionWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Evaluation\EvaluationTabItemControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Evaluation\VehicleEvaluationDataItemControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\EventLogControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MaintenanceLog\InsuranceControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MaintenanceLog\MaintenanceEventWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MaintenanceLog\MedicalControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MaintenanceLog\TechReviewControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ParameterDetailsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ParametersSetView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ParameterView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PsaParametersSetAnalysisControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PsaParametersSetTabbedView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ServiceEventDetailsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\VehicleEventWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Instance\Agent.Common.Instance.csproj">
+      <Project>{3bebde5e-1413-4fad-8634-447a630185d9}</Project>
+      <Name>Agent.Common.Instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Presentation\Agent.Common.Presentation.csproj">
+      <Project>{7BEDE629-357F-4903-A1F1-061D0185848E}</Project>
+      <Name>Agent.Common.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common\Agent.Common.csproj">
+      <Project>{21539378-9a42-4546-8327-ff4ff88e7d08}</Project>
+      <Name>Agent.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.Presentation.PSA\Agent.Connector.Presentation.PSA.csproj">
+      <Project>{D6786BA7-89A7-49DF-9947-B7BBB8F5CC45}</Project>
+      <Name>Agent.Connector.Presentation.PSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.PSA.TypeConversion\Agent.Connector.PSA.TypeConversion.csproj">
+      <Project>{C866837D-A44B-48FF-A082-BDB694C01253}</Project>
+      <Name>Agent.Connector.PSA.TypeConversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector\Agent.Connector.csproj">
+      <Project>{5673e58f-c62f-4701-ab8d-57ffed655a6c}</Project>
+      <Name>Agent.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Evaluation\Agent.Evaluation.csproj">
+      <Project>{4A709B11-0A75-4DC5-98CC-19A2899705F8}</Project>
+      <Name>Agent.Evaluation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Host\Agent.Host.csproj">
+      <Project>{30B54B89-8752-4C71-B3AE-06A171E89510}</Project>
+      <Name>Agent.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Infrastructure\Agent.Infrastructure.csproj">
+      <Project>{42ecf03b-100d-495a-98b1-4bc9747d13b4}</Project>
+      <Name>Agent.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Localization\Agent.Localization.csproj">
+      <Project>{43F96D06-9A94-471C-B900-B8EFF2BCB42A}</Project>
+      <Name>Agent.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Logging\Agent.Logging.csproj">
+      <Project>{a9403843-fad4-446e-a157-2a2ca6f228c7}</Project>
+      <Name>Agent.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Metadata\Agent.Metadata.csproj">
+      <Project>{fa109915-77d6-456c-af17-6d76ecb0633d}</Project>
+      <Name>Agent.Metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.DataSynchronization\Agent.Network.DataSynchronization.csproj">
+      <Project>{4BD6050A-11BB-40B0-9314-FEBD6E029DA6}</Project>
+      <Name>Agent.Network.DataSynchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.Monitor\Agent.Network.Monitor.csproj">
+      <Project>{927985D8-D0D6-428C-A50D-CDCD7931C28B}</Project>
+      <Name>Agent.Network.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Styles\Common.Styles.csproj">
+      <Project>{00166dad-3c45-4aac-b52b-1b048c4a3670}</Project>
+      <Name>Common.Styles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Transport\Common.Transport.csproj">
+      <Project>{63d64d84-5d31-4b12-bc46-fdec8cca7c2d}</Project>
+      <Name>Common.Transport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GraphDisplay\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

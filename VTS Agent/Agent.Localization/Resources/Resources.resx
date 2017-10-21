@@ -1,0 +1,3672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AirIntake" xml:space="preserve">
+    <value>Air intake</value>
+  </data>
+  <data name="ApplicationHeader" xml:space="preserve">
+    <value>VTS Agent</value>
+  </data>
+  <data name="BackText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BasicBlocksSupply" xml:space="preserve">
+    <value>Basic blocks electric supply</value>
+  </data>
+  <data name="BasicParameters1" xml:space="preserve">
+    <value>Basic parameters 1</value>
+  </data>
+  <data name="BasicParameters2" xml:space="preserve">
+    <value>Basic parameters 2</value>
+  </data>
+  <data name="ByDatesText" xml:space="preserve">
+    <value>By dates</value>
+  </data>
+  <data name="ByVehiclesText" xml:space="preserve">
+    <value>CurrentData</value>
+  </data>
+  <data name="ChooseThreeDots" xml:space="preserve">
+    <value>Choose...</value>
+  </data>
+  <data name="ChosingDisplayedData" xml:space="preserve">
+    <value>Select data for display</value>
+  </data>
+  <data name="ClickToSetMileage" xml:space="preserve">
+    <value>Click to set mileage</value>
+  </data>
+  <data name="ClimateDevices" xml:space="preserve">
+    <value>Climate devices</value>
+  </data>
+  <data name="ControlPanelParameters" xml:space="preserve">
+    <value>Control panel parameters</value>
+  </data>
+  <data name="DataExportedMessage" xml:space="preserve">
+    <value>Data has been exported to the selected file</value>
+  </data>
+  <data name="DataExportFailedMessage" xml:space="preserve">
+    <value>Data export failed</value>
+  </data>
+  <data name="DataExportText" xml:space="preserve">
+    <value>Data export</value>
+  </data>
+  <data name="DetailsText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DifferentElectricSupplyAndImmobilizer" xml:space="preserve">
+    <value>Different electric supply and immobiliser</value>
+  </data>
+  <data name="DrivingInfo" xml:space="preserve">
+    <value>Driving info</value>
+  </data>
+  <data name="DynamicInformation" xml:space="preserve">
+    <value>Dynamic data</value>
+  </data>
+  <data name="ElectricPumpData" xml:space="preserve">
+    <value>Electric pump data</value>
+  </data>
+  <data name="ElectricSystemInfo" xml:space="preserve">
+    <value>Electric system info</value>
+  </data>
+  <data name="EngineCoolingAndClimateUnit" xml:space="preserve">
+    <value>Engine cooling and climate unit</value>
+  </data>
+  <data name="ExportedDataExtension" xml:space="preserve">
+    <value>.vts</value>
+  </data>
+  <data name="ExportFileFilterString" xml:space="preserve">
+    <value>Diagnostic data (.vts)|*.vts</value>
+  </data>
+  <data name="ExportText" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="FapAdditiveParameters" xml:space="preserve">
+    <value>FAP additive parameters</value>
+  </data>
+  <data name="ForwardText" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="FuelTankCap" xml:space="preserve">
+    <value>Fuel tank cap</value>
+  </data>
+  <data name="HeaterSensorsAndFanState" xml:space="preserve">
+    <value>Heater sensors and fan state</value>
+  </data>
+  <data name="HeatingAndVentilation" xml:space="preserve">
+    <value>Heating and ventilation</value>
+  </data>
+  <data name="Ignition" xml:space="preserve">
+    <value>Ignition</value>
+  </data>
+  <data name="InjectionInformation" xml:space="preserve">
+    <value>Injection information</value>
+  </data>
+  <data name="MainWindowTitle" xml:space="preserve">
+    <value>VTS – Diagnostic data Agent</value>
+  </data>
+  <data name="MileageColonText" xml:space="preserve">
+    <value>Mileage: </value>
+  </data>
+  <data name="MileageForTheMomentColon" xml:space="preserve">
+    <value>Mileage for the moment of data capture:</value>
+  </data>
+  <data name="OdometerScreenState" xml:space="preserve">
+    <value>Odometer screen state</value>
+  </data>
+  <data name="ParametersQuantityColon" xml:space="preserve">
+    <value>Parameters number:</value>
+  </data>
+  <data name="ParticleFilterInfo" xml:space="preserve">
+    <value>Particle filter info</value>
+  </data>
+  <data name="PleaseWaitThreeDots" xml:space="preserve">
+    <value>Please wait...</value>
+  </data>
+  <data name="Purification" xml:space="preserve">
+    <value>Purification</value>
+  </data>
+  <data name="ResetText" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ScanningSessionsColon" xml:space="preserve">
+    <value>Scanning sessions:</value>
+  </data>
+  <data name="SelectAllText" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="TitleColonText" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="TripData" xml:space="preserve">
+    <value>Trip data</value>
+  </data>
+  <data name="Unsupported" xml:space="preserve">
+    <value>Unrecognized data</value>
+  </data>
+  <data name="UnsupportedDataSet" xml:space="preserve">
+    <value>Unrecognized data set</value>
+  </data>
+  <data name="ValuesQuantityColon" xml:space="preserve">
+    <value>Values number:</value>
+  </data>
+  <data name="DiagnosticDataSavingText" xml:space="preserve">
+    <value>Diagnostic data export.</value>
+  </data>
+  <data name="ExportThreeDotsText" xml:space="preserve">
+    <value>Export...</value>
+  </data>
+  <data name="UnsupportedDataConnectorName" xml:space="preserve">
+    <value>Unrecognized</value>
+  </data>
+  <data name="UnsupportedDataDetectedMessage" xml:space="preserve">
+    <value>Unrecognized data detected.</value>
+  </data>
+  <data name="UnsupportedDataExportedMessage" xml:space="preserve">
+    <value>Unrecognized data has been saved to the selected file. Please provide this file to VTS support team. Data support will be added in one of the next versions of VTS Agent tool.</value>
+  </data>
+  <data name="UnsupportedDiagnosticFileExtension" xml:space="preserve">
+    <value>.uvts</value>
+  </data>
+  <data name="UnsupportedDiagnosticFileMaskText" xml:space="preserve">
+    <value>Unrecognized VTS data (.uvts)|*.uvts</value>
+  </data>
+  <data name="Mixed" xml:space="preserve">
+    <value>Various parameters</value>
+  </data>
+  <data name="AcceleratorPedalHardSpotSignal1" xml:space="preserve">
+    <value>Accelerator pedal hard spot signal 1</value>
+  </data>
+  <data name="AcceleratorPedalHardSpotSignal2" xml:space="preserve">
+    <value>Accelerator pedal hard spot signal 2</value>
+  </data>
+  <data name="AcceleratorPedalPosition" xml:space="preserve">
+    <value>Accelerator pedal position</value>
+  </data>
+  <data name="ActivationOfElectricalConsumers" xml:space="preserve">
+    <value>Electrical consumers activation</value>
+  </data>
+  <data name="AdditionalHeatingStatus" xml:space="preserve">
+    <value>Additional heating status</value>
+  </data>
+  <data name="AirConditioningAuthorisation" xml:space="preserve">
+    <value>Air conditioning authorisation</value>
+  </data>
+  <data name="AirConditioningBlowerLoadShedding" xml:space="preserve">
+    <value>Air conditioning blower load shedding</value>
+  </data>
+  <data name="AirConditioningCompressorControl" xml:space="preserve">
+    <value>Air conditioning compressor control</value>
+  </data>
+  <data name="AirConditioningCompressorLoadShedding" xml:space="preserve">
+    <value>Air conditioning compressor load shedding</value>
+  </data>
+  <data name="AirConditioningCompressorRelayOutput" xml:space="preserve">
+    <value>Air conditioning compressor relay output</value>
+  </data>
+  <data name="AirConditioningPushButton" xml:space="preserve">
+    <value>Air conditioning push button </value>
+  </data>
+  <data name="AirConditioningRequestInput" xml:space="preserve">
+    <value>Air conditioning request input</value>
+  </data>
+  <data name="AirFlowVolume" xml:space="preserve">
+    <value>Air volume flow</value>
+  </data>
+  <data name="AirPumpControl" xml:space="preserve">
+    <value>Air pump control</value>
+  </data>
+  <data name="AirTemperature" xml:space="preserve">
+    <value>Air temperature</value>
+  </data>
+  <data name="AirTurbine" xml:space="preserve">
+    <value>Air turbine</value>
+  </data>
+  <data name="AirTurbineSpeed" xml:space="preserve">
+    <value>Air turbine speed</value>
+  </data>
+  <data name="AlternatorExcitationVoltage" xml:space="preserve">
+    <value>Alternator excitation voltage</value>
+  </data>
+  <data name="AtmosphericPressure" xml:space="preserve">
+    <value>Atmospheric pressure</value>
+  </data>
+  <data name="AutomaticGearboxInParkPosition" xml:space="preserve">
+    <value>Automatic gearbox in parking position</value>
+  </data>
+  <data name="AutomaticGearboxRecognition" xml:space="preserve">
+    <value>Automatic gearbox recognition</value>
+  </data>
+  <data name="AutomaticGearboxSnowProgramRequest" xml:space="preserve">
+    <value>Automatic gearbox "snow" program request</value>
+  </data>
+  <data name="AutomaticLightingMode" xml:space="preserve">
+    <value>Automatic lighting mode</value>
+  </data>
+  <data name="AverageDistanceOfLast5Regenerations" xml:space="preserve">
+    <value>Average distance for the last 5 regenerations</value>
+  </data>
+  <data name="AverageFuelConsumption" xml:space="preserve">
+    <value>Average fuel consumption</value>
+  </data>
+  <data name="AverageJourneyConsumption" xml:space="preserve">
+    <value>Average journey consumption</value>
+  </data>
+  <data name="BasicBlocksSupply1" xml:space="preserve">
+    <value>Basic blocks supply</value>
+  </data>
+  <data name="BasicInjectionAdvance" xml:space="preserve">
+    <value>Basic injection advance</value>
+  </data>
+  <data name="BatteryVoltage" xml:space="preserve">
+    <value>Battery voltage</value>
+  </data>
+  <data name="BlowerCopyVoltage" xml:space="preserve">
+    <value>Blower copy voltage</value>
+  </data>
+  <data name="BodyworkVanPlusStatus" xml:space="preserve">
+    <value>Bodywork VAN + status</value>
+  </data>
+  <data name="BonnetLock" xml:space="preserve">
+    <value>Bonnet lock</value>
+  </data>
+  <data name="BootLampControlRelayOutput" xml:space="preserve">
+    <value>Boot lamp control relay output</value>
+  </data>
+  <data name="BootLightingCommand" xml:space="preserve">
+    <value>Boot lighting command</value>
+  </data>
+  <data name="BootLock" xml:space="preserve">
+    <value>Boot lock</value>
+  </data>
+  <data name="BootLockingControl" xml:space="preserve">
+    <value>Boot locking control</value>
+  </data>
+  <data name="BootOpeningRelayOutput" xml:space="preserve">
+    <value>Boot opening relay control</value>
+  </data>
+  <data name="BootOpeningRequest" xml:space="preserve">
+    <value>Boot opening request</value>
+  </data>
+  <data name="BrakeFluidLevel" xml:space="preserve">
+    <value>Brake fluid level</value>
+  </data>
+  <data name="BrakeLiningsWear" xml:space="preserve">
+    <value>Brake linings wear</value>
+  </data>
+  <data name="BrakePedal" xml:space="preserve">
+    <value>Barke pedal position</value>
+  </data>
+  <data name="BrightnessButton" xml:space="preserve">
+    <value>Brightness button</value>
+  </data>
+  <data name="CamshaftCrankshaftSync" xml:space="preserve">
+    <value>Camshaft/crankshaft sync</value>
+  </data>
+  <data name="CanisterElectrovalveOCR" xml:space="preserve">
+    <value>Canister electrovalve OCR</value>
+  </data>
+  <data name="CanisterSolenoidValveStatus" xml:space="preserve">
+    <value>Canister solenoid valve status</value>
+  </data>
+  <data name="CatalyticConverterCheck" xml:space="preserve">
+    <value>Catalytic converter check</value>
+  </data>
+  <data name="CatConverterDownstreamTemperature" xml:space="preserve">
+    <value>Catalytic converter downstream temperature</value>
+  </data>
+  <data name="CatConverterUpstreamTemperature" xml:space="preserve">
+    <value>Catalytic converter upstream temperature</value>
+  </data>
+  <data name="ChildSafetyActivationControl" xml:space="preserve">
+    <value>Child safety activation control</value>
+  </data>
+  <data name="ChildSafetyDeactivationControl" xml:space="preserve">
+    <value>Child safety deactivation control</value>
+  </data>
+  <data name="ClutchPedalSignal" xml:space="preserve">
+    <value>Clutch pedal signal</value>
+  </data>
+  <data name="CodedEngineImmobiliserProgrammingStatus" xml:space="preserve">
+    <value>Coded engine immobiliser programming status</value>
+  </data>
+  <data name="ComfortVanPlusStatus" xml:space="preserve">
+    <value>Comfort VAN + status</value>
+  </data>
+  <data name="CompleteHeatingLoadShedding" xml:space="preserve">
+    <value>Complete heating load shedding</value>
+  </data>
+  <data name="ConditionerCoolingCircuitPressure" xml:space="preserve">
+    <value>Conditioner cooling circuit pressure</value>
+  </data>
+  <data name="ConditioningCutOffRequest" xml:space="preserve">
+    <value>Conditioning cut-off request</value>
+  </data>
+  <data name="ControlPanelBrightnessLevel" xml:space="preserve">
+    <value>Control panel brightness level</value>
+  </data>
+  <data name="CoolantLevelWarning" xml:space="preserve">
+    <value>Coolant level warning</value>
+  </data>
+  <data name="CylinderCoilChargeTime1" xml:space="preserve">
+    <value>Cylinder 1 coil charge time</value>
+  </data>
+  <data name="CylinderCoilChargeTime14" xml:space="preserve">
+    <value>Cylinder coil 1/4 charge time</value>
+  </data>
+  <data name="CylinderCoilChargeTime2" xml:space="preserve">
+    <value>Cylinder 2 coil charge time</value>
+  </data>
+  <data name="CylinderCoilChargeTime23" xml:space="preserve">
+    <value>Cylinder coil 2/3 charge time</value>
+  </data>
+  <data name="CylinderCoilChargeTime3" xml:space="preserve">
+    <value>Cylinder 3 coil charge time</value>
+  </data>
+  <data name="CylinderCoilChargeTime4" xml:space="preserve">
+    <value>Cylinder 4 coil charge time</value>
+  </data>
+  <data name="DeadlockingControl" xml:space="preserve">
+    <value>Deadlocking control</value>
+  </data>
+  <data name="DeflationDetectionFrontLhTyrePressure" xml:space="preserve">
+    <value>Deflation detection front left tyre pressure</value>
+  </data>
+  <data name="DeflationDetectionFrontRhTyrePressure" xml:space="preserve">
+    <value>Deflation detection front right tyre pressure</value>
+  </data>
+  <data name="DeflationDetectionRearLhTyrePressure" xml:space="preserve">
+    <value>Deflation detection rear left tyre pressure</value>
+  </data>
+  <data name="DeflationDetectionRearRhTyrePressure" xml:space="preserve">
+    <value>Deflation detection rear right tyre pressure</value>
+  </data>
+  <data name="DeicingLoadShedding" xml:space="preserve">
+    <value>Deicing load shedding</value>
+  </data>
+  <data name="DieselPressureRegulatorRatio" xml:space="preserve">
+    <value>Diesel pressure regulator cycle open ratio</value>
+  </data>
+  <data name="DieselWaterAirPumpRelayOutputStatus" xml:space="preserve">
+    <value>Air/fuel pump relay output status</value>
+  </data>
+  <data name="DippedBeamControl" xml:space="preserve">
+    <value>Dipped beam control</value>
+  </data>
+  <data name="DisplayedFuelLevel" xml:space="preserve">
+    <value>Displayed fule level</value>
+  </data>
+  <data name="DistanceTravelledSinceLastRegeneration" xml:space="preserve">
+    <value>Distance travelled since the last regeneration</value>
+  </data>
+  <data name="DistributionStatus" xml:space="preserve">
+    <value>Distribution status</value>
+  </data>
+  <data name="DriverSeatBeltFastened" xml:space="preserve">
+    <value>Driver's seat belt fastened</value>
+  </data>
+  <data name="EconomyModeStatus" xml:space="preserve">
+    <value>Economy mode status</value>
+  </data>
+  <data name="ECULocking" xml:space="preserve">
+    <value>ECU locking</value>
+  </data>
+  <data name="ElectropumpAssemblyMotorCurrent" xml:space="preserve">
+    <value>Electropump assembly motor current</value>
+  </data>
+  <data name="ElectropumpAssemblyMotorTerminalsVoltage" xml:space="preserve">
+    <value>Electropump assembly motor terminals voltage</value>
+  </data>
+  <data name="EngineCoolantTemperature" xml:space="preserve">
+    <value>Engine coolant temperature</value>
+  </data>
+  <data name="EngineOilTemperature" xml:space="preserve">
+    <value>Engine oil temperature</value>
+  </data>
+  <data name="EngineRpm" xml:space="preserve">
+    <value>Engine RPM</value>
+  </data>
+  <data name="EngineRunningInformation" xml:space="preserve">
+    <value>Engine running information</value>
+  </data>
+  <data name="EngineRunningOutputControl" xml:space="preserve">
+    <value>Engine running output control</value>
+  </data>
+  <data name="EngineTorque" xml:space="preserve">
+    <value>Engine torque</value>
+  </data>
+  <data name="EspDeactivationRequest" xml:space="preserve">
+    <value>ESPdeactivation request</value>
+  </data>
+  <data name="EspEcuSupplyVoltage" xml:space="preserve">
+    <value>ESP ECUsupply voltage</value>
+  </data>
+  <data name="EvaporatorIcingUpSafetyStatus" xml:space="preserve">
+    <value>Evaporator icing up safety status</value>
+  </data>
+  <data name="EvaporatorSensorTemperature" xml:space="preserve">
+    <value>Evaporator sensor temperature</value>
+  </data>
+  <data name="ExhaustCycleRatio" xml:space="preserve">
+    <value>Exhaust cycle ratio</value>
+  </data>
+  <data name="ExhaustRecirculationGateCycle" xml:space="preserve">
+    <value>Exhaust recirculation gate open cycle ratio</value>
+  </data>
+  <data name="ExteriorAirTemperature" xml:space="preserve">
+    <value>Exterior air temperature</value>
+  </data>
+  <data name="FactoryModeStatus" xml:space="preserve">
+    <value>Factory mode status</value>
+  </data>
+  <data name="FanAssemblyControl" xml:space="preserve">
+    <value>Fan assembly control</value>
+  </data>
+  <data name="FanAssemblyHighSpeedControl" xml:space="preserve">
+    <value>Fan assembly high speed control</value>
+  </data>
+  <data name="FanAssemblyLowSpeedControl" xml:space="preserve">
+    <value>Fan assembly low speed control</value>
+  </data>
+  <data name="FanMidSpeedControl" xml:space="preserve">
+    <value>Fan mid speed control</value>
+  </data>
+  <data name="FanRelayOutput" xml:space="preserve">
+    <value>Fan relay output</value>
+  </data>
+  <data name="FanUnitReferenceSpeed" xml:space="preserve">
+    <value>Fan unit reference speed</value>
+  </data>
+  <data name="FanUnitSpeedSetting" xml:space="preserve">
+    <value>Fan unit speed setting</value>
+  </data>
+  <data name="FilteredFuelLevel" xml:space="preserve">
+    <value>Filtered fuel level</value>
+  </data>
+  <data name="FlamePresence" xml:space="preserve">
+    <value>Flame presence</value>
+  </data>
+  <data name="ForcedDeicingLoadShedding" xml:space="preserve">
+    <value>Forced deicing load shedding</value>
+  </data>
+  <data name="ForcedFanUnitLowSpeedLoadShedding" xml:space="preserve">
+    <value>Forced fan unit load shedding at low speed</value>
+  </data>
+  <data name="ForcedFanUnitMidSpeedLoadShedding" xml:space="preserve">
+    <value>Forced fan unit load shedding at mid speed</value>
+  </data>
+  <data name="FrontLeftHandLockUnlockingInformation" xml:space="preserve">
+    <value>Front LH lock unlocking information</value>
+  </data>
+  <data name="FrontLeftWheelSpeed" xml:space="preserve">
+    <value>Front left wheel speed</value>
+  </data>
+  <data name="FrontLhTyrePressureStatus" xml:space="preserve">
+    <value>Front LH type pressure status</value>
+  </data>
+  <data name="FrontLhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Front LH tyre deflation detection sensor status</value>
+  </data>
+  <data name="FrontRhTyrePressureStatus" xml:space="preserve">
+    <value>Front RH tyre pressure status</value>
+  </data>
+  <data name="FrontRhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Front RH tyre deflation detection sensor status</value>
+  </data>
+  <data name="FrontRightHandLockUnlockingInformation" xml:space="preserve">
+    <value>Front RH lock unlocking information</value>
+  </data>
+  <data name="FrontRightWheelSpeed" xml:space="preserve">
+    <value>Front right wheel speed</value>
+  </data>
+  <data name="FrontSillLightingControl" xml:space="preserve">
+    <value>Front sill lighting control</value>
+  </data>
+  <data name="FuelPumpRelayOutputStatus" xml:space="preserve">
+    <value>Fuel pump relay output status </value>
+  </data>
+  <data name="FuelPumpStatus" xml:space="preserve">
+    <value>Fuel pump status</value>
+  </data>
+  <data name="FuelPumpSupplyCutOff" xml:space="preserve">
+    <value>Fuel pump supply cut off</value>
+  </data>
+  <data name="FuelRegulatorCurrent" xml:space="preserve">
+    <value>Fuel regulator current</value>
+  </data>
+  <data name="FuelSenderImpedance" xml:space="preserve">
+    <value>Fuel sender impedance</value>
+  </data>
+  <data name="FuelSystemPressure" xml:space="preserve">
+    <value>Fuel system pressure</value>
+  </data>
+  <data name="FuelSystemPressureDelta" xml:space="preserve">
+    <value>Difference between rated and actual fuel pressure</value>
+  </data>
+  <data name="FuelTemperature" xml:space="preserve">
+    <value>Fuel temperature</value>
+  </data>
+  <data name="Gearbox" xml:space="preserve">
+    <value>Gearbox type</value>
+  </data>
+  <data name="GearboxGear" xml:space="preserve">
+    <value>Gearbox gear</value>
+  </data>
+  <data name="GrossFuelLevel" xml:space="preserve">
+    <value>Gross fuel level</value>
+  </data>
+  <data name="HazardWarningLampPushButton" xml:space="preserve">
+    <value>Hazard warning lamp push button</value>
+  </data>
+  <data name="HeadlampBeamCorrectorFault" xml:space="preserve">
+    <value>Headlamp beam corrector fault</value>
+  </data>
+  <data name="HeadlampWasherControl" xml:space="preserve">
+    <value>Headlamp washer control</value>
+  </data>
+  <data name="HeatedRearScreenPushButton" xml:space="preserve">
+    <value>Rear screen heater push button</value>
+  </data>
+  <data name="HeaterSensorsAndFanState1" xml:space="preserve">
+    <value>Heater sensors and fan state</value>
+  </data>
+  <data name="HeatingAndVentilation1" xml:space="preserve">
+    <value>Heating and ventilation</value>
+  </data>
+  <data name="HeatingStatus" xml:space="preserve">
+    <value>Heating status</value>
+  </data>
+  <data name="HigherOxygenSensorState" xml:space="preserve">
+    <value>Higher oxygen sensor state</value>
+  </data>
+  <data name="UpperOxygenSensorVoltage" xml:space="preserve">
+    <value>Higher oxygen sensor voltage (inlet sensor)</value>
+  </data>
+  <data name="HornControl" xml:space="preserve">
+    <value>Horn control</value>
+  </data>
+  <data name="IgnitionAdvance" xml:space="preserve">
+    <value>Ignition advance</value>
+  </data>
+  <data name="IncandescentElementStatus" xml:space="preserve">
+    <value>Incandescent element status</value>
+  </data>
+  <data name="InjectionAdvance" xml:space="preserve">
+    <value>Injection advance</value>
+  </data>
+  <data name="InjectionOffWhenSlowdown" xml:space="preserve">
+    <value>Injection off when slowdown</value>
+  </data>
+  <data name="InjectionTime" xml:space="preserve">
+    <value>Injection time</value>
+  </data>
+  <data name="InjectionVolumeSetting" xml:space="preserve">
+    <value>Injection volume setting</value>
+  </data>
+  <data name="Injector1Correction" xml:space="preserve">
+    <value>Injector 1 correction</value>
+  </data>
+  <data name="Injector2Correction" xml:space="preserve">
+    <value>Injector 2 correction</value>
+  </data>
+  <data name="Injector3Correction" xml:space="preserve">
+    <value>Injector 3 correction</value>
+  </data>
+  <data name="Injector4Correction" xml:space="preserve">
+    <value>Injector 4 correction</value>
+  </data>
+  <data name="InjectorsVoltage" xml:space="preserve">
+    <value>Injectors voltage</value>
+  </data>
+  <data name="InletAirHeaterThrottleOpenCycleRatio" xml:space="preserve">
+    <value>Inlet air heater throttle open cycle ratio</value>
+  </data>
+  <data name="InteriorLampControl" xml:space="preserve">
+    <value>Interior lamp control</value>
+  </data>
+  <data name="InteriorLampControlRelayOutput" xml:space="preserve">
+    <value>Interior lamp control relay output</value>
+  </data>
+  <data name="InteriorLampRequest" xml:space="preserve">
+    <value>Interior lamp request</value>
+  </data>
+  <data name="LeftBlownAirTemperature" xml:space="preserve">
+    <value>Left blown air temperatire</value>
+  </data>
+  <data name="LeftHandIndicatorsControl" xml:space="preserve">
+    <value>Left hand indicators control</value>
+  </data>
+  <data name="LockLockingControl" xml:space="preserve">
+    <value>Lock locking control</value>
+  </data>
+  <data name="LocksDeadlockingRelayOutput" xml:space="preserve">
+    <value>Locks deadlocking relay output</value>
+  </data>
+  <data name="LocksLockingRelayOutput" xml:space="preserve">
+    <value>Locks locking relay output</value>
+  </data>
+  <data name="LocksUnlockingRelayOutput" xml:space="preserve">
+    <value>Locks unlocking relay output</value>
+  </data>
+  <data name="LockUnlockingControl" xml:space="preserve">
+    <value>Lock unlocking control</value>
+  </data>
+  <data name="LowBrakeFluidWarning" xml:space="preserve">
+    <value>Low brake fluid level warning</value>
+  </data>
+  <data name="LowerOxygenSensorState" xml:space="preserve">
+    <value>Lower oxygen sensor state</value>
+  </data>
+  <data name="LowerOxygenVoltage" xml:space="preserve">
+    <value>Lower oxygen voltage</value>
+  </data>
+  <data name="LowScreenWashLevelDisplay" xml:space="preserve">
+    <value>Low screen wash level display</value>
+  </data>
+  <data name="MainBeamControl" xml:space="preserve">
+    <value>Main beam control</value>
+  </data>
+  <data name="MainBrakeSignal" xml:space="preserve">
+    <value>Main brake signal (disconnected when pedal is released)</value>
+  </data>
+  <data name="MaintenanceIndicator" xml:space="preserve">
+    <value>Maintenance indicator</value>
+  </data>
+  <data name="ManifoldPressure" xml:space="preserve">
+    <value>Manifold pressure</value>
+  </data>
+  <data name="MeasuredAirVolume" xml:space="preserve">
+    <value>Masured air volume</value>
+  </data>
+  <data name="MeasuredOilLevel" xml:space="preserve">
+    <value>Measured oil level</value>
+  </data>
+  <data name="MedianInjectorCorrDataHeader" xml:space="preserve">
+    <value>Averaged injectors corrections </value>
+  </data>
+  <data name="MeteringPumpSpeed" xml:space="preserve">
+    <value>Metering pump speed</value>
+  </data>
+  <data name="MixingStatusLeft" xml:space="preserve">
+    <value>Mixing status left</value>
+  </data>
+  <data name="MixingStatusRight" xml:space="preserve">
+    <value>Mixing status right</value>
+  </data>
+  <data name="MixRegState" xml:space="preserve">
+    <value>Mixing regulation state</value>
+  </data>
+  <data name="NoLoadShedding" xml:space="preserve">
+    <value>No load shedding</value>
+  </data>
+  <data name="NominalTurbinePressure" xml:space="preserve">
+    <value>Rated turbine pressure</value>
+  </data>
+  <data name="NumberOfServicesPerformed" xml:space="preserve">
+    <value>Number of services performed</value>
+  </data>
+  <data name="OdometerResetButton" xml:space="preserve">
+    <value>Odmeter reset button</value>
+  </data>
+  <data name="OilLevelFunction" xml:space="preserve">
+    <value>Oil level indication function </value>
+  </data>
+  <data name="OilPressureWarning" xml:space="preserve">
+    <value>Oil pressure warning</value>
+  </data>
+  <data name="OilTemperature" xml:space="preserve">
+    <value>Oil temperature</value>
+  </data>
+  <data name="ParkingBrake" xml:space="preserve">
+    <value>Parking brake</value>
+  </data>
+  <data name="PartialHeatingLoadShedding" xml:space="preserve">
+    <value>Partial heating load shedding</value>
+  </data>
+  <data name="ParticleFilterInletOutletPressureDifference" xml:space="preserve">
+    <value>Particle filter inlet/outlet pressure difference</value>
+  </data>
+  <data name="ParticleFilterStatus" xml:space="preserve">
+    <value>Particle filter status</value>
+  </data>
+  <data name="PassengerSeatBeltFastened" xml:space="preserve">
+    <value>Passenger's seat belt fastened</value>
+  </data>
+  <data name="TyresPressure" xml:space="preserve">
+    <value>Tyres pressure</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Doors" xml:space="preserve">
+    <value>Doors</value>
+  </data>
+  <data name="InstrumentalIndication" xml:space="preserve">
+    <value>Instrumental indication</value>
+  </data>
+  <data name="Lighting" xml:space="preserve">
+    <value>Lighting</value>
+  </data>
+  <data name="LoadSheddingLevel" xml:space="preserve">
+    <value>Load shedding level</value>
+  </data>
+  <data name="Locks" xml:space="preserve">
+    <value>Locks</value>
+  </data>
+  <data name="LowFapAdditiveLevel" xml:space="preserve">
+    <value>Low FAP additive level</value>
+  </data>
+  <data name="MeasuredData" xml:space="preserve">
+    <value>Measured data</value>
+  </data>
+  <data name="PlusVanSupply" xml:space="preserve">
+    <value>VAN "+" voltage</value>
+  </data>
+  <data name="PostInjectionFlow" xml:space="preserve">
+    <value>Post injection phase fuel flow</value>
+  </data>
+  <data name="PostInjectionPhasing" xml:space="preserve">
+    <value>Post injection phasing</value>
+  </data>
+  <data name="PowerSupplyOfRainSensor" xml:space="preserve">
+    <value>Rain sensor power supply</value>
+  </data>
+  <data name="PreheaterPlugLoadShedding" xml:space="preserve">
+    <value>Preheater plug load shedding</value>
+  </data>
+  <data name="PreHeatRelay" xml:space="preserve">
+    <value>Preheat relay</value>
+  </data>
+  <data name="PresenceOfPlusAccessories" xml:space="preserve">
+    <value>Accessoires "+" presence</value>
+  </data>
+  <data name="PresenceOfPlusIgnition" xml:space="preserve">
+    <value>Ignition "+" presence</value>
+  </data>
+  <data name="ProblemsDetectedWhenTransmittingTheUnlockCode" xml:space="preserve">
+    <value>Problems passing unlock code</value>
+  </data>
+  <data name="RangeInjectorCorrDataHeader" xml:space="preserve">
+    <value>Injectors corrections values range</value>
+  </data>
+  <data name="RearElectricWindowSwitchesDeactivation" xml:space="preserve">
+    <value>Rear electric window switches deactivation</value>
+  </data>
+  <data name="RearElectricWindowSwitchesSupply" xml:space="preserve">
+    <value>Rear electric window switches supply</value>
+  </data>
+  <data name="RearFogLampsControl" xml:space="preserve">
+    <value>Rear fog lamps control</value>
+  </data>
+  <data name="RearLeftHandDoorSwitch" xml:space="preserve">
+    <value>Rear left hand door switch</value>
+  </data>
+  <data name="RearLeftWheelSpeed" xml:space="preserve">
+    <value>Rear left wheel speed</value>
+  </data>
+  <data name="RearLhTyrePressureStatus" xml:space="preserve">
+    <value>Rear LH tyre pressure status</value>
+  </data>
+  <data name="RearLhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Rear LH tyre deflation detection sensor status</value>
+  </data>
+  <data name="RearLhWindowLowerControl" xml:space="preserve">
+    <value>Rear LH window lower control</value>
+  </data>
+  <data name="RearLhWindowRaiseControl" xml:space="preserve">
+    <value>Rear LH window raise control</value>
+  </data>
+  <data name="RearRhTyrePressureStatus" xml:space="preserve">
+    <value>Rear RH tyre pressure status</value>
+  </data>
+  <data name="RearRhWheelTyreDeflationDetectionSensorStatus" xml:space="preserve">
+    <value>Rear RH tyre deflation detection sensor status</value>
+  </data>
+  <data name="RearRhWindowLowerControl" xml:space="preserve">
+    <value>Rear RH window lower control</value>
+  </data>
+  <data name="RearRhWindowRaiseControl" xml:space="preserve">
+    <value>Rear RH window raise control</value>
+  </data>
+  <data name="RearRightHandDoorSwitch" xml:space="preserve">
+    <value>Rear right hand door switch</value>
+  </data>
+  <data name="RearRightWheelSpeed" xml:space="preserve">
+    <value>Rear right wheel speed</value>
+  </data>
+  <data name="RearScreenWashControl" xml:space="preserve">
+    <value>Rear screen wash control</value>
+  </data>
+  <data name="RearScreenWiperControl" xml:space="preserve">
+    <value>Rear screen wiper control</value>
+  </data>
+  <data name="RearWiperParkedPositionInformation" xml:space="preserve">
+    <value>Rear wiper parked position information</value>
+  </data>
+  <data name="RecirculationStatus" xml:space="preserve">
+    <value>Recirculation status</value>
+  </data>
+  <data name="RedundantBrakeSignal" xml:space="preserve">
+    <value>Redundant brake signal (connected when pedal is released)</value>
+  </data>
+  <data name="RegenerationAssistanceRequest" xml:space="preserve">
+    <value>Regeneration asistance request</value>
+  </data>
+  <data name="RelayLowSpeedVent" xml:space="preserve">
+    <value>Engine cooling fan low speed relay</value>
+  </data>
+  <data name="ReservoirCap" xml:space="preserve">
+    <value>Fuel tank cap</value>
+  </data>
+  <data name="Sensor1Voltage" xml:space="preserve">
+    <value>Sensors 1 voltage (camshafts)</value>
+  </data>
+  <data name="Sensor2Voltage" xml:space="preserve">
+    <value>Sensors 2 voltage (other)</value>
+  </data>
+  <data name="SidelampsControl" xml:space="preserve">
+    <value>Sidelamps control</value>
+  </data>
+  <data name="SlowSpeedWindscreenWiperControl" xml:space="preserve">
+    <value>Slow speed windscreen wiper control</value>
+  </data>
+  <data name="SmoothedConsumption" xml:space="preserve">
+    <value>Smoothed fuel consumption</value>
+  </data>
+  <data name="SparkPlugSpeed" xml:space="preserve">
+    <value>Spark plug speed</value>
+  </data>
+  <data name="SpeedElectropumpAssemblyMotor" xml:space="preserve">
+    <value>Speed of electropump assembly motor</value>
+  </data>
+  <data name="SpeedVent" xml:space="preserve">
+    <value>Engine cooling fan high speed relay</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SteeringElectropumpTemperature" xml:space="preserve">
+    <value>Steering electropump temperature</value>
+  </data>
+  <data name="SteeringWheelRotationAngleDataPresence" xml:space="preserve">
+    <value>Steering wheel rotation angle data presence</value>
+  </data>
+  <data name="SteeringWheelRotationDirection" xml:space="preserve">
+    <value>Steering wheel rotation direction</value>
+  </data>
+  <data name="SteeringWheelSpeed" xml:space="preserve">
+    <value>Steering wheel speed</value>
+  </data>
+  <data name="SunlightSensorDuskValue" xml:space="preserve">
+    <value>Sunlight sensor dusk value</value>
+  </data>
+  <data name="SupplyRelayControl" xml:space="preserve">
+    <value>Supply relay control</value>
+  </data>
+  <data name="SuspensionControlButton" xml:space="preserve">
+    <value>Suspension control button</value>
+  </data>
+  <data name="ThirdCylOff" xml:space="preserve">
+    <value>Third cylinder off</value>
+  </data>
+  <data name="ThrottleAngle" xml:space="preserve">
+    <value>Throttle angle</value>
+  </data>
+  <data name="ThrottlePositionVoltage" xml:space="preserve">
+    <value>Throttle position voltage</value>
+  </data>
+  <data name="ThrottleStatus" xml:space="preserve">
+    <value>Throttle status</value>
+  </data>
+  <data name="TotalAdditiveAmountDepositedCounter1" xml:space="preserve">
+    <value>Total additive amount consumed by FAP filter (counter 1)</value>
+  </data>
+  <data name="TotalAdditiveAmountDepositedCounter2" xml:space="preserve">
+    <value>Total additive amount taken from additive tank (counter 2)</value>
+  </data>
+  <data name="TotalFuelAdditiveQuantity" xml:space="preserve">
+    <value>Total fuel additive quantity</value>
+  </data>
+  <data name="TotalMileage" xml:space="preserve">
+    <value>Total mileage</value>
+  </data>
+  <data name="TripometerDisplayUnits" xml:space="preserve">
+    <value>Tripometer display units</value>
+  </data>
+  <data name="TurbineCycleRatio" xml:space="preserve">
+    <value>Turbine pressure electrovalve open duty cycle</value>
+  </data>
+  <data name="TurbinePressure" xml:space="preserve">
+    <value>Turbine pressure (post-turbine)</value>
+  </data>
+  <data name="ValidityOfTyreDeflationSensorStatusParameters" xml:space="preserve">
+    <value>Validity of tyre deflation status parameters</value>
+  </data>
+  <data name="VehicleProtectionStatusLedControl" xml:space="preserve">
+    <value>Vehicle protection status led control</value>
+  </data>
+  <data name="VehicleSpeed" xml:space="preserve">
+    <value>Vehicle speed</value>
+  </data>
+  <data name="VehicleSpeedSignalPresence" xml:space="preserve">
+    <value>Vehicle speed signal presence</value>
+  </data>
+  <data name="VisibilityControl" xml:space="preserve">
+    <value>Visibility control</value>
+  </data>
+  <data name="VoltageInjector1and4" xml:space="preserve">
+    <value>Voltage - injectors 1 and 4</value>
+  </data>
+  <data name="VoltageInjector2and3" xml:space="preserve">
+    <value>Voltage - injectors 2 and 3</value>
+  </data>
+  <data name="VoltageValueOnBlower" xml:space="preserve">
+    <value>Voltage value on blower</value>
+  </data>
+  <data name="VolumetricBreakinDetection" xml:space="preserve">
+    <value>Volumetric breakin detection</value>
+  </data>
+  <data name="VolumetricProtectionDeactivation" xml:space="preserve">
+    <value>Volumetric protection deactivation</value>
+  </data>
+  <data name="WaterInDiesel" xml:space="preserve">
+    <value>Water in diesel</value>
+  </data>
+  <data name="WaterPump" xml:space="preserve">
+    <value>Water pump</value>
+  </data>
+  <data name="WaterTemperature" xml:space="preserve">
+    <value>Water temperature</value>
+  </data>
+  <data name="WindscreenWasherControl" xml:space="preserve">
+    <value>Windscreen washer control</value>
+  </data>
+  <data name="WindscreenWiperControl" xml:space="preserve">
+    <value>Windscreen wiper control</value>
+  </data>
+  <data name="WindscreenWiperControlAtHighSpeed" xml:space="preserve">
+    <value>Windscreen wiper high speed control</value>
+  </data>
+  <data name="WindscreenWiperParkedPositionInformation" xml:space="preserve">
+    <value>Windscreen wiper parked position information</value>
+  </data>
+  <data name="VentilationDistribution" xml:space="preserve">
+    <value>Ventilation – distribution</value>
+  </data>
+  <data name="MileageNotSetExplainText" xml:space="preserve">
+    <value>Mileage not set to one or more scanning sessions. Please click at the scanning session item in the data tree and set mileage. Scanning data is incomplete without mileage field.</value>
+  </data>
+  <data name="MileageNotSetText" xml:space="preserve">
+    <value>Mileage not set</value>
+  </data>
+  <data name="OkText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AboutText" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="UnrecognizedText" xml:space="preserve">
+    <value>Unrecognized</value>
+  </data>
+  <data name="unrecFilter" xml:space="preserve">
+    <value>DJCU+zqqO6Pmy166hcfwwz0muA17lpWlx4Q/sAnmNUFPJtqo39gi9aUHmXUotTce</value>
+    <comment>Unrecognized data (.uvts)|*.uvts [DateTime]</comment>
+  </data>
+  <data name="UnrecognizedVehicleText" xml:space="preserve">
+    <value>Unrecognized model</value>
+  </data>
+  <data name="AggregatesState" xml:space="preserve">
+    <value>Aggregates state</value>
+  </data>
+  <data name="ControlPanelElementsState" xml:space="preserve">
+    <value>Control panel elements state</value>
+  </data>
+  <data name="ReverseGearInfo" xml:space="preserve">
+    <value>Reverse gear info</value>
+  </data>
+  <data name="RhAndLhIndicatorRelayOutput" xml:space="preserve">
+    <value>RH and LH indicator relay output</value>
+  </data>
+  <data name="RightHandIndicatorsControl" xml:space="preserve">
+    <value>Right hand indicators control</value>
+  </data>
+  <data name="Variables" xml:space="preserve">
+    <value>Environment variables</value>
+  </data>
+  <data name="AnalyseDataButtonText" xml:space="preserve">
+    <value>Analyse data</value>
+  </data>
+  <data name="CitroenName" xml:space="preserve">
+    <value>Citroёn</value>
+  </data>
+  <data name="PeugeotName" xml:space="preserve">
+    <value>Peugeot</value>
+  </data>
+  <data name="RightBlownAirTemperature" xml:space="preserve">
+    <value>Right blown air temperature</value>
+  </data>
+  <data name="DataAnalysisExplanatoryText" xml:space="preserve">
+    <value>To analyse collected data please click the button below and it will redirect you to VTS Automonitoring system where you will be able to upload your data for analysis. Click "Help" button to see the VTS Automonitoring system usage help.</value>
+  </data>
+  <data name="DataAnalysisHeader" xml:space="preserve">
+    <value>Data analysis</value>
+  </data>
+  <data name="AnalyseText" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="WikiLink" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/</value>
+  </data>
+  <data name="AboutHeader" xml:space="preserve">
+    <value>About VTS Agent application</value>
+  </data>
+  <data name="AboutTextContent" xml:space="preserve">
+    <value>VTS Agent application is a part of the VTS Avtomonitoring software package. It's completely free. Please visit our website Vtsautomonitoring.com to download the latest version or to learn more about the VTS Avtomonitoring vehicle health monitoring system.</value>
+  </data>
+  <data name="MonitorLink" xml:space="preserve">
+    <value>http://vtsapp.azurewebsites.net</value>
+  </data>
+  <data name="WikiLinkDataUpload" xml:space="preserve">
+    <value>http://vtsautomonitoring.wikidot.com/wiki:diagnosticdataupload</value>
+  </data>
+  <data name="DataExportWindowTextCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DataExportWindowTextDataExported" xml:space="preserve">
+    <value>Data exported</value>
+  </data>
+  <data name="DataExportWindowTextExplanation" xml:space="preserve">
+    <value>The data has been exported to a .vts file. It is required in order to upload it to the VTS Monitor web application where diagnostic data from the file will be stored in the central database of the system, and analyzed. Should we go to the VTS Monitor web page to upload the file?</value>
+  </data>
+  <data name="DataExportWindowTextGoto" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="DataExportWindowTextHeader" xml:space="preserve">
+    <value>Data export</value>
+  </data>
+  <data name="DataExportWindowTextHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="DesktopNoDataWarningMessageText" xml:space="preserve">
+    <value>Could not find any data captured from a vehicle by Lexia, PP2000 or DiagBox diagnostic system on this computer.</value>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="InstrumentationMeasurements" xml:space="preserve">
+    <value>Instrumentation measurements</value>
+  </data>
+  <data name="UnrecognizedData" xml:space="preserve">
+    <value>Unrecognized data</value>
+  </data>
+  <data name="UnrecognizedDataExplanatoryText" xml:space="preserve">
+    <value>At the moment the application can not recognize some parts of your diagnostic data. Please send the saved .uvts file to the vtsautomonitoring@gmail.com email and this data support will be included in one of the upcoming releases.</value>
+  </data>
+  <data name="UnrecognizedDataExported" xml:space="preserve">
+    <value>Unrecognized data exported</value>
+  </data>
+  <data name="UnrecognizedDataButtonTooltipText" xml:space="preserve">
+    <value>Unrecognized data found. Press to process it.</value>
+  </data>
+  <data name="NewVersionAvailableWindowCaption" xml:space="preserve">
+    <value>New version</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Later" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="NewVersionExplanatoryText" xml:space="preserve">
+    <value>It's better than current and is free as well. We recommend you to download it now or later from our website.</value>
+  </data>
+  <data name="ThereIsANewVersionExclamation" xml:space="preserve">
+    <value>New version available!</value>
+  </data>
+  <data name="Disclaimer" xml:space="preserve">
+    <value>VTS Automonitoring 2013. All rights reserved.</value>
+  </data>
+  <data name="ConnectionCheckingText" xml:space="preserve">
+    <value>Network connection check</value>
+  </data>
+  <data name="EnterUserData" xml:space="preserve">
+    <value>User credentials</value>
+  </data>
+  <data name="LogonText" xml:space="preserve">
+    <value>Logon</value>
+  </data>
+  <data name="NoConnectionExplanatoryText" xml:space="preserve">
+    <value>You need network connection to log on or register. Loggong on with a user account allows you to enable all application's abilities for your car parameters monitoring.</value>
+  </data>
+  <data name="NoNetworkHeader" xml:space="preserve">
+    <value>No network connection</value>
+  </data>
+  <data name="LogoffText" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="IncorrectUserCredentialsMessage" xml:space="preserve">
+    <value>Combination is incorrect, check login and password</value>
+  </data>
+  <data name="EmailColon" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="LoginColon" xml:space="preserve">
+    <value>Login:</value>
+  </data>
+  <data name="PasswordColon" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="ShowPassword" xml:space="preserve">
+    <value>Show password</value>
+  </data>
+  <data name="TooltipDataSynchronizationDataNotSupported" xml:space="preserve">
+    <value>Data Synchronization error: Data is not supported</value>
+  </data>
+  <data name="TooltipDataSynchronizationFailed" xml:space="preserve">
+    <value>Data was not synchronized because of error</value>
+  </data>
+  <data name="TooltipDataSynchronizationFinished" xml:space="preserve">
+    <value>Data synchronized</value>
+  </data>
+  <data name="TooltipDataSynchronizationInProgress" xml:space="preserve">
+    <value>Data synchronization in progress</value>
+  </data>
+  <data name="TooltipDataSynchronizationStopped" xml:space="preserve">
+    <value>Data synchronization halted: no network connection or user not logged on</value>
+  </data>
+  <data name="TooltipDataSynchronizationUnknown" xml:space="preserve">
+    <value>Data synchronization status is unknown</value>
+  </data>
+  <data name="TooltipDataSynchronizationVehicleNotSupported" xml:space="preserve">
+    <value>Data is not synchronized because this vehicle is not supported</value>
+  </data>
+  <data name="CouldNotGetVehicleCharacteristicsMessage" xml:space="preserve">
+    <value>Could not retrieve characteristics for this vehicle.</value>
+  </data>
+  <data name="NoConnectionOrUserNotLoggedCharacteristicsMessage" xml:space="preserve">
+    <value>Cannot display vehicle characteristics. No network connection or user not logged on.</value>
+  </data>
+  <data name="Characteristics" xml:space="preserve">
+    <value>Characteristics</value>
+  </data>
+  <data name="CanNotGetVehicleCharacteristics" xml:space="preserve">
+    <value>Could not get vehice characteristics.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UnrecognizedDataWayToExport1" xml:space="preserve">
+    <value>Pass data automatically right now. It requires internet connection. (Recommended)</value>
+  </data>
+  <data name="UnrecognizedDataWayToExport2" xml:space="preserve">
+    <value>Save data to a file, which then should be sent to the e-mail of the technical support vtsautomonitoring@gmail.com. (Select only if you do not have Internet connection or connection is limited)</value>
+  </data>
+  <data name="UnrecognizedDataWayToExportContinueArrow" xml:space="preserve">
+    <value>Continue &gt;</value>
+  </data>
+  <data name="UnrecognizedDataWayToExportExplanatoryText" xml:space="preserve">
+    <value>Failed to recognize some diagnostic data. You can pass this data to support and one of the upcoming application releases will be able to recognize them. How do you prefer to pass data?</value>
+  </data>
+  <data name="UnrecognizedDataWayToExportHeader" xml:space="preserve">
+    <value>How will we pass data to support?</value>
+  </data>
+  <data name="UnrecognizedDataWayToExportWindowTitle" xml:space="preserve">
+    <value>How should we pass data?</value>
+  </data>
+  <data name="LogOn" xml:space="preserve">
+    <value>Log on</value>
+  </data>
+  <data name="NextWithArrow" xml:space="preserve">
+    <value>Next &gt;</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="UnrecognizedDataReportedSuccessfullyMessage" xml:space="preserve">
+    <value>Data passed successfully, thank you for your collaboration.</value>
+  </data>
+  <data name="ErrorReportingWindowDescriptionText" xml:space="preserve">
+    <value>Something went wrong. Please copy the error text and send it to the support email address. We will try to fix it as soon as possible.</value>
+  </data>
+  <data name="ErrorReportingWindowHeaderText" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="CannotDisplayCharacteristicsExplanation" xml:space="preserve">
+    <value>No internet connection or user not logged on.</value>
+  </data>
+  <data name="CannotDisplayVehicleCharacteristics" xml:space="preserve">
+    <value>Cannot display vehicle characteristics.</value>
+  </data>
+  <data name="AllData" xml:space="preserve">
+    <value>All data</value>
+  </data>
+  <data name="DatasetSummaryFormat" xml:space="preserve">
+    <value>Uploaded on {0}</value>
+  </data>
+  <data name="TraceSummaryFormat" xml:space="preserve">
+    <value>Captured on {0}</value>
+  </data>
+  <data name="VehicleColon" xml:space="preserve">
+    <value>Vehicle:</value>
+  </data>
+  <data name="CannotGetDataWithoutNetworkConnectionAndUserLogged" xml:space="preserve">
+    <value>Unable to get data without network connection and user logged on</value>
+  </data>
+  <data name="MeasureUnitsColon" xml:space="preserve">
+    <value>Measure units:</value>
+  </data>
+  <data name="ParameterColon" xml:space="preserve">
+    <value>Parameter:</value>
+  </data>
+  <data name="UnitsAmper" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="UnitsBar" xml:space="preserve">
+    <value>bar</value>
+  </data>
+  <data name="UnitsCelsiusDegree" xml:space="preserve">
+    <value>°C</value>
+  </data>
+  <data name="UnitsCelsiusDegreePerSecond" xml:space="preserve">
+    <value>°C/s</value>
+  </data>
+  <data name="UnitsDegree" xml:space="preserve">
+    <value>°</value>
+  </data>
+  <data name="UnitsGramm" xml:space="preserve">
+    <value>g</value>
+  </data>
+  <data name="UnitsHour" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="UnitsKm" xml:space="preserve">
+    <value>Km</value>
+  </data>
+  <data name="UnitsKmH" xml:space="preserve">
+    <value>km/h</value>
+  </data>
+  <data name="UnitsLitre" xml:space="preserve">
+    <value>l</value>
+  </data>
+  <data name="UnitsLitrePer100Km" xml:space="preserve">
+    <value>l/100 km</value>
+  </data>
+  <data name="UnitsLux" xml:space="preserve">
+    <value>lx</value>
+  </data>
+  <data name="UnitsM3PerHour" xml:space="preserve">
+    <value>м³/h</value>
+  </data>
+  <data name="UnitsMgPerStroke" xml:space="preserve">
+    <value>mg/stroke</value>
+  </data>
+  <data name="UnitsMile" xml:space="preserve">
+    <value>AM</value>
+  </data>
+  <data name="UnitsMilliamper" xml:space="preserve">
+    <value>mA</value>
+  </data>
+  <data name="UnitsMillibar" xml:space="preserve">
+    <value>mbar</value>
+  </data>
+  <data name="UnitsMillilitre" xml:space="preserve">
+    <value>ml</value>
+  </data>
+  <data name="UnitsMilliohm" xml:space="preserve">
+    <value>mOhm</value>
+  </data>
+  <data name="UnitsMillisec" xml:space="preserve">
+    <value>ms</value>
+  </data>
+  <data name="UnitsMillivolt" xml:space="preserve">
+    <value>mV</value>
+  </data>
+  <data name="UnitsMinute" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="UnitsMm3PerStroke" xml:space="preserve">
+    <value>мм³/stroke</value>
+  </data>
+  <data name="UnitsMpH" xml:space="preserve">
+    <value>AM/h</value>
+  </data>
+  <data name="UnitsNewtonMetre" xml:space="preserve">
+    <value>Nm</value>
+  </data>
+  <data name="UnitsNoUnits" xml:space="preserve">
+    <value>No measure units</value>
+  </data>
+  <data name="UnitsOhm" xml:space="preserve">
+    <value>Ohm</value>
+  </data>
+  <data name="UnitsPercent" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="UnitsRpm" xml:space="preserve">
+    <value>RPM</value>
+  </data>
+  <data name="UnitsSec" xml:space="preserve">
+    <value>s</value>
+  </data>
+  <data name="UnitsUnsupported" xml:space="preserve">
+    <value>Unsupported</value>
+  </data>
+  <data name="UnitsVolt" xml:space="preserve">
+    <value>V</value>
+  </data>
+  <data name="ValuesCountColon" xml:space="preserve">
+    <value>Values count:</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCommonRail" xml:space="preserve">
+    <value>Common Rail injection system</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime1" xml:space="preserve">
+    <value>Coil 1</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime2" xml:space="preserve">
+    <value>Coil 2</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime3" xml:space="preserve">
+    <value>Coil 3</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilChargeTime4" xml:space="preserve">
+    <value>Coil 4</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilsChargeTime" xml:space="preserve">
+    <value>Ignition coils charge time</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelCylinderCoilsStartupChargeTimePeak" xml:space="preserve">
+    <value>Ignition coil peak charging time at the engine start</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelElectricSystem" xml:space="preserve">
+    <value>Electric system</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelFuelPressureDelta" xml:space="preserve">
+    <value>Difference between measured and rated fuel pressure</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelFuelPressureRegulatorCurrent" xml:space="preserve">
+    <value>Fuel pressure regulator current</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections1" xml:space="preserve">
+    <value>Corrections - injector 1</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections2" xml:space="preserve">
+    <value>Corrections - injector 2</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections3" xml:space="preserve">
+    <value>Corrections - injector 3</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorCorrections4" xml:space="preserve">
+    <value>Corrections - injector 4</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelInjectorsCorrections" xml:space="preserve">
+    <value>Injectors corrections</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelLambdaProbes" xml:space="preserve">
+    <value>Lambda probes</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelLowerLambdaProbe" xml:space="preserve">
+    <value>Lower lambda probe</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineIgnition" xml:space="preserve">
+    <value>Ignition</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineInjection" xml:space="preserve">
+    <value>Injection</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEngineInjectionTime" xml:space="preserve">
+    <value>Injection time</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelPetrolEnginePurification" xml:space="preserve">
+    <value>Engine – Catalytic neutralizer</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticModelUpperLambdaProbe" xml:space="preserve">
+    <value>Upper lambda probe</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime1" xml:space="preserve">
+    <value>Coil 1 startup charge time peak</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime2" xml:space="preserve">
+    <value>Coil 2 startup charge time peak</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime3" xml:space="preserve">
+    <value>Coil 3 startup charge time peak</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargePeakTime4" xml:space="preserve">
+    <value>Coil 4 startup charge time peak</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm1000" xml:space="preserve">
+    <value>Coil 1 charge time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm2000" xml:space="preserve">
+    <value>Coil 1 charge time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil1Rpm3000" xml:space="preserve">
+    <value>Coil 1 charge time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm1000" xml:space="preserve">
+    <value>Coil 2 charge time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm2000" xml:space="preserve">
+    <value>Coil 2 charge time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil2Rpm3000" xml:space="preserve">
+    <value>Coil 2 charge time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm1000" xml:space="preserve">
+    <value>Coil 3 charge time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm2000" xml:space="preserve">
+    <value>Coil 3 charge time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil3Rpm3000" xml:space="preserve">
+    <value>Coil 3 charge time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm1000" xml:space="preserve">
+    <value>Coil 4 charge time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm2000" xml:space="preserve">
+    <value>Coil 4 charge time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleCylinderCoilChargeTimeForRpmCoil4Rpm3000" xml:space="preserve">
+    <value>Coil 4 charge time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm1000" xml:space="preserve">
+    <value>At 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm2000" xml:space="preserve">
+    <value>At 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelPressureDeltaForRpmRpm3000" xml:space="preserve">
+    <value>At 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm1000" xml:space="preserve">
+    <value>Fuel pressure regulator current at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm2000" xml:space="preserve">
+    <value>Fuel pressure regulator current at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleFuelRegulatorCurrentForRpmRpm3000" xml:space="preserve">
+    <value>Fuel pressure regulator current at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectionTimeStartupPeak" xml:space="preserve">
+    <value>Injection time peak at engine startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm1000" xml:space="preserve">
+    <value>At 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm2000" xml:space="preserve">
+    <value>At 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleInjectorCorrectionRpm3000" xml:space="preserve">
+    <value>At 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpm" xml:space="preserve">
+    <value>Upper lambda probe voltage</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Lower lambda probe voltage at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Lower lambda probe voltage at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleLowerLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Lower lambda probe voltage at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm1000" xml:space="preserve">
+    <value>Injection time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm2000" xml:space="preserve">
+    <value>Injection time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRulePetrolEngineInjectionTimeForRpm3000" xml:space="preserve">
+    <value>Injection time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleStartupUndervoltage" xml:space="preserve">
+    <value>Undervoltage at engine start</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpm" xml:space="preserve">
+    <value>Lower lambda probe voltage</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm1000" xml:space="preserve">
+    <value>Upper lambda probe voltage at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm2000" xml:space="preserve">
+    <value>Upper lambda probe voltage at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameAnalyticRuleUpperLamdaProbeVoltageForRpmRpm3000" xml:space="preserve">
+    <value>Upper lambda probe voltage at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Cylinder 1 coil charge time at  1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Cylinder 1 coil charge time at  2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Cylinder 1 coil charge time at  3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder1CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Cylinder 1 coil charge time peak at startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Cylinder 2 coil charge time at  1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Cylinder 2 coil charge time at  2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Cylinder 2 coil charge time at  3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder2CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Cylinder 2 coil charge time peak at startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Cylinder 3 coil charge time at  1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Cylinder 3 coil charge time at  2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Cylinder 3 coil charge time at  3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder3CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Cylinder 3 coil charge time peak at startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime1000Rpm" xml:space="preserve">
+    <value>Cylinder 4 coil charge time at  1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime2000Rpm" xml:space="preserve">
+    <value>Cylinder 4 coil charge time at  2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilChargeTime3000Rpm" xml:space="preserve">
+    <value>Cylinder 4 coil charge time at  3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameCylinder4CoilStartupChargeTimePeak" xml:space="preserve">
+    <value>Cylinder 4 coil charge time peak at startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameEngineStartUndervoltage" xml:space="preserve">
+    <value>Undervoltage at engine start</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta1000Rpm" xml:space="preserve">
+    <value>Difference between measured and rated fuel pressure at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta2000Rpm" xml:space="preserve">
+    <value>Difference between measured and rated fuel pressure at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureDelta3000Rpm" xml:space="preserve">
+    <value>Difference between measured and rated fuel pressure at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent1000Rpm" xml:space="preserve">
+    <value>Fuel pressure regulator current at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent2000Rpm" xml:space="preserve">
+    <value>Fuel pressure regulator current at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameFuelPressureRegulatorCurrent3000Rpm" xml:space="preserve">
+    <value>Fuel pressure regulator current at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt1000Rpm" xml:space="preserve">
+    <value>Injection time at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt2000Rpm" xml:space="preserve">
+    <value>Injection time at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeAt3000Rpm" xml:space="preserve">
+    <value>Injection time at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectionTimeStartupPeak" xml:space="preserve">
+    <value>Injection time peak at engine startup</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 1 correction at 1000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 1 correction at 2000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector1CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 1 correction at 3000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 2 correction at 1000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 2 correction at 2000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector2CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 2 correction at 3000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 3 correction at 1000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 3 correction at 2000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector3CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 3 correction at 3000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt1000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 4 correction at 1000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt2000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 4 correction at 2000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjector4CorrectionAt3000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector 4 correction at 3000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt1000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector correction at 1000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt2000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector correction at 2000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameInjectorCorrectionAt3000Rpm" xml:space="preserve">
+    <value>Common Rail system Diesel injector correction at 3000 RPM</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt1000Rpm" xml:space="preserve">
+    <value>Lower Lambda probe voltage at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt2000Rpm" xml:space="preserve">
+    <value>Lower Lambda probe voltage at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaLowerVoltageAt3000Rpm" xml:space="preserve">
+    <value>Lower Lambda probe voltage at 3000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt1000Rpm" xml:space="preserve">
+    <value>Upper Lambda probe voltage at 1000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt2000Rpm" xml:space="preserve">
+    <value>Upper Lambda probe voltage at 2000 rpm</value>
+  </data>
+  <data name="AnalyticItemDisplayNameLambdaUpperVoltageAt3000Rpm" xml:space="preserve">
+    <value>Upper Lambda probe voltage at 3000 rpm</value>
+  </data>
+  <data name="ParametersChronology" xml:space="preserve">
+    <value>Parameters chronology</value>
+  </data>
+  <data name="ParametersEstimation" xml:space="preserve">
+    <value>Parameters evaluation</value>
+  </data>
+  <data name="ChronologicalItemGraphExplanatoryText" xml:space="preserve">
+    <value>Parameter changes graph throughout the observation period for the car.</value>
+  </data>
+  <data name="ReliabilityDisplayNameHigh" xml:space="preserve">
+    <value>High</value>
+  </data>
+  <data name="ReliabilityDisplayNameLow" xml:space="preserve">
+    <value>Low</value>
+  </data>
+  <data name="ReliabilityDisplayNameMedium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="ReliabilityDisplayNameMediumHigh" xml:space="preserve">
+    <value>Medium-high</value>
+  </data>
+  <data name="ReliabilityDisplayNameMediumLow" xml:space="preserve">
+    <value>Medium-low</value>
+  </data>
+  <data name="ReliabilityDisplayNameUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="ClientCreationExplanatoryText" xml:space="preserve">
+    <value>Enter the user's email address for him to be notified and receive a login and password to the system. Caution: If you enter the wrong address, the customer will not receive an email with login and password to the system.</value>
+  </data>
+  <data name="ClientCreationWindowHeader" xml:space="preserve">
+    <value>New Client creation</value>
+  </data>
+  <data name="ClientDataProvideExplanatoryText1" xml:space="preserve">
+    <value>Providing data access to Client:</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="VehicleSelectionExplanatoryText" xml:space="preserve">
+    <value>Select the vehicle to which you want to grant access to the client. Later, you can give him access to other vehicles.</value>
+  </data>
+  <data name="YourClients" xml:space="preserve">
+    <value>Your clients:</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="BlockAccessExplanatoryText" xml:space="preserve">
+    <value>Blocking access to the vehicle for the client:</value>
+  </data>
+  <data name="ClientHasAccessToTheFollowingVehicles" xml:space="preserve">
+    <value>Client has access to the following vehicles:</value>
+  </data>
+  <data name="Grant" xml:space="preserve">
+    <value>Grant</value>
+  </data>
+  <data name="EvaluationMarkExplanatoryText" xml:space="preserve">
+    <value>Parameter estimation based on statistical analysis of data and known nominal parameter values. Calculated on a scale of 1 to 10, and shows the evaluation of the parameter quality on its differences from the nominal value or the average value.</value>
+  </data>
+  <data name="EvaluationMarkExplanatoryTextDate" xml:space="preserve">
+    <value>Last data capture date on base of which the current mark has been calculated.</value>
+  </data>
+  <data name="EvaluationMarkExplanatoryTextReliability" xml:space="preserve">
+    <value>Mark reliability which depend on a toal amount of data accumulated by the system for vehicles with the same engine type. </value>
+  </data>
+  <data name="EvaluationMarksExplanationTextHistoryGraph" xml:space="preserve">
+    <value>Marks history graph throughout the entire vehicle observation history.</value>
+  </data>
+  <data name="ImportText" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="LevelOfRadioSignal" xml:space="preserve">
+    <value>Level of radio signal</value>
+  </data>
+  <data name="MixRegStateInput" xml:space="preserve">
+    <value>Mixing regulation state on input</value>
+  </data>
+  <data name="MixRegStateOutput" xml:space="preserve">
+    <value>Mixing regulation state on output</value>
+  </data>
+  <data name="QualityOfRadioSignal" xml:space="preserve">
+    <value>Quality of radio signal</value>
+  </data>
+  <data name="RadioConfiguration" xml:space="preserve">
+    <value>Radio configuration</value>
+  </data>
+  <data name="AdditionalGearAndSafety" xml:space="preserve">
+    <value>Additional gear and safety</value>
+  </data>
+  <data name="AudioAndComputer" xml:space="preserve">
+    <value>Audio and computer</value>
+  </data>
+  <data name="BasicParameters3" xml:space="preserve">
+    <value>Basic parameters 3</value>
+  </data>
+  <data name="BoardComputer" xml:space="preserve">
+    <value>Board computer</value>
+  </data>
+  <data name="CommandsAndRelays" xml:space="preserve">
+    <value>Commands and relays</value>
+  </data>
+  <data name="ControlButtonsStates" xml:space="preserve">
+    <value>Control buttons states</value>
+  </data>
+  <data name="Immobilizer" xml:space="preserve">
+    <value>Immobilizer</value>
+  </data>
+  <data name="Keys" xml:space="preserve">
+    <value>Keys</value>
+  </data>
+  <data name="MixingState" xml:space="preserve">
+    <value>Air mixing</value>
+  </data>
+  <data name="ParametersSet1" xml:space="preserve">
+    <value>Various parameters</value>
+  </data>
+  <data name="ParametersSet2" xml:space="preserve">
+    <value>Various parameters</value>
+  </data>
+  <data name="ParametersSet3" xml:space="preserve">
+    <value>Various parameters</value>
+  </data>
+  <data name="RadioButtons" xml:space="preserve">
+    <value>Radio buttons</value>
+  </data>
+  <data name="RequestedAirVolumeFlow" xml:space="preserve">
+    <value>Requested air volume flow</value>
+  </data>
+  <data name="SoftwareVersions" xml:space="preserve">
+    <value>Firmware and programs versions</value>
+  </data>
+  <data name="UnitsAndNotations" xml:space="preserve">
+    <value>Units and notations</value>
+  </data>
+  <data name="AbrDefault" xml:space="preserve">
+    <value>ABR default</value>
+  </data>
+  <data name="AirCollectorTemperature" xml:space="preserve">
+    <value>Air collector temperature</value>
+  </data>
+  <data name="AudioButton" xml:space="preserve">
+    <value>Audio button</value>
+  </data>
+  <data name="AuxiliaryAudioInputActivationState" xml:space="preserve">
+    <value>Auxiliary Audio Input activation state</value>
+  </data>
+  <data name="AVInputSensors" xml:space="preserve">
+    <value>AV Input sensors</value>
+  </data>
+  <data name="BoardComputerOption" xml:space="preserve">
+    <value>Board computer option</value>
+  </data>
+  <data name="BoardComputerState" xml:space="preserve">
+    <value>Board computer state</value>
+  </data>
+  <data name="BrightnessLevelRheostat" xml:space="preserve">
+    <value>Brightness level rheostat</value>
+  </data>
+  <data name="BrightnessLevelRheostat1" xml:space="preserve">
+    <value>Alarm button state</value>
+  </data>
+  <data name="BrightnessPlusSwitchState" xml:space="preserve">
+    <value>Brightness "Plus" switch state</value>
+  </data>
+  <data name="CDChangerPresenceOnVANBusSetting" xml:space="preserve">
+    <value>CD Changer presence on VAN bus</value>
+  </data>
+  <data name="CdEjectButtonState" xml:space="preserve">
+    <value>CD eject button state</value>
+  </data>
+  <data name="CentralLockButtonState" xml:space="preserve">
+    <value>Central lock button state</value>
+  </data>
+  <data name="ConfiguredAutoradioPresenceOnVanBus" xml:space="preserve">
+    <value>Configured autoradio presence on VAN bus.</value>
+  </data>
+  <data name="DateDisplayNotation" xml:space="preserve">
+    <value>Date display notation</value>
+  </data>
+  <data name="DefaultAdditiveSystem" xml:space="preserve">
+    <value>Default additive system</value>
+  </data>
+  <data name="DeicingCommand" xml:space="preserve">
+    <value>Deicing command</value>
+  </data>
+  <data name="DiagnosticsVersionIndex" xml:space="preserve">
+    <value>Diagnostic software version index</value>
+  </data>
+  <data name="DisplayColorSchemeType" xml:space="preserve">
+    <value>Display color scheme type</value>
+  </data>
+  <data name="EgrThrottlePositionFeedback" xml:space="preserve">
+    <value>EGR throttle position feedback</value>
+  </data>
+  <data name="EgrValvePositionFeedback" xml:space="preserve">
+    <value>EGR valve position feedback</value>
+  </data>
+  <data name="ElectrovalveTurboPositionFeedback" xml:space="preserve">
+    <value>Turbo electrovalve position feedback</value>
+  </data>
+  <data name="FaderFunction" xml:space="preserve">
+    <value>Fader function</value>
+  </data>
+  <data name="FrequencyBandAM" xml:space="preserve">
+    <value>Frequency band AM</value>
+  </data>
+  <data name="HeatingFramePushState" xml:space="preserve">
+    <value>Heating frame button push state</value>
+  </data>
+  <data name="HighPressureFuelPumpFuelSupply" xml:space="preserve">
+    <value>High pressure fuel pump fuel supply</value>
+  </data>
+  <data name="InformationAboutAutoVolumeRadioFunction" xml:space="preserve">
+    <value>Information about "Auto Volume" radio function</value>
+  </data>
+  <data name="InjectorsCommandError" xml:space="preserve">
+    <value>Injectors command error</value>
+  </data>
+  <data name="InternalTemperature" xml:space="preserve">
+    <value>Internal temperature</value>
+  </data>
+  <data name="LightingTableConfiguration" xml:space="preserve">
+    <value>Lighting table configuration</value>
+  </data>
+  <data name="MassAdditiveFap" xml:space="preserve">
+    <value>Additive mass in filter</value>
+  </data>
+  <data name="MeasuredFuelLevel" xml:space="preserve">
+    <value>Measured fuel level</value>
+  </data>
+  <data name="MeasuredInjectionVolume" xml:space="preserve">
+    <value>Measured injection volume</value>
+  </data>
+  <data name="MinimumFuelLevelAlert" xml:space="preserve">
+    <value>Minimum fuel level alert</value>
+  </data>
+  <data name="MixingShutterStatus" xml:space="preserve">
+    <value>Mixing shutter status</value>
+  </data>
+  <data name="OverspeedingAlertFunction" xml:space="preserve">
+    <value>Overspeeding alert function</value>
+  </data>
+  <data name="ProgrammingOfExteriorTemperature" xml:space="preserve">
+    <value>Exterior temperature programmed display</value>
+  </data>
+  <data name="PsaCalcDecale" xml:space="preserve">
+    <value>PSA calculator decale</value>
+  </data>
+  <data name="RadioVolumeButtonMinus" xml:space="preserve">
+    <value>Radio volume "Minus" button</value>
+  </data>
+  <data name="RadioVolumeButtonPlus" xml:space="preserve">
+    <value>Radio volume "Plus" button</value>
+  </data>
+  <data name="RequestForBVAProgramSport" xml:space="preserve">
+    <value>Request for BVA Sport program </value>
+  </data>
+  <data name="RequestForBVAProgramSportState" xml:space="preserve">
+    <value>Request for BVA Sport program state</value>
+  </data>
+  <data name="SensibilityCurveLoDx" xml:space="preserve">
+    <value>Sensibility curve LoDx</value>
+  </data>
+  <data name="SoftwareVersion" xml:space="preserve">
+    <value>Software version</value>
+  </data>
+  <data name="SupplierCode" xml:space="preserve">
+    <value>Supplier code</value>
+  </data>
+  <data name="TemperatureUnit" xml:space="preserve">
+    <value>Temperature measure unit</value>
+  </data>
+  <data name="UsageGeographicalZone" xml:space="preserve">
+    <value>Usage geographical zone</value>
+  </data>
+  <data name="VinCodeVerification" xml:space="preserve">
+    <value>Vin code verification</value>
+  </data>
+  <data name="VolumeAndDistanceUnits" xml:space="preserve">
+    <value>Volume and distance measure units</value>
+  </data>
+  <data name="VolumeLevelCorrectionAlgorythm" xml:space="preserve">
+    <value>Volume level correction algorythm</value>
+  </data>
+  <data name="VolumeLevelDependencyFromVehicleSpeed" xml:space="preserve">
+    <value>Volume level dependency on vehicle speed</value>
+  </data>
+  <data name="WindscreenWasherLiquidMinimumLevel" xml:space="preserve">
+    <value>Windscreen washer liquid minimum level</value>
+  </data>
+  <data name="AdditionalHeatingCommand" xml:space="preserve">
+    <value>Additional heating command</value>
+  </data>
+  <data name="BsiAntiScan" xml:space="preserve">
+    <value>BSI Antiscan</value>
+  </data>
+  <data name="BsiEmpty" xml:space="preserve">
+    <value>BSI empty</value>
+  </data>
+  <data name="BsiPair" xml:space="preserve">
+    <value>BSI pair</value>
+  </data>
+  <data name="BsiUnlock" xml:space="preserve">
+    <value>BSI unlock</value>
+  </data>
+  <data name="CalculatorStatus" xml:space="preserve">
+    <value>Calculator status</value>
+  </data>
+  <data name="ChildSafetyLeft" xml:space="preserve">
+    <value>Child safety (left)</value>
+  </data>
+  <data name="ChildSafetyRight" xml:space="preserve">
+    <value>Child safety (right)</value>
+  </data>
+  <data name="CorrectCommunicationWithKeyTransponder" xml:space="preserve">
+    <value>Correct communication with key transponder</value>
+  </data>
+  <data name="FirstAirHeaterThrottleScan" xml:space="preserve">
+    <value>First air heater throttle scan</value>
+  </data>
+  <data name="FirstEgrScan" xml:space="preserve">
+    <value>First EGR scan</value>
+  </data>
+  <data name="FirstEgrThrottleScan" xml:space="preserve">
+    <value>First EGR throttle scan</value>
+  </data>
+  <data name="FrontFogLampsControl" xml:space="preserve">
+    <value>Front fog lamps control</value>
+  </data>
+  <data name="Key1Sync" xml:space="preserve">
+    <value>Key 1 sync</value>
+  </data>
+  <data name="Key2Sync" xml:space="preserve">
+    <value>Key 2 sync</value>
+  </data>
+  <data name="Key3Sync" xml:space="preserve">
+    <value>Key 3 sync</value>
+  </data>
+  <data name="Key4Sync" xml:space="preserve">
+    <value>Key 4 sync</value>
+  </data>
+  <data name="Key5Sync" xml:space="preserve">
+    <value>Key 5 sync</value>
+  </data>
+  <data name="LastAirHeaterThrottleScan" xml:space="preserve">
+    <value>Last air heater throttle scan</value>
+  </data>
+  <data name="LastEgrScan" xml:space="preserve">
+    <value>Last EGR scan</value>
+  </data>
+  <data name="MeasuredFanSpeed" xml:space="preserve">
+    <value>Measured fan speed</value>
+  </data>
+  <data name="NumberOfActiveKeys" xml:space="preserve">
+    <value>Number of active keys</value>
+  </data>
+  <data name="NumberOfSynchronizedRadiokeys" xml:space="preserve">
+    <value>Number of synchronized radiokeys</value>
+  </data>
+  <data name="SunroofAndWindowRelay" xml:space="preserve">
+    <value>Sunroof and window relay</value>
+  </data>
+  <data name="TelecodingVariableError" xml:space="preserve">
+    <value>Telecoding variable error</value>
+  </data>
+  <data name="TransponderAntiscanActive" xml:space="preserve">
+    <value>Transponder antiscan active</value>
+  </data>
+  <data name="AlarmButtonState" xml:space="preserve">
+    <value>Alarm button state</value>
+  </data>
+  <data name="RadioSearchButtonMinus" xml:space="preserve">
+    <value>Radio "Search" button minus</value>
+  </data>
+  <data name="RadioSearchButtonPlus" xml:space="preserve">
+    <value>Radio "Search" button plus</value>
+  </data>
+  <data name="AirConditioningCircuitHighPressureProtection" xml:space="preserve">
+    <value>Air conditioning circuit high-pressure protection</value>
+  </data>
+  <data name="AirConditioningCircuitLowPressureProtection" xml:space="preserve">
+    <value>Air conditioning circuit low-pressure protection</value>
+  </data>
+  <data name="AirConditioningCompressorCommand" xml:space="preserve">
+    <value>Air conditioning compressor command</value>
+  </data>
+  <data name="ClimateControlFunctioningMode" xml:space="preserve">
+    <value>Climate control functioning mode</value>
+  </data>
+  <data name="ElectromagneticModulationActivationTimes" xml:space="preserve">
+    <value>Electromagnetic modulation activation time</value>
+  </data>
+  <data name="EPDECollector" xml:space="preserve">
+    <value>EPDE collector</value>
+  </data>
+  <data name="GearboxRule" xml:space="preserve">
+    <value>Gearbox rule</value>
+  </data>
+  <data name="OilPressure" xml:space="preserve">
+    <value>Oil pressure</value>
+  </data>
+  <data name="PressureSetting" xml:space="preserve">
+    <value>Pressure setting</value>
+  </data>
+  <data name="ThrottlePosition" xml:space="preserve">
+    <value>Throttle position</value>
+  </data>
+  <data name="AirConditionerCompressorOnOffState" xml:space="preserve">
+    <value>Air conditioner compressor state</value>
+  </data>
+  <data name="ClimateAirConditioningFanCommand" xml:space="preserve">
+    <value>Air conditioning fan management</value>
+  </data>
+  <data name="EvaporatorTemperatureSensorState" xml:space="preserve">
+    <value>Evaporator temperature sensor state</value>
+  </data>
+  <data name="ElectricEnergyGenerationCommand" xml:space="preserve">
+    <value>Electric energy generation command</value>
+  </data>
+  <data name="BatteryVoltageSecure" xml:space="preserve">
+    <value>Secure battery voltage</value>
+  </data>
+  <data name="ElectricEnergyGenerationRegulationCommand" xml:space="preserve">
+    <value>Electric energy generation regulation command</value>
+  </data>
+  <data name="ElectricLoadLevel" xml:space="preserve">
+    <value>Electric load level</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder1" xml:space="preserve">
+    <value>Ignition timing advance angle - Cylinder 1</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder2" xml:space="preserve">
+    <value>Ignition timing advance angle - Cylinder 2</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder3" xml:space="preserve">
+    <value>Ignition timing advance angle - Cylinder 3</value>
+  </data>
+  <data name="IgnitionTimingAdvanceAngleCylinder4" xml:space="preserve">
+    <value>Ignition timing advance angle - Cylinder 4</value>
+  </data>
+  <data name="MaximumIgnitionAdvance" xml:space="preserve">
+    <value>Maximum ignition timing advance angle</value>
+  </data>
+  <data name="NoiseLevelMeasuredByDetonationSensor" xml:space="preserve">
+    <value>Noise level measured by detonation sensor</value>
+  </data>
+  <data name="OptimalIgnitionAdvance" xml:space="preserve">
+    <value>Optimal ignition timing advance angle</value>
+  </data>
+  <data name="RequestedManagedThermostatValue" xml:space="preserve">
+    <value>Requested managed thermostat value</value>
+  </data>
+  <data name="LightSensorOutput" xml:space="preserve">
+    <value>Sunlight sensor output</value>
+  </data>
+  <data name="AutomaticGearboxEnterTimeMeasured" xml:space="preserve">
+    <value>Automatic gearbox enter time (measured)</value>
+  </data>
+  <data name="AutomaticGearboxEnterTimeRequested" xml:space="preserve">
+    <value>Automatic gearbox enter time (requested)</value>
+  </data>
+  <data name="AutomaticGearboxExitTimeMeasured" xml:space="preserve">
+    <value>Automatic gearbox exit time (measured)</value>
+  </data>
+  <data name="AutomaticGearboxExitTimeRequested" xml:space="preserve">
+    <value>Automatic gearbox exit time (requested)</value>
+  </data>
+  <data name="BatteryChargePercentage" xml:space="preserve">
+    <value>Battery charge percentage</value>
+  </data>
+  <data name="BatteryChargePercentagePrecise" xml:space="preserve">
+    <value>Precise battery charge percentage</value>
+  </data>
+  <data name="BatteryCurrent" xml:space="preserve">
+    <value>Battery current</value>
+  </data>
+  <data name="BatteryTemperature" xml:space="preserve">
+    <value>Battery temperature</value>
+  </data>
+  <data name="GearboxHandlePosition" xml:space="preserve">
+    <value>Gearbox handle position</value>
+  </data>
+  <data name="OilPressureSensorVoltage" xml:space="preserve">
+    <value>Oil pressure sensor voltage</value>
+  </data>
+  <data name="OilTemperatureSensorVoltage" xml:space="preserve">
+    <value>Oil temperature sensor voltage</value>
+  </data>
+  <data name="MultifunctionalSwitch1OrImpulseMinusContact" xml:space="preserve">
+    <value>Switch 1 or impulse ( – ) switch contact</value>
+  </data>
+  <data name="MultifunctionalSwitchPNContact" xml:space="preserve">
+    <value>P/N Multifunctional switch contact</value>
+  </data>
+  <data name="MultifunctionalSwitchS1OrImpulsePlusContact" xml:space="preserve">
+    <value>S1 Multifunctional or impulse ( + ) switch contact</value>
+  </data>
+  <data name="MultifunctionalSwitchS2Contact" xml:space="preserve">
+    <value>S2 Multifunctional switch contact</value>
+  </data>
+  <data name="MultifunctionalSwitchS3Contact" xml:space="preserve">
+    <value>S3 Multifunctional switch contact</value>
+  </data>
+  <data name="MultifunctionalSwitchS4Contact" xml:space="preserve">
+    <value>S4 Multifunctional switch contact</value>
+  </data>
+  <data name="IncorrectVinMessage" xml:space="preserve">
+    <value>Incorrect VIN. Please check your VIN before setting.</value>
+  </data>
+  <data name="IncorrectVinMessageBoxCaption" xml:space="preserve">
+    <value>Incorrect VIN</value>
+  </data>
+  <data name="ScalesText" xml:space="preserve">
+    <value>Scales</value>
+  </data>
+  <data name="ClimateControlOrKeyLockFunctionOutput" xml:space="preserve">
+    <value>Climate control or KeyLock function output</value>
+  </data>
+  <data name="DrainRequired" xml:space="preserve">
+    <value>Drain required</value>
+  </data>
+  <data name="GearboxHandlePositionRegisteredBySMD" xml:space="preserve">
+    <value>Gearbox handle position registered by SMD</value>
+  </data>
+  <data name="KeyPositionInIgnitionLock" xml:space="preserve">
+    <value>Key position in ignition lock</value>
+  </data>
+  <data name="ReverseInformation" xml:space="preserve">
+    <value>Reverse moving information</value>
+  </data>
+  <data name="SequentialElectromagneticValvesGeneralSupply" xml:space="preserve">
+    <value>Sequential electromagnetic valves generic supply</value>
+  </data>
+  <data name="TorqueRegulation" xml:space="preserve">
+    <value>Torque regulation</value>
+  </data>
+  <data name="AlternatorNonOperationalTimeHasEnded" xml:space="preserve">
+    <value>Alternator non-operational time has ended</value>
+  </data>
+  <data name="BsiMemoryStateAfterTelecoding" xml:space="preserve">
+    <value>BSI memory state after telecoding</value>
+  </data>
+  <data name="BsiSoftwareRebootsCount" xml:space="preserve">
+    <value>BSI software reboots count</value>
+  </data>
+  <data name="BsiSoftwareResetsCount" xml:space="preserve">
+    <value>BSI software resets count</value>
+  </data>
+  <data name="ElectricChainStateWithGeneratorOffline" xml:space="preserve">
+    <value>Electric system state when alternator is off</value>
+  </data>
+  <data name="ElectricChainStateWithGeneratorOnline" xml:space="preserve">
+    <value>Electric system state when alternator is on</value>
+  </data>
+  <data name="ElectricSystemEmergencyMode" xml:space="preserve">
+    <value>Electric system emergency mode</value>
+  </data>
+  <data name="EngineStartCommand" xml:space="preserve">
+    <value>Engine start command</value>
+  </data>
+  <data name="FapRegenerationHelpRequest" xml:space="preserve">
+    <value>FAP regeneration help request</value>
+  </data>
+  <data name="InformationPlusAfterContactPassedToEngineServiceModule" xml:space="preserve">
+    <value>Information about plus after contact passed to the Engine service module</value>
+  </data>
+  <data name="KeyInStarterStartPosition" xml:space="preserve">
+    <value>Key in starter start position</value>
+  </data>
+  <data name="LifePhaseMode" xml:space="preserve">
+    <value>Life phase mode</value>
+  </data>
+  <data name="MainElectricSystemState" xml:space="preserve">
+    <value>Main state of electric system</value>
+  </data>
+  <data name="PhysicalStateOfParkingStateShunt" xml:space="preserve">
+    <value>Physical state of Parking state shunt</value>
+  </data>
+  <data name="PlusAfterContactAPC" xml:space="preserve">
+    <value>Plus after contact (+APC)</value>
+  </data>
+  <data name="PowerOutputAtWorkingEngineControl_SeatHeaterOn" xml:space="preserve">
+    <value>Power output control for working engine (seat heater switch on permission)</value>
+  </data>
+  <data name="PowerUnitState" xml:space="preserve">
+    <value>Power unit state</value>
+  </data>
+  <data name="SensitiveElectricConsumersState" xml:space="preserve">
+    <value>Sensitive electric consumers state</value>
+  </data>
+  <data name="TimeSpanSinceAlternatorStart" xml:space="preserve">
+    <value>Time elapsed from the moment when alternator started</value>
+  </data>
+  <data name="VehicleElectricSystemConfiguration" xml:space="preserve">
+    <value>Vehicle electric system configuration</value>
+  </data>
+  <data name="AdditionalHeaterPowerSavingFunctionCTP1And2" xml:space="preserve">
+    <value>Additional heater power saving function (CTP 1 and 2)</value>
+  </data>
+  <data name="AdditionalHeatingSystemCTP3PartialBlock" xml:space="preserve">
+    <value>Additional heating system partial block (TCP3)</value>
+  </data>
+  <data name="BodyTransformationBlockLoadShedding" xml:space="preserve">
+    <value>Body transformation block load shedding</value>
+  </data>
+  <data name="GlobalPowerSavingFunctionOfRearWindowHeater" xml:space="preserve">
+    <value>Global power saving function of rear window heater</value>
+  </data>
+  <data name="NOxSystemSwitchOffForPartialGeneratorUnload" xml:space="preserve">
+    <value>NOx system switch of for partial generator unload</value>
+  </data>
+  <data name="RearWindowHeatingPowerSaveFunctionWhileRegeneratingFAP" xml:space="preserve">
+    <value>Rear window heating power save function when regenerating FAP</value>
+  </data>
+  <data name="WindscreenHeaterLoadShedding" xml:space="preserve">
+    <value>Windscreen heater load shedding</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_ActivationState" xml:space="preserve">
+    <value>Speed regulation/limitation: activation state</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_CancelRestoreButtonStatus" xml:space="preserve">
+    <value>Speed regulation/limitation: «Cancel/Restore» button status </value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_SelectionState" xml:space="preserve">
+    <value>Speed regulation/limitation: Selection state</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_SpeedRegulationMinus" xml:space="preserve">
+    <value>Speed regulation/limitation: speed regulation «-»</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_SpeedRegulationPlus" xml:space="preserve">
+    <value>Speed regulation/limitation: speed regulation «+»</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_SpeedState" xml:space="preserve">
+    <value>Speed regulation/limitation: speed state</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_SwitchOnCommand" xml:space="preserve">
+    <value>Speed regulation/limitation: switch on command</value>
+  </data>
+  <data name="BatteryChargeCirquitErrorDisplaying" xml:space="preserve">
+    <value>Battery charge cirquit error displaying</value>
+  </data>
+  <data name="OilPressureAfterSignalFiltering" xml:space="preserve">
+    <value>Oil level signal filtered</value>
+  </data>
+  <data name="WaterInGazolineDetected" xml:space="preserve">
+    <value>Water in gas</value>
+  </data>
+  <data name="BVAProgramState" xml:space="preserve">
+    <value>BVA program state</value>
+  </data>
+  <data name="BVAState" xml:space="preserve">
+    <value>BVA State</value>
+  </data>
+  <data name="DaysLeftTillService" xml:space="preserve">
+    <value>Days remaining until service</value>
+  </data>
+  <data name="DaysLeftTillServiceSign" xml:space="preserve">
+    <value>Days remaining until service - sign</value>
+  </data>
+  <data name="DeicingControl" xml:space="preserve">
+    <value>Deicing control</value>
+  </data>
+  <data name="ESPSwitchOffSignalManagement" xml:space="preserve">
+    <value>CDS (ESP) switch off signal management</value>
+  </data>
+  <data name="EVLUActivationTime" xml:space="preserve">
+    <value>EVLU activation time</value>
+  </data>
+  <data name="HeadlightWasherControlOrExitWithWorkingEngine" xml:space="preserve">
+    <value>Headlight washer control or exit with working engine</value>
+  </data>
+  <data name="HydraulicTorqueConverterBlocking" xml:space="preserve">
+    <value>Hydraulic torque converter blocking</value>
+  </data>
+  <data name="InstantFuelConsumption" xml:space="preserve">
+    <value>Instant fuel consumption</value>
+  </data>
+  <data name="MileageBeforeService" xml:space="preserve">
+    <value>Mileage before service</value>
+  </data>
+  <data name="MileageBeforeServiceSign" xml:space="preserve">
+    <value>Mileage before service - sign</value>
+  </data>
+  <data name="MileageCorrespondingToLastReset" xml:space="preserve">
+    <value>Mileage corresponding to last reset</value>
+  </data>
+  <data name="MileageResetAtFirstPostDeliverService" xml:space="preserve">
+    <value>Mileage reset at first post-deliver service</value>
+  </data>
+  <data name="PeriodAfterLastReset" xml:space="preserve">
+    <value>Period after last reset</value>
+  </data>
+  <data name="RearScreenWasherRequest" xml:space="preserve">
+    <value>Rear screen washer request</value>
+  </data>
+  <data name="ScreenWiperAutomaticMode" xml:space="preserve">
+    <value>Screen wiper automatic mode</value>
+  </data>
+  <data name="ScreenWiperCommandSentByRainSensor" xml:space="preserve">
+    <value>Screen wiper requested by rain sensor</value>
+  </data>
+  <data name="SequentialSolenoidValve1" xml:space="preserve">
+    <value>Sequential solenoid valve 1</value>
+  </data>
+  <data name="SequentialSolenoidValve2" xml:space="preserve">
+    <value>Sequential solenoid valve 2</value>
+  </data>
+  <data name="SequentialSolenoidValve3" xml:space="preserve">
+    <value>Sequential solenoid valve 3</value>
+  </data>
+  <data name="SequentialSolenoidValve4" xml:space="preserve">
+    <value>Sequential solenoid valve 4</value>
+  </data>
+  <data name="SequentialSolenoidValve5" xml:space="preserve">
+    <value>Sequential solenoid valve 5</value>
+  </data>
+  <data name="SequentialSolenoidValve6" xml:space="preserve">
+    <value>Sequential solenoid valve 6</value>
+  </data>
+  <data name="ShiftLockHandleUnblocking" xml:space="preserve">
+    <value>Shift-lock handle unblocking</value>
+  </data>
+  <data name="UnfastenedBeltSignalManagement" xml:space="preserve">
+    <value>Unfastened belt signal management</value>
+  </data>
+  <data name="WindscreenWasherRequest" xml:space="preserve">
+    <value>Windscreen washer request</value>
+  </data>
+  <data name="WindscreenWiperRequest" xml:space="preserve">
+    <value>Windscreen wiper request</value>
+  </data>
+  <data name="AdditionalStopLight" xml:space="preserve">
+    <value>Additional stop light</value>
+  </data>
+  <data name="BootLightingCover" xml:space="preserve">
+    <value>Boot light cover</value>
+  </data>
+  <data name="BootOpen" xml:space="preserve">
+    <value>Boot open</value>
+  </data>
+  <data name="BVAKickDownContactState" xml:space="preserve">
+    <value>BVA "Kick-down" contact state</value>
+  </data>
+  <data name="ClimateManualSwitch" xml:space="preserve">
+    <value>Manual climate system switch</value>
+  </data>
+  <data name="ElectricIgnitionLockSafety" xml:space="preserve">
+    <value>Elecric ignition lock safety</value>
+  </data>
+  <data name="ESPSwitch" xml:space="preserve">
+    <value>ESP switch</value>
+  </data>
+  <data name="FrontLight" xml:space="preserve">
+    <value>Front light</value>
+  </data>
+  <data name="FrontSillLightingCover" xml:space="preserve">
+    <value>Front sill lighting</value>
+  </data>
+  <data name="LeftReverseLight" xml:space="preserve">
+    <value>Left reverse light</value>
+  </data>
+  <data name="LeftStoplight" xml:space="preserve">
+    <value>Left stoplight</value>
+  </data>
+  <data name="ParkingAidSystemSwitch" xml:space="preserve">
+    <value>Parking aid system switch</value>
+  </data>
+  <data name="PnContactDiagnosticsOrEngineStartPermissionStatusBVA" xml:space="preserve">
+    <value>P/N contact diagnostics (BVA) or engine start permission state</value>
+  </data>
+  <data name="RearLeftFogLamp" xml:space="preserve">
+    <value>Rear left fog lamp</value>
+  </data>
+  <data name="RearLeftMarkerLamp" xml:space="preserve">
+    <value>Rear left marker lamp</value>
+  </data>
+  <data name="RearLeftTurnSignal" xml:space="preserve">
+    <value>Rear left turn signal</value>
+  </data>
+  <data name="RearLight" xml:space="preserve">
+    <value>Rear light</value>
+  </data>
+  <data name="RearRightFogLamp" xml:space="preserve">
+    <value>Rear right fog lamp</value>
+  </data>
+  <data name="RearRightMarkerLamp" xml:space="preserve">
+    <value>Rear right marker lamp</value>
+  </data>
+  <data name="RearRightTurnIndicator" xml:space="preserve">
+    <value>Rear right turn indicator</value>
+  </data>
+  <data name="RearSillLightingCover" xml:space="preserve">
+    <value>Rear sill light cover</value>
+  </data>
+  <data name="RearWindowOpening" xml:space="preserve">
+    <value>Rear window opening</value>
+  </data>
+  <data name="RequestForCTPResistiveHeaterSwitchOn" xml:space="preserve">
+    <value>Request for resistive heater (CTP) switch on</value>
+  </data>
+  <data name="RequestForMaximumAirConditionerCompressorVolume" xml:space="preserve">
+    <value>Request for maximal Air conditioner compressor volume</value>
+  </data>
+  <data name="RightReverseLight" xml:space="preserve">
+    <value>Right reverse light</value>
+  </data>
+  <data name="RightStoplight" xml:space="preserve">
+    <value>Right stop light</value>
+  </data>
+  <data name="SillLighting" xml:space="preserve">
+    <value>Sill lighting</value>
+  </data>
+  <data name="SwitchesLighting" xml:space="preserve">
+    <value>Switches lighting</value>
+  </data>
+  <data name="AirPressureCorrectionFactorInlet" xml:space="preserve">
+    <value>Inlet air pressure correction factor</value>
+  </data>
+  <data name="BruttoMeasuredFilling" xml:space="preserve">
+    <value>Gross measured filling</value>
+  </data>
+  <data name="BruttoRequestedFilling" xml:space="preserve">
+    <value>Gross requested filling</value>
+  </data>
+  <data name="CollectorPressureRelativeToMeasured" xml:space="preserve">
+    <value>Collector pressure relative to measured</value>
+  </data>
+  <data name="CollectorPressureRelativeToSpecified" xml:space="preserve">
+    <value>Collector pressure relative to specified</value>
+  </data>
+  <data name="CorrectedMeasuredFilling" xml:space="preserve">
+    <value>Corrected measured filling</value>
+  </data>
+  <data name="CorrectedRequestedFilling" xml:space="preserve">
+    <value>Corrected requested filling</value>
+  </data>
+  <data name="FillingCorrectionFactor" xml:space="preserve">
+    <value>Filing correction factor</value>
+  </data>
+  <data name="FillingRegulatorState" xml:space="preserve">
+    <value>Filling regulator state</value>
+  </data>
+  <data name="InletAirPressure" xml:space="preserve">
+    <value>Inlet air pressure</value>
+  </data>
+  <data name="InletAirPressureRegulatorState" xml:space="preserve">
+    <value>Inlet air pressure regulator state</value>
+  </data>
+  <data name="InputCamshaftPhaserMechanismState" xml:space="preserve">
+    <value>Inlet camshaft phaser state</value>
+  </data>
+  <data name="InputValvesDephaserPosition" xml:space="preserve">
+    <value>Inlet valves dephaser position</value>
+  </data>
+  <data name="InputValvesPhaserElectrovalveRCO" xml:space="preserve">
+    <value>Inlet valves phaser electrovalve RCO</value>
+  </data>
+  <data name="PrescriptionForInputValvesDephaserPosition" xml:space="preserve">
+    <value>Prescription for inlet valves dephaser position</value>
+  </data>
+  <data name="ThrottleAngleMeasured" xml:space="preserve">
+    <value>Measured throttle angle</value>
+  </data>
+  <data name="ThrottleAngleSensorVoltageDuplicate1" xml:space="preserve">
+    <value>Duplicated throttle angle sensor voltage 1</value>
+  </data>
+  <data name="ThrottleAngleSensorVoltageDuplicate2" xml:space="preserve">
+    <value>Duplicated throttle angle sensor voltage 2</value>
+  </data>
+  <data name="ThrottleAngleSpecified" xml:space="preserve">
+    <value>Specified throttle angle</value>
+  </data>
+  <data name="ExhaustValvesDephaserPosition" xml:space="preserve">
+    <value>Exhaust valves dephaser position</value>
+  </data>
+  <data name="ExhaustValvesPhaserMechanismElectrovalveRCO" xml:space="preserve">
+    <value>Exhaust valves phaser mechanism electrovalve RCO</value>
+  </data>
+  <data name="PrescriptionForExhaustValvesDephaserPosition" xml:space="preserve">
+    <value>Prescription for exhaust valves dephaser position</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ThrottleControlPWMSignal" xml:space="preserve">
+    <value>Throttle control PWM signal</value>
+  </data>
+  <data name="ThrottleGearingDirection" xml:space="preserve">
+    <value>Throttle gearing direction</value>
+  </data>
+  <data name="DelayAdvanceCylinder1" xml:space="preserve">
+    <value>Cylinder 1 delay of advance</value>
+  </data>
+  <data name="DelayAdvanceCylinder2" xml:space="preserve">
+    <value>Cylinder 2 delay of advance</value>
+  </data>
+  <data name="DelayAdvanceCylinder3" xml:space="preserve">
+    <value>Cylinder 3 delay of advance</value>
+  </data>
+  <data name="DelayAdvanceCylinder4" xml:space="preserve">
+    <value>Cylinder 4 delay of advance</value>
+  </data>
+  <data name="DetonationDetectionThreshold" xml:space="preserve">
+    <value>Detonation detection threshold</value>
+  </data>
+  <data name="FuelVaporsAbsorberEstimatedLoad" xml:space="preserve">
+    <value>Fuel vapors absorber estimated load</value>
+  </data>
+  <data name="InjectionTimeCylinder1" xml:space="preserve">
+    <value>Cylinder 1 injection time</value>
+  </data>
+  <data name="InjectionTimeCylinder2" xml:space="preserve">
+    <value>Cylinder 2 injection time</value>
+  </data>
+  <data name="InjectionTimeCylinder3" xml:space="preserve">
+    <value>Cylinder 3 injection time</value>
+  </data>
+  <data name="InjectionTimeCylinder4" xml:space="preserve">
+    <value>Cylinder 4 injection time</value>
+  </data>
+  <data name="LowerLambdaProbeHeatingRCO" xml:space="preserve">
+    <value>Lower lambda probe heating RCO</value>
+  </data>
+  <data name="LowerOxygenSensorRegulationState" xml:space="preserve">
+    <value>Lower oxygen sensor regulation state</value>
+  </data>
+  <data name="MixRegSetup" xml:space="preserve">
+    <value>Mixture regulation setup</value>
+  </data>
+  <data name="MixtureCompositionCorrectionFactorOnEnter" xml:space="preserve">
+    <value>Mixture composition correction factor (on enter)</value>
+  </data>
+  <data name="MixtureCompositionCorrectionFactorOnExit" xml:space="preserve">
+    <value>Mixture composition correction factor (on exit)</value>
+  </data>
+  <data name="RequestedOilPressure" xml:space="preserve">
+    <value>Requested oil pressure</value>
+  </data>
+  <data name="UpperLambdaProbeHeatingRCO" xml:space="preserve">
+    <value>Upper lambda probe heating RCO</value>
+  </data>
+  <data name="UpperMixCompositionBorder" xml:space="preserve">
+    <value>Upper mix composition border</value>
+  </data>
+  <data name="UpperOxygenSensorRegulationState" xml:space="preserve">
+    <value>Upper oxygen sensor regulation state</value>
+  </data>
+  <data name="EstimatedResistanceTorque" xml:space="preserve">
+    <value>Estimated resistance torque</value>
+  </data>
+  <data name="MinInjectionAdvance" xml:space="preserve">
+    <value>Minimum injection advance</value>
+  </data>
+  <data name="TorqueCorrespondingToDriversDesire" xml:space="preserve">
+    <value>Torque corresponding to driver's desire</value>
+  </data>
+  <data name="CascadeText" xml:space="preserve">
+    <value>Cacade</value>
+  </data>
+  <data name="VariableValveLiftDriveRCO" xml:space="preserve">
+    <value>Variable valve lift drive RCO</value>
+  </data>
+  <data name="VariableValveLiftSystemsSupplyaRelayState" xml:space="preserve">
+    <value>State of the power relay of variable valve lifting system</value>
+  </data>
+  <data name="CurrentConsumedByValvesRaisingElectricEngine" xml:space="preserve">
+    <value>Current consumed by valves lifting electric engine</value>
+  </data>
+  <data name="CurrentConsumedByValvesRaisingElectricEngineWhileSetup" xml:space="preserve">
+    <value>Current which valves lifting electric engine consumes while setup</value>
+  </data>
+  <data name="FillingError" xml:space="preserve">
+    <value>Filling error</value>
+  </data>
+  <data name="LearnStateStopValveRequirement" xml:space="preserve">
+    <value>Requirement for valves stop point "learning"</value>
+  </data>
+  <data name="MeasuredValveLiftingValue" xml:space="preserve">
+    <value>Measured valve lifting value</value>
+  </data>
+  <data name="RequestedAirConsumption" xml:space="preserve">
+    <value>Requested air flow volume</value>
+  </data>
+  <data name="RequestedValveLiftingValue" xml:space="preserve">
+    <value>Requested valve lifting value</value>
+  </data>
+  <data name="StateofInitialSetupOfUpperAndLowerValveLimiters" xml:space="preserve">
+    <value>State of upper and lower valve position limiters initial setup</value>
+  </data>
+  <data name="StateOfLearnStopValve" xml:space="preserve">
+    <value>State of valves stop point learning</value>
+  </data>
+  <data name="TemperatureOfValvesRaisingElectricEngine" xml:space="preserve">
+    <value>Valves lifting electric engine temperature</value>
+  </data>
+  <data name="ValveLiftLearnAngleMax" xml:space="preserve">
+    <value>"Learned" angle corresponding to max valves lift</value>
+  </data>
+  <data name="ValveLiftLearnAngleMin" xml:space="preserve">
+    <value>"Learned" angle corresponding to min valves lift</value>
+  </data>
+  <data name="ValvesRaisingElectricEngineRotationDirection" xml:space="preserve">
+    <value>Valves rising electric engine rotation direction</value>
+  </data>
+  <data name="VariableValveLiftSystemsElectricEngineSupplyVoltage" xml:space="preserve">
+    <value>Electric engine supply voltage for variable valve lifting system</value>
+  </data>
+  <data name="ButtonDownPressed" xml:space="preserve">
+    <value>"Down" Button</value>
+  </data>
+  <data name="ButtonEscPressed" xml:space="preserve">
+    <value>"Esc" Button</value>
+  </data>
+  <data name="ButtonLeftPressed" xml:space="preserve">
+    <value>"Left" Button</value>
+  </data>
+  <data name="ButtonMenuPressed" xml:space="preserve">
+    <value>"Menu" Button</value>
+  </data>
+  <data name="ButtonModePressed" xml:space="preserve">
+    <value>"Mode" Button</value>
+  </data>
+  <data name="ButtonOkPressed" xml:space="preserve">
+    <value>"Ok" Button</value>
+  </data>
+  <data name="ButtonRightPressed" xml:space="preserve">
+    <value>"Right" Button</value>
+  </data>
+  <data name="ButtonUpPressed" xml:space="preserve">
+    <value>"Up" Button</value>
+  </data>
+  <data name="ClientLanguage" xml:space="preserve">
+    <value>Client language</value>
+  </data>
+  <data name="AlertsOutputOnMultifunctionalDisplay" xml:space="preserve">
+    <value>Alerts output on multifunctional display</value>
+  </data>
+  <data name="ConnectionTypeToRemoteControl" xml:space="preserve">
+    <value>Connection type to remote control</value>
+  </data>
+  <data name="ControlPanelType" xml:space="preserve">
+    <value>Control panel type</value>
+  </data>
+  <data name="HandsFreeKitOption" xml:space="preserve">
+    <value>Hands-free kit option</value>
+  </data>
+  <data name="LowTyresPressureDetectionOption" xml:space="preserve">
+    <value>Low tyres pressure detection option</value>
+  </data>
+  <data name="NomadeMenuOption" xml:space="preserve">
+    <value>"Nomade" menu option</value>
+  </data>
+  <data name="ParkingAidSystemOption" xml:space="preserve">
+    <value>Parking aid system option</value>
+  </data>
+  <data name="RadioAndScreenControlUsingSteeringWheenControls" xml:space="preserve">
+    <value>Radio and screen control using steering wheel controls</value>
+  </data>
+  <data name="SecurityAlarmLogOutput" xml:space="preserve">
+    <value>Security alarm log output</value>
+  </data>
+  <data name="SettingsMenuDisplayed" xml:space="preserve">
+    <value>Settings menu displayed</value>
+  </data>
+  <data name="StatesJournalOutput" xml:space="preserve">
+    <value>States journal output</value>
+  </data>
+  <data name="TemperatureUnitsSetupOption" xml:space="preserve">
+    <value>Temperature units setup option</value>
+  </data>
+  <data name="AdditionalCTP1AndCTP2ResistorsControl" xml:space="preserve">
+    <value>Control of additional CTP1 and CTP2 resistors</value>
+  </data>
+  <data name="BatteryType" xml:space="preserve">
+    <value>Battery type</value>
+  </data>
+  <data name="CalculatedExternalTemperature" xml:space="preserve">
+    <value>Calculated exterior temterature</value>
+  </data>
+  <data name="DisplayedFanSpeed" xml:space="preserve">
+    <value>Displayed fan speed</value>
+  </data>
+  <data name="EngineCoolantSafetyState" xml:space="preserve">
+    <value>Engine coolant safety state</value>
+  </data>
+  <data name="EngineRpmSafety" xml:space="preserve">
+    <value>Engine speed safety</value>
+  </data>
+  <data name="ExternalTemperatureSensorState" xml:space="preserve">
+    <value>Exterior temperature sensor state</value>
+  </data>
+  <data name="PressureSensorStateInConditionerCirquit" xml:space="preserve">
+    <value>Pressure sensor state in conditioner cirquit</value>
+  </data>
+  <data name="UserCommandToSwicthClimateControlOn" xml:space="preserve">
+    <value>User command to switch climate-control on</value>
+  </data>
+  <data name="AcceleratorPedalPositionSensorVoltage1" xml:space="preserve">
+    <value>Accelerator pedal position sensor voltage 1</value>
+  </data>
+  <data name="AcceleratorPedalPositionSensorVoltage2" xml:space="preserve">
+    <value>Accelerator pedal position sensor voltage 2</value>
+  </data>
+  <data name="AdaptationOfCrankshaftPositionSensorTargetWhileDecelerating" xml:space="preserve">
+    <value>Adaptation of crankshaft position "target" while decelerating</value>
+  </data>
+  <data name="AdaptationRateOfFrictionTorqueDependingOnCoolantTemperature" xml:space="preserve">
+    <value>Adaptation rate of friction torque deending on coolant temperature</value>
+  </data>
+  <data name="AdaptiveValuesForDetonationPreventionInCylinder1" xml:space="preserve">
+    <value>Adaptive values for detonation prevention in cylinder 1</value>
+  </data>
+  <data name="AdaptiveValuesForDetonationPreventionInCylinder2" xml:space="preserve">
+    <value>Adaptive values for detonation prevention in cylinder 2</value>
+  </data>
+  <data name="AdaptiveValuesForDetonationPreventionInCylinder3" xml:space="preserve">
+    <value>Adaptive values for detonation prevention in cylinder 3</value>
+  </data>
+  <data name="AdaptiveValuesForDetonationPreventionInCylinder4" xml:space="preserve">
+    <value>Adaptive values for detonation prevention in cylinder 4</value>
+  </data>
+  <data name="AlternatorChargeValue" xml:space="preserve">
+    <value>Alternator charge value</value>
+  </data>
+  <data name="AlternatorTemperature" xml:space="preserve">
+    <value>Alternator temperature</value>
+  </data>
+  <data name="BoardComputerControl" xml:space="preserve">
+    <value>Board computer control</value>
+  </data>
+  <data name="CalculatorActivationState" xml:space="preserve">
+    <value>Calculator activation state</value>
+  </data>
+  <data name="CalculatorResetsCount" xml:space="preserve">
+    <value>Calculator resets count</value>
+  </data>
+  <data name="CalculatorSupplyVoltage" xml:space="preserve">
+    <value>Calculator supply voltage</value>
+  </data>
+  <data name="CalculatorTemperature" xml:space="preserve">
+    <value>Calculator temperature</value>
+  </data>
+  <data name="ClutchPedalPosition" xml:space="preserve">
+    <value>Clutch pedal position</value>
+  </data>
+  <data name="CoolantLiquidTemperatureAtLastEngineStop" xml:space="preserve">
+    <value>Coolant liquid temperature at last engine stop</value>
+  </data>
+  <data name="CoolantPumpActuatorControl" xml:space="preserve">
+    <value>Coolant pump actuator control</value>
+  </data>
+  <data name="CoolantTemperatureSettings" xml:space="preserve">
+    <value>Coolant temperature settings</value>
+  </data>
+  <data name="DecreasingSelectedSpeed" xml:space="preserve">
+    <value>Decreasing selected speed</value>
+  </data>
+  <data name="DippedAndHighBeamSwitch" xml:space="preserve">
+    <value>Dipped / High beam switch</value>
+  </data>
+  <data name="ElectricValvesSupplyRelayState" xml:space="preserve">
+    <value>Electric valves supply relay state</value>
+  </data>
+  <data name="EngineState" xml:space="preserve">
+    <value>Engine state</value>
+  </data>
+  <data name="EngineStopTime" xml:space="preserve">
+    <value>Engine stop time</value>
+  </data>
+  <data name="EstimatedPowerConsumptionByAirConditionerCompressor" xml:space="preserve">
+    <value>Estimated power consumption by Air Conditioner compressor</value>
+  </data>
+  <data name="FanAssemblyHighSpeedRelayControl" xml:space="preserve">
+    <value>Fan assembly high speed relay control</value>
+  </data>
+  <data name="FanAssemblyLowSpeedRelayControl" xml:space="preserve">
+    <value>Fan assembly low speed relay control</value>
+  </data>
+  <data name="FanAssemblyStateInputState" xml:space="preserve">
+    <value>State of the "Fan assembly state" input</value>
+  </data>
+  <data name="FogLightsState_Minus" xml:space="preserve">
+    <value>Fog lights state (minus)</value>
+  </data>
+  <data name="FogLightsState_Plus" xml:space="preserve">
+    <value>Fog lights state (plus)</value>
+  </data>
+  <data name="FunctioningZonesLearningPerformed" xml:space="preserve">
+    <value>Functioning zones learning performed</value>
+  </data>
+  <data name="GeneratorCurrent" xml:space="preserve">
+    <value>Alternator current</value>
+  </data>
+  <data name="HighBeamImpulseSwitch" xml:space="preserve">
+    <value>High beam impulse switch</value>
+  </data>
+  <data name="IncreasingSelectedSpeed" xml:space="preserve">
+    <value>Increasing selected speed</value>
+  </data>
+  <data name="InformationAboutAcceleratorPedalAbutment" xml:space="preserve">
+    <value>Information about accelerator pedal abutment</value>
+  </data>
+  <data name="InformationFromElectricParkingBrake" xml:space="preserve">
+    <value>Information from electric parking brake</value>
+  </data>
+  <data name="LearmingStateOfExhaustDephaser" xml:space="preserve">
+    <value>Learning state of exhaust dephaser</value>
+  </data>
+  <data name="LearningStateForInletCamshaftDephaser" xml:space="preserve">
+    <value>Learning state for inlet camshaft dephaser</value>
+  </data>
+  <data name="LearningValueForLowerStopForInletDephaser" xml:space="preserve">
+    <value>Learning value for lower stop for inlet dephaser</value>
+  </data>
+  <data name="LearningValueForUpperStopForExhaustDephaser" xml:space="preserve">
+    <value>Learnin value for upper stop for exhaust dephaser</value>
+  </data>
+  <data name="LightingControl_SwitchInPosition3" xml:space="preserve">
+    <value>Lighting control - switch in position 3</value>
+  </data>
+  <data name="LightingControl_SwitchInPosition4" xml:space="preserve">
+    <value>Lighting control - switch in position 4</value>
+  </data>
+  <data name="LightSwitchButtonOn" xml:space="preserve">
+    <value>Light switch button on</value>
+  </data>
+  <data name="ManagedAlternatorVoltageSetting" xml:space="preserve">
+    <value>MAnaged alternator voltage setting</value>
+  </data>
+  <data name="MixtureCompositionAdaptiveValuesOfOfInletSensor" xml:space="preserve">
+    <value>mixture composition adaptive values of inlet sensor</value>
+  </data>
+  <data name="ModeledCoolantTemperature" xml:space="preserve">
+    <value>Modeled cooalnt temperature</value>
+  </data>
+  <data name="OilPumpFunctioningMode" xml:space="preserve">
+    <value>Oil pump functioning mode</value>
+  </data>
+  <data name="PositionRecognitionToDriveInEmergencyMode1" xml:space="preserve">
+    <value>Position recognition to drive in emergency mode 1</value>
+  </data>
+  <data name="PositionRecognitionToDriveInEmergencyMode2" xml:space="preserve">
+    <value>Position recognition to drive in emergency mode 2</value>
+  </data>
+  <data name="PowerRelayState" xml:space="preserve">
+    <value>Power relay state</value>
+  </data>
+  <data name="RadioScanRegulator" xml:space="preserve">
+    <value>Radio: "Scan" regulator</value>
+  </data>
+  <data name="RecirculationPumpRelaystate" xml:space="preserve">
+    <value>Recirculation pump relay state</value>
+  </data>
+  <data name="RecognitionOfAcceleratorPedalMaxState1" xml:space="preserve">
+    <value>Recognition of acceleration pedal max state 1</value>
+  </data>
+  <data name="RecognitionOfAcceleratorPedalMaxState2" xml:space="preserve">
+    <value>Recognition of acceleration pedal max state 2</value>
+  </data>
+  <data name="RecognitionOfAcceleratorPedalMinState1" xml:space="preserve">
+    <value>Recognition of acceleration pedal min state 1</value>
+  </data>
+  <data name="RecognitionOfAcceleratorPedalMinState2" xml:space="preserve">
+    <value>Recognition of acceleration pedal min state 2</value>
+  </data>
+  <data name="RecognitionOfMinPositionLimiterForThrottle1" xml:space="preserve">
+    <value>Recognition of min position limiter for throttle 1</value>
+  </data>
+  <data name="RecognitionOfMinPositionLimiterForThrottle2" xml:space="preserve">
+    <value>Recognition of min position limiter for throttle 2</value>
+  </data>
+  <data name="RequestedEngineRpm" xml:space="preserve">
+    <value>Requested engine RPM</value>
+  </data>
+  <data name="RequestToControlElectromagneticValveOfOilPump" xml:space="preserve">
+    <value>Request to control electromagnetic valve of oil pump</value>
+  </data>
+  <data name="RequiredValueForGradualGeneratorLoad" xml:space="preserve">
+    <value>Required value for gradual alternator load</value>
+  </data>
+  <data name="ScreenWiperSwitchControl" xml:space="preserve">
+    <value>Screen wiper switch control</value>
+  </data>
+  <data name="SensorsSupplyVoltage" xml:space="preserve">
+    <value>Sensors supply voltage</value>
+  </data>
+  <data name="SingleTimeSwitchOfWindscreenWiper" xml:space="preserve">
+    <value>Single time switching of windscreen wiper</value>
+  </data>
+  <data name="SoundAlarm" xml:space="preserve">
+    <value>Sound alarm</value>
+  </data>
+  <data name="SourceToTelephoneSwitch" xml:space="preserve">
+    <value>"Source/Phone" switch</value>
+  </data>
+  <data name="SpeedLimitationSettings" xml:space="preserve">
+    <value>Speed limitation settings </value>
+  </data>
+  <data name="SpeedLimitationState" xml:space="preserve">
+    <value>Speed limitation state</value>
+  </data>
+  <data name="SpeedRegulationORLimitationSelection" xml:space="preserve">
+    <value>Speed regulation / limitation selection</value>
+  </data>
+  <data name="SpeedRegulationState" xml:space="preserve">
+    <value>Speed regulation state</value>
+  </data>
+  <data name="SpeedRegulatorSpeedSettings" xml:space="preserve">
+    <value>Speed regulator speed settings</value>
+  </data>
+  <data name="StateOfControlOfStarterControlRelay" xml:space="preserve">
+    <value>State of controlling starter control relay</value>
+  </data>
+  <data name="StateOfLearningOfThrottleStops" xml:space="preserve">
+    <value>State of learning of throttle stops</value>
+  </data>
+  <data name="StateOfTheFirstExhaustDephaserSetup" xml:space="preserve">
+    <value>Status of the first exhaust dephaser setup</value>
+  </data>
+  <data name="StateOfTheFirstInletDephaserSetup" xml:space="preserve">
+    <value>Status of the first inlet dephaser setup</value>
+  </data>
+  <data name="StopSignalContact" xml:space="preserve">
+    <value>Stop signal contact</value>
+  </data>
+  <data name="SupplyVoltage" xml:space="preserve">
+    <value>Supply voltage</value>
+  </data>
+  <data name="ThrottleStopsLearningRequired" xml:space="preserve">
+    <value>Throttle stops learning required</value>
+  </data>
+  <data name="TorqueValueObtainedByAirVolumeFlowRegulation_Real" xml:space="preserve">
+    <value>Torque value obtained by air volume flow regulation (real)</value>
+  </data>
+  <data name="TorqueValueObtainedByAirVolumeFlowRegulation_Requested" xml:space="preserve">
+    <value>Torque value obtained by air volume flow regulation (requested)</value>
+  </data>
+  <data name="TorqueValueObtainedByIgnitionAdvance_Real" xml:space="preserve">
+    <value>Torque value obtained by ignition advance regulation (real)</value>
+  </data>
+  <data name="TorqueValueObtainedByIgnitionAdvance_Requested" xml:space="preserve">
+    <value>Torque value obtained by ignition advance regulation (requested)</value>
+  </data>
+  <data name="TurnIndicatorsControl" xml:space="preserve">
+    <value>Turn indicators control</value>
+  </data>
+  <data name="ValueOfMixtureAdaptiveFunctionsAtIdlingRPM" xml:space="preserve">
+    <value>Value of mixture adaptive functions at idling RPM</value>
+  </data>
+  <data name="ValueOfMixtureAdaptiveFunctionsAtTransitionalMode" xml:space="preserve">
+    <value>Value of mixture adaptive functions at transitional mode</value>
+  </data>
+  <data name="ValuesOfIndicatedTorqueAdaptations" xml:space="preserve">
+    <value>Values of indicated torque adaptations</value>
+  </data>
+  <data name="WakingUpCruiseControl" xml:space="preserve">
+    <value>Waking up cruise control</value>
+  </data>
+  <data name="Autoscale" xml:space="preserve">
+    <value>Autoscale</value>
+  </data>
+  <data name="MaintainginForKeyInIgnitionWarning" xml:space="preserve">
+    <value>Maintaining for key in ignition warning</value>
+  </data>
+  <data name="MaintainingDueToADiagnosticSessionOrDownloadingBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to a diagnostic session or downloading being in progress</value>
+  </data>
+  <data name="MaintainingDueToALocatingOfAVehicleBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to locating of the vehicle being in progress</value>
+  </data>
+  <data name="MaintainingDueToAmbientOrWelcomeLightingBeingOn" xml:space="preserve">
+    <value>Maintaining due to ambient or welcome lighting being on</value>
+  </data>
+  <data name="MaintainingDueToDisplayingOfTheStatusOfTheElectricEmergencyBrakeBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to displaying of the status of the electric emergency brake being in progress</value>
+  </data>
+  <data name="MaintainingDueToHeightAdjustmentBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to height adjustment being in progress</value>
+  </data>
+  <data name="MaintainingDueToMemorisingOfTheDrivingPositionBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to memorising of the driving position being in progress</value>
+  </data>
+  <data name="MaintainingDueToMovingMotorisedBootOrTailgate" xml:space="preserve">
+    <value>Maintaining due to moving motorised boot or tailgate</value>
+  </data>
+  <data name="MaintainingDueToMovingOrFoldingOfTheExteriorMirrors" xml:space="preserve">
+    <value>Maintaining due to movement of the exterior mirrors or folding the exterior mirrors being in progress</value>
+  </data>
+  <data name="MaintainingDueToRecallingOfTheDrivingPositionMemoryBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to recalling of the driving position memory being in progress</value>
+  </data>
+  <data name="MaintainingDueToTheBootLightBeingOn" xml:space="preserve">
+    <value>Maintaining due to the boot light being on</value>
+  </data>
+  <data name="MaintainingDueToTheHeadlampFlashBeingActivated" xml:space="preserve">
+    <value>Maintaining due to the headlamp flash being activated // </value>
+  </data>
+  <data name="MaintainingDueToTheHornBeingActive" xml:space="preserve">
+    <value>Maintaining due to the horn being active</value>
+  </data>
+  <data name="MaintainingDueToTheMovementOfSteeringColumn" xml:space="preserve">
+    <value>Maintainig due to the movement of the steering column</value>
+  </data>
+  <data name="MaintainingDueToThePresenceOfTheIgnition" xml:space="preserve">
+    <value>Maintaining due to the presence of the ignition</value>
+  </data>
+  <data name="MaintainingDueToThePresenceOfTheWarning" xml:space="preserve">
+    <value>Maintaining due to the presence of the warning</value>
+  </data>
+  <data name="MaintainingDueToThermalPrePostConditioningBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to thermal pre-post conditioning being in progress</value>
+  </data>
+  <data name="MaintainingDueToTheSideLightsBeingOn" xml:space="preserve">
+    <value>Maintaining due to the side lights being on</value>
+  </data>
+  <data name="MaintainingDueToTheSlidingDoorMovingOrBeingStopped" xml:space="preserve">
+    <value>Maintaining due to the sliding side door moving or being stopped</value>
+  </data>
+  <data name="MaintainingDueToWelcomeFunctionBeingInProgress" xml:space="preserve">
+    <value>Maintaining due to the welcome function being in progress</value>
+  </data>
+  <data name="MaintainingForAudioEquipmentOrTelematicsActivity" xml:space="preserve">
+    <value>Maintaining for audio equipment or telematics activity</value>
+  </data>
+  <data name="MaintainingForElectricWindowMovement" xml:space="preserve">
+    <value>Maintaining for electric window movement</value>
+  </data>
+  <data name="MaintainingForHighHeadVisionMirrorMovement" xml:space="preserve">
+    <value>Maintaining for High Head Vision mirror movement</value>
+  </data>
+  <data name="MaintainingForSeatMovement" xml:space="preserve">
+    <value>Maintaining for seat movement </value>
+  </data>
+  <data name="MaintainingForSunroofMovement" xml:space="preserve">
+    <value>Maintaining for sunroof movement</value>
+  </data>
+  <data name="MaintainingRequestForAlarm" xml:space="preserve">
+    <value>Maintaining request for alarm</value>
+  </data>
+  <data name="MaintenanceByTheServiceModuleMds" xml:space="preserve">
+    <value>Maintenance by the Service Module (MDS)</value>
+  </data>
+  <data name="MaintenanceDueToTheCentralisedPowerSwitchPositivePlusCpc" xml:space="preserve">
+    <value>Maintenance due to the centralised power switch positive (+CPC)</value>
+  </data>
+  <data name="DippedBeamHighBeamHeadlampsInversion" xml:space="preserve">
+    <value>Headlamp flash request</value>
+    <comment>Dipped beam / main beam headlamps inversion</comment>
+  </data>
+  <data name="DippedBeamSwitchOnCommand" xml:space="preserve">
+    <value>Request to switch on the dipped headlamps</value>
+    <comment>Request to switch on the dipped headlamps</comment>
+  </data>
+  <data name="FrontDaylightsSwitchOnOrHeadlampWasher" xml:space="preserve">
+    <value>Control of the dedicated front daytime-running lamps or of headlamp wash</value>
+    <comment>Control of the dedicated front daytime-running lamps or of headlamp wash</comment>
+  </data>
+  <data name="HazardWarningLampSwitchOnRequest" xml:space="preserve">
+    <value>Hazard warning laps illumination request</value>
+    <comment>Запрос на включение аварийной сигнализации</comment>
+  </data>
+  <data name="HeadlampFlashRequest" xml:space="preserve">
+    <value>Команда на сигнализацию светом фар</value>
+    <comment>Headlamp flash request</comment>
+  </data>
+  <data name="LeftHandTurnIndicatorIndicationRequest" xml:space="preserve">
+    <value>LH indicator illumination request</value>
+    <comment>Запрос на включение указателя поворота слева</comment>
+  </data>
+  <data name="LeftHandVehicleAndTrailerSidelampsControl" xml:space="preserve">
+    <value>Vehicle and trailer LH side lamps illumination control</value>
+    <comment>Vehicle and trailer LH side lamps illumination control</comment>
+  </data>
+  <data name="NumberPlateLightingControl" xml:space="preserve">
+    <value>Number plate lights lighting command</value>
+    <comment>Number plate lights lighting command</comment>
+  </data>
+  <data name="RearSillLightingControl" xml:space="preserve">
+    <value>Rear sill lighting control</value>
+  </data>
+  <data name="RequestForHornSound" xml:space="preserve">
+    <value>Request for horns</value>
+    <comment>Команда на включение звукового сигнала</comment>
+  </data>
+  <data name="ReverseLampsIllumunationControl" xml:space="preserve">
+    <value>Reversing lamps illumination control</value>
+    <comment>Управление включением фонарей заднего хода</comment>
+  </data>
+  <data name="RightHandTurnIndicatorIndicationRequest" xml:space="preserve">
+    <value>RH indicator illumination request</value>
+    <comment>Запрос на включение указателей поворота справа</comment>
+  </data>
+  <data name="RightHandVehicleAndTrailerSidelampsControl" xml:space="preserve">
+    <value>Vehicle and trailer RH side lamps illumination control</value>
+    <comment>Vehicle and trailer RH side lamps illumination control</comment>
+  </data>
+  <data name="StopLampsIlluminationControl" xml:space="preserve">
+    <value>Stop lamps illumination control</value>
+    <comment>Управление включением фонарей стоп</comment>
+  </data>
+  <data name="VehicleAndTrailerLeftHandIndicatorIllumicationControl" xml:space="preserve">
+    <value>Vehicle and trailer LH indicator illumination control</value>
+    <comment>Управление активизацией левых указателей поворота автомобиля и прицепа</comment>
+  </data>
+  <data name="VehicleAndTrailerRightHandIndicatorIllumicationControl" xml:space="preserve">
+    <value>Vehicle and trailer RH indicator illumination control</value>
+    <comment>Управление активизацией правых указателей поворота автомобиля и прицепа</comment>
+  </data>
+  <data name="AuxiliaryInput1" xml:space="preserve">
+    <value>Auxiliary input 1</value>
+    <comment>Вспомогательный вход 1</comment>
+  </data>
+  <data name="AuxiliaryInput2" xml:space="preserve">
+    <value>Auxiliary input 2</value>
+    <comment>Вспомогательный вход 1</comment>
+  </data>
+  <data name="BsiHasNoEngineImmobilizerCode" xml:space="preserve">
+    <value>BSI with no engine immobiliser code (coded engine immobilizer)</value>
+    <comment>BSI with no engine immobiliser code (coded engine immobilizer)</comment>
+  </data>
+  <data name="BSIMatchedToECU" xml:space="preserve">
+    <value>BSI matched to the engine management ECU</value>
+    <comment>BSI matched to the engine management ECU</comment>
+  </data>
+  <data name="BSIReadyForProgramming" xml:space="preserve">
+    <value>BSI ready for programming</value>
+    <comment>BSI ready for programming</comment>
+  </data>
+  <data name="EmissionOfTheEncryptedDatatoEngineECU" xml:space="preserve">
+    <value>Emission of the encrypted data to the engine ECU</value>
+    <comment>mission of the encrypted data to the engine ECU</comment>
+  </data>
+  <data name="HighFrequencyRemoteControlBatteryFlat" xml:space="preserve">
+    <value>High frequency remote control battery flat</value>
+    <comment>High frequency remote control battery flat</comment>
+  </data>
+  <data name="HighFrequencyRemoteControlDesynchronized" xml:space="preserve">
+    <value>Remote desynchronized high frequency control</value>
+    <comment>Remote desynchronized high frequency control</comment>
+  </data>
+  <data name="MeasuredCurrent" xml:space="preserve">
+    <value>Measured current</value>
+    <comment>Измеренный ток</comment>
+  </data>
+  <data name="NumberOfHichFrequencyRemoteControlsLearned" xml:space="preserve">
+    <value>Number of high frequency remote control commands learned</value>
+    <comment>Number of high frequency remote control commands learned</comment>
+  </data>
+  <data name="NumberOfTransponderAuthenticationAttempts" xml:space="preserve">
+    <value>Number of attempts to authenticate the transponder</value>
+    <comment>Number of attempts to authenticate the transponder</comment>
+  </data>
+  <data name="NumberOfTransponderIdentifictionAttempts" xml:space="preserve">
+    <value>Number of attempts to identify the transponder</value>
+    <comment>Number of attempts to identify the transponder</comment>
+  </data>
+  <data name="PresenceOfParkingAssistance" xml:space="preserve">
+    <value>Presence of parking assistance</value>
+    <comment>Наличие помощи при парковке</comment>
+  </data>
+  <data name="PresenceOfTheKey" xml:space="preserve">
+    <value>Presence of the key</value>
+    <comment>Presence of the key</comment>
+  </data>
+  <data name="SteeringStatus" xml:space="preserve">
+    <value>Steering status</value>
+    <comment>Состояние рулевого управления</comment>
+  </data>
+  <data name="SteeringWheelAngleSensorType" xml:space="preserve">
+    <value>Type of steering wheel angle sensor</value>
+    <comment>Тип датчика углового положения руля</comment>
+  </data>
+  <data name="ThermalEngineStatus" xml:space="preserve">
+    <value>Thermal engine status</value>
+    <comment>Термический статус двигателя</comment>
+  </data>
+  <data name="TransponderLabelRecognized" xml:space="preserve">
+    <value>Transponder label recognized</value>
+    <comment>Transponder label recognized</comment>
+  </data>
+  <data name="Aerial1RadioQuality" xml:space="preserve">
+    <value>Quality of radio reception from the 1 aerial</value>
+    <comment>Качество радиоприёма с помощью антенны 1</comment>
+  </data>
+  <data name="Aerial2RadioQuality" xml:space="preserve">
+    <value>Quality of radio reception from the 2 aerial</value>
+    <comment>Качество радиоприёма с помощью антенны 2</comment>
+  </data>
+  <data name="AirConditioningRequest" xml:space="preserve">
+    <value>Air conditioning request (AC)</value>
+    <comment>Air conditioning request (AC)</comment>
+  </data>
+  <data name="AirDistributionRequest_Deicing" xml:space="preserve">
+    <value>Air distribution request - De-icing</value>
+    <comment>Air distribution request - De-icing</comment>
+  </data>
+  <data name="AirDistributionRequest_Footwells" xml:space="preserve">
+    <value>Air distribution request - Footwells</value>
+    <comment>Air distribution request - Footwells</comment>
+  </data>
+  <data name="AirDistributionRequest_Ventilation" xml:space="preserve">
+    <value>Air distribution request - Ventilation</value>
+    <comment>Air distribution request - Ventilation</comment>
+  </data>
+  <data name="AirRecyclingMotorPosition" xml:space="preserve">
+    <value>Air recycling motor position</value>
+    <comment>Положение привода заслонки рециркуляции воздуха</comment>
+  </data>
+  <data name="AutomaticRegulationCommand" xml:space="preserve">
+    <value>Automatic regulation request (AUTO)</value>
+    <comment>Automatic regulation request (AUTO)</comment>
+  </data>
+  <data name="DisplayOfTheAmbientLightingOption" xml:space="preserve">
+    <value>Display of the "Ambient lighting" option</value>
+    <comment>Вывод информации опции "Внутренее освещение автомобиля"</comment>
+  </data>
+  <data name="DisplayOfTheAutomaticHeadlampIlluminationOption" xml:space="preserve">
+    <value>Display of the "Automatic headlamp illumunation" option</value>
+    <comment>Вывод информации опции "Автоматическое включение света"</comment>
+  </data>
+  <data name="DisplayOfTheDaylightLightsOption" xml:space="preserve">
+    <value>Display of the "Daylight lights" option</value>
+    <comment>Вывод информации опции "Свет включаемый в дневное время"</comment>
+  </data>
+  <data name="DisplayOfTheDeactivationAutomaticElectricSecondaryBrakeOption" xml:space="preserve">
+    <value>Display of the "Deactivation automatic electric secondary brake" option</value>
+    <comment>Вывод информации опции "Отключение электрического автоматического вторичного тормоза-замедлителя"</comment>
+  </data>
+  <data name="DisplayOfTheDirectionlaHeadlampOption" xml:space="preserve">
+    <value>Display of the "Directional headlamp" option</value>
+    <comment>Вывод информации опции "Поворотные фары"</comment>
+  </data>
+  <data name="DisplayOfTheDrivingPositionClearanceOption" xml:space="preserve">
+    <value>Display of the "Driving position clearance" option</value>
+    <comment>Вывод информации опции "Разблокировка места водителя"</comment>
+  </data>
+  <data name="DisplayOfTheEngagementOfTheRearWipingWhenReversingOption" xml:space="preserve">
+    <value>Display of the "Engagement of the rear wiping whn reversing" option</value>
+    <comment>Вывод информации опции "Включение заднего дворника при движении задним ходом"</comment>
+  </data>
+  <data name="DisplayOfTheFollowMeHomeLightingOption" xml:space="preserve">
+    <value>Display of the "Follow me home lighting" option</value>
+    <comment>Вывод информации опции "Освещение сопровождения"</comment>
+  </data>
+  <data name="DisplayOfTheLockingDeadlockingModeOption" xml:space="preserve">
+    <value>Display of the "Locking/deadlocking mode" option</value>
+    <comment>Вывод информации опции "Режим запирания / суперблокировки"</comment>
+  </data>
+  <data name="DisplayOfTheLockingOfTheDoorsWhenYouMoveAwayOption" xml:space="preserve">
+    <value>Display of the "Locking of the doors when you move away" option</value>
+    <comment>Вывод информации опции "Дистанционное запирание дверей"</comment>
+  </data>
+  <data name="DisplayOfTheLockingOfTheDriversDoorOnlyOption" xml:space="preserve">
+    <value>Display of the "Locking of the driver's door only" option</value>
+    <comment>Вывод информации опции "Запирание только двери водителя"</comment>
+  </data>
+  <data name="DisplayOfThePermanentLockingOfTheBootOption" xml:space="preserve">
+    <value>Display of the "Permanent locking of the boot" option</value>
+    <comment>Вывод информации опции "Постоянное запирание багажника"</comment>
+  </data>
+  <data name="DisplayOfTheTotalNearbyObstacleDetectionOption" xml:space="preserve">
+    <value>Display of the "Total nearby obstacle detection" option</value>
+    <comment>Вывод информации опции "Определение расстояния до препятствия"</comment>
+  </data>
+  <data name="FM2IncomingSignalLevel" xml:space="preserve">
+    <value>Level of the incoming radio signal from FM2</value>
+    <comment>Уровень входного раиосигнала от FM2</comment>
+  </data>
+  <data name="LevelOfAmFmIncomingSignal" xml:space="preserve">
+    <value>Level of incoming radio signal from FM1 or AM</value>
+    <comment>Уровень входного сигнала радио с помощью антенны 2</comment>
+  </data>
+  <data name="MonozoneRegulationRequest" xml:space="preserve">
+    <value>Monozone regulation request</value>
+    <comment>Monozone regulation request</comment>
+  </data>
+  <data name="NumberOfDaysOfUseCDPlayer" xml:space="preserve">
+    <value>Number of days of use of the CD Player</value>
+    <comment>Число дней использования проигрывателя CD</comment>
+  </data>
+  <data name="NumberOfDaysOfUseOfTheTuner" xml:space="preserve">
+    <value>Number of days of use of the tuner</value>
+    <comment>Число дней использования тюнера</comment>
+  </data>
+  <data name="PersonalizationMenu" xml:space="preserve">
+    <value>Personalization menu</value>
+    <comment>Меню персонализации</comment>
+  </data>
+  <data name="RearDeicingCommand" xml:space="preserve">
+    <value>Rear screeen and door mirror de-icing request</value>
+    <comment>Rear screeen and door mirror de-icing request</comment>
+  </data>
+  <data name="RecirculationRequest" xml:space="preserve">
+    <value>Recirculation request</value>
+    <comment>Recirculation request</comment>
+  </data>
+  <data name="TelecodingDate" xml:space="preserve">
+    <value>Telecoding date</value>
+  </data>
+  <data name="TelecodingToolSignature" xml:space="preserve">
+    <value>Telecoding tool signature</value>
+  </data>
+  <data name="FilteredOilLevel" xml:space="preserve">
+    <value>Filtered fuel level</value>
+  </data>
+  <data name="OilLevelWarning" xml:space="preserve">
+    <value>Oil level warning</value>
+  </data>
+  <data name="AutoRadioOption" xml:space="preserve">
+    <value>"Autoradio" option</value>
+  </data>
+  <data name="BsiMode" xml:space="preserve">
+    <value>BSI mode</value>
+  </data>
+  <data name="ExhaustCamshaftPhaserMechanismState" xml:space="preserve">
+    <value>Exhaust camshaft phaser mechanism state</value>
+  </data>
+  <data name="FirstErgThrottleScan" xml:space="preserve">
+    <value>First EGR throttle scan</value>
+  </data>
+  <data name="LastErgThrottleScan" xml:space="preserve">
+    <value>Last EGR throttle scan</value>
+  </data>
+  <data name="NIVDELEST3" xml:space="preserve">
+    <value>NIVDELEST3</value>
+  </data>
+  <data name="NIVDELEST4" xml:space="preserve">
+    <value>NIVDELEST4</value>
+  </data>
+  <data name="NIVDELEST6" xml:space="preserve">
+    <value>NIVDELEST6</value>
+  </data>
+  <data name="NIVDELEST7" xml:space="preserve">
+    <value>NIVDELEST7</value>
+  </data>
+  <data name="NIVDELEST8" xml:space="preserve">
+    <value>NIVDELEST8</value>
+  </data>
+  <data name="PsaReference" xml:space="preserve">
+    <value>PSA reference</value>
+  </data>
+  <data name="RearCentreSeatBeltFastened" xml:space="preserve">
+    <value>Rear centre seatbelt fastened</value>
+  </data>
+  <data name="RearLeftSeatBeltFastened" xml:space="preserve">
+    <value>Rear left seatbelt fastened</value>
+  </data>
+  <data name="RearRightSeatBeltFastened" xml:space="preserve">
+    <value>Rear right seatbelt fastened</value>
+  </data>
+  <data name="ReportedGearboxGearRatio" xml:space="preserve">
+    <value>Reported gearbox gear ratio</value>
+  </data>
+  <data name="Row3LeftHandSeatBeltBuckled" xml:space="preserve">
+    <value>Row 3 left-hand seatbelt buckled</value>
+  </data>
+  <data name="Row3RightHandSeatBeltBuckled" xml:space="preserve">
+    <value>Row 3 right-hand seatbelt buckled</value>
+  </data>
+  <data name="TelecodingsCount" xml:space="preserve">
+    <value>Telecoding sessions count</value>
+  </data>
+  <data name="Vin" xml:space="preserve">
+    <value>VIN</value>
+  </data>
+  <data name="BonnetOpen" xml:space="preserve">
+    <value>Bonnet open</value>
+  </data>
+  <data name="CeilingLightingRequest" xml:space="preserve">
+    <value>Ceiling lightning request</value>
+  </data>
+  <data name="Deadlockingcommand" xml:space="preserve">
+    <value>Deadlocking command</value>
+  </data>
+  <data name="LockingLocksCommand" xml:space="preserve">
+    <value>Locks locking command</value>
+  </data>
+  <data name="LowBatteryVoltageAlert" xml:space="preserve">
+    <value>Low battery voltage alert</value>
+  </data>
+  <data name="PredefinedRadioStationsSelection" xml:space="preserve">
+    <value>Predefined radio stations selection</value>
+  </data>
+  <data name="ProductionDate" xml:space="preserve">
+    <value>Production date</value>
+  </data>
+  <data name="SpeedLimitationOrRegulation_PauseState" xml:space="preserve">
+    <value>Speed regulation/limitation: Suspended</value>
+  </data>
+  <data name="SportSuspensionRequest" xml:space="preserve">
+    <value>Sport suspension request</value>
+  </data>
+  <data name="UnlockingLocksCommand" xml:space="preserve">
+    <value>Locks unlocking command</value>
+  </data>
+  <data name="VehicleEventMileageNotSetErrorMessage" xml:space="preserve">
+    <value>Mileage for the moment of operation not set!</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameAirFilterChange" xml:space="preserve">
+    <value>Air filter replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameBodyRepair" xml:space="preserve">
+    <value>Body repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCabinFilterChange" xml:space="preserve">
+    <value>Cabin air filter replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCabinRepair" xml:space="preserve">
+    <value>Cabin repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameConditioningRepair" xml:space="preserve">
+    <value>Air conditioner repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantChange" xml:space="preserve">
+    <value>Coolant pump replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantPumpChange" xml:space="preserve">
+    <value>Coolant pump replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameCoolantSystemRepair" xml:space="preserve">
+    <value>Cooling system repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameEngineRepair" xml:space="preserve">
+    <value>Engine repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameGeneratorBeltChange" xml:space="preserve">
+    <value>Generator belt replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameGlassMirrorsRepair" xml:space="preserve">
+    <value>Glass and mirrors repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOilChange" xml:space="preserve">
+    <value>Oil change</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOilFilterChange" xml:space="preserve">
+    <value>Oil filter replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameSuspensionRepair" xml:space="preserve">
+    <value>Suspension repair</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameTimingBeltChange" xml:space="preserve">
+    <value>Timing belt replacement</value>
+  </data>
+  <data name="VehicleEventTypeDisplayNameWheelsRepair" xml:space="preserve">
+    <value>Wheels repair</value>
+  </data>
+  <data name="VehicleEventTypeNotSelectedErrorMessage" xml:space="preserve">
+    <value>Operation type not selected!</value>
+  </data>
+  <data name="InPeriodTextWithGaps" xml:space="preserve">
+    <value> in </value>
+  </data>
+  <data name="InPeriodText" xml:space="preserve">
+    <value>in</value>
+  </data>
+  <data name="ExpiredText" xml:space="preserve">
+    <value>overdue</value>
+  </data>
+  <data name="CreateNewVehicleEvent" xml:space="preserve">
+    <value>New operation</value>
+  </data>
+  <data name="DeleteVehicleEvent" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EditVehicleEvent" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+</root>

@@ -1,0 +1,27 @@
+﻿@model VTS.Shared.DomainObjects.PsaParameterData
+
+<link href="~/Content/parameter-chart.css" rel="stylesheet"/>
+<script src="~/Scripts/d3/d3.js"></script>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+    var data = [];
+    @for (int i=0; i<Model.Values.Count; i++)
+    {
+        if (Model.HasTimestamps)
+        {
+            @:data.push([@Model.Timestamps[i], @Model.Values[i]]);
+            }
+        else
+        {
+            @:data.push([@i, @Model.Values[i]]);
+                }
+    };
+    var yMeasureUnits = "@Model.Units";
+</script>
+<script src="~/Scripts/parameterChart.js"></script>
+
+<h3>Parameter chart</h3>
+
+<div id="chart-placeholder">
+</div>
+

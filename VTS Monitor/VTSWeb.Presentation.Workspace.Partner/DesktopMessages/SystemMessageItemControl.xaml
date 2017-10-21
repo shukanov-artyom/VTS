@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="VTSWeb.Presentation.Workspace.Partner.DesktopMessages.SystemMessageItemControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Grid>
+        <Button
+            x:Name="button"
+            Margin="5,0,5,0"
+            Height="20"
+            Width="20">
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                x:Name="textBlockContent"/>
+        </Button>
+    </Grid>
+</UserControl>

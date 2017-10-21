@@ -1,0 +1,71 @@
+﻿@model Portal.WebUI.Models.LogonPageViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="~/Scripts/logonForm.js"></script>
+        <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" />
+        <link href="~/Content/account-wall.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width" />
+        <title id="document-title">Вход в портал системы VTS Автомониторинг</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div class="account-wall">
+                        @using (@Html.BeginForm("Signin", "User", new
+                            {
+                                id="form-credentials",
+                                @class = "form-signin" 
+                            }))
+                        {
+                            @Html.DropDownListFor(m => m.Language, new List<SelectListItem>() 
+                                {
+                                    new SelectListItem() { Text = "Русский", Value = "Ru"}, 
+                                    new SelectListItem() { Text = "Беларуская", Value = "By"}, 
+                                    new SelectListItem() { Text = "English", Value = "En"} 
+                                }, 
+                                new { @class = "form-control", id = "dropdown-language"})
+                            <br/>
+                            @Html.TextBoxFor(m => m.EmailOrLogin, null, new
+                                {
+                                    id="text-box-email",
+                                    @class="form-control", 
+                                    placeholder="Email or Login", 
+                                    required="required"
+                                })
+                            <br/>
+                            @Html.PasswordFor(m=>m.Password, new
+                                {
+                                    id="text-box-password",
+                                    @class="form-control", 
+                                    placeholder="Пароль",
+                                    required = "required"
+                                })
+                            <br/>
+                            <div class="text-center">
+                                <input 
+                                    id="button-logon" 
+                                    class="btn btn-lg btn-primary btn-block" 
+                                    type="submit" 
+                                    value="Войти" />
+                            </div>
+                        }
+                        @if (TempData["LogonFailed"] != null)
+                        {
+                            <div class="text-center">
+                                <label id="label-usernotfound" class="field-validation-error text-danger">Такая комбинация не найдена</label>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Agent.Workspace.DesktopElements.CitroenDesktopButtonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Button
+            Background="White"
+            x:Name="citroenButton"
+            Grid.Column="1"
+            Grid.Row="1"
+            Height="50"
+            Width="50"
+            Command="{Binding Path=CitroenButtonClickedCommand}">
+            <StackPanel>
+                <Image Source="pack://application:,,,/Agent;component/Resources/Images/citroen_logo_small_2.png" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

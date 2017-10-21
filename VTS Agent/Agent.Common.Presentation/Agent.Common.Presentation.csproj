@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BEDE629-357F-4903-A1F1-061D0185848E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent.Common.Presentation</RootNamespace>
+    <AssemblyName>Agent.Common.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core">
+      <HintPath>..\External\DevExpress.Charts.v11.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2">
+      <HintPath>..\External\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Xpf.Charts.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Xpf.Core.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VtsShared">
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindingConverters\BoolToVisibilityConverter.cs" />
+    <Compile Include="BindingConverters\InverseBoolValueConverter.cs" />
+    <Compile Include="BindingConverters\MarkToColorConverter.cs" />
+    <Compile Include="Characteristics\VehicleCharacteristicsItemsGroupControl.xaml.cs">
+      <DependentUpon>VehicleCharacteristicsItemsGroupControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Characteristics\VehicleCharacteristicsControl.xaml.cs">
+      <DependentUpon>VehicleCharacteristicsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Characteristics\VehicleCharacteristicsItemsGroupViewModel.cs" />
+    <Compile Include="Characteristics\VehicleCharacteristicsItemViewModel.cs" />
+    <Compile Include="Characteristics\VehicleCharacteristicsViewModel.cs" />
+    <Compile Include="Controls\AxisScaleSettingsControl.xaml.cs">
+      <DependentUpon>AxisScaleSettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cascade\CascadeChartControl.xaml.cs">
+      <DependentUpon>CascadeChartControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cascade\CascadeControl.xaml.cs">
+      <DependentUpon>CascadeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cascade\CascadeViewModel.cs" />
+    <Compile Include="Controls\Cascade\CascadeWindow.xaml.cs">
+      <DependentUpon>CascadeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChartScale.cs" />
+    <Compile Include="Controls\IParametersSetSettingsSource.cs" />
+    <Compile Include="Controls\ParameterDisplaySettingsControl.xaml.cs">
+      <DependentUpon>ParameterDisplaySettingsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IParametersSetGraphView.cs" />
+    <Compile Include="Controls\ScaleControllers\ChartController.cs" />
+    <Compile Include="Controls\ScaleControllers\ParametersSetAnalysisController.cs" />
+    <Compile Include="Controls\ScaleControllers\ParametersSetScaleController.cs" />
+    <Compile Include="Controls\PsaParameterDataGraphControl.xaml.cs">
+      <DependentUpon>PsaParameterDataGraphControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PsaParametersSetDetailsControl.xaml.cs">
+      <DependentUpon>PsaParametersSetDetailsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RangeSlider.xaml.cs">
+      <DependentUpon>RangeSlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RangeSliderVertical.xaml.cs">
+      <DependentUpon>RangeSliderVertical.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScalesSetControl.xaml.cs">
+      <DependentUpon>ScalesSetControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ScalesSetViewModel.cs" />
+    <Compile Include="Crosshair\CrosshairCursorProvider.cs" />
+    <Compile Include="Crosshair\DateTimeDoubleCrosshairCursorProvider.cs" />
+    <Compile Include="Crosshair\DoubleDoubleCrosshairCursorProvider.cs" />
+    <Compile Include="Crosshair\DoubleDoubleMovingCrosshairCursorProvider.cs" />
+    <Compile Include="Crosshair\ValueItem.cs" />
+    <Compile Include="Crosshair\DoubleDoubleMouseCrosshairCursorProvider.cs" />
+    <Compile Include="Data\IPsaParametersSetViewModel.cs" />
+    <Compile Include="Data\PsaParameterDataViewModel.cs" />
+    <Compile Include="Data\UnitsViewModel.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Error\ErrorReportingControl.xaml.cs">
+      <DependentUpon>ErrorReportingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Error\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lexia\ChartScaleViewModel.cs" />
+    <Compile Include="Lexia\ExportableViewModel.cs" />
+    <Compile Include="Lexia\ParameterDisplaySettingsViewModel.cs" />
+    <Compile Include="Network\ConnectionCheckInProgressControl.xaml.cs">
+      <DependentUpon>ConnectionCheckInProgressControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Network\ConnectionCheckWindow.xaml.cs">
+      <DependentUpon>ConnectionCheckWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Network\NoConnectionControl.xaml.cs">
+      <DependentUpon>NoConnectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\CircularProgressBarSmall.xaml.cs">
+      <DependentUpon>CircularProgressBarSmall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBar\CircularProgressBarTiny.xaml.cs">
+      <DependentUpon>CircularProgressBarTiny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistryUser\AgentIsolatedStorageHelper.cs" />
+    <Compile Include="RegistryUser\StoredUser.cs" />
+    <Compile Include="Unrecognized\BlinkingWarningControlSmall.xaml.cs">
+      <DependentUpon>BlinkingWarningControlSmall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Unrecognized\UnrecognizedDataExportedWindow.xaml.cs">
+      <DependentUpon>UnrecognizedDataExportedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PsaParametersSetGraphControl.xaml.cs">
+      <DependentUpon>PsaParametersSetGraphControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Users\HyperlinkButtonControl.xaml.cs">
+      <DependentUpon>HyperlinkButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LoggedUserToolbarItemControl.xaml.cs">
+      <DependentUpon>LoggedUserToolbarItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LoginPreRegistrationCheckControl.xaml.cs">
+      <DependentUpon>LoginPreRegistrationCheckControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Users\LogonAndRegistrationViewModel.cs" />
+    <Compile Include="Users\LogonAndRegistrationWindow.xaml.cs">
+      <DependentUpon>LogonAndRegistrationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles\VehicleViewModel.cs" />
+    <Compile Include="ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Instance\Agent.Common.Instance.csproj">
+      <Project>{3BEBDE5E-1413-4FAD-8634-447A630185D9}</Project>
+      <Name>Agent.Common.Instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common\Agent.Common.csproj">
+      <Project>{21539378-9A42-4546-8327-FF4FF88E7D08}</Project>
+      <Name>Agent.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Infrastructure\Agent.Infrastructure.csproj">
+      <Project>{42ecf03b-100d-495a-98b1-4bc9747d13b4}</Project>
+      <Name>Agent.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Logging\Agent.Logging.csproj">
+      <Project>{A9403843-FAD4-446E-A157-2A2CA6F228C7}</Project>
+      <Name>Agent.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.Monitor\Agent.Network.Monitor.csproj">
+      <Project>{927985D8-D0D6-428C-A50D-CDCD7931C28B}</Project>
+      <Name>Agent.Network.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Localization\Agent.Localization.csproj">
+      <Project>{43F96D06-9A94-471C-B900-B8EFF2BCB42A}</Project>
+      <Name>Agent.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Interfaces\Agent.Common.Interfaces.csproj">
+      <Project>{6853BCCB-216D-4FF7-ADB8-65FF46213A96}</Project>
+      <Name>Agent.Common.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Styles\Common.Styles.csproj">
+      <Project>{00166DAD-3C45-4AAC-B52B-1B048C4A3670}</Project>
+      <Name>Common.Styles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Characteristics\VehicleCharacteristicsItemsGroupControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Characteristics\VehicleCharacteristicsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\AxisScaleSettingsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Cascade\CascadeChartControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Cascade\CascadeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Cascade\CascadeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ParameterDisplaySettingsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PsaParameterDataGraphControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PsaParametersSetDetailsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RangeSlider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RangeSliderVertical.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ScalesSetControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Error\ErrorReportingControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Error\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Network\ConnectionCheckInProgressControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Network\ConnectionCheckWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Network\NoConnectionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressBar\CircularProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressBar\CircularProgressBarSmall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressBar\CircularProgressBarTiny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Unrecognized\BlinkingWarningControlSmall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Unrecognized\UnrecognizedDataExportedWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PsaParametersSetGraphControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Users\HyperlinkButtonControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Users\LoggedUserToolbarItemControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Users\LoginPreRegistrationCheckControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Users\LogonAndRegistrationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Unrecognized\warning-icon-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Unrecognized\email_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Network\emoticon_sad.png" />
+    <Resource Include="Network\emoticon_sad_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Users\Accept-Male-User-small.png" />
+    <Resource Include="Images\Grid.png" />
+    <Content Include="Users\Accept-Male-User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Evaluation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

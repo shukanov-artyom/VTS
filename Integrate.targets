@@ -1,0 +1,164 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<OldVersion>0.0.26.6</OldVersion>
+	<NewVersion>0.0.26.7</NewVersion>
+	<VtsAgentFolder>VTS Agent</VtsAgentFolder>
+	<VtsAgentInstallerFolder>VTS Agent Installer</VtsAgentInstallerFolder>
+	<VtsVerifierPath>VTS Project Settings Verifier</VtsVerifierPath>
+	<VtsConfigurationWatcherPath>VTS Configuration Watcher</VtsConfigurationWatcherPath>
+	<VtsLocalizationWatcherPath>VTS Localization Watcher</VtsLocalizationWatcherPath>
+	<VtsAgentLiteFolder>VTS Agent Lite</VtsAgentLiteFolder>
+	<VtsMonitorFolder>VTS Monitor</VtsMonitorFolder>
+	<VtsSharedFolder>VTS Shared</VtsSharedFolder>
+	<VtsVersionModifierFolder>VTS Version Modifier</VtsVersionModifierFolder>
+	<VtsWebserviceFolder>VTS Webservice</VtsWebserviceFolder>
+	<VtsWebsiteFolder>VTS Website</VtsWebsiteFolder>
+	<VtsNunitGeneratorPath>VTS Nunit Project Generator</VtsNunitGeneratorPath>
+	<NunitScriptPath>VTS Scripts\GenerateNunitFileForSolution.ps1</NunitScriptPath>
+	<VtsExternalToolsPath>VTS External Tools</VtsExternalToolsPath>
+	<VtsScriptsPath>VTS Scripts</VtsScriptsPath>
+	
+	<AgentLocalizationResourcesPath>.\VTS Agent\Agent.Localization\Resources</AgentLocalizationResourcesPath>
+	<MonitorLocalizationResourcesPath>.\VTS Monitor\VTSWeb.Localization</MonitorLocalizationResourcesPath>
+	
+	<!--Configuration Files to watch-->
+	<AgentConfigFile>$(VtsAgentFolder)\Agent\App.config</AgentConfigFile>
+  </PropertyGroup>
+  <Target Name="Build">
+	<MSBuild 
+		Projects="$(VtsVerifierPath)\Verifier.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsConfigurationWatcherPath)\ConfigurationWatcher.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<Exec Command="&quot;$(VtsConfigurationWatcherPath)\Output\ConfigurationWatcher.exe&quot; &quot;$(AgentConfigFile)&quot; DebugMode True" />
+	
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsAgentFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsAgentInstallerFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsAgentLiteFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsMonitorFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsVerifierPath)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsSharedFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsVersionModifierFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsWebserviceFolder)&quot;" />
+	<Exec Command="&quot;$(VtsVerifierPath)\Output\Verifier.exe&quot; &quot;$(VtsWebsiteFolder)&quot;" />
+	<MSBuild 
+		Projects="$(VtsVersionModifierFolder)\VersionModifier.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsAgentFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsAgentInstallerFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsVerifierPath)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsAgentLiteFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsMonitorFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsSharedFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsVersionModifierFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsWebserviceFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<Exec Command="&quot;$(VtsVersionModifierFolder)\Output\VersionModifier.exe&quot; &quot;$(VtsWebsiteFolder)&quot; &quot;$(OldVersion)&quot; &quot;$(NewVersion)&quot;" />
+	<MSBuild 
+		Projects="$(VtsSharedFolder)\VtsShared.sln" 
+		Properties="Configuration=Release;Platform=Any CPU" 
+		Targets="Rebuild"/>	
+	<MSBuild 
+		Projects="$(VtsLocalizationWatcherPath)\LocalizationWatcher.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<Delete Files="$(VtsLocalizationWatcherPath)\Output\LocalizationWatcher.log"/>
+	<Exec Command="&quot;$(VtsLocalizationWatcherPath)\Output\LocalizationWatcher.exe&quot; &quot;$(AgentLocalizationResourcesPath)&quot; &quot;$(MonitorLocalizationResourcesPath)&quot;" />
+	<MSBuild 
+		Projects="$(VtsAgentFolder)\VTSAgentVS13.sln" 
+		Properties="Configuration=Release;Platform=x86" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsAgentInstallerFolder)\VtsAgentInstaller.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsAgentLiteFolder)\VtsAgentLite.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsMonitorFolder)\VTSWebApp.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsWebserviceFolder)\VTSWebServiceVS13.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+	<MSBuild 
+		Projects="$(VtsWebsiteFolder)\Site.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+  </Target>
+  
+  <Target Name="Clean">
+    <MSBuild 
+		Projects="$(VtsSharedFolder)\VtsShared.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsAgentFolder)\VTSAgentVS13.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<RemoveDir Directories="VTS Agent\Output"/>
+	<MSBuild 
+		Projects="$(VtsVerifierPath)\Verifier.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+		<MSBuild 
+		Projects="$(VtsAgentInstallerFolder)\VtsAgentInstaller.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsAgentLiteFolder)\VtsAgentLite.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsMonitorFolder)\VTSWebApp.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsWebserviceFolder)\VTSWebServiceVS13.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsWebsiteFolder)\Site.sln" 
+		Properties="Configuration=Release" 
+		Targets="Clean"/>
+	<MSBuild 
+		Projects="$(VtsNunitGeneratorPath)\Generator.sln"
+		Targets="Clean"	/>
+  </Target>
+  
+  <Target Name="Deploy">
+	<CallTarget Targets="Clean"/>
+	<CallTarget Targets="Build"/>
+	<MSBuild 
+		Projects="$(VtsWebserviceFolder)\VTSWebService\VTSWebService.csproj"
+		Properties="DeployOnBuild=true; 
+			PublishProfile=vtswebservice - Web deploy; 
+			Password=eL11hEwi48uECj8DqzyrmZKkxQtGrQPmHsvZ5ZXwai6ft14w7G4vtDSKrgMA" />
+	<MSBuild 
+		Projects="$(VtsMonitorFolder)\VTS.Web\VTS.Web.csproj"
+		Properties="DeployOnBuild=true; 
+			PublishProfile=vtsapp - Web deploy; 
+			Password=EXJvmbXPZo8RYE81z2yqKnRyhJlxbBvBYpgZsQpBp42mXnyPiumX2zxk5DFt" />
+	<MSBuild 
+		Projects="$(VtsWebsiteFolder)\Site\Site.csproj"
+		Properties="DeployOnBuild=true; 
+			PublishProfile=vts - Web deploy; 
+			Password=4edtPnXQxJE2shBXwBKoFclxlTrohxJQJREat9wC0lJN9rnwEsmC05gvQHTE" />
+	<Exec Command="powershell -file &quot;$(VtsScriptsPath)\DeployVtsAgent.ps1&quot;" />
+	</Target>
+	
+	<Target Name="Test">
+		<MSBuild 
+			Projects="$(VtsNunitGeneratorPath)\Generator.sln"
+			Properties="Configuration=Release;Platform=Any CPU"
+			Targets="Build"/>
+		<Exec Command="&quot;$(VtsNunitGeneratorPath)\Output\Generator.exe&quot; &quot;$(VtsAgentFolder)&quot;" />
+		<Exec Command="&quot;$(VtsExternalToolsPath)\NUnit\bin\nunit-console-x86.exe&quot; &quot;$(VtsAgentFolder)\Output\auto.nunit&quot;" />
+	</Target>
+</Project>

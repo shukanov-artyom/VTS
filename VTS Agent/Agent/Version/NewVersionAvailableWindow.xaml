@@ -1,0 +1,62 @@
+﻿<Window 
+    x:Class="Agent.Version.NewVersionAvailableWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:localization="clr-namespace:Agent.Localization;assembly=Agent.Localization"
+    Title="{localization:TranslateExtension NewVersionAvailableWindowCaption}"
+    Width="320"
+    MaxHeight="240"
+    WindowStartupLocation="CenterOwner"
+    ResizeMode="NoResize">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel
+            Margin="0,7,0,0"
+            Grid.Row="0"
+            Orientation="Horizontal">
+            <Image 
+                Margin="12,0,0,0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Source="Download.png"/>
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="40,10,10,10"
+                Text="{localization:TranslateExtension ThereIsANewVersionExclamation}"/>
+        </StackPanel>
+        
+        <TextBlock
+            Margin="7"
+            FontSize="14"
+            TextWrapping="Wrap"
+            Grid.Row="1"
+            Text="{localization:TranslateExtension NewVersionExplanatoryText}"/>
+        
+        <StackPanel
+            HorizontalAlignment="Center"
+            Grid.Row="2"
+            Orientation="Horizontal">
+            <Button
+                Click="OnDownloadClicked"
+                Margin="10"
+                Height="27"
+                Width="120"
+                Content="{localization:TranslateExtension Download}"/>
+            <Button 
+                Margin="10"
+                Height="27"
+                Width="120"
+                Content="{localization:TranslateExtension Later}"
+                IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

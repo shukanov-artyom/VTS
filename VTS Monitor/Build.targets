@@ -1,0 +1,15 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+  </PropertyGroup>
+  <Target Name="Build">
+	<MSBuild 
+		Projects="VtsWebApp.sln" 
+		Properties="Configuration=Release" 
+		Targets="Rebuild"/>
+  </Target>
+  <Target Name="Clean">
+	<MSBuild 
+		Projects="VtsWebApp.sln" 
+		Targets="Clean"/>
+  </Target>
+</Project>

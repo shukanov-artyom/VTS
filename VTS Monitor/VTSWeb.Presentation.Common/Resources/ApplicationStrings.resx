@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppHeader" xml:space="preserve">
+    <value>Консоль управления данными</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>Лицензии</value>
+  </data>
+  <data name="CancelKeyButtonText" xml:space="preserve">
+    <value>Аннулировать</value>
+  </data>
+  <data name="CreateButtonText" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="EndUsers" xml:space="preserve">
+    <value>Конечные пользователи</value>
+  </data>
+  <data name="FreePartnerKeysLabelText" xml:space="preserve">
+    <value>Свободные ключи для регистрации партнёров</value>
+  </data>
+  <data name="FreePartnerRegistrationKeys" xml:space="preserve">
+    <value>Свободные регистрационные ключи</value>
+  </data>
+  <data name="KeyColumnName" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="LoginTextBlockText" xml:space="preserve">
+    <value>Логин:</value>
+  </data>
+  <data name="LogonHyperlinkButtonText" xml:space="preserve">
+    <value>Вход в систему</value>
+  </data>
+  <data name="LogoutHyperlinkButtonText" xml:space="preserve">
+    <value>Выход из системы</value>
+  </data>
+  <data name="MarkKeyAsDeliveredButtonText" xml:space="preserve">
+    <value>В выданные</value>
+  </data>
+  <data name="PartnerRegisterKeyEmissionWindowText" xml:space="preserve">
+    <value>Создание ключа для регистрации партнёра</value>
+  </data>
+  <data name="Partners" xml:space="preserve">
+    <value>Партнёры</value>
+  </data>
+  <data name="PasswordTextBlockText" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="RegisterHyperlinkButtonText" xml:space="preserve">
+    <value>Регистрация</value>
+  </data>
+  <data name="RegistrationKeys" xml:space="preserve">
+    <value>Регистрационные ключи</value>
+  </data>
+  <data name="RegKeyExplanationText" xml:space="preserve">
+    <value>Регистрационный ключ – уникальный идентификатор (GUID), который позволит системе распознать вас как пользователя и предоставить соответствующий уровень доступа после регистрации.</value>
+  </data>
+  <data name="RegKeyInputRequest" xml:space="preserve">
+    <value>Пожалуйста, введите ваш регистрационный ключ:</value>
+  </data>
+  <data name="UserLogonWindowTitle" xml:space="preserve">
+    <value>Вход пользователя в систему</value>
+  </data>
+  <data name="UserNotFoundMessage" xml:space="preserve">
+    <value>Пользователь не найден. Проверьте введённые данные.</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="RegistrationKeyFormatMessage" xml:space="preserve">
+    <value>Формат регистрационного ключа:</value>
+  </data>
+  <data name="PartnerRegistrationWindowHeader" xml:space="preserve">
+    <value>Регистрация партнёрской учётной записи</value>
+  </data>
+  <data name="Customers" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="RegisteredPartners" xml:space="preserve">
+    <value>Зарегистрированные партнёры</value>
+  </data>
+  <data name="Vehicles" xml:space="preserve">
+    <value>Машины</value>
+  </data>
+  <data name="SavedData" xml:space="preserve">
+    <value>Сохранённые данные</value>
+  </data>
+  <data name="UploadData" xml:space="preserve">
+    <value>Загрузка данных</value>
+  </data>
+  <data name="OkButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CleintRegistrationWindowHeader" xml:space="preserve">
+    <value>Регистрация учётной записи</value>
+  </data>
+  <data name="SavedDataAnalysis" xml:space="preserve">
+    <value>Анализ данных</value>
+  </data>
+  <data name="SelectVehicleText" xml:space="preserve">
+    <value>Выберите автомобиль из списка:</value>
+  </data>
+  <data name="LicensesExplanatoryText" xml:space="preserve">
+    <value>Операции с лицензиями для регистрации клиентов и машин: запрос на получение и продление лицензий, просмотр выданных лицензий и их состояния </value>
+  </data>
+  <data name="RegistrationKeysExplanatoryText" xml:space="preserve">
+    <value>Операции с регистрационными ключами: cоздание рег. ключей (потребуется лицензия класса А), аннулирование ключей или установление отметки о выдаче ключа клиенту.</value>
+  </data>
+  <data name="UploadDataExplanatoryText" xml:space="preserve">
+    <value>Загрузка данных в формате .vts, экспортированных из диагностической системы.</value>
+  </data>
+  <data name="SavedDataAnalysisExplanatoryText" xml:space="preserve">
+    <value>Автоматический анализ сохранённых данных, слежение за изменениями параметров машины за время наблюдений</value>
+  </data>
+  <data name="BackText" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="BasedOnFileLabel" xml:space="preserve">
+    <value>(исходя из данных загруженного файла)</value>
+  </data>
+  <data name="BlockText" xml:space="preserve">
+    <value>Заблокировать</value>
+  </data>
+  <data name="CheckingImportableData" xml:space="preserve">
+    <value>Проверка данных перед сохранением</value>
+  </data>
+  <data name="ChronoParameterIdleRpmColdExplanatoryText" xml:space="preserve">
+    <value>&lt;Пояснительный текст к параметру&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmColdText" xml:space="preserve">
+    <value>Холодный старт</value>
+  </data>
+  <data name="ChronoParameterIdleRpmHotExplanatoryText" xml:space="preserve">
+    <value>&lt;Пояснительный текст к параметру&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmHotText" xml:space="preserve">
+    <value>Горячий старт</value>
+  </data>
+  <data name="ChronoParameterIdleRpmMediumExplanatoryText" xml:space="preserve">
+    <value>&lt;Пояснительный текст к параметру&gt;</value>
+  </data>
+  <data name="ChronoParameterIdleRpmMediumText" xml:space="preserve">
+    <value>Средний старт</value>
+  </data>
+  <data name="ChronoParamGroupDisplayNameEngine" xml:space="preserve">
+    <value>Двигатель</value>
+  </data>
+  <data name="ChronoParamGroupDisplayNameEngineInjection" xml:space="preserve">
+    <value>Двигатель – Впрыск</value>
+  </data>
+  <data name="ChronoParamTypeDisplayNameIdleEngineRpm" xml:space="preserve">
+    <value>Обороты холостого хода</value>
+  </data>
+  <data name="ChronoParamTypeDisplayNameInjectorCorrections" xml:space="preserve">
+    <value>Коррекции инжекторов</value>
+  </data>
+  <data name="ClientKeysText" xml:space="preserve">
+    <value>Клиентские ключи</value>
+  </data>
+  <data name="CurrentSelectedFileStubTextName" xml:space="preserve">
+    <value>Не выбран</value>
+  </data>
+  <data name="CurrentUploadedFileLabel" xml:space="preserve">
+    <value>Выбранный файл с данными:</value>
+  </data>
+  <data name="DataContentsVehicleLabel" xml:space="preserve">
+    <value>Данные для машины:</value>
+  </data>
+  <data name="DataPersistedExplanation" xml:space="preserve">
+    <value>Вы можете просмотреть все сохранённые данные в разделе "Данные". Для всей загруженной диагностической информации система автоматически вычислит хронологические параметры и выдаст предупреждения, коотрые вы можете просмотреть в соотвествующем разделе</value>
+  </data>
+  <data name="DataPersistedHeader" xml:space="preserve">
+    <value>Данные сохранены</value>
+  </data>
+  <data name="DatasetsQuantityPerFileLabel" xml:space="preserve">
+    <value>Наборов данных в файле:</value>
+  </data>
+  <data name="DatasetsText" xml:space="preserve">
+    <value>Наборы данных:</value>
+  </data>
+  <data name="DaysText" xml:space="preserve">
+    <value>дней</value>
+  </data>
+  <data name="DeliveredKeyRadioButtonRegText" xml:space="preserve">
+    <value>Используя выданный пользовательский ключ</value>
+  </data>
+  <data name="DeliveredText" xml:space="preserve">
+    <value>Выданные</value>
+  </data>
+  <data name="DiagnosticData" xml:space="preserve">
+    <value>Диагностические данные</value>
+  </data>
+  <data name="DiagnosticData1" xml:space="preserve">
+    <value>Диагностические данные</value>
+  </data>
+  <data name="DiagnosticDataUpload" xml:space="preserve">
+    <value>Загрузка диагностических данных</value>
+  </data>
+  <data name="EmailText" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="EmitentText" xml:space="preserve">
+    <value>Эмитент</value>
+  </data>
+  <data name="EmptyUserRadioButtonRegText" xml:space="preserve">
+    <value>На пользователя, у которого ещё нет зарегистрированных машин</value>
+  </data>
+  <data name="ErrorSavingData" xml:space="preserve">
+    <value>Ошибка при сохранении данных</value>
+  </data>
+  <data name="ExtraVehicleRadioButtonRegText" xml:space="preserve">
+    <value>Как дополнительную для зарегистрированного пользователя</value>
+  </data>
+  <data name="FileCloseButtonLabel" xml:space="preserve">
+    <value>Закрыть файл...</value>
+  </data>
+  <data name="FileUploadButtonLabel" xml:space="preserve">
+    <value>Открыть файл...</value>
+  </data>
+  <data name="FileUploadRequestLabel" xml:space="preserve">
+    <value>Выберите файл с данными для загрузки:</value>
+  </data>
+  <data name="ForwardText" xml:space="preserve">
+    <value>Вперёд</value>
+  </data>
+  <data name="FreeText" xml:space="preserve">
+    <value>Свободные</value>
+  </data>
+  <data name="ImportImpossibleCaption" xml:space="preserve">
+    <value>Не могу импортировать</value>
+  </data>
+  <data name="InjectorCorrectionsMedianValuesExplanatoryText" xml:space="preserve">
+    <value>Усреднённые по оборотам показатели коррекции форсунок дизельного двигателя. Вычисляются при наличии данных для 1000, 2000 и 3000 об/мин</value>
+  </data>
+  <data name="InjectorCorrectionsMedianValuesText" xml:space="preserve">
+    <value>Средние значения</value>
+  </data>
+  <data name="InjectorCorrectionsRangeValuesExplanatoryText" xml:space="preserve">
+    <value>Предельные (мин. и макс.) показатели коррекции форсунок дизельного двигателя. Вычисляются отдельно для каждой форсунки при 1000, 2000 и 3000 об/мин</value>
+  </data>
+  <data name="InjectorCorrectionsRangeValuesText" xml:space="preserve">
+    <value>Предельные значения</value>
+  </data>
+  <data name="KeysDeliveredToClientsText" xml:space="preserve">
+    <value>Ключи, выданные клиентам</value>
+  </data>
+  <data name="KeyText" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="LicenseARadioButtonText" xml:space="preserve">
+    <value>А — для регистрации пользователей или машин</value>
+  </data>
+  <data name="LicenseExpirationMessageStub" xml:space="preserve">
+    <value>Лицензия для этой машины истекла. Продлить её вы можете на странице операций с лицензиями. Номер лицензии: №{0}</value>
+  </data>
+  <data name="LicenseExpirationPeriodDisplayStringFormat" xml:space="preserve">
+    <value>истекает через {0} дней</value>
+  </data>
+  <data name="LicenseExpiredDaysStringFormat" xml:space="preserve">
+    <value>истекла {0} дней назад</value>
+  </data>
+  <data name="LicenseIssuanceRequestSend" xml:space="preserve">
+    <value>Отправка запроса на лицензию</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep1" xml:space="preserve">
+    <value>Шаг 1. Выбор типа и периода лицензии</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep2" xml:space="preserve">
+    <value>Шаг 2. Выбор количества нужных лицензий</value>
+  </data>
+  <data name="LicenseIssuanceRequestStep3" xml:space="preserve">
+    <value>Шаг 3. Подтверждение правильности данных</value>
+  </data>
+  <data name="LicenseIssuanceSendRequest" xml:space="preserve">
+    <value>Отправить запрос</value>
+  </data>
+  <data name="LicenseNumberStringFormat" xml:space="preserve">
+    <value>Лицензия №{0} </value>
+  </data>
+  <data name="LicensePeriodDisplayStringFormat" xml:space="preserve">
+    <value>Период: {0} дней, </value>
+  </data>
+  <data name="LicensePeriodText" xml:space="preserve">
+    <value>Период действия лицензии:</value>
+  </data>
+  <data name="LicenseQuantityText" xml:space="preserve">
+    <value>Количество лицензий:</value>
+  </data>
+  <data name="LicenseRequestBackText" xml:space="preserve">
+    <value>&lt; Назад</value>
+  </data>
+  <data name="LicenseRequestFailureText" xml:space="preserve">
+    <value>Неудача. Попробуйте ещё раз, возможно проблемы с подключением к сети.</value>
+  </data>
+  <data name="LicenseRequestFrowardText" xml:space="preserve">
+    <value>Далее &gt;</value>
+  </data>
+  <data name="LicenseRequestSentInformationText" xml:space="preserve">
+    <value>Запрос отправлен, его состояние вы можете проверить в разделе "Статус моих запросов."</value>
+  </data>
+  <data name="LicenseStartDateStringFormat" xml:space="preserve">
+    <value> от {0:dd MMMM yyyy}</value>
+  </data>
+  <data name="MileageLabel" xml:space="preserve">
+    <value>Общий пробег:</value>
+  </data>
+  <data name="MyLicensesText" xml:space="preserve">
+    <value>Лицензии в моём распоряжении</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="NavigatablePageHeaderAvailableLicenses" xml:space="preserve">
+    <value>Лицензии – доступные</value>
+  </data>
+  <data name="NavigatablePageHeaderClients" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="NavigatablePageHeaderData" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="NavigatablePageHeaderDataAnalysis" xml:space="preserve">
+    <value>Анализ данных</value>
+  </data>
+  <data name="NavigatablePageHeaderDataUpload" xml:space="preserve">
+    <value>Загрузка данных</value>
+  </data>
+  <data name="NavigatablePageHeaderDesktop" xml:space="preserve">
+    <value>Рабочий стол</value>
+  </data>
+  <data name="NavigatablePageHeaderLicenses" xml:space="preserve">
+    <value>Лицензии</value>
+  </data>
+  <data name="NavigatablePageHeaderPartners" xml:space="preserve">
+    <value>Партнёры</value>
+  </data>
+  <data name="NavigatablePageHeaderRegKeys" xml:space="preserve">
+    <value>Регистрационные ключи</value>
+  </data>
+  <data name="NavigatablePageHeaderVehicles" xml:space="preserve">
+    <value>Машины</value>
+  </data>
+  <data name="NewKeyRadioButtonRegText" xml:space="preserve">
+    <value>Создать новый регистрационный ключ и внести данные на него</value>
+  </data>
+  <data name="NoDataSelectedForImport" xml:space="preserve">
+    <value>Данные для импорта не выбраны. Выберите данные и повторите попытку.</value>
+  </data>
+  <data name="PartnerKeysText" xml:space="preserve">
+    <value>Партнёрские ключи</value>
+  </data>
+  <data name="PartnersExplanatoryText" xml:space="preserve">
+    <value>Список зарегистрированных партнёров, операции с партнёрскими учётными записями</value>
+  </data>
+  <data name="PartnerVehiclesHeaderText" xml:space="preserve">
+    <value>Зарегистрированные машины</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="ProlongLicenseText" xml:space="preserve">
+    <value>Продлить лицензию</value>
+  </data>
+  <data name="RefreshText" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="RegisteredClients" xml:space="preserve">
+    <value>Зарегистрированные клиенты</value>
+  </data>
+  <data name="RemoveText" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="RequestForLicenseText" xml:space="preserve">
+    <value>Запросить лицензию</value>
+  </data>
+  <data name="RequestsStatusText" xml:space="preserve">
+    <value>Статус моих запросов</value>
+  </data>
+  <data name="SaveSelectedButtonLabel" xml:space="preserve">
+    <value>Сохранить выбранное</value>
+  </data>
+  <data name="SelectVehicleText1" xml:space="preserve">
+    <value>Выберите машину из списка:</value>
+  </data>
+  <data name="SurnameText" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="UnableToOpenFile" xml:space="preserve">
+    <value>Не удалось загрузить файл</value>
+  </data>
+  <data name="UnregiseredVehiclesDetected" xml:space="preserve">
+    <value>Обнаружены незарегистрированные машины</value>
+  </data>
+  <data name="UnregiseredVehiclesDetectedExplanation" xml:space="preserve">
+    <value>Система не поддерживает внесение данных на незарегистрированную в системе машину, поэтому перед сохранением диагностической информации машину надо зарегистрировать одним из доступных способов. Кликните на данные по машине на экране "Загрузка диагностических данных", чтобы зарегистрировать автомобиль. </value>
+  </data>
+  <data name="UnregiseredVehiclesListHeader" xml:space="preserve">
+    <value>Vin незарегистрированных машин:</value>
+  </data>
+  <data name="VehicleDataRetrievalErrorMessage" xml:space="preserve">
+    <value>Не удалось получить из базы данных сведения о зарегистрированных машинах</value>
+  </data>
+  <data name="VehicleDataRetrievalInProgressMessage" xml:space="preserve">
+    <value>Получение данных о машине</value>
+  </data>
+  <data name="VehicleNotRegisteredHeader" xml:space="preserve">
+    <value>Машина не зарегистрирована в системе</value>
+  </data>
+  <data name="VehicleRegistrationRequirementsText" xml:space="preserve">
+    <value>Зарегистрировать машину в системе можно одним из следующих способов: </value>
+  </data>
+  <data name="VinLabel" xml:space="preserve">
+    <value>Vin:</value>
+  </data>
+  <data name="AddressText" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="CheckLoginText" xml:space="preserve">
+    <value>проверить</value>
+  </data>
+  <data name="ContactDataText" xml:space="preserve">
+    <value>Контактные данные:</value>
+  </data>
+  <data name="ContactPersonText" xml:space="preserve">
+    <value>Контактное лицо:</value>
+  </data>
+  <data name="EmailLabelText" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="EmailNotSetErrorMessage" xml:space="preserve">
+    <value>Адрес электронной почты не задан</value>
+  </data>
+  <data name="LoginAccessibilityCheckLabel" xml:space="preserve">
+    <value>Проверьте доступность имени чтобы продолжить регистрацию</value>
+  </data>
+  <data name="LoginInaccessibleLabel" xml:space="preserve">
+    <value>Такой логин некорректен или уже занят. Пожалуйста, выберите другой.</value>
+  </data>
+  <data name="LoginNotSetErrorMessage" xml:space="preserve">
+    <value>Логин не задан</value>
+  </data>
+  <data name="LoginOccupiedErrorMessage" xml:space="preserve">
+    <value>Логин уже занят</value>
+  </data>
+  <data name="NameText1" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="ObligatoryData" xml:space="preserve">
+    <value>Обязательные данные</value>
+  </data>
+  <data name="OptionalData" xml:space="preserve">
+    <value>Опциональные данные</value>
+  </data>
+  <data name="OptionalDataReminderText" xml:space="preserve">
+    <value>Эти данные необязательно вводить сейчас, их можно заполнить в любое время после регистрации на странице пользовательского профиля.</value>
+  </data>
+  <data name="OrgNameNotSetErrorMessage" xml:space="preserve">
+    <value>Название организации не задано</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="PhoneText" xml:space="preserve">
+    <value>Телефон:</value>
+  </data>
+  <data name="ShowPasswordButtonText" xml:space="preserve">
+    <value>показать</value>
+  </data>
+  <data name="SurnameText1" xml:space="preserve">
+    <value>Фамилия:</value>
+  </data>
+  <data name="ContinueText" xml:space="preserve">
+    <value>Продолжить</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="IssuanceRequestOperationsText" xml:space="preserve">
+    <value>Операции с запросами на выдачу лицензии</value>
+  </data>
+  <data name="LicenseForProlongationText" xml:space="preserve">
+    <value>Лицензия на продление:</value>
+  </data>
+  <data name="LicenseProlongationExplanatoryText" xml:space="preserve">
+    <value>Здесь вы можете послать запрос на продление лицензии. Как только продление лицензии будет оплачено и администратор одобрит продление, лицензия снова станет активной.</value>
+  </data>
+  <data name="LicenseProlongationText" xml:space="preserve">
+    <value>Продление лицензии</value>
+  </data>
+  <data name="ProlongationPeriodQuestionText" xml:space="preserve">
+    <value>На какой срок будем продлевать?</value>
+  </data>
+  <data name="RefreshListText" xml:space="preserve">
+    <value>Обновить список</value>
+  </data>
+  <data name="ToIssueText" xml:space="preserve">
+    <value>Выдать</value>
+  </data>
+  <data name="WhoHasRequestedText" xml:space="preserve">
+    <value>Кто запросил</value>
+  </data>
+  <data name="ActivatedText" xml:space="preserve">
+    <value>Активирована</value>
+  </data>
+  <data name="AddressColonText" xml:space="preserve">
+    <value>Адрес:</value>
+  </data>
+  <data name="ClientKeyExplanatoryText" xml:space="preserve">
+    <value>На клиентский ключ можно зарегистрировать только одну машину, поэтому в данном списке не будут отображены ключи с уже зарегистрированными на них машинами</value>
+  </data>
+  <data name="CommentText" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="ContactPersonColonText" xml:space="preserve">
+    <value>Контактное лицо:</value>
+  </data>
+  <data name="DgKyDlvdd" xml:space="preserve">
+    <value>Регистрационный ключ помечен как доставленный клиенту. Теперь на этот ключ может быть зарегистррована машина и внесены диагностические данные.</value>
+  </data>
+  <data name="EmailColonText" xml:space="preserve">
+    <value>E-Mail:</value>
+  </data>
+  <data name="ExitText" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="ExpiredTextFem" xml:space="preserve">
+    <value>Просрочена</value>
+  </data>
+  <data name="FreeTextFem" xml:space="preserve">
+    <value>Свободна</value>
+  </data>
+  <data name="IncorrectKeyProvidedText" xml:space="preserve">
+    <value>Введён некорректный ключ, свяжитесь с поставщиком услуг для получения действительного регистрационного ключа.</value>
+  </data>
+  <data name="IssuanceRequestsText" xml:space="preserve">
+    <value>Запросы на выдачу</value>
+  </data>
+  <data name="LicenseClassColonText" xml:space="preserve">
+    <value>Класс лицензии:</value>
+  </data>
+  <data name="LicenseRequestToIssueText" xml:space="preserve">
+    <value>Запрос на лицензию к выдаче:</value>
+  </data>
+  <data name="LicensesIssuedText" xml:space="preserve">
+    <value>Лицензии выданы</value>
+  </data>
+  <data name="LicenseText" xml:space="preserve">
+    <value>Лицензия</value>
+  </data>
+  <data name="PartnerLicensesOperationsText" xml:space="preserve">
+    <value>Операции с лицензиями для партнёров</value>
+  </data>
+  <data name="PartnerWhoHasRequestedText" xml:space="preserve">
+    <value>Запросивший партнёр:</value>
+  </data>
+  <data name="PhoneColonText" xml:space="preserve">
+    <value>Телефон:</value>
+  </data>
+  <data name="ProlongationRequestsText" xml:space="preserve">
+    <value>Запросы на продление</value>
+  </data>
+  <data name="QuantityRequestedText" xml:space="preserve">
+    <value>Количество запрошенных экземпляров:</value>
+  </data>
+  <data name="RegisteredToText" xml:space="preserve">
+    <value>Зарегистрировано на</value>
+  </data>
+  <data name="RegistrationKeyDeliveranceText" xml:space="preserve">
+    <value>Выдача ключа</value>
+  </data>
+  <data name="RegistrationKeySelectionText" xml:space="preserve">
+    <value>Выбор регистрационного ключа</value>
+  </data>
+  <data name="RKCancT" xml:space="preserve">
+    <value>Аннулирование ключа</value>
+  </data>
+  <data name="RKCancWrn" xml:space="preserve">
+    <value>Вы собираетесь аннулировать выданный пользователю ключ. После этого пользователь не сможет использовать его для регистрации. Продолжить?</value>
+  </data>
+  <data name="RKCcldT" xml:space="preserve">
+    <value>Регистрационный ключ аннулирован. Лицензия деактивирована и снова доступна для использования.</value>
+  </data>
+  <data name="RKyDctvt" xml:space="preserve">
+    <value>Аннулирование ключа</value>
+  </data>
+  <data name="VehicleRegisteredExplanatory1Text" xml:space="preserve">
+    <value>Вы можете увидеть её на экране зарегистрированных машин. На неё теперь могут быть внесены данные, которые станут доступны клиенту для просмотра после того, как он зарегистрируется в системе по выданному ему ключу.</value>
+  </data>
+  <data name="VehicleRegisteredExplanatory2Text" xml:space="preserve">
+    <value>При регистрации машины была задействована одна лицензия класса A – та же самая, что при создании регистрационного ключа. После регистрации пользователя вы сможете зарегистрировать на его имя дополнительные машины, это потребует лицензии класса А.</value>
+  </data>
+  <data name="VehicleRegisteredText" xml:space="preserve">
+    <value>Машина зарегистрирована</value>
+  </data>
+  <data name="VehicleRegistrationInDatabaseText" xml:space="preserve">
+    <value>Регистрация машины в базе данных</value>
+  </data>
+  <data name="VehicleRegistrationText" xml:space="preserve">
+    <value>Регистрация автомобиля</value>
+  </data>
+  <data name="VehicleText" xml:space="preserve">
+    <value>Транспортное средство</value>
+  </data>
+  <data name="WorkingWithDatabaseText" xml:space="preserve">
+    <value>Работа с базой данных</value>
+  </data>
+  <data name="ClientsFreeKeysText" xml:space="preserve">
+    <value>Свободные ключи для клиентов</value>
+  </data>
+  <data name="CommentTextSavingMessage" xml:space="preserve">
+    <value>Текст комментария сохранится в базу после нажания Enter</value>
+  </data>
+  <data name="DatabaseInformationRetrievalError" xml:space="preserve">
+    <value>Ошибка при получении информации из базы данных</value>
+  </data>
+  <data name="DaysBeforeExpired" xml:space="preserve">
+    <value>Дней до истечения</value>
+  </data>
+  <data name="DeliveredKeysText" xml:space="preserve">
+    <value>Выданные конечным пользователям ключи</value>
+  </data>
+  <data name="ErrorCreatingKey" xml:space="preserve">
+    <value>Ошибка при создании ключа</value>
+  </data>
+  <data name="GeneralPeriod" xml:space="preserve">
+    <value>Общий срок действия</value>
+  </data>
+  <data name="LicenseAConsumptionExplanatoryText" xml:space="preserve">
+    <value>Для создания ключа активируется одна свободная лицензия класса A</value>
+  </data>
+  <data name="LicensePickUpExplanatoryMessage" xml:space="preserve">
+    <value>Выберите лицензию из списка. Если вы аннулируете ключ, лицензия вернётся вам. Созданный ключ можно выдать клиенту, чтобы он смог зарегистрироваться в системе. На выданный ключ можно внести данные по машине, чтобы клиент после регистрации смог их просмотреть. Всегда помечайте ключ как выданный перед тем как доставить его клиенту, чтобы другой пользователь не выдал этот ключ другому клиенту.</value>
+  </data>
+  <data name="LicReqQntt" xml:space="preserve">
+    <value>Запрос: лицензия {0} в количестве {1}</value>
+  </data>
+  <data name="RegisterSelectedWay" xml:space="preserve">
+    <value>Зарегистрировать выбранным способом -&gt;</value>
+  </data>
+  <data name="RegistrationKeyCreation" xml:space="preserve">
+    <value>Создание регистрационного ключа</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="AfterVehicleRegisteredMessage" xml:space="preserve">
+    <value>После регистрации машины вы сможете сохранять для неё данные, вносить записи о событиях (заменах деталей, проведённых ТО и т.д.) и просматривать её статистические и хронологические параметры</value>
+  </data>
+  <data name="AnnulateText" xml:space="preserve">
+    <value>Аннулировать</value>
+  </data>
+  <data name="CheckDataConsistency" xml:space="preserve">
+    <value>Проверьте правильность данных</value>
+  </data>
+  <data name="CheckLoginAvailabilityMessage" xml:space="preserve">
+    <value>Проверьте доступность имени чтобы продолжить регистрацию</value>
+  </data>
+  <data name="ClientRegistrationKeys" xml:space="preserve">
+    <value>Регистрационные ключи для клиентов</value>
+  </data>
+  <data name="ContactDataColon" xml:space="preserve">
+    <value>Контактные данные:</value>
+  </data>
+  <data name="CreateText" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="DataInputCheck" xml:space="preserve">
+    <value>Проверка введённых данных</value>
+  </data>
+  <data name="DataSaveToDatabase" xml:space="preserve">
+    <value>Сохранение данных в базу</value>
+  </data>
+  <data name="DeliveredToClient" xml:space="preserve">
+    <value>Выдан ли клиенту</value>
+  </data>
+  <data name="ErrorTryRefreshRelogin" xml:space="preserve">
+    <value>Ошибка. Попробуйте обновить или перелогиньтесь.</value>
+  </data>
+  <data name="KeyValueText" xml:space="preserve">
+    <value>Значение ключа</value>
+  </data>
+  <data name="KmText" xml:space="preserve">
+    <value>км</value>
+  </data>
+  <data name="LoginColon" xml:space="preserve">
+    <value>Логин:</value>
+  </data>
+  <data name="LoginIncorrectMessage" xml:space="preserve">
+    <value>Такой логин некорректен или уже занят. Пожалуйста, выберите другой.</value>
+  </data>
+  <data name="LoginWithNewAcc" xml:space="preserve">
+    <value>Войти в систему под новым аккаунтом после завершения</value>
+  </data>
+  <data name="MadatoryDataText" xml:space="preserve">
+    <value>Обязательные данные</value>
+  </data>
+  <data name="MileageColon" xml:space="preserve">
+    <value>Пробег:</value>
+  </data>
+  <data name="NameColon" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="OptionalDataText" xml:space="preserve">
+    <value>Опциональные данные</value>
+  </data>
+  <data name="OptionalRegDataMessage" xml:space="preserve">
+    <value>Эти данные необязательно вводить сейчас, их можно заполнить в любое время после регистрации на странице пользовательского профиля.</value>
+  </data>
+  <data name="OrganizationColon" xml:space="preserve">
+    <value>Организация:</value>
+  </data>
+  <data name="PasswordColon" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="ProfileFilling" xml:space="preserve">
+    <value>Заполнение профиля</value>
+  </data>
+  <data name="ProlongText" xml:space="preserve">
+    <value>Продлить</value>
+  </data>
+  <data name="RegisteredColon" xml:space="preserve">
+    <value>Зарегистрирован:</value>
+  </data>
+  <data name="RegisteringVehicleData" xml:space="preserve">
+    <value>Данные о регистрируемой машине</value>
+  </data>
+  <data name="RegistrationKeyForVehicleMessage" xml:space="preserve">
+    <value>Ключ, на который зарегистрирована машина, помечен как выданный клиенту. После регистрации в системе с этим ключом клиент сможет просмотреть сохранённые данные о своей машине.</value>
+  </data>
+  <data name="RegistrationProcessText" xml:space="preserve">
+    <value>Процесс регистрации</value>
+  </data>
+  <data name="RegKeyActivation" xml:space="preserve">
+    <value>Активация регистрационного ключа</value>
+  </data>
+  <data name="ShowText" xml:space="preserve">
+    <value>показать</value>
+  </data>
+  <data name="SurnameColon" xml:space="preserve">
+    <value>Фамилия:</value>
+  </data>
+  <data name="ToDelivered" xml:space="preserve">
+    <value>В выданные</value>
+  </data>
+  <data name="CheckText" xml:space="preserve">
+    <value>проверить</value>
+  </data>
+  <data name="DataTodisplayChoose" xml:space="preserve">
+    <value>Выбор отображаемых данных</value>
+  </data>
+  <data name="DetailsText" xml:space="preserve">
+    <value>Подробности</value>
+  </data>
+  <data name="EnterTheSystem" xml:space="preserve">
+    <value>Войдите в систему</value>
+  </data>
+  <data name="ParametersQuantityColon" xml:space="preserve">
+    <value>Количество параметров:</value>
+  </data>
+  <data name="ResetText" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="TitleColonText" xml:space="preserve">
+    <value>Название:</value>
+  </data>
+  <data name="ValuesQuantityColon" xml:space="preserve">
+    <value>Количество значений:</value>
+  </data>
+  <data name="For1000Rpm" xml:space="preserve">
+    <value>При 1000 об/мин</value>
+  </data>
+  <data name="For2000Rpm" xml:space="preserve">
+    <value>При 2000 об/мин</value>
+  </data>
+  <data name="For3000Rpm" xml:space="preserve">
+    <value>При 3000 об/мин</value>
+  </data>
+  <data name="GeneralText" xml:space="preserve">
+    <value>Общий</value>
+  </data>
+  <data name="RangeInjectorCorrDataHeader" xml:space="preserve">
+    <value>Коридор предельных значений коррекций инжекторов</value>
+  </data>
+  <data name="MedianInjectorCorrDataHeader" xml:space="preserve">
+    <value>Усреднённые значения коррекций инжекторов</value>
+  </data>
+  <data name="SendingRequest" xml:space="preserve">
+    <value>Отправка запроса</value>
+  </data>
+  <data name="ProlongationRequestSent" xml:space="preserve">
+    <value>Запрос на продление лицензии отправлен</value>
+  </data>
+  <data name="ProlongationRequestSentExplanation" xml:space="preserve">
+    <value>Как только запрос будет одобрен, лицензия снова активируется и связанные с ней данные будут доступны для просмотра.</value>
+    <comment>После отправки запроса на продление лицензии</comment>
+  </data>
+  <data name="ProlongationRequestOperationsText" xml:space="preserve">
+    <value>Продление просроченных лицензий </value>
+  </data>
+  <data name="ProlongationRequestAlreadyExists" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ProlongationRequestAlreadyExistsExplanation" xml:space="preserve">
+    <value>Запрос на продление этой лицензии уже отправлен, и второй не может быть создан пока не одобрен первый. Свяжитесь с администратором – возможно, это ускорит обработку запроса.</value>
+  </data>
+</root>

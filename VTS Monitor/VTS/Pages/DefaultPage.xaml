@@ -1,0 +1,18 @@
+﻿<navigation:Page
+    x:Class="VTS.Pages.DefaultPage" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization" Title="DefaultPage Page">
+    
+    <Grid x:Name="LayoutRoot">
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="18"
+            FontWeight="Bold"
+            Foreground="#45000000"
+            Text="{Localization:TranslateExtension Key=EnterTheSystem}">
+        </TextBlock>
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,25 @@
+﻿
+@using System.Threading
+@using Html.Models
+@{
+    Thread.CurrentThread.CurrentCulture =
+        Thread.CurrentThread.CurrentUICulture = SiteSession.GetCurrentCulture();
+}
+@using Html
+@using VTS.Site.AnalysisCore.Recognition
+@{
+    string successFormat = Resource.VehicleRecognizedMessageFormat;
+    VehicleInformation info = Model as VehicleInformation;
+    if (info == null)
+    {
+        <p class="vin-check-error-message">@Resource.UnableToGetVehicleData</p>
+    }
+    else
+    {
+        string resultMessage =
+                String.Format(successFormat, info.VehicleModel,
+                info.Engine.DisplayName, Html.ActionLink(
+                Resource.HowToProcessThisVehicleDiagnosticData, "DataAnalysis", "TopicDetails"));
+            <p class="vin-check-error-message">@Html.Raw(resultMessage)</p>
+    }
+}

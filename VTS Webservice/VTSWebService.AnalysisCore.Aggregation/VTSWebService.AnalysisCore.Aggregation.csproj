@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03D2BFC4-23B6-44F0-A64E-40EECBCEEE44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTSWebService.AnalysisCore.Aggregation</RootNamespace>
+    <AssemblyName>VTSWebService.AnalysisCore.Aggregation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\Output\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VtsShared">
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AggregatorFactory.cs" />
+    <Compile Include="IAggregator.cs" />
+    <Compile Include="InjectorCorrectionForRpmAggregator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReliabilityEvaluator.cs" />
+    <Compile Include="ReliabilitySummarizer.cs" />
+    <Compile Include="Sigma.cs" />
+    <Compile Include="StandardAggregator.cs" />
+    <Compile Include="StandardAggregatorSettings.cs" />
+    <Compile Include="StatisticsAggregationEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VTS.AnalysisCore.Common\VTS.AnalysisCore.Common.csproj">
+      <Project>{3174442a-3049-4548-98c7-e0768f81bc6f}</Project>
+      <Name>VTS.AnalysisCore.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.AnalysisCore.Enums\VTSWebService.AnalysisCore.Enums.csproj">
+      <Project>{7A1D1C6F-0073-4CB8-AAF0-CBFF7E569E14}</Project>
+      <Name>VTSWebService.AnalysisCore.Enums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DataAccess\VTSWebService.DataAccess.csproj">
+      <Project>{845699A2-6354-4CD5-BD38-1D441B3EB72C}</Project>
+      <Name>VTSWebService.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTSWebService.DomainObjects.Assemblers\VTSWebService.DomainObjects.Assemblers.csproj">
+      <Project>{2DFB7755-EEC6-48FC-8B7B-2A909E51DB8F}</Project>
+      <Name>VTSWebService.DomainObjects.Assemblers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

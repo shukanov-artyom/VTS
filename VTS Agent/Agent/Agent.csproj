@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8F3E9EE-C6E2-4269-9B76-F863F6030C51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Agent</RootNamespace>
+    <AssemblyName>Agent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>1</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\..\VTS.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>car_repair.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Charts.v11.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Data.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Charts.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Xpf.Charts.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v11.2, Version=11.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\External\DevExpress.Xpf.Core.v11.2.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\External\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VtsShared">
+      <HintPath>..\..\VTS Shared\Output\VtsShared.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="About\AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAnalysis\DataAnalysisWindow.xaml.cs">
+      <DependentUpon>DataAnalysisWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\PsaGlobalDictionary.cs" />
+    <Compile Include="Localization\LanguageSelectionControl.xaml.cs">
+      <DependentUpon>LanguageSelectionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\LanguageViewModel.cs" />
+    <Compile Include="Version\NewVersionAvailableWindow.xaml.cs">
+      <DependentUpon>NewVersionAvailableWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="About\AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataAnalysis\DataAnalysisWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Localization\LanguageSelectionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Version\NewVersionAvailableWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Agent.BusinessObjects\Agent.BusinessObjects.csproj">
+      <Project>{1ABB2603-58C0-45E8-899C-684BA07D634C}</Project>
+      <Name>Agent.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Instance\Agent.Common.Instance.csproj">
+      <Project>{3BEBDE5E-1413-4FAD-8634-447A630185D9}</Project>
+      <Name>Agent.Common.Instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common\Agent.Common.csproj">
+      <Project>{21539378-9A42-4546-8327-FF4FF88E7D08}</Project>
+      <Name>Agent.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.PSA.TypeConversion\Agent.Connector.PSA.TypeConversion.csproj">
+      <Project>{C866837D-A44B-48FF-A082-BDB694C01253}</Project>
+      <Name>Agent.Connector.PSA.TypeConversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Infrastructure\Agent.Infrastructure.csproj">
+      <Project>{42ecf03b-100d-495a-98b1-4bc9747d13b4}</Project>
+      <Name>Agent.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Metadata\Agent.Metadata.csproj">
+      <Project>{FA109915-77D6-456C-AF17-6D76ECB0633D}</Project>
+      <Name>Agent.Metadata</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Evaluation\Agent.Evaluation.csproj">
+      <Project>{4a709b11-0a75-4dc5-98cc-19a2899705f8}</Project>
+      <Name>Agent.Evaluation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Host\Agent.Host.csproj">
+      <Project>{30B54B89-8752-4C71-B3AE-06A171E89510}</Project>
+      <Name>Agent.Host</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Logging\Agent.Logging.csproj">
+      <Project>{A9403843-FAD4-446E-A157-2A2CA6F228C7}</Project>
+      <Name>Agent.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.DataSynchronization\Agent.Network.DataSynchronization.csproj">
+      <Project>{4BD6050A-11BB-40B0-9314-FEBD6E029DA6}</Project>
+      <Name>Agent.Network.DataSynchronization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Network.Monitor\Agent.Network.Monitor.csproj">
+      <Project>{927985D8-D0D6-428C-A50D-CDCD7931C28B}</Project>
+      <Name>Agent.Network.Monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Workspace\Agent.Workspace.csproj">
+      <Project>{a4e45d68-d704-40ba-bdbf-89d8b92a41a9}</Project>
+      <Name>Agent.Workspace</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Transport\Common.Transport.csproj">
+      <Project>{63D64D84-5D31-4B12-BC46-FDEC8CCA7C2D}</Project>
+      <Name>Common.Transport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector\Agent.Connector.csproj">
+      <Project>{5673E58F-C62F-4701-AB8D-57FFED655A6C}</Project>
+      <Name>Agent.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Localization\Agent.Localization.csproj">
+      <Project>{43F96D06-9A94-471C-B900-B8EFF2BCB42A}</Project>
+      <Name>Agent.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Interfaces\Agent.Common.Interfaces.csproj">
+      <Project>{6853BCCB-216D-4FF7-ADB8-65FF46213A96}</Project>
+      <Name>Agent.Common.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Common.Presentation\Agent.Common.Presentation.csproj">
+      <Project>{7BEDE629-357F-4903-A1F1-061D0185848E}</Project>
+      <Name>Agent.Common.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Styles\Common.Styles.csproj">
+      <Project>{00166DAD-3C45-4AAC-B52B-1B048C4A3670}</Project>
+      <Name>Common.Styles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.Presentation.PSA\Agent.Connector.Presentation.PSA.csproj">
+      <Project>{D6786BA7-89A7-49DF-9947-B7BBB8F5CC45}</Project>
+      <Name>Agent.Connector.Presentation.PSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Agent.Connector.PSA\Agent.Connector.PSA.csproj">
+      <Project>{5D595477-45C9-40F3-B34D-1723DD70742F}</Project>
+      <Name>Agent.Connector.PSA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="car_repair.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\citroen_logo_small_2.png" />
+    <Resource Include="Resources\Images\peugeot_logo_small.png" />
+    <Resource Include="Resources\Images\peugeot_logo_small_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\citroen_logo_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\MileageWarnIllustration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Ok-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\warning-icon-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Version\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\characteristics.png" />
+    <Resource Include="Resources\Images\current_icon.png" />
+    <Resource Include="Resources\Images\marks.png" />
+    <Resource Include="Resources\Images\Very-Basic-Clock-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\vehicle_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

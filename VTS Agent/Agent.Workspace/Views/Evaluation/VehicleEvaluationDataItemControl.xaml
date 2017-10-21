@@ -1,0 +1,246 @@
+﻿<UserControl 
+    x:Class="Agent.Workspace.Views.Evaluation.VehicleEvaluationDataItemControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+    xmlns:crosshair="clr-namespace:Agent.Common.Presentation.Crosshair;assembly=Agent.Common.Presentation"
+    xmlns:bindingConverters="clr-namespace:Agent.Common.Presentation.BindingConverters;assembly=Agent.Common.Presentation"
+    xmlns:localization="clr-namespace:Agent.Localization;assembly=Agent.Localization">
+    
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <bindingConverters:MarkToColorConverter 
+                x:Key="ColorConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Ellipse
+                Grid.Column="0"
+                Grid.Row="0"
+                Margin="40,10,10,10"
+                Height="100"
+                Width="100"
+                Fill="{Binding Path=CurrentMark, 
+                    Converter={StaticResource ColorConverter}}"/>
+            <TextBlock 
+                Foreground="White"
+                Grid.Column="0"
+                Grid.Row="0"
+                Margin="40,10,10,10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="40"
+                FontWeight="Bold"
+                Text="{Binding Path=CurrentMark, 
+                    StringFormat='0.0'}"/>
+            <TextBlock
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Margin="40,10,10,10"
+                Grid.Column="1"
+                Grid.Row="0"
+                TextWrapping="Wrap"
+                Text="{localization:Translate EvaluationMarkExplanatoryText}"/>
+            
+            <TextBlock
+                Grid.Column="0"
+                Grid.Row="1"
+                FontSize="18"
+                Margin="40,10,10,10"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Text="{Binding Path=LastDatasetDateString}"
+                Foreground="DimGray"/>
+            
+            <TextBlock
+                Margin="40,10,10,10"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                TextWrapping="Wrap"
+                Text="{localization:Translate EvaluationMarkExplanatoryTextDate}"/>
+            
+            <TextBlock
+                FontSize="18"
+                Margin="40,10,10,10"
+                FontWeight="Bold"
+                Grid.Column="0"
+                Grid.Row="2"
+                Foreground="DimGray"
+                HorizontalAlignment="Center"
+                Text="{Binding Path=Reliability}"/>
+
+            <TextBlock
+                Margin="40,10,10,10"
+                Grid.Column="1"
+                Grid.Row="2"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                TextWrapping="Wrap"
+                Text="{localization:Translate EvaluationMarkExplanatoryTextReliability}"/>
+
+            <TextBlock
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Margin="10"
+                TextWrapping="Wrap"
+                HorizontalAlignment="Center"
+                Text="{localization:Translate EvaluationMarksExplanationTextHistoryGraph}"/>
+            
+        </Grid>
+        
+    <dxc:ChartControl
+        Margin="5,0,0,0"
+        BorderThickness="0"
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            x:Name="chart">
+        <dxc:ChartControl.Diagram>
+            <dxc:XYDiagram2D 
+                    x:Name="diagram">
+                <dxc:XYDiagram2D.Series>
+                    <dxc:LineSeries2D
+                        ValueScaleType="Numerical"
+                        ArgumentScaleType="DateTime"
+                        DataSource="{Binding DataForGraph}"
+                        MarkerVisible="False"
+                        ShowInLegend="False"
+                        ArgumentDataMember="Key"
+                        ValueDataMember="Value"
+                        x:Name="series">
+                        <dxc:LineSeries2D.Label>
+                            <dxc:SeriesLabel 
+                                    Visible="False"/>
+                        </dxc:LineSeries2D.Label>
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D.Series>
+                <dxc:XYDiagram2D.AxisX>
+                    <dxc:AxisX2D 
+                            TickmarksMinorVisible="True"
+                            GridLinesMinorVisible="True"
+                            GridLinesVisible="True"
+                            x:Name="axisX">
+                        <dxc:AxisX2D.Label>
+                            <dxc:AxisLabel 
+                                    Staggered="False" />
+                        </dxc:AxisX2D.Label>
+                    </dxc:AxisX2D>
+                </dxc:XYDiagram2D.AxisX>
+                <dxc:XYDiagram2D.AxisY>
+                    <dxc:AxisY2D
+                        GridLinesMinorVisible="True"
+                        GridLinesVisible="True"
+                        x:Name="axisY">
+                        <dxc:AxisY2D.Range>
+                            <dxc:AxisRange 
+                                MaxValue="{Binding MaxYValue}"
+                                MinValue="{Binding MinYValue}"/>
+                        </dxc:AxisY2D.Range>
+                    </dxc:AxisY2D>
+                </dxc:XYDiagram2D.AxisY>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl.Diagram>
+    </dxc:ChartControl>
+
+    <Canvas 
+            Grid.Column="0"
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Name="crosshairCursorCanvas">
+        <Border 
+            Name="verticalLine" 
+            Background="#424242" 
+            Width="1" 
+            Height="10000" 
+            Opacity="0.75"/>
+        <Border 
+            Name="horizontalLine" 
+            Background="#424242"
+            Height="1"
+            Width="10000"
+            Opacity="0.75"/>
+    </Canvas>
+
+    <Canvas
+        Grid.Column="0"
+        Grid.Row="1"
+        Grid.ColumnSpan="2">
+        <crosshair:ValueItem 
+            x:Name="valueX" 
+            Visibility="Collapsed">
+            <crosshair:ValueItem.RenderTransform>
+                <TranslateTransform />
+            </crosshair:ValueItem.RenderTransform>
+            <!--region #CrosshairCursorLabelX-->
+            <crosshair:ValueItem.Template>
+                <ControlTemplate>
+                    <Border 
+                        Height="20" 
+                        Background="Silver">
+                        <TextBlock 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="5,0"
+                            Text="{Binding Path=Text, 
+                            RelativeSource={RelativeSource 
+                            TemplatedParent}}" />
+                    </Border>
+                </ControlTemplate>
+            </crosshair:ValueItem.Template>
+            <!--endregion #CrosshairCursorLabelX-->
+        </crosshair:ValueItem>
+        <crosshair:ValueItem 
+                    x:Name="valueY" 
+                    Visibility="Collapsed">
+            <crosshair:ValueItem.RenderTransform>
+                <TranslateTransform />
+            </crosshair:ValueItem.RenderTransform>
+            <!--region #CrosshairCursorLabelY-->
+            <crosshair:ValueItem.Template>
+                <ControlTemplate>
+                    <Border 
+                        Height="20" 
+                        Background="Silver">
+                        <TextBlock 
+                            HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" 
+                            Margin="5,0" 
+                            Text="{Binding Path=Text, 
+                            RelativeSource={RelativeSource 
+                            TemplatedParent}}" />
+                    </Border>
+                </ControlTemplate>
+            </crosshair:ValueItem.Template>
+            <!--endregion #CrosshairCursorLabelY-->
+        </crosshair:ValueItem>
+    </Canvas>
+    </Grid>
+</UserControl>

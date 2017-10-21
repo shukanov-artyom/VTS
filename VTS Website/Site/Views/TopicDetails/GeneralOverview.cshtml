@@ -1,0 +1,48 @@
+﻿@using Html
+@using Html.Models
+@{
+    int culture = SiteSession.CurrentUICulture;
+    ViewBag.Title = Resource.PageHeaderSystemOverview;
+}
+
+<div class="root-element">
+    <h2>@Resource.SystemOverviewHeader1</h2>
+    <p>@Html.Raw(Resource.SystemOverviewText1)</p>
+    <div class="center-image-holder">
+        <img src="../Content/Images/overviewIllustration1.png"/>
+    </div>
+    <h2>@Resource.SystemOverviewHeader2</h2>
+    <p>@Html.Raw(Resource.SystemOverviewText2)</p>
+    <h2>@Resource.SystemOverviewHeader3</h2>
+    <p>@Html.Raw(Resource.SystemOverviewText3)</p>
+    <h2>@Resource.SystemOverviewHeader4</h2>
+    <div>
+        <div>
+            <table id="images-series-with-subscriptions-table">
+                <!--tr>
+                    <td><img src="../Content/Images/overviewIllustration2.png"/></td>
+                    <td><img src="../Content/Images/overviewIllustration3.png"/></td>
+                    <td><img src="../Content/Images/overviewIllustration4.png"/></td>
+                </tr>
+                <tr>
+                    <td><b>@Resource.DesktopApplicationName</b></td>
+                    <td><b>@Resource.WebApplicationName</b></td>
+                    <td><b>VTS Wiki</b></td>
+                </tr-->
+            </table>
+        </div>
+        <ul>
+            <li>
+                <b><a href=@Resource.AgentWikiPage>@Resource.DesktopApplicationName</a></b>@Resource.SystemOverviewText4
+            </li>
+            <li>
+                <b><a href=@Resource.MonitorWikiPage>@Resource.WebApplicationName</a></b>@Resource.SystemOverviewText5
+            </li>
+            <li>
+                <b><a href="@Resource.WikiLink">VTS Wiki</a></b>@Resource.SystemOverviewText6
+            </li>
+        </ul>
+    </div>
+    <h2>@Resource.TechnicalSupport</h2>
+    <p>@Resource.SystemOverviewText7</p>
+</div>

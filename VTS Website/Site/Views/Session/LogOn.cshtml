@@ -1,0 +1,35 @@
+﻿@model Html.Models.LogOnModel
+@using Html
+@{
+    ViewBag.Title = "LogOn";
+}
+
+<div class="root-element">
+
+@using (Html.BeginForm())
+{
+    <div>
+        <fieldset>
+            <legend>Logon</legend>
+
+            <div class="editor-label">
+                @Resource.LogOnModelUsername
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Username)
+                @Html.ValidationMessageFor(m => m.Username)
+            </div>
+            <div class="editor-label">
+                @Resource.LogOnModelPassword
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+            <p>
+                <input type="submit" value="Ok" />
+            </p>
+        </fieldset>
+    </div>
+}
+    </div>

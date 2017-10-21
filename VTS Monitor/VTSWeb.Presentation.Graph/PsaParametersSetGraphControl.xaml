@@ -1,0 +1,39 @@
+﻿<Graph:MultipleGraphControl 
+    x:Class="VTSWeb.Presentation.Graph.PsaParametersSetGraphControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+    xmlns:Graph="clr-namespace:VTSWeb.Presentation.Graph">
+
+    <dxc:ChartControl
+        MouseLeftButtonUp="OnGraphClicked"
+        x:Name="chartControlRoot"
+        Margin="5,0,0,0"
+        BorderThickness="0">
+        <dxc:ChartControl.Diagram>
+            <dxc:XYDiagram2D
+                    x:Name="graphDiagram">
+                <dxc:XYDiagram2D.Series>
+                    <!--fills programmatically-->
+                </dxc:XYDiagram2D.Series>
+                <dxc:XYDiagram2D.AxisX>
+                    <dxc:AxisX2D 
+                        GridLinesMinorVisible="True"
+                        GridLinesVisible="True"
+                        TickmarksMinorVisible="False">
+                        <dxc:AxisX2D.Label>
+                            <dxc:AxisLabel 
+                                Staggered="False" />
+                        </dxc:AxisX2D.Label>
+                    </dxc:AxisX2D>
+                </dxc:XYDiagram2D.AxisX>
+                <dxc:XYDiagram2D.AxisY>
+                    <dxc:AxisY2D
+                                GridLinesVisible="True"
+                                GridLinesMinorVisible="True">
+                    </dxc:AxisY2D>
+                </dxc:XYDiagram2D.AxisY>
+            </dxc:XYDiagram2D>
+        </dxc:ChartControl.Diagram>
+    </dxc:ChartControl>
+</Graph:MultipleGraphControl>

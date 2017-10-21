@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UserDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PasswordHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RegisteredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Role" type="xs:int" />
+          <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserDto" nillable="true" type="tns:UserDto" />
+  <xs:complexType name="DomainObjectDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DomainObjectDto" nillable="true" type="tns:DomainObjectDto" />
+  <xs:complexType name="AgentVersionDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DownloadLink" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReleasedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="VersionString" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AgentVersionDto" nillable="true" type="tns:AgentVersionDto" />
+  <xs:complexType name="ArrayOfUserDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserDto" nillable="true" type="tns:UserDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserDto" nillable="true" type="tns:ArrayOfUserDto" />
+  <xs:complexType name="ArrayOfVehicleDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleDto" nillable="true" type="tns:VehicleDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleDto" nillable="true" type="tns:ArrayOfVehicleDto" />
+  <xs:complexType name="VehicleDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DomainObjectDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Manufacturer" type="xs:int" />
+          <xs:element minOccurs="0" name="Mileage" type="xs:int" />
+          <xs:element minOccurs="0" name="Model" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProductionYear" type="xs:int" />
+          <xs:element minOccurs="0" name="RegisteredDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Vin" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="VehicleDto" nillable="true" type="tns:VehicleDto" />
+</xs:schema>

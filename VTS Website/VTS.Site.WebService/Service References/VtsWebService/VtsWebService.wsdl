@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VtsWebService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpsBinding_IVtsWebService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VTSWebService.DataContracts" />
+      <xsd:import schemaLocation="http://vtswebservice.azurewebsites.net/VtsWebService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVtsWebService_CheckConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConnection" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_CheckConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_CheckUsernameAvailability_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUsernameAvailability" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_CheckUsernameAvailability_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUsernameAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetLastAgentVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastAgentVersion" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetLastAgentVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastAgentVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetUserRoleByUserId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRoleByUserId" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetUserRoleByUserId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserRoleByUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetPartnersVehiclesCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnersVehiclesCount" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetPartnersVehiclesCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartnersVehiclesCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetClientsForPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsForPartner" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetClientsForPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientsForPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetUsersVehicles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersVehicles" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetUsersVehicles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersVehiclesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetVehicleByVin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleByVin" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetVehicleByVin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleByVinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_CheckWhetherVinIsSupported_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckWhetherVinIsSupported" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_CheckWhetherVinIsSupported_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckWhetherVinIsSupportedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetVehicleInformationByVin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleInformationByVin" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetVehicleInformationByVin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleInformationByVinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_ReturnUnsupportedVinsFromTheList_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUnsupportedVinsFromTheList" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_ReturnUnsupportedVinsFromTheList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUnsupportedVinsFromTheListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetAgentVersions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentVersions" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_GetAgentVersions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentVersionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGetLast_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGetLast" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGetLast_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGetLastResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGetAll" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGet" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsUpdate" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsPersist_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsPersist" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsPersist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsPersistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewsDelete" />
+  </wsdl:message>
+  <wsdl:message name="IVtsWebService_NewsDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewsDeleteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVtsWebService">
+    <wsdl:operation name="CheckConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/CheckConnection" message="tns:IVtsWebService_CheckConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/CheckConnectionResponse" message="tns:IVtsWebService_CheckConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUsernameAvailability">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/CheckUsernameAvailability" message="tns:IVtsWebService_CheckUsernameAvailability_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/CheckUsernameAvailabilityResponse" message="tns:IVtsWebService_CheckUsernameAvailability_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/AuthenticateUser" message="tns:IVtsWebService_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/AuthenticateUserResponse" message="tns:IVtsWebService_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastAgentVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetLastAgentVersion" message="tns:IVtsWebService_GetLastAgentVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetLastAgentVersionResponse" message="tns:IVtsWebService_GetLastAgentVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/RegisterUser" message="tns:IVtsWebService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/RegisterUserResponse" message="tns:IVtsWebService_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleByUserId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetUserRoleByUserId" message="tns:IVtsWebService_GetUserRoleByUserId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetUserRoleByUserIdResponse" message="tns:IVtsWebService_GetUserRoleByUserId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnersVehiclesCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetPartnersVehiclesCount" message="tns:IVtsWebService_GetPartnersVehiclesCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetPartnersVehiclesCountResponse" message="tns:IVtsWebService_GetPartnersVehiclesCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsForPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetClientsForPartner" message="tns:IVtsWebService_GetClientsForPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetClientsForPartnerResponse" message="tns:IVtsWebService_GetClientsForPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersVehicles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetUsersVehicles" message="tns:IVtsWebService_GetUsersVehicles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetUsersVehiclesResponse" message="tns:IVtsWebService_GetUsersVehicles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleByVin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetVehicleByVin" message="tns:IVtsWebService_GetVehicleByVin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetVehicleByVinResponse" message="tns:IVtsWebService_GetVehicleByVin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckWhetherVinIsSupported">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/CheckWhetherVinIsSupported" message="tns:IVtsWebService_CheckWhetherVinIsSupported_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/CheckWhetherVinIsSupportedResponse" message="tns:IVtsWebService_CheckWhetherVinIsSupported_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInformationByVin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetVehicleInformationByVin" message="tns:IVtsWebService_GetVehicleInformationByVin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetVehicleInformationByVinResponse" message="tns:IVtsWebService_GetVehicleInformationByVin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUnsupportedVinsFromTheList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/ReturnUnsupportedVinsFromTheList" message="tns:IVtsWebService_ReturnUnsupportedVinsFromTheList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/ReturnUnsupportedVinsFromTheListResponse" message="tns:IVtsWebService_ReturnUnsupportedVinsFromTheList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentVersions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/GetAgentVersions" message="tns:IVtsWebService_GetAgentVersions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/GetAgentVersionsResponse" message="tns:IVtsWebService_GetAgentVersions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetLast">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsGetLast" message="tns:IVtsWebService_NewsGetLast_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsGetLastResponse" message="tns:IVtsWebService_NewsGetLast_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsGetAll" message="tns:IVtsWebService_NewsGetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsGetAllResponse" message="tns:IVtsWebService_NewsGetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsGet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsGet" message="tns:IVtsWebService_NewsGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsGetResponse" message="tns:IVtsWebService_NewsGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsUpdate" message="tns:IVtsWebService_NewsUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsUpdateResponse" message="tns:IVtsWebService_NewsUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsPersist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsPersist" message="tns:IVtsWebService_NewsPersist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsPersistResponse" message="tns:IVtsWebService_NewsPersist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewsDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVtsWebService/NewsDelete" message="tns:IVtsWebService_NewsDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVtsWebService/NewsDeleteResponse" message="tns:IVtsWebService_NewsDelete_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVtsWebService" type="tns:IVtsWebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckConnection">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUsernameAvailability">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckUsernameAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastAgentVersion">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetLastAgentVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleByUserId">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetUserRoleByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnersVehiclesCount">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetPartnersVehiclesCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsForPartner">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetClientsForPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersVehicles">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetUsersVehicles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleByVin">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetVehicleByVin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckWhetherVinIsSupported">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckWhetherVinIsSupported" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInformationByVin">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetVehicleInformationByVin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUnsupportedVinsFromTheList">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/ReturnUnsupportedVinsFromTheList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentVersions">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetAgentVersions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetLast">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGetLast" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetAll">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGet">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsUpdate">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsPersist">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsPersist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsDelete">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpsBinding_IVtsWebService" type="tns:IVtsWebService">
+    <wsp:PolicyReference URI="#BasicHttpsBinding_IVtsWebService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckConnection">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUsernameAvailability">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckUsernameAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastAgentVersion">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetLastAgentVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserRoleByUserId">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetUserRoleByUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartnersVehiclesCount">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetPartnersVehiclesCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientsForPartner">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetClientsForPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersVehicles">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetUsersVehicles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleByVin">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetVehicleByVin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckWhetherVinIsSupported">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/CheckWhetherVinIsSupported" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleInformationByVin">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetVehicleInformationByVin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUnsupportedVinsFromTheList">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/ReturnUnsupportedVinsFromTheList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentVersions">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/GetAgentVersions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetLast">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGetLast" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGetAll">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsGet">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsUpdate">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsPersist">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsPersist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewsDelete">
+      <soap:operation soapAction="http://tempuri.org/IVtsWebService/NewsDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VtsWebService">
+    <wsdl:port name="BasicHttpBinding_IVtsWebService" binding="tns:BasicHttpBinding_IVtsWebService">
+      <soap:address location="http://vtswebservice.azurewebsites.net/VtsWebService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpsBinding_IVtsWebService" binding="tns:BasicHttpsBinding_IVtsWebService">
+      <soap:address location="https://vtswebservice.azurewebsites.net/VtsWebService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

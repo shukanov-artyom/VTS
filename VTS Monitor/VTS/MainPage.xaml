@@ -1,0 +1,61 @@
+﻿<UserControl 
+    x:Class="VTS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:VTS="clr-namespace:VTS" 
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization"
+    MinWidth="640"
+    MinHeight="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="23" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Style="{StaticResource ApplicationHeaderGridStyle}"
+            Grid.Column="0"
+            Grid.Row="0">
+            <Border
+            Style="{StaticResource ApplicationHeaderBorderStyle}">
+                <TextBlock
+                    Style="{StaticResource ApplicationHeaderStyle}"
+                    Text="{Localization:TranslateExtension Key=AppHeader}" >
+                </TextBlock>
+            </Border>
+        </Grid>
+
+        <VTS:LoggedUserBarControl 
+            Grid.Row="1"
+            Grid.Column="0"/>
+
+        <StackPanel
+            Grid.Row="2"
+            x:Name="stackPanelPlaceholder"/>
+
+        <Grid
+            Style="{StaticResource ApplicationBottomPanelGridStyle}"
+            Grid.Column="0"
+            Grid.Row="3">
+            <TextBlock
+                Foreground="White"
+                Margin="10,0,0,0"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Text="{Localization:Translate Key=FooterCopyrightText}"/>
+            <TextBlock
+                x:Name="textBlockVersion"
+                Foreground="White"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Margin="0,0,15,0">
+            </TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>

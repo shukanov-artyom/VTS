@@ -1,0 +1,98 @@
+﻿<UserControl
+    x:Class="VTSWeb.Presentation.Workspace.Common.Data.VehicleDatasetsTreeControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:TreeItems="clr-namespace:VTSWeb.Presentation.Workspace.Common.TreeItems;assembly=VTSWeb.Presentation.Workspace.Common"
+    xmlns:Localization="clr-namespace:VTSWeb.Localization;assembly=VTSWeb.Localization">
+
+    <UserControl.Resources>
+        <sdk:HierarchicalDataTemplate 
+            x:Key="ParameterTemplate">
+            <Grid>
+                <TreeItems:ParameterTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Parameters}"
+            ItemTemplate="{StaticResource ParameterTemplate}"
+            x:Key="ParametersSetTemplate">
+            <Grid>
+                <TreeItems:ParametersSetTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=ParametersSets}"
+            ItemTemplate="{StaticResource ParametersSetTemplate}"
+            x:Key="TraceTemplate">
+            <Grid
+                x:Name="traceTemplate">
+                <TreeItems:TraceTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Traces}"
+            ItemTemplate="{StaticResource TraceTemplate}"
+            x:Key="VehicleTemplate">
+            <Grid
+                x:Name="gridVehicleTemplate">
+                <TreeItems:VehicleTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+
+        <sdk:HierarchicalDataTemplate 
+            ItemsSource="{Binding Path=Traces}"
+            ItemTemplate="{StaticResource TraceTemplate}"
+            x:Key="DatasetTemplate">
+            <Grid
+                x:Name="gridDatasetTemplate">
+                <TreeItems:PsaDatasetTreeItemControl />
+            </Grid>
+        </sdk:HierarchicalDataTemplate>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Column="1"
+            Grid.Row="1">
+            <Button
+                Height="23"
+                Width="90"
+                Content="{Localization:TranslateExtension 
+                    Key=DeleteText}"/>
+            <Button
+                Margin="10,0,0,0"
+                Height="23"
+                Width="90"
+                Content="{Localization:Translate Key=RefreshText}"/>
+        </StackPanel>
+        
+        <sdk:TreeView 
+            x:Name="mainTreeView"
+            SelectedItemChanged="OnGridSelectedItemChanged"
+            ItemTemplate="{StaticResource DatasetTemplate}"
+            BorderThickness="0"
+            Grid.Column="1"
+            Grid.Row="3">
+        </sdk:TreeView>
+    </Grid>
+</UserControl>

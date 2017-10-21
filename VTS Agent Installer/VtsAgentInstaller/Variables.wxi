@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <?define ProductName="VTS Agent" ?>
+  <?define ProductVersion="0.0.26.6" ?>
+  <?define ProductCode="CCF0B3B5-EA08-47E9-94D2-6CF8568425CD"?>
+  <?define UpgradeCode="74E54A03-A223-4488-843E-ECDE1B7A37FB"?>
+  <?define Manufacturer="VTS Automonitoring"?>
+  <?define AgentOutputDirectory="..\..\VTS Agent\Output"?>
+  <?define AgentOutputDirectoryLocalizationBe="$(var.AgentOutputDirectory)\be"?>
+  <?define AgentOutputDirectoryLocalizationRu="$(var.AgentOutputDirectory)\ru"?>
+</Include>
